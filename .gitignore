@@ -25,6 +25,4 @@
 .yamllint.yaml
 .typos.toml
 
-
-# Node Modules folder
-node_modules/
+node_modules
