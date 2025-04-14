@@ -26,3 +26,4 @@
 .typos.toml
 
 node_modules
+/.svelte-kit

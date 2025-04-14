@@ -1,59 +1,40 @@
-set positional-arguments
+# Set shell for all commands
 set shell := ["bash", "-cue"]
-root_dir := `git rev-parse --show-toplevel`
-flake_dir := root_dir / "tools/nix"
-output_dir := root_dir / ".output"
-build_dir := output_dir / "build"
 
-# Default target if you do not specify a target.
+# Default recipe to list all available commands
 default:
-    just --list --unsorted
+    @just --list
 
-# Enter the default Nix development shell and execute the command `"$@`.
-develop *args:
-    just nix-develop "default" "$@"
+# Install dependencies
+install:
+    pnpm install
 
-# Format the project.
-format *args:
-    "{{root_dir}}/tools/scripts/setup-config-files.sh"
-    nix run --accept-flake-config {{flake_dir}}#treefmt -- "$@"
+# Start development server
+serve:
+    pnpm dev
 
-# Setup the project.
-setup *args:
-    cd "{{root_dir}}" && ./tools/scripts/setup.sh
+# Build for production
+build:
+    pnpm build
 
-# Run commands over the ci development shell.
-ci *args:
-    just nix-develop "ci" "$@"
+# Preview production build
+preview:
+    pnpm preview
 
-## Nix Stuff ==================================================================
-# Show all packages configured in the Nix `flake.nix`.
-nix-list *args:
-    cd tools/nix && nix flake --no-pure-eval show
+# Run type checking
+typecheck:
+    pnpm check
 
-# Enter the Nix `devShell` with name `$1` and execute the command `${@:2}` (default command is '$SHELL')
-[private]
-nix-develop *args:
-    #!/usr/bin/env bash
-    set -eu
-    cd "{{root_dir}}"
-    shell="$1"; shift 1;
-    args=("$@") && [ "${#args[@]}" != 0 ] || args="$SHELL"
-    nix develop --no-pure-eval --accept-flake-config \
-        "{{flake_dir}}#$shell" --command "${args[@]}"
-## ============================================================================
-# Lint the project.
-lint *args:
-    echo "TODO: Not implemented"
+# Run linting
+lint:
+    pnpm lint
 
-# Build the module.
-build *args:
-    echo "TODO: Not implemented"
+# Format code
+format:
+    pnpm format
 
-# Test the project.
-test *args:
-    echo "TODO: Not implemented"
-
-# Run an executable.
-run *args:
-    echo "TODO: Not implemented"
+# Clean build artifacts
+clean:
+    rm -rf .svelte-kit
+    rm -rf build
+    rm -rf dist
