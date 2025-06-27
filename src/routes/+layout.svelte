@@ -7,11 +7,11 @@
 </script>
 
 
-	<div class="min-h-screen flex flex-col bg-surface-900 text-surface-50">
+	<div class="min-h-screen flex flex-col">
 		<header>
 			<Header />
 		</header>
-		<main class="flex-grow flex items-center justify-center">
+		<main class="flex-grow flex items-center justify-center bg-surface-50">
 			{@render children()}
 		</main>
 
@@ -22,8 +22,4 @@
 
 
 <style>
-	:global(html) {
-		background-color: var(--color-surface-900);
-		color: var(--color-surface-50);
-	}
 </style>
