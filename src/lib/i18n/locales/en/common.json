@@ -1,30 +1,12 @@
 {
   "hero": {
-    "explore": "Explore",
     "landing-title": "Low-Value Care in Medical Hospitalized Patients: A National Data Stream on Quality of Care in Swiss University Hospitals",
     "landing-description": "Low-value care refers to medical treatments or tests that offer little or no benefit to patients. It’s estimated to make up about 20% of healthcare costs. In Switzerland, that could mean around 16 billion CHF is spent on unnecessary care each year. To reduce this, experts recommend avoiding certain tests and treatments—especially when the risks or costs outweigh the benefits. These are often found in hospital settings.",
     "landing-description-lucid": "The LUCID project aims to build a national data stream, collecting patient reported outcomes in hospitals and providing a safe, online platform, where the data on patient treatment can be studied and compared."
   },
-  "welcome": {
-    "title": "Welcome to LUCID",
-    "p1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.",
-    "p2": "Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio."
-  },
-  "mission": {
-    "title": "Our Mission",
-    "p1": "Proin pharetra nonummy pede. Mauris et orci. Aenean nec lorem. In porttitor. Donec laoreet nonummy augue. Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc.",
-    "p2": "Ut nonummy. Fusce aliquet pede non pede. Suspendisse dapibus. Nam at justo vitae lectus hendrerit hendrerit. Mauris massa. Vestibulum lacinia arcu eget nulla."
-  },
-  "join": {
-    "title": "Join Us",
-    "p1": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent dapibus. Neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat.",
-    "p2": "Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus. Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus."
-  },
-  "buttons": {
-    "continue": "Continue",
-    "learnMore": "Learn More",
-    "requestAccess": "Request Access"
-  },
+  "lvc": {
+    "lvc-title": "What is Low-Value Care?"
+  }, 
   "language": {
     "en": "English",
     "fr": "Français",

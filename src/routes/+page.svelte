@@ -2,6 +2,7 @@
   import { onMount } from 'svelte';
   import InfoSection from '$lib/components/InfoSection.svelte';
   import { t, initLocale } from '$lib/i18n/i18n';
+  import LVCexamples from '$lib/components/LVCexamples.svelte';
 
   let scrollPosition = 0;
   let windowHeight = 0;
@@ -42,6 +43,7 @@
 <div class="scroll-container">
 
   <InfoSection/>
+  <LVCexamples/>
 
   
 </div>

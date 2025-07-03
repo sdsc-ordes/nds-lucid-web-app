@@ -2,7 +2,7 @@
     import { t, initLocale } from "$lib/i18n/i18n";
     initLocale();
 
-    $: translate = t;
+
 </script>
 
 <div class="p-6">
