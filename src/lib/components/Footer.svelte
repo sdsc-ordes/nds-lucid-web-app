@@ -1,6 +1,6 @@
 <footer class="bg-surface-800 p-4 text-center text-surface-50">
   <div class="mb-4 flex justify-center items-center">
-    <img src="/logo.svg" alt="LUCID Registry Logo" class="h-5 mr-2" />
+    <!-- <img src="" alt="LUCID Registry Logo" class="h-5 mr-2" /> -->
     <span class="text-xl font-bold uppercase">SDSC</span>
   </div>
   <div>

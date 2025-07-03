@@ -31,7 +31,7 @@ lint:
 
 # Format code
 format:
-    pnpm format
+    pnpm exec prettier . --write
 
 # Clean build artifacts
 clean:
