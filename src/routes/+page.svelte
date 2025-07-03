@@ -1,7 +1,6 @@
 <script lang="ts">
   import { onMount } from 'svelte';
-  import Scroll from '$lib/components/Scroll.svelte';
-  import LanguageSelector from '$lib/components/LanguageSelector.svelte';
+  import InfoSection from '$lib/components/InfoSection.svelte';
   import { t, initLocale } from '$lib/i18n/i18n';
 
   let scrollPosition = 0;
@@ -41,6 +40,8 @@
 <svelte:window onscroll={handleScroll} />
 
 <div class="scroll-container">
+
+  <InfoSection/>
 
   
 </div>

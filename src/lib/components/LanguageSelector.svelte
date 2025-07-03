@@ -15,12 +15,3 @@
     {/each}
   </div>
 </div>
-
-<style>
-  .language-selector {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    z-index: 20;
-  }
-</style> 

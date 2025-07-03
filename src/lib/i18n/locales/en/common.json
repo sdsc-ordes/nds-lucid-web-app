@@ -1,6 +1,9 @@
 {
   "hero": {
-    "explore": "Explore"
+    "explore": "Explore",
+    "landing-title": "Low-Value Care in Medical Hospitalized Patients: A National Data Stream on Quality of Care in Swiss University Hospitals",
+    "landing-description": "Low-value care refers to medical treatments or tests that offer little or no benefit to patients. It’s estimated to make up about 20% of healthcare costs. In Switzerland, that could mean around 16 billion CHF is spent on unnecessary care each year. To reduce this, experts recommend avoiding certain tests and treatments—especially when the risks or costs outweigh the benefits. These are often found in hospital settings.",
+    "landing-description-lucid": "The LUCID project aims to build a national data stream, collecting patient reported outcomes in hospitals and providing a safe, online platform, where the data on patient treatment can be studied and compared."
   },
   "welcome": {
     "title": "Welcome to LUCID",
