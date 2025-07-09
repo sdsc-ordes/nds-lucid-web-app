@@ -43,7 +43,7 @@
     base="py-2 sm:py-2"
 >
     {#snippet lead()}
-        <h2 class="h2 text-surface-50">LUCID</h2>
+        <h1 class="h1 text-primary-100 font-semibold">LUCID</h1>
     {/snippet}
 
     {#snippet trail()}
