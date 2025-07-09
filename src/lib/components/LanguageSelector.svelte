@@ -3,7 +3,7 @@
   import type { Locale } from '$lib/i18n/i18n';
 </script>
 
-<div class="language-selector bg-surface-800 rounded-lg p-2 shadow-lg">
+<div class="language-selector rounded-lg p-2 shadow-lg">
   <div class="flex space-x-4">
     {#each Object.entries(locales) as [code, name]}
       <button 

@@ -28,9 +28,11 @@
 
     // Nav links shared for desktop and mobile
     const navLinks = [
-        { href: "/", label: "About" },
-        { href: "/", label: "Access" },
-        { href: "/", label: "Contact" },
+        { href: "/", label: "low-value care" },
+        { href: "/", label: "impact" },
+        { href: "/", label: "datastream" },
+        { href: "/", label: "goals" },
+        { href: "/", label: "contact" },
     ];
 </script>
 
@@ -46,14 +48,14 @@
 
     {#snippet trail()}
         <!-- Desktop Nav -->
-        <div class="hidden sm:flex items-center relative gap-6">
+        <div class="hidden sm:flex items-center relative gap-12">
             <nav>
-                <ul class="flex gap-6">
+                <ul class="flex gap-12">
                     {#each navLinks as { href, label }}
                         <li>
                             <a
                                 href={href}
-                                class="text-surface-50 hover:text-primary-400 text-lg font-semibold"
+                                class="text-surface-50 hover:text-primary-400 text-lg "
                             >
                                 {label}
                             </a>
@@ -113,7 +115,7 @@
                             <li>
                                 <a
                                     href={href}
-                                    class="text-surface-900 hover:text-primary-500 font-semibold"
+                                    class="text-primary-900 active:text-primary-500 focus:text-primary-500 transition-colors duration-200"
                                     on:click={() => (mobileMenuOpen = false)}
                                 >
                                     {label}
