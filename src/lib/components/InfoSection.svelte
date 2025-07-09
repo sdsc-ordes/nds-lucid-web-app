@@ -1,6 +1,7 @@
 <script lang="ts">
     import { t } from "$lib/i18n/i18n";
     import { onMount } from 'svelte';
+    import BreathingText from '$lib/components/BreathingText.svelte';
 
     let scrollY = 0;
 
@@ -28,19 +29,31 @@
     </div>
     <!-- Main Content Area -->
     <div class="relative z-10 flex-1 flex items-start pt-10 lg:pt-20">
-        <div class="container mx-auto px-6 max-w-7xl">
+        <div class="container mx-auto px-6 max-w-7xl w-full">
             <div class="grid grid-cols-12 gap-8 items-start">
                 <!-- Title and Description - Left Side -->
                 <div class="col-span-12 lg:col-span-7 xl:col-span-6">
+                
                     <div class="max-w-2xl">
-                        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-100 leading-tight mb-8">
-                            {$t("hero.landing-title")}
-                        </h1>
-                        <div class="space-y-6 text-lg md:text-xl text-primary-100 leading-relaxed">
-                            <p>
-                                {$t("hero.landing-description")}
-                            </p>
-                        </div>
+
+                        <BreathingText 
+                        children={$t("hero.landing-title")}
+                        fromFontVariationSettings='"wght" 500'
+                        toFontVariationSettings='"wght" 900'
+                        radius={150}
+                        falloff="exponential"
+                        className="text-3xl md:text-4xl lg:text-4xl font-bold text-primary-100 leading-tight mb-8"
+                    />
+                        
+                            <BreathingText 
+                            children={$t("hero.landing-description")}
+                            fromFontVariationSettings='"wght" 300'
+                            toFontVariationSettings='"wght" 900'
+                            radius={50}
+                            falloff="exponential"
+                            className="pace-y-6 text-lg md:text-xl text-primary-100 leading-relaxed"
+                        />
+                        
                     </div>
                 </div>
             </div>
