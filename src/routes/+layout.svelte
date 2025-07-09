@@ -7,11 +7,11 @@
 </script>
 
 
-	<div class="min-h-screen flex flex-col">
+	<div class="min-h-screen min-w-screen flex flex-col">
 		<header>
 			<Header />
 		</header>
-		<main class="flex-grow flex items-center justify-center bg-surface-50">
+		<main class="">
 			{@render children()}
 		</main>
 

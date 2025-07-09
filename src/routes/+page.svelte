@@ -40,7 +40,7 @@
 
 <svelte:window onscroll={handleScroll} />
 
-<div class="scroll-container">
+<div>
 
   <InfoSection/>
   <LVCexamples/>
