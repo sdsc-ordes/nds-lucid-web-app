@@ -8,7 +8,7 @@
 
 
 	<div class="min-h-screen min-w-screen flex flex-col">
-		<header>
+		<header class="sticky top-0 z-50">
 			<Header />
 		</header>
 		<main class="">
