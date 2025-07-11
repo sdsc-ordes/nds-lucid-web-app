@@ -3,7 +3,7 @@
   import InfoSection from '$lib/components/InfoSection.svelte';
   import { t, initLocale } from '$lib/i18n/i18n';
   import LVCexamples from '$lib/components/LVCexamples.svelte';
-
+  import Impact from '$lib/components/Impact.svelte';
   let scrollPosition = 0;
   let windowHeight = 0;
   let scrollIndex: number | undefined = undefined;
@@ -44,6 +44,7 @@
 
   <InfoSection/>
   <LVCexamples/>
+  <Impact/>
 
   
 </div>
