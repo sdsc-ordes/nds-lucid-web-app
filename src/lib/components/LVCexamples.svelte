@@ -36,7 +36,7 @@
 
 <div class="p-6">
     <!-- Header Bar -->
-    <section class="mb-12">
+    <section class="mb-12 mt-12">
         <div
             class="bg-surface-contrast-50 p-4 sm:p-4 shadow-lg sm:w-2/3 ml-auto"
         >
