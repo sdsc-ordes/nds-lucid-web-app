@@ -1,3 +1,4 @@
+
 <script lang="ts">
     import { t } from "$lib/i18n/i18n";
     import { onMount } from 'svelte';
@@ -16,15 +17,16 @@
 
 <!-- Hero Section - Full Screen with Parallax -->
 <section class="min-h-screen flex flex-col justify-between relative overflow-hidden bg-surface-contrast-50">
-    <!-- Parallax Background Map -->
+    <!-- Background Map -->
     <div 
-        class="absolute inset-0 w-full h-full flex items-start pt-64"
+        class="absolute inset-0 w-full h-full flex items-start pt-64 justify-center lg:justify-end lg:pr-16"
         style="transform: translateY({scrollY * 0.5}px);"
     >
         <img 
             src="/Map.svg" 
             alt="Background Map" 
-            class="w-3/4 h-3/4 mx-auto"
+            class="w-3/4 h-3/4 "
+            
         />
     </div>
     <!-- Main Content Area -->
