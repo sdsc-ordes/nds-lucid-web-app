@@ -35,7 +35,13 @@
                 <div class="col-span-12 lg:col-span-7 xl:col-span-6">
                 
                     <div class="max-w-2xl">
-
+                        <h1 class="text-3xl md:text-4xl lg:text-4xl font-bold text-primary-100 leading-tight mb-8">
+                            {$t("hero.landing-title")}
+                        </h1>
+                        <p class="pace-y-6 text-lg md:text-xl text-primary-100 leading-relaxed">
+                            {$t("hero.landing-description")}
+                        </p>
+<!-- 
                         <BreathingText 
                         children={$t("hero.landing-title")}
                         fromFontVariationSettings='"wght" 500'
@@ -43,9 +49,9 @@
                         radius={150}
                         falloff="exponential"
                         className="text-3xl md:text-4xl lg:text-4xl font-bold text-primary-100 leading-tight mb-8"
-                    />
+                    /> -->
                         
-                            <BreathingText 
+                            <!-- <BreathingText 
                             children={$t("hero.landing-description")}
                             fromFontVariationSettings='"wght" 300'
                             toFontVariationSettings='"wght" 900'
@@ -53,7 +59,7 @@
                             falloff="exponential"
                             className="pace-y-6 text-lg md:text-xl text-primary-100 leading-relaxed"
                         />
-                        
+                         -->
                     </div>
                 </div>
             </div>
