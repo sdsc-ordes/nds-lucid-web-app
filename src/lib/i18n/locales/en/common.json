@@ -5,7 +5,13 @@
     "landing-description-lucid": "The LUCID project aims to build a national data stream, collecting patient reported outcomes in hospitals and providing a safe, online platform, where the data on patient treatment can be studied and compared."
   },
   "lvc": {
-    "lvc-title": "What is Low-Value Care?"
+    "lvc-title": "What is Low-Value Care?", 
+    "lab-test-title": "Too many lab tests, too often.",
+    "lab-test-description": "Lab test overuse is common and can result in adverse outcomes such as anemia, discomfort and further unnecessary testing.", 
+    "sedatives-title": "Sedative prescriptions for older patients.",
+    "sedatives-description": "The prescription of benzodiazepines (BZD) and other sedatives in adults aged over 65 years is considered low-value care, due to its association with various complications, such as prolonged hospital stays and falls.", 
+    "transfusions-title": "Unnecessary blood transfusions.",
+    "transfusions-description": "Giving red blood cell (RBC) transfusions to patients who aren’t bleeding and don’t have low enough haemoglobin levels is considered low-value care. It has not been shown to improve prognosis but is associated with adverse events such as hemolytic reactions or circulatory overload. " 
   }, 
   "language": {
     "en": "English",
