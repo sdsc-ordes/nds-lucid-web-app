@@ -16,7 +16,7 @@
 <svelte:window bind:scrollY />
 
 <!-- Hero Section - Full Screen with Parallax -->
-<section class="min-h-screen flex flex-col justify-between relative overflow-hidden bg-surface-contrast-50">
+<section class="h-screen flex flex-col justify-between relative overflow-hidden bg-surface-contrast-50">
     <!-- Background Map -->
     <div 
         class="absolute inset-0 w-full h-full flex items-start pt-64 justify-center lg:justify-end lg:pr-16"
@@ -30,7 +30,7 @@
         />
     </div>
     <!-- Main Content Area -->
-    <div class="relative z-10 flex-1 flex items-start pt-10 lg:pt-20">
+    <div class="relative z-10 flex-1 flex items-start pt-20 lg:pt-32">
         <div class="container mx-auto px-6 max-w-7xl w-full">
             <div class="grid grid-cols-12 gap-8 items-start">
                 <!-- Title and Description - Left Side -->
@@ -40,9 +40,24 @@
                         <h1 class="text-3xl md:text-4xl lg:text-4xl font-bold text-primary-100 leading-tight mb-8">
                             {$t("hero.landing-title")}
                         </h1>
-                        <p class="pace-y-6 text-lg md:text-xl text-primary-100 leading-relaxed">
+                        <p class="pace-y-6 text-lg md:text-xl text-primary-100 leading-relaxed mb-16">
                             {$t("hero.landing-description")}
                         </p>
+
+                        <!-- Buttons for larger screens -->
+                        <div class="hidden sm:flex flex-col sm:flex-row gap-4 justify-start items-start lg:mt-16">
+                            <button class="btn preset-filled-primary-500 lg:btn-lg">
+                                Learn More About LVC
+                            </button>
+                            <a 
+                                href="/" 
+                                class="btn preset-tonal-primary lg:btn-lg"
+                            >
+                                Choosing Wisely Switzerland
+                            </a>
+                        </div>
+
+                        
 <!-- 
                         <BreathingText 
                         children={$t("hero.landing-title")}
@@ -63,21 +78,24 @@
                         />
                          -->
                     </div>
+                    
                 </div>
+
+                
             </div>
         </div>
     </div>
     
-    <!-- Bottom Buttons -->
-    <div class="relative z-10 pb-32">
+    <!-- Bottom Buttons for small screens -->
+    <div class="relative z-10 pb-32 sm:hidden p-6">
         <div class="container mx-auto px-6 max-w-7xl">
-            <div class="flex flex-col sm:flex-row gap-4 justify-centre lg:justify-start items-start lg:items-start">
-                <button class="btn preset-filled-primary-500 lg:btn-lg">
+            <div class="flex flex-col gap-4 justify-center items-center">
+                <button class="btn preset-filled-primary-500 w-full">
                     Learn More About LVC
                 </button>
                 <a 
                     href="/" 
-                    class="btn preset-outlined-primary-500 lg:btn-lg text-primary-100"
+                    class="btn preset-tonal-primary w-full"
                 >
                     Choosing Wisely Switzerland
                 </a>
