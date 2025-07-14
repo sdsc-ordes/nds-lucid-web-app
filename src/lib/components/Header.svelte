@@ -42,12 +42,30 @@
 
     // Nav links shared for desktop and mobile
     const navLinks = [
-        { href: "/", label: "low-value care" },
-        { href: "/", label: "impact" },
-        { href: "/", label: "datastream" },
-        { href: "/", label: "goals" },
-        { href: "/", label: "contact" },
+        { href: "#low-value-care", label: "low-value care" },
+        { href: "#impact", label: "impact" },
+        { href: "#datastream", label: "datastream" },
+        { href: "#goals", label: "goals" },
+        { href: "#contact", label: "contact" },
     ];
+
+    // Handle navigation click with smooth scrolling
+    const handleNavClick = (event: Event, href: string) => {
+        event.preventDefault();
+        mobileMenuOpen = false; // Close mobile menu
+        
+        const targetId = href.replace('#', '');
+        const element = document.getElementById(targetId);
+        
+        if (element) {
+            const yOffset = -80; // Account for header height
+            const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+            window.scrollTo({
+                top: y,
+                behavior: 'smooth'
+            });
+        }
+    };
 </script>
 
 <svelte:window bind:scrollY />
@@ -73,6 +91,7 @@
                                 <a
                                     href={href}
                                     class="text-surface-50 hover:text-primary-400 text-lg transition-all duration-200"
+                                    on:click={(e) => handleNavClick(e, href)}
                                 >
                                     {label}
                                 </a>
@@ -133,7 +152,7 @@
                                     <a
                                         href={href}
                                         class="text-primary-900 active:text-primary-500 focus:text-primary-500 transition-colors duration-200"
-                                        on:click={() => (mobileMenuOpen = false)}
+                                        on:click={(e) => handleNavClick(e, href)}
                                     >
                                         {label}
                                     </a>

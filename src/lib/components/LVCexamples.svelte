@@ -36,11 +36,11 @@
 
 <div class="p-6">
     <!-- Header Bar -->
-    <section class="mb-12 mt-12">
+    <section id="low-value-care" class="mb-12 mt-12">
         <div
-            class="bg-surface-contrast-50 p-4 sm:p-4 shadow-lg sm:w-2/3 ml-auto"
+            class="bg-surface-contrast-50 dark:bg-primary-200 p-4 sm:p-4 shadow-lg sm:w-2/3 ml-auto"
         >
-            <h1 class="text-surface-50 text-xl sm:text-2xl font-bold">
+            <h1 class="text-surface-50-950 text-xl sm:text-2xl font-bold">
                 {$t("lvc.lvc-title")}
             </h1>
         </div>

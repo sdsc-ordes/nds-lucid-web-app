@@ -4,6 +4,7 @@
   import { t, initLocale } from '$lib/i18n/i18n';
   import LVCexamples from '$lib/components/LVCexamples.svelte';
   import Impact from '$lib/components/Impact.svelte';
+  import Datastream from '$lib/components/Datastream.svelte';
   let scrollPosition = 0;
   let windowHeight = 0;
   let scrollIndex: number | undefined = undefined;
@@ -45,6 +46,27 @@
   <InfoSection/>
   <LVCexamples/>
   <Impact/>
+  <Datastream/>
+
+  <!-- Goals Section -->
+  <section id="goals" class="min-h-screen bg-surface-contrast-50 py-16">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-primary-100 mb-8">Goals</h2>
+      <p class="text-lg text-surface-50">
+        Content for goals section will be added here.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="min-h-screen bg-surface-100 py-16">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-primary-900 mb-8">Contact</h2>
+      <p class="text-lg text-surface-contrast-50">
+        Content for contact section will be added here.
+      </p>
+    </div>
+  </section>
 
   
 </div>

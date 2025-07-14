@@ -46,7 +46,7 @@
     <div class="relative min-h-screen bg-surface-contrast-50">
         <div class="relative z-10 p-6">
             <!-- Header Bar -->
-            <section class="mb-12 mt-12">
+            <section id="impact" class="mb-12 mt-12">
                 <div
                     class="bg-primary-100 p-4 sm:p-4 shadow-lg sm:w-2/3 max-w-3xl mr-auto"
                 >

@@ -16,7 +16,7 @@
 <svelte:window bind:scrollY />
 
 <!-- Hero Section - Full Screen with Parallax -->
-<section class="h-screen flex flex-col justify-between relative overflow-hidden bg-surface-contrast-50">
+<section id="home" class="h-screen flex flex-col justify-between relative overflow-hidden bg-surface-contrast-50">
     <!-- Background Map -->
     <div 
         class="absolute inset-0 w-full h-full flex items-start pt-64 justify-center lg:justify-end lg:pr-16"
