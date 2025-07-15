@@ -4,17 +4,16 @@
     initLocale();
 
     let observer: IntersectionObserver;
+    let animatedElements = new Set();
 
     onMount(async () => {
         await tick(); // Wait for DOM
         observer = new IntersectionObserver(
             (entries) => {
                 entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-            
+                    if (entry.isIntersecting && !animatedElements.has(entry.target)) {
                         entry.target.classList.add("is-visible");
-                    } else {
-                        entry.target.classList.remove("is-visible");
+                        animatedElements.add(entry.target);
                     }
                 });
             },
@@ -34,7 +33,7 @@
     });
 </script>
 
-<div class="p-6">
+<div class="p-6 max-w-7xl mx-auto w-full">
     <!-- Header Bar -->
     <section id="low-value-care" class="mb-12 mt-12">
         <div
@@ -47,20 +46,22 @@
     </section>
 
     <!-- Grid -->
-    <section class="max-w-6xl mx-auto">
+    <section>
         <!-- Row 1 -->
         <div
             class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center p-6 sm:p-8"
         >
-            <div class="order-2 lg:order-1 text-center lg:text-left">
-                <h2
-                    class="text-3xl s:text-xl font-semibold text-tertiary-500 mb-2 animate-on-scroll"
-                >
-                    {$t("lvc.lab-test-title")}
-                </h2>
-                <p class="text-sm sm:text-base leading-relaxed animate-on-scroll">
-                    {$t("lvc.lab-test-description")}
-                </p>
+            <div class="order-2 lg:order-1 text-center lg:text-left animate-on-scroll">
+                <div class="max-w-md md:max-w-sm mx-auto lg:mx-0">
+                    <h2
+                        class="text-2xl font-bold text-tertiary-500 mb-2 "
+                    >
+                        {$t("lvc.lab-test-title")}
+                    </h2>
+                    <p class="text-sm leading-relaxed ">
+                        {$t("lvc.lab-test-description")}
+                    </p>
+                </div>
             </div>
             <div class="order-1 lg:order-2 flex justify-center">
                 <img
@@ -75,15 +76,17 @@
         <div
             class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center p-6 sm:p-8"
         >
-            <div class="order-2 lg:order-2 text-center lg:text-left">
-                <h2
-                    class="text-3xl s:text-xl font-semibold text-tertiary-500 mb-2 animate-on-scroll"
-                >
-                    {$t("lvc.sedatives-title")}
-                </h2>
-                <p class="text-sm sm:text-base leading-relaxed animate-on-scroll">
-                    {$t("lvc.sedatives-description")}
-                </p>
+            <div class="order-2 lg:order-2 text-center lg:text-left animate-on-scroll">
+                <div class="max-w-md md:max-w-sm mx-auto lg:mx-0">
+                    <h2
+                        class="text-2xl font-bold text-tertiary-500 mb-2 "
+                    >
+                        {$t("lvc.sedatives-title")}
+                    </h2>
+                    <p class="text-sm leading-relaxed ">
+                        {$t("lvc.sedatives-description")}
+                    </p>
+                </div>
             </div>
             <div class="order-1 lg:order-1 flex justify-center">
                 <!-- Placeholder for Image 2 -->
@@ -98,15 +101,17 @@
         <div
             class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center p-6 sm:p-8"
         >
-            <div class="order-2 lg:order-1 text-center lg:text-left">
-                <h2
-                    class="text-3xl s:text-xl font-semibold text-tertiary-500 mb-2 animate-on-scroll"
-                >
-                    {$t("lvc.transfusions-title")}
-                </h2>
-                <p class="text-sm sm:text-base leading-relaxed animate-on-scroll">
-                    {$t("lvc.transfusions-description")}
-                </p>
+            <div class="order-2 lg:order-1 text-center lg:text-left animate-on-scroll">
+                <div class="max-w-md md:max-w-sm mx-auto lg:mx-0">
+                    <h2
+                        class="text-2xl font-bold text-tertiary-500 mb-2 "
+                    >
+                        {$t("lvc.transfusions-title")}
+                    </h2>
+                    <p class="text-sm leading-relaxed ">
+                        {$t("lvc.transfusions-description")}
+                    </p>
+                </div>
             </div>
             <div class="order-1 lg:order-2 flex justify-center">
                 <img

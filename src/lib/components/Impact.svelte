@@ -5,16 +5,16 @@
     
     let observer: IntersectionObserver;
     let scrollY = 0;
+    let animatedElements = new Set();
     
     onMount(() => {
         tick().then(() => {
             observer = new IntersectionObserver(
                 (entries) => {
                     entries.forEach((entry) => {
-                        if (entry.isIntersecting) {
+                        if (entry.isIntersecting && !animatedElements.has(entry.target)) {
                             entry.target.classList.add("is-visible");
-                        } else {
-                            entry.target.classList.remove("is-visible");
+                            animatedElements.add(entry.target);
                         }
                     });
                 },
@@ -43,71 +43,79 @@
     
     <svelte:window bind:scrollY />
     
-    <div class="relative min-h-screen bg-surface-contrast-50">
-        <div class="relative z-10 p-6">
-            <!-- Header Bar -->
-            <section id="impact" class="mb-12 mt-12">
-                <div
-                    class="bg-primary-100 p-4 sm:p-4 shadow-lg sm:w-2/3 max-w-3xl mr-auto"
-                >
-                    <h1 class="text-surface-contrast-50 text-xl sm:text-2xl font-bold">
-                        {$t("impact.impact-title")}
-                    </h1>
-                </div>
-            </section>
-    
-            <!-- Impact Sections -->
-            <section class="max-w-6xl mx-auto relative">
-                <!-- Background Map - static centered -->
-                <div 
-                    class="absolute inset-0 w-full h-full flex items-center justify-center opacity-50 pointer-events-none"
-                >
-                    <img 
-                        src="/Map.svg" 
-                        alt="Background Map" 
-                        class="w-3/4 h-3/4 object-contain"
-                    />
-                </div>
-
-                <!-- Section 1: Left aligned -->
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center p-6 sm:p-8 relative z-10">
-                    <div class="order-2 lg:order-1 text-center lg:text-left">
-                        <h2 class="text-3xl s:text-xl font-semibold text-primary-100 mb-6 animate-on-scroll">
-                            {$t("impact.unknown-title")}
-                        </h2>
-                        <p class="text-sm sm:text-base text-primary-100 leading-relaxed animate-on-scroll">
-                            {$t("impact.unknown-description")}
-                        </p>
+    <div class="relative h-full bg-surface-contrast-50 pb-32">
+        <div class="max-w-7xl mx-auto w-full">
+            <div class="relative z-10 p-6">
+                <!-- Header Bar -->
+                <section id="impact" class="mb-12 mt-12">
+                    <div
+                        class="bg-primary-100 p-4 sm:p-4 shadow-lg sm:w-2/3 mr-auto"
+                    >
+                        <h1 class="text-surface-contrast-50 text-xl sm:text-2xl font-bold">
+                            {$t("impact.impact-title")}
+                        </h1>
                     </div>
-                    <div class="order-1 lg:order-2"></div>
-                </div>
+                </section>
 
-                <!-- Section 2: Right aligned -->
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center p-6 sm:p-8 relative z-10">
-                    <div class="order-1 lg:order-1"></div>
-                    <div class="order-2 lg:order-2 text-center lg:text-right">
-                        <h2 class="text-3xl s:text-xl font-semibold text-primary-100 mb-6 animate-on-scroll">
-                            {$t("impact.billion-title")}
-                        </h2>
-                        <p class="text-sm sm:text-base text-primary-100 leading-relaxed animate-on-scroll">
-                            {$t("impact.billion-description")}
-                        </p>
+                <!-- Impact Sections -->
+                <section class="max-w-7xl mx-auto relative">
+                    <!-- Background Map - static centered -->
+                    <div 
+                        class="absolute inset-0 w-full h-full flex items-center justify-center opacity-50 pointer-events-none"
+                    >
+                        <img 
+                            src="/Map.svg" 
+                            alt="Background Map" 
+                            class="w-3/4 h-3/4 object-contain"
+                        />
                     </div>
-                </div>
 
-                <!-- Section 3: Left aligned -->
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center p-6 sm:p-8 relative z-10">
-                    <div class="order-2 lg:order-1 text-center lg:text-left">
-                        <h2 class="text-3xl s:text-xl font-semibold text-primary-100 mb-6 animate-on-scroll">
-                            {$t("impact.healthcare-cost-title")}
-                        </h2>   
-                        <p class="text-sm sm:text-base text-primary-100 leading-relaxed animate-on-scroll">
-                            {$t("impact.healthcare-cost-description")}
-                        </p>
+                    <!-- Section 1: Left aligned -->
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center p-6 sm:p-8 relative z-10">
+                        <div class="order-2 lg:order-1 text-center lg:text-left animate-on-scroll">
+                            <div class="max-w-md md:max-w-sm mx-auto lg:mx-0">
+                                <h2 class="text-3xl s:text-xl font-semibold text-primary-100 mb-6 ">
+                                    {$t("impact.unknown-title")}
+                                </h2>
+                                <p class="text-sm text-primary-100 leading-relaxed ">
+                                    {$t("impact.unknown-description")}
+                                </p>
+                            </div>
+                        </div>
+                        <div class="order-1 lg:order-2"></div>
                     </div>
-                    <div class="order-1 lg:order-2"></div>
-                </div>
-            </section>
+
+                    <!-- Section 2: Right aligned -->
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center p-6 sm:p-8 relative z-10">
+                        <div class="order-1 lg:order-1"></div>
+                        <div class="order-2 lg:order-2 text-center lg:text-right animate-on-scroll">
+                            <div class="max-w-md md:max-w-sm mx-auto lg:mx-0 lg:ml-auto">
+                                <h2 class="text-3xl s:text-xl font-semibold text-primary-100 mb-6 ">
+                                    {$t("impact.billion-title")}
+                                </h2>
+                                <p class="text-sm sm:text-base text-primary-100 leading-relaxed ">
+                                    {$t("impact.billion-description")}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section 3: Left aligned -->
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center p-6 sm:p-8 relative z-10">
+                        <div class="order-2 lg:order-1 text-center lg:text-left animate-on-scroll">
+                            <div class="max-w-md md:max-w-sm mx-auto lg:mx-0">
+                                <h2 class="text-3xl s:text-xl font-semibold text-primary-100 mb-6 ">
+                                    {$t("impact.healthcare-cost-title")}
+                                </h2>   
+                                <p class="text-sm sm:text-base text-primary-100 leading-relaxed ">
+                                    {$t("impact.healthcare-cost-description")}
+                                </p>
+                            </div>
+                        </div>
+                        <div class="order-1 lg:order-2"></div>
+                    </div>
+                </section>
+            </div>
         </div>
     </div>
     
