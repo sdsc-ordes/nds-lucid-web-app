@@ -43,15 +43,15 @@
     
     <svelte:window bind:scrollY />
     
-    <div class="relative h-full bg-surface-contrast-50 pb-32">
+    <div class="relative h-full pb-32">
         <div class="max-w-7xl mx-auto w-full">
             <div class="relative z-10 p-6">
                 <!-- Header Bar -->
                 <section id="impact" class="mb-12 mt-12">
                     <div
-                        class="bg-primary-100 p-4 sm:p-4 shadow-lg sm:w-2/3 mr-auto"
+                        class="bg-surface-contrast-50 dark:bg-primary-200 p-4 sm:p-4 shadow-lg sm:w-2/3 mr-auto header-slide-in animate-on-scroll"
                     >
-                        <h1 class="text-surface-contrast-50 text-xl sm:text-2xl font-bold">
+                        <h1 class="text-surface-50-950  text-xl sm:text-2xl font-bold">
                             {$t("impact.impact-title")}
                         </h1>
                     </div>
@@ -61,7 +61,7 @@
                 <section class="max-w-7xl mx-auto relative">
                     <!-- Background Map - static centered -->
                     <div 
-                        class="absolute inset-0 w-full h-full flex items-center justify-center opacity-50 pointer-events-none"
+                        class="absolute inset-0 w-full h-full flex items-center justify-center pointer-events-none"
                     >
                         <img 
                             src="/Map.svg" 
@@ -74,10 +74,10 @@
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center p-6 sm:p-8 relative z-10">
                         <div class="order-2 lg:order-1 text-center lg:text-left animate-on-scroll">
                             <div class="max-w-md md:max-w-sm mx-auto lg:mx-0">
-                                <h2 class="text-3xl s:text-xl font-semibold text-primary-100 mb-6 ">
+                                <h2 class="text-2xl font-bold text-surface-contrast-50 mb-6 ">
                                     {$t("impact.unknown-title")}
                                 </h2>
-                                <p class="text-sm text-primary-100 leading-relaxed ">
+                                <p class="text-sm text-surface-contrast-50 leading-relaxed ">
                                     {$t("impact.unknown-description")}
                                 </p>
                             </div>
@@ -90,10 +90,10 @@
                         <div class="order-1 lg:order-1"></div>
                         <div class="order-2 lg:order-2 text-center lg:text-right animate-on-scroll">
                             <div class="max-w-md md:max-w-sm mx-auto lg:mx-0 lg:ml-auto">
-                                <h2 class="text-3xl s:text-xl font-semibold text-primary-100 mb-6 ">
+                                <h2 class="text-2xl font-bold text-surface-contrast-50 mb-6 ">
                                     {$t("impact.billion-title")}
                                 </h2>
-                                <p class="text-sm sm:text-base text-primary-100 leading-relaxed ">
+                                <p class="text-sm text-surface-contrast-50 leading-relaxed ">
                                     {$t("impact.billion-description")}
                                 </p>
                             </div>
@@ -104,10 +104,10 @@
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center p-6 sm:p-8 relative z-10">
                         <div class="order-2 lg:order-1 text-center lg:text-left animate-on-scroll">
                             <div class="max-w-md md:max-w-sm mx-auto lg:mx-0">
-                                <h2 class="text-3xl s:text-xl font-semibold text-primary-100 mb-6 ">
+                                <h2 class="text-2xl font-bold text-surface-contrast-50 mb-6 ">
                                     {$t("impact.healthcare-cost-title")}
                                 </h2>   
-                                <p class="text-sm sm:text-base text-primary-100 leading-relaxed ">
+                                <p class="text-sm text-surface-contrast-50 leading-relaxed ">
                                     {$t("impact.healthcare-cost-description")}
                                 </p>
                             </div>
@@ -129,5 +129,16 @@
         :global(.animate-on-scroll.is-visible) {
             opacity: 1;
             transform: translateY(0);
+        }
+
+        :global(.header-slide-in) {
+            opacity: 0;
+            transform: translateX(30px);
+            transition: all 0.8s ease-out;
+        }
+
+        :global(.header-slide-in.is-visible) {
+            opacity: 1;
+            transform: translateX(0);
         }
     </style>

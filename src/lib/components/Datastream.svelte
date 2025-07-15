@@ -98,7 +98,7 @@
     <div class="absolute top-0 left-0 right-0 z-10 p-6 lg:relative lg:p-6">
         <section id="datastream" class="mt-12">
             <div
-                class="bg-surface-contrast-50 dark:bg-primary-200 p-4 sm:p-4 shadow-lg sm:w-2/3 ml-auto"
+                class="bg-surface-contrast-50 dark:bg-primary-200 p-4 sm:p-4 shadow-lg sm:w-2/3 ml-auto header-slide-in animate-on-scroll"
             >
                 <h1 class="text-surface-50-950 text-xl sm:text-2xl font-bold">
                     {$t("datastream.datastream-title")}
@@ -109,7 +109,7 @@
 
     <!-- Large Screen: Animated Layout -->
     <div class="hidden lg:block">
-        <div class="bg-surface-50 flex items-center justify-center relative max-w-7xl mx-auto w-full" style="height: calc(100vh - 120px);">
+        <div class="bg-surface-50 dark:bg-surface-700 flex items-center justify-center relative max-w-7xl mx-auto w-full" style="height: calc(100vh - 120px);">
             <!-- Use the animated DatastreamLayers component -->
             <DatastreamLayers {currentStep} />
             
@@ -132,4 +132,14 @@
 </div>
 
 <style>
+    :global(.header-slide-in) {
+        opacity: 0;
+        transform: translateX(-30px);
+        transition: all 0.8s ease-out;
+    }
+
+    :global(.header-slide-in.is-visible) {
+        opacity: 1;
+        transform: translateX(0);
+    }
 </style>

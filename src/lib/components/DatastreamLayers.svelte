@@ -41,7 +41,7 @@
         <img
             src="/datastream-layer-1.png"
             alt="Datastream Layer 1"
-            class="w-auto h-auto max-w-[50vw] max-h-[50vh] object-contain"
+            class="w-auto h-auto max-w-[35vw] max-h-[35vh] object-contain"
         />
     </div>
 
@@ -53,7 +53,7 @@
         <img
             src="/datastream-layer-2.png"
             alt="Datastream Layer 2"
-            class="w-auto h-auto max-w-[50vw] max-h-[50vh] object-contain"
+            class="w-auto h-auto max-w-[35vw] max-h-[35vh] object-contain"
         />
         <!-- Top-left text -->
         <div class="absolute top-[20%] left-[8%] max-w-sm text-animation {animatedSteps.has(2) ? 'is-visible' : ''}"
@@ -75,7 +75,7 @@
         <img
             src="/datastream-layer-3.png"
             alt="Datastream Layer 3"
-            class="w-auto h-auto max-w-[50vw] max-h-[50vh] object-contain"
+            class="w-auto h-auto max-w-[35vw] max-h-[35vh] object-contain"
         />
                 <!-- Bottom-right text -->
         <div class="absolute bottom-[20%] right-[8%] max-w-sm text-right text-animation {animatedSteps.has(3) ? 'is-visible' : ''}"
@@ -97,7 +97,7 @@
         <img
             src="/datastream-layer-4.png"
             alt="Datastream Layer 4"
-            class="w-auto h-auto max-w-[50vw] max-h-[50vh] object-contain"
+            class="w-auto h-auto max-w-[35vw] max-h-[35vh] object-contain"
         />
         <!-- Bottom-left text -->
         <div class="absolute bottom-[15%] left-[8%] max-w-sm text-animation {animatedSteps.has(4) ? 'is-visible' : ''}"
@@ -119,7 +119,7 @@
         <img
             src="/datastream-layer-5.png"
             alt="Datastream Layer 5"
-            class="w-auto h-auto max-w-[50vw] max-h-[50vh] object-contain"
+            class="w-auto h-auto max-w-[35vw] max-h-[35vh] object-contain"
         />
         <!-- Top-right text -->
         <div class="absolute top-[15%] right-[8%] max-w-sm text-right text-animation {animatedSteps.has(5) ? 'is-visible' : ''}"

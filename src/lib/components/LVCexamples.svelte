@@ -37,7 +37,7 @@
     <!-- Header Bar -->
     <section id="low-value-care" class="mb-12 mt-12">
         <div
-            class="bg-surface-contrast-50 dark:bg-primary-200 p-4 sm:p-4 shadow-lg sm:w-2/3 ml-auto"
+            class="bg-surface-contrast-50 dark:bg-primary-200 p-4 sm:p-4 shadow-lg sm:w-2/3 ml-auto header-slide-in animate-on-scroll"
         >
             <h1 class="text-surface-50-950 text-xl sm:text-2xl font-bold">
                 {$t("lvc.lvc-title")}
@@ -134,5 +134,16 @@
     :global(.animate-on-scroll.is-visible) {
         opacity: 1;
         transform: translateY(0);
+    }
+
+    :global(.header-slide-in) {
+        opacity: 0;
+        transform: translateX(-30px);
+        transition: all 0.8s ease-out;
+    }
+
+    :global(.header-slide-in.is-visible) {
+        opacity: 1;
+        transform: translateX(0);
     }
 </style>
