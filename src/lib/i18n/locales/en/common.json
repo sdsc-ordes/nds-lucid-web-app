@@ -15,12 +15,26 @@
   },
   "impact": {
     "impact-title": "Low Value Care in Switzerland",
-    "unknown-title": "Unknown impact",
-    "unknown-description": "We still don’t know how often low-value care (LVC) occurs—or what harm it causes—in Swiss hospitals. Why? Because Switzerland lacks a nationwide hospital database and the clinical detail needed to detect LVC. Without these, national quality improvement efforts can’t move forward.",
-    "billion-title": "16 Billion CHF",
-    "billion-description": "The estimated cost of low-value care that is spent unnecessarily in Switzerland each year is 16 billion swiss francs.",
-    "healthcare-cost-title": "~ 20% of healthcare costs",
-    "healthcare-cost-description": "It’s estimated that Low-value care amounts to up to 20% of healthcare costs. "
+    "unknown-title": "Little or no benefit to patients",
+    "unknown-description": "We still don’t know how often low-value care happens in Swiss hospitals or what harm it causes. These practices provide little or no benefit to hospitalized patients and can even expose them to unnecessary risks. The LUCID research project studies this impact to help ensure care truly improves health.",
+    "billion-title": "Potential for harm",
+    "billion-description": "Some low-value care can harm patients instead of helping. Unnecessary tests, sedatives, or transfusions may cause side effects, stress, or serious complications. The LUCID research project studies these risks in Swiss hospitalized patients to help make care safer, more effective, and truly focused on patients’ needs.",
+    "healthcare-cost-title": "Wasted healthcare resources",
+    "healthcare-cost-description": "Low-value care wastes resources that could help patients who truly need them. In Switzerland, it costs an estimated 16 Billion swiss francs - up to 20% of healthcare spending each year. The LUCID research project studies this impact to support smarter use of hospital resources and improve care for hospitalized patients."
+  },
+  "datastream": {
+    "datastream-title": "National Data Stream",
+    "datastream-description": "The LUCID project aims to build a national data stream, collecting patient reported outcomes in hospitals and providing a safe, online platform, where the data on patient treatment can be studied and compared.",
+    "layer1-title": "What data does LUCID use?",
+    "layer1-description": "The project uses only anonymized data from patients who gave general consent during a hospital stay. Consent can be withdrawn at any time, stopping future use of their data.",
+    "layer2-title": "What types of data are collected?",
+    "layer2-description": "Routinely collected data from the five university hospitals is securely transferred to the BioMedIT platform and harmonized using SPHN standards to enable meaningful research.",
+    "layer3-title": "How does LUCID get the data?",
+    "layer3-description": "LUCID collects data from patients at Switzerland’s five university hospitals to identify low-value care, its effects, and improve future treatment. Securely stored data helps compare care and promote more effective, equitable healthcare.",
+    "layer4-title": "What does the LUCID project do with the data?",
+    "layer4-description": "The data is securely stored on a national platform and then safely transmitted to researchers to compare care across hospitals, identify patterns, and improve treatment to make it more personal, effective, and equitable across the country.",
+    "layer5-title": "Actionable Results",
+    "layer5-description": "Final results are delivered to healthcare providers, enabling evidence-based decisions to improve patient outcomes."
   },
   "language": {
     "en": "English",
