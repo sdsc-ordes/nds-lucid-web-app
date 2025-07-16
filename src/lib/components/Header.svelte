@@ -42,10 +42,10 @@
 
     // Nav links shared for desktop and mobile
     const navLinks = [
-        { href: "#low-value-care", label: "low-value care" },
-        { href: "#impact", label: "impact" },
-        { href: "#datastream", label: "datastream" },
-        { href: "#goals", label: "goals" },
+        { href: "#low-value-care", label: "Low-Value Care" },
+        { href: "#impact", label: "Impact" },
+        { href: "#datastream", label: "National Data Stream" },
+        { href: "#main-goals", label: "Goals" },
         { href: "#contact", label: "contact" },
     ];
 

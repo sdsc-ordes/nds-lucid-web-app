@@ -50,28 +50,28 @@
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start p-6 sm:p-8">
         <!-- Layer 1 Text -->
         <div class="animate-on-scroll mx-auto max-w-md">
-            <h2 class="text-2xl font-bold text-tertiary-500 mb-2">
+            <h2 class="text-2xl font-bold text-tertiary-500 mb-2 text-center">
                 {$t("datastream.layer1-title")}
             </h2>
-            <p class="text-sm leading-relaxed">
+            <p class="text-sm leading-relaxed text-center">
                 {$t("datastream.layer1-description")}
             </p>
         </div>
         <!-- Layer 2 Text -->
         <div class="animate-on-scroll mx-auto max-w-md">
-            <h2 class="text-2xl font-bold text-tertiary-500 mb-2">
+            <h2 class="text-2xl font-bold text-tertiary-500 mb-2 text-center">
                 {$t("datastream.layer2-title")}
             </h2>
-            <p class="text-sm leading-relaxed">
+            <p class="text-sm leading-relaxed text-center">
                 {$t("datastream.layer2-description")}
             </p>
         </div>
         <!-- Layer 3 Text -->
         <div class="animate-on-scroll mx-auto max-w-md">
-            <h2 class="text-2xl font-bold text-tertiary-500 mb-2">
+            <h2 class="text-2xl font-bold text-tertiary-500 mb-2 text-center">
                 {$t("datastream.layer3-title")}
             </h2>
-            <p class="text-sm leading-relaxed">
+            <p class="text-sm leading-relaxed text-center">
                 {$t("datastream.layer3-description")}
             </p>
         </div>
@@ -86,24 +86,24 @@
         </div>
         <!-- Layer 5 Text -->
         <div class="animate-on-scroll mx-auto max-w-md">
-            <h2 class="text-2xl font-bold text-tertiary-500 mb-2">
+            <h2 class="text-2xl font-bold text-tertiary-500 mb-2 text-center">
                 {$t("datastream.layer5-title")}
             </h2>
-            <p class="text-sm leading-relaxed">
+            <p class="text-sm leading-relaxed text-center">
                 {$t("datastream.layer5-description")}
             </p>
         </div>
         <!-- Layer 6 Text -->
         <div class="animate-on-scroll mx-auto max-w-md">
-            <h2 class="text-2xl font-bold text-tertiary-500 mb-2">
+            <h2 class="text-2xl font-bold text-tertiary-500 mb-2 text-center">
                 {$t("datastream.layer6-title")}
             </h2>
-            <p class="text-sm leading-relaxed">
+            <p class="text-sm leading-relaxed text-center">
                 {$t("datastream.layer6-description")}
             </p>
         </div>
 
-        <button class="btn preset-filled-tertiary-500">
+        <button class="btn preset-filled-tertiary-500 mx-auto animate-on-scroll">
             {$t("datastream.layer6-button")}
         </button>
     </div>

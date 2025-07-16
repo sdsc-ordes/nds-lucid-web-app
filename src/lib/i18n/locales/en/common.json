@@ -40,8 +40,19 @@
     "layer5-title": "How does LUCID help improve care?",
     "layer5-description": "By analyzing patient journeys during hospital stays, LUCID helps hospitals understand, follow and improve their low-value care practices.",
     "layer6-title": "How can researchers access LUCID data?",
-    "layer6-description": "Researchers can request access to LUCID data for approved studies. Each request is reviewed carefully to ensure it meets ethical and legal standards.", 
+    "layer6-description": "Researchers can request access to LUCID data for approved studies. Each request is reviewed carefully to ensure it meets ethical and legal standards.",
     "layer6-button": "Request Data Access"
+  },
+  "main-goals": {
+    "section-title": "Main Goals of the LUCID Project",
+    "goal1-title": "Create a National Data Stream for Quality of Care",
+    "goal1-description": "The main goal of the LUCID National Data Stream (NDS) is to make it easier to share and access routine clinical data from adult patients in Switzerland’s five main university hospitals. This shared information helps monitor and study the quality of care in hospitals.",
+    "goal2-title": "National Insights, Local Impact",
+    "goal2-description": "The LUCID NDS gives a nationwide view of hospital care quality using existing clinical data. It helps researchers and clinicians identify areas that need attention and create targeted actions to improve inpatient care.",
+    "goal3-title": "Understand Patient Experiences",
+    "goal3-description": "Collecting patient-reported outcome measures (PROMs) and experience measures (PREMs) is a key priority in LUCID. These tools give patients a voice and show how care impacts their health and daily life. By leading this effort, LUCID helps make care more responsive to what matters most to patients.",
+    "goal4-title": "Involve Patients and the Public",
+    "goal4-description": "The project will share its findings with every stakeholder: patients, the public, healthcare professionals, and authorities. With this insight, everyone can help build a more patient-centered healthcare system that delivers higher-value care."
   },
   "language": {
     "en": "English",
