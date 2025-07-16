@@ -17,9 +17,9 @@
             scrollY = window.scrollY;
             isScrolled = scrollY > 50;
         };
-        
-        window.addEventListener('scroll', updateScroll, { passive: true });
-        return () => window.removeEventListener('scroll', updateScroll);
+
+        window.addEventListener("scroll", updateScroll, { passive: true });
+        return () => window.removeEventListener("scroll", updateScroll);
     });
 
     // Toggle language dropdown, close mobile menu if open
@@ -53,16 +53,19 @@
     const handleNavClick = (event: Event, href: string) => {
         event.preventDefault();
         mobileMenuOpen = false; // Close mobile menu
-        
-        const targetId = href.replace('#', '');
+
+        const targetId = href.replace("#", "");
         const element = document.getElementById(targetId);
-        
+
         if (element) {
             const yOffset = -80; // Account for header height
-            const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+            const y =
+                element.getBoundingClientRect().top +
+                window.pageYOffset +
+                yOffset;
             window.scrollTo({
                 top: y,
-                behavior: 'smooth'
+                behavior: "smooth",
             });
         }
     };
@@ -70,19 +73,31 @@
 
 <svelte:window bind:scrollY />
 
-<div class="navbar-wrapper transition-all duration-300 ease-in-out {isScrolled ? 'scrolled' : ''}">
+<div
+    class="navbar-wrapper transition-all duration-300 ease-in-out {isScrolled
+        ? 'scrolled'
+        : ''}"
+>
     <AppBar
         headlineClasses="sm:hidden"
         centerClasses="hidden sm:block"
         background="bg-surface-contrast-50"
-        base="py-2 sm:py-3 transition-all duration-300 ease-in-out {isScrolled ? 'py-1 sm:py-2' : ''}"
+        base="py-2 sm:py-3 transition-all duration-300 ease-in-out {isScrolled
+            ? 'py-1 sm:py-2'
+            : ''}"
     >
         {#snippet lead()}
-            <h1 class="h1 text-primary-100 font-semibold transition-all duration-300 {isScrolled ? 'text-lg' : ''}">LUCID</h1>
+            <h1
+                class="h1 text-primary-100 font-semibold transition-all duration-300 {isScrolled
+                    ? 'text-lg'
+                    : ''}"
+            >
+                LUCID
+            </h1>
         {/snippet}
 
         {#snippet trail()}
-            <!-- Desktop Nav -->
+            <!-- Desktop Nav
             <div class="hidden sm:flex items-center relative gap-12">
                 <nav>
                     <ul class="flex gap-12">
@@ -99,7 +114,7 @@
                         {/each}
                     </ul>
                 </nav>
-            </div>
+            </div> -->
 
             <!-- Language Dropdown -->
             <div class="relative flex items-center justify-center">
@@ -108,7 +123,10 @@
                     on:click={toggleDropdown}
                     aria-label="Select Language"
                 >
-                    <LanguagesIcon size={25} />
+                    <LanguagesIcon
+                        class="transition-all duration-200"
+                        size={isScrolled ? 24 : 32}
+                    />
                 </button>
 
                 {#if dropdownOpen}
@@ -133,26 +151,30 @@
             </div>
 
             <!-- Mobile Menu Icon and Dropdown -->
-            <div class="sm:hidden flex items-center relative">
+            <div class=" flex items-center relative">
                 <button
                     aria-label="Toggle menu"
                     on:click={toggleMobileMenu}
                     class="text-surface-50 transition-all duration-200"
                 >
-                    <Menu size={24} />
+                    <Menu
+                        class="transition-all duration-200"
+                        size={isScrolled ? 24 : 32}
+                    />
                 </button>
 
                 {#if mobileMenuOpen}
                     <nav
-                        class="absolute right-0 top-full mt-2 bg-surface-50 rounded-lg p-4 shadow-lg z-40 w-40"
+                        class="absolute right-0 top-full mt-2 bg-surface-50 rounded-lg p-4 shadow-lg z-40 w-60"
                     >
                         <ul class="flex flex-col gap-4">
                             {#each navLinks as { href, label }}
                                 <li>
                                     <a
-                                        href={href}
+                                        {href}
                                         class="text-primary-900 active:text-primary-500 focus:text-primary-500 transition-colors duration-200"
-                                        on:click={(e) => handleNavClick(e, href)}
+                                        on:click={(e) =>
+                                            handleNavClick(e, href)}
                                     >
                                         {label}
                                     </a>
@@ -165,4 +187,3 @@
         {/snippet}
     </AppBar>
 </div>
-

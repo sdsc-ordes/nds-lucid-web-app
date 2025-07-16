@@ -54,11 +54,11 @@
             <div class="order-2 lg:order-1 text-center lg:text-left animate-on-scroll">
                 <div class="max-w-md md:max-w-sm mx-auto lg:mx-0">
                     <h2
-                        class="text-2xl font-bold text-tertiary-500 mb-2 "
+                        class="text-lg sm:text-2xl font-bold text-tertiary-500 mb-2 "
                     >
                         {$t("lvc.lab-test-title")}
                     </h2>
-                    <p class="text-sm leading-relaxed ">
+                    <p class="text-sm sm:text-base leading-relaxed ">
                         {$t("lvc.lab-test-description")}
                     </p>
                 </div>
@@ -79,11 +79,11 @@
             <div class="order-2 lg:order-2 text-center lg:text-left animate-on-scroll">
                 <div class="max-w-md md:max-w-sm mx-auto lg:mx-0">
                     <h2
-                        class="text-2xl font-bold text-tertiary-500 mb-2 "
+                        class="text-lg sm:text-2xl font-bold text-tertiary-500 mb-2 "
                     >
                         {$t("lvc.sedatives-title")}
                     </h2>
-                    <p class="text-sm leading-relaxed ">
+                    <p class="text-sm sm:text-base leading-relaxed ">
                         {$t("lvc.sedatives-description")}
                     </p>
                 </div>
@@ -104,11 +104,11 @@
             <div class="order-2 lg:order-1 text-center lg:text-left animate-on-scroll">
                 <div class="max-w-md md:max-w-sm mx-auto lg:mx-0">
                     <h2
-                        class="text-2xl font-bold text-tertiary-500 mb-2 "
+                        class="text-lg sm:text-2xl font-bold text-tertiary-500 mb-2 "
                     >
                         {$t("lvc.transfusions-title")}
                     </h2>
-                    <p class="text-sm leading-relaxed ">
+                    <p class="text-sm sm:text-base leading-relaxed ">
                         {$t("lvc.transfusions-description")}
                     </p>
                 </div>
@@ -129,11 +129,11 @@
          <div class="order-2 lg:order-2 text-center lg:text-left animate-on-scroll">
              <div class="max-w-md md:max-w-sm mx-auto lg:mx-0">
                  <h2
-                     class="text-2xl font-bold text-tertiary-500 mb-2 "
+                     class="text-lg sm:text-2xl font-bold text-tertiary-500 mb-2 "
                  >
                      {$t("lvc.sleep-title")}
                  </h2>
-                 <p class="text-sm leading-relaxed ">
+                 <p class="text-sm sm:text-base leading-relaxed ">
                      {$t("lvc.sleep-description")}
                  </p>
              </div>
