@@ -61,7 +61,7 @@
                 <section class="max-w-7xl mx-auto relative">
                     <!-- Background Map - static centered -->
                     <div 
-                        class="absolute inset-0 w-full h-full flex items-center justify-center pointer-events-none"
+                        class="absolute inset-0 w-full h-full flex items-center justify-center pointer-events-none dark:opacity-30"
                     >
                         <img 
                             src="/Map.svg" 
@@ -74,10 +74,10 @@
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center p-6 sm:p-8 relative z-10">
                         <div class="order-2 lg:order-1 text-center lg:text-left animate-on-scroll">
                             <div class="max-w-md md:max-w-sm mx-auto lg:mx-0">
-                                <h2 class="text-2xl font-bold text-surface-contrast-50 mb-6 ">
+                                <h2 class="text-2xl font-bold text-surface-contrast-50 dark:text-primary-200 mb-6 ">
                                     {$t("impact.unknown-title")}
                                 </h2>
-                                <p class="text-sm text-surface-contrast-50 leading-relaxed ">
+                                <p class="text-sm text-surface-contrast-50 dark:text-primary-200 leading-relaxed ">
                                     {$t("impact.unknown-description")}
                                 </p>
                             </div>
@@ -90,10 +90,10 @@
                         <div class="order-1 lg:order-1"></div>
                         <div class="order-2 lg:order-2 text-center lg:text-right animate-on-scroll">
                             <div class="max-w-md md:max-w-sm mx-auto lg:mx-0 lg:ml-auto">
-                                <h2 class="text-2xl font-bold text-surface-contrast-50 mb-6 ">
+                                <h2 class="text-2xl font-bold text-surface-contrast-50 dark:text-primary-200 mb-6 ">
                                     {$t("impact.harm-title")}
                                 </h2>
-                                <p class="text-sm text-surface-contrast-50 leading-relaxed ">
+                                <p class="text-sm text-surface-contrast-50 dark:text-primary-200 leading-relaxed ">
                                     {$t("impact.harm-description")}
                                 </p>
                             </div>
@@ -104,10 +104,10 @@
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center p-6 sm:p-8 relative z-10">
                         <div class="order-2 lg:order-1 text-center lg:text-left animate-on-scroll">
                             <div class="max-w-md md:max-w-sm mx-auto lg:mx-0">
-                                <h2 class="text-2xl font-bold text-surface-contrast-50 mb-6 ">
+                                <h2 class="text-2xl font-bold text-surface-contrast-50 dark:text-primary-200 mb-6 ">
                                     {$t("impact.healthcare-cost-title")}
                                 </h2>   
-                                <p class="text-sm text-surface-contrast-50 leading-relaxed ">
+                                <p class="text-sm text-surface-contrast-50 dark:text-primary-200 leading-relaxed ">
                                     {$t("impact.healthcare-cost-description")}
                                 </p>
                             </div>

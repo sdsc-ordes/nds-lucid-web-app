@@ -13,35 +13,60 @@
             <img
                 src="/datastream-layer-1.png"
                 alt="Datastream Layer 1"
-                class="w-full max-w-md mx-auto h-auto object-contain"
+                class="w-full max-w-md mx-auto h-auto object-contain block dark:hidden"
+            />
+            <img
+                src="/datastream-layer-1-dark.png"
+                alt="Datastream Layer 1 Dark"
+                class="w-full max-w-md mx-auto h-auto object-contain hidden dark:block"
             />
 
             <!-- Layer 2 - Overlaid -->
             <img
                 src="/datastream-layer-2.png"
                 alt="Datastream Layer 2"
-                class="absolute inset-0 w-full max-w-md mx-auto h-auto object-contain"
+                class="absolute inset-0 w-full max-w-md mx-auto h-auto object-contain block dark:hidden"
+            />
+            <img
+                src="/datastream-layer-2-dark.png"
+                alt="Datastream Layer 2 Dark"
+                class="absolute inset-0 w-full max-w-md mx-auto h-auto object-contain hidden dark:block"
             />
 
             <!-- Layer 3 - Overlaid -->
             <img
                 src="/datastream-layer-3.png"
                 alt="Datastream Layer 3"
-                class="absolute inset-0 w-full max-w-md mx-auto h-auto object-contain"
+                class="absolute inset-0 w-full max-w-md mx-auto h-auto object-contain block dark:hidden"
+            />
+            <img
+                src="/datastream-layer-3-dark.png"
+                alt="Datastream Layer 3 Dark"
+                class="absolute inset-0 w-full max-w-md mx-auto h-auto object-contain hidden dark:block"
             />
 
             <!-- Layer 4 - Overlaid -->
             <img
                 src="/datastream-layer-4.png"
                 alt="Datastream Layer 4"
-                class="absolute inset-0 w-full max-w-md mx-auto h-auto object-contain"
+                class="absolute inset-0 w-full max-w-md mx-auto h-auto object-contain block dark:hidden"
+            />
+            <img
+                src="/datastream-layer-4-dark.png"
+                alt="Datastream Layer 4 Dark"
+                class="absolute inset-0 w-full max-w-md mx-auto h-auto object-contain hidden dark:block"
             />
 
             <!-- Layer 5 - Overlaid -->
             <img
                 src="/datastream-layer-5.png"
                 alt="Datastream Layer 5"
-                class="absolute inset-0 w-full max-w-md mx-auto h-auto object-contain"
+                class="absolute inset-0 w-full max-w-md mx-auto h-auto object-contain block dark:hidden"
+            />
+            <img
+                src="/datastream-layer-5-dark.png"
+                alt="Datastream Layer 5 Dark"
+                class="absolute inset-0 w-full max-w-md mx-auto h-auto object-contain hidden dark:block"
             />
         </div>
     </div>

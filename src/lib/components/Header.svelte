@@ -46,7 +46,7 @@
         { href: "#impact", label: "Impact" },
         { href: "#datastream", label: "National Data Stream" },
         { href: "#main-goals", label: "Goals" },
-        { href: "#contact", label: "contact" },
+        { href: "#contact", label: "Contact" },
     ];
 
     // Handle navigation click with smooth scrolling

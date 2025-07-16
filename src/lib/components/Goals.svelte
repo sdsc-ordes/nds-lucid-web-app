@@ -57,7 +57,7 @@
             <!-- Goal 1 -->
             <div class="animate-on-scroll bg-surface-200-800 p-6 shadow-lg rounded-lg">
                 <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 items-center sm:items-center">
-                    <BriefcaseMedical class="w-20 h-20 text-primary-contrast-600-400 mb-4 sm:mb-0 mx-auto sm:mx-0" />
+                    <BriefcaseMedical class="w-20 h-20 text-primary-contrast-600-400 dark:text-primary-200 mb-4 sm:mb-0 mx-auto sm:mx-0" />
                     <div class="flex flex-col gap-2 w-full text-left">
                         <h2 class="text-2xl font-bold text-tertiary-500 mb-2 text-center sm:text-left">{$t("main-goals.goal1-title")}</h2>
                         <p class="text-sm leading-relaxed text-center sm:text-left">{$t("main-goals.goal1-description")}</p>
@@ -68,7 +68,7 @@
             <!-- Goal 2 -->
             <div class="animate-on-scroll bg-surface-200-800 p-6 shadow-lg rounded-lg">
                 <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 items-center sm:items-center">
-                    <MapPinned class="w-20 h-20 text-primary-contrast-600-400 mb-4 sm:mb-0 mx-auto sm:mx-0" />
+                    <MapPinned class="w-20 h-20 text-primary-contrast-600-400 dark:text-primary-200 mb-4 sm:mb-0 mx-auto sm:mx-0" />
                     <div class="flex flex-col gap-2 w-full text-left">
                         <h2 class="text-2xl font-bold text-tertiary-500 mb-2 text-center sm:text-left">{$t("main-goals.goal2-title")}</h2>
                         <p class="text-sm leading-relaxed text-center sm:text-left">{$t("main-goals.goal2-description")}</p>
@@ -79,7 +79,7 @@
             <!-- Goal 3 -->
             <div class="animate-on-scroll bg-surface-200-800 p-6 shadow-lg rounded-lg">
                 <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 items-center sm:items-center">
-                    <Speech class="w-20 h-20 text-primary-contrast-600-400 mb-4 sm:mb-0 mx-auto sm:mx-0" />
+                    <Speech class="w-20 h-20 text-primary-contrast-600-400 dark:text-primary-200 mb-4 sm:mb-0 mx-auto sm:mx-0" />
                     <div class="flex flex-col gap-2 w-full text-left">
                         <h2 class="text-2xl font-bold text-tertiary-500 mb-2 text-center sm:text-left">{$t("main-goals.goal3-title")}</h2>
                         <p class="text-sm leading-relaxed text-center sm:text-left">{$t("main-goals.goal3-description")}</p>
@@ -90,7 +90,7 @@
             <!-- Goal 4 -->
             <div class="animate-on-scroll bg-surface-200-800 p-6 shadow-lg rounded-lg">
                 <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 items-center sm:items-center">
-                    <User class="w-20 h-20 text-primary-contrast-600-400 mb-4 sm:mb-0 mx-auto sm:mx-0" />
+                    <User class="w-20 h-20 text-primary-contrast-600-400 dark:text-primary-200 mb-4 sm:mb-0 mx-auto sm:mx-0" />
                     <div class="flex flex-col gap-2 w-full text-left">
                         <h2 class="text-2xl font-bold text-tertiary-500 mb-2 text-center sm:text-left">{$t("main-goals.goal4-title")}</h2>
                         <p class="text-sm leading-relaxed text-center sm:text-left">{$t("main-goals.goal4-description")}</p>

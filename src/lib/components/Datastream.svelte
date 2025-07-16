@@ -114,7 +114,7 @@
 
     <!-- Large Screen: Animated Layout -->
     <div class="hidden lg:block">
-        <div class="bg-surface-50 dark:bg-surface-700 flex items-center justify-center relative max-w-7xl mx-auto w-full" style="height: calc(100vh - 120px);">
+        <div class="flex items-center justify-center relative max-w-7xl mx-auto w-full" style="height: calc(100vh - 120px);">
             <!-- Use the animated DatastreamLayers component -->
             <DatastreamLayers {currentStep} />
             
@@ -131,7 +131,7 @@
     </div>
 
     <!-- Small/Medium Screen: Static Layout -->
-    <div class="lg:hidden bg-surface-50 min-h-screen pt-32">
+    <div class="lg:hidden min-h-screen pt-32">
         <DatastreamStatic />
     </div>
 </div>
