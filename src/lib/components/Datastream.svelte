@@ -81,11 +81,16 @@
         animationTimeouts.push(setTimeout(() => {
             currentStep = 5;
         }, 8000));
+
+         // Layer 6: After 10 seconds
+         animationTimeouts.push(setTimeout(() => {
+            currentStep = 6;
+        }, 10000));
         
         // Mark animations as complete after all layers are shown
         animationTimeouts.push(setTimeout(() => {
             animationsComplete = true;
-        }, 10000)); // 2 second buffer after last animation
+        }, 12000)); // 2 second buffer after last animation
     }
 </script>
 

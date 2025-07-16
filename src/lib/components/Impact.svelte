@@ -91,10 +91,10 @@
                         <div class="order-2 lg:order-2 text-center lg:text-right animate-on-scroll">
                             <div class="max-w-md md:max-w-sm mx-auto lg:mx-0 lg:ml-auto">
                                 <h2 class="text-2xl font-bold text-surface-contrast-50 mb-6 ">
-                                    {$t("impact.billion-title")}
+                                    {$t("impact.harm-title")}
                                 </h2>
                                 <p class="text-sm text-surface-contrast-50 leading-relaxed ">
-                                    {$t("impact.billion-description")}
+                                    {$t("impact.harm-description")}
                                 </p>
                             </div>
                         </div>

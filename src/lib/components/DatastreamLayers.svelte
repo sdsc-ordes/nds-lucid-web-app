@@ -1,136 +1,50 @@
 <script lang="ts">
     import { t, initLocale } from "$lib/i18n/i18n";
-
     initLocale();
     export let currentStep: number = 0;
-
     let animatedSteps = new Set();
-    let allAnimationsComplete = false;
-
-    // Track which steps have been animated
     $: {
-        if (currentStep >= 1 && !animatedSteps.has(1)) {
-            animatedSteps.add(1);
-            animatedSteps = animatedSteps; // Trigger reactivity
-        }
-        if (currentStep >= 2 && !animatedSteps.has(2)) {
-            animatedSteps.add(2);
-            animatedSteps = animatedSteps; // Trigger reactivity
-        }
-        if (currentStep >= 3 && !animatedSteps.has(3)) {
-            animatedSteps.add(3);
-            animatedSteps = animatedSteps; // Trigger reactivity
-        }
-        if (currentStep >= 4 && !animatedSteps.has(4)) {
-            animatedSteps.add(4);
-            animatedSteps = animatedSteps; // Trigger reactivity
-            allAnimationsComplete = true;
-        }
+        if (currentStep >= 1 && !animatedSteps.has(1)) { animatedSteps.add(1); animatedSteps = animatedSteps; }
+        if (currentStep >= 2 && !animatedSteps.has(2)) { animatedSteps.add(2); animatedSteps = animatedSteps; }
+        if (currentStep >= 3 && !animatedSteps.has(3)) { animatedSteps.add(3); animatedSteps = animatedSteps; }
+        if (currentStep >= 4 && !animatedSteps.has(4)) { animatedSteps.add(4); animatedSteps = animatedSteps; }
+        if (currentStep >= 5 && !animatedSteps.has(5)) { animatedSteps.add(5); animatedSteps = animatedSteps; }
+        if (currentStep >= 6 && !animatedSteps.has(6)) { animatedSteps.add(6); animatedSteps = animatedSteps; }
     }
 </script>
 
-<!-- SVG Layers Container -->
-<div
-    class="relative w-full h-full flex items-center justify-center overflow-hidden transition-all duration-1000"
->
-    <!-- Layer 1 - Always visible (base layer)-->
-    <div
-        class="absolute w-full h-full flex items-center justify-center transition-opacity duration-1000"
-        style="transform: translateY(-10%); pointer-events: none;"
-    >
-        <img
-            src="/datastream-layer-1.png"
-            alt="Datastream Layer 1"
-            class="w-auto h-auto max-w-[35vw] max-h-[35vh] object-contain"
-        />
+<!-- 4-column grid: left (1-3), center (images, spans 2 cols), right (4-6 + button) -->
+<div class="grid grid-cols-1 lg:grid-cols-4 gap-8 w-full h-full items-center justify-center">
+    <!-- Left column: statements 1-3 -->
+    <div class="flex flex-col gap-8 items-start justify-center h-full">
+        {#each [1,2,3] as n}
+            <div class="animate-on-scroll max-w-md text-left" class:text-animation={animatedSteps.has(n)} style="opacity: {currentStep >= n || animatedSteps.has(n) ? 1 : 0};">
+                <h2 class="text-2xl font-bold text-tertiary-500 mb-2">{ $t(`datastream.layer${n}-title`) }</h2>
+                <p class="text-sm leading-relaxed">{ $t(`datastream.layer${n}-description`) }</p>
+            </div>
+        {/each}
     </div>
 
-    <!-- Layer 2-->
-    <div
-        class="absolute w-full h-full flex items-center justify-center transition-opacity duration-1000"
-        style="opacity: {currentStep >= 2 ? 1 : 0}; transform: translateY(-10%); pointer-events: none;"
-    >
-        <img
-            src="/datastream-layer-2.png"
-            alt="Datastream Layer 2"
-            class="w-auto h-auto max-w-[35vw] max-h-[35vh] object-contain"
-        />
-        <!-- Top-left text -->
-        <div class="absolute top-[20%] left-[8%] max-w-sm text-animation {animatedSteps.has(2) ? 'is-visible' : ''}"
-             style="opacity: {currentStep >= 2 || animatedSteps.has(2) ? 1 : 0}; pointer-events: auto; z-index: 10;">
-            <h2 class="text-2xl font-bold text-tertiary-500 mb-2 select-text">
-                {$t("datastream.layer1-title")}
-            </h2>
-            <p class="text-sm text-surface-contrast-50 leading-relaxed select-text">
-                {$t("datastream.layer1-description")}
-            </p>
-        </div>
+    <!-- Center columns: stacked images, span 2 columns -->
+    <div class="relative flex flex-col items-center justify-center h-full min-h-[400px] col-span-2">
+        <img src="/datastream-layer-1.png" alt="Layer 1" class="absolute w-auto h-auto max-w-[40vw] max-h-[40vh] object-contain z-10" style="opacity: 1;" />
+        <img src="/datastream-layer-2.png" alt="Layer 2" class="absolute w-auto h-auto max-w-[40vw] max-h-[40vh] object-contain z-20" style="opacity: {currentStep >= 2 ? 1 : 0}; transition: opacity 1s;" />
+        <img src="/datastream-layer-3.png" alt="Layer 3" class="absolute w-auto h-auto max-w-[40vw] max-h-[40vh] object-contain z-30" style="opacity: {currentStep >= 3 ? 1 : 0}; transition: opacity 1s;" />
+        <img src="/datastream-layer-4.png" alt="Layer 4" class="absolute w-auto h-auto max-w-[40vw] max-h-[40vh] object-contain z-40" style="opacity: {currentStep >= 4 ? 1 : 0}; transition: opacity 1s;" />
+        <img src="/datastream-layer-5.png" alt="Layer 5" class="absolute w-auto h-auto max-w-[40vw] max-h-[40vh] object-contain z-50" style="opacity: {currentStep >= 5 ? 1 : 0}; transition: opacity 1s;" />
     </div>
 
-    <!-- Layer 3 -->
-    <div
-        class="absolute w-full h-full flex items-center justify-center transition-opacity duration-1000"
-        style="opacity: {currentStep >= 3 ? 1 : 0}; transform: translateY(-10%); pointer-events: none;"
-    >
-        <img
-            src="/datastream-layer-3.png"
-            alt="Datastream Layer 3"
-            class="w-auto h-auto max-w-[35vw] max-h-[35vh] object-contain"
-        />
-                <!-- Bottom-right text -->
-        <div class="absolute bottom-[20%] right-[8%] max-w-sm text-right text-animation {animatedSteps.has(3) ? 'is-visible' : ''}"
-             style="opacity: {currentStep >= 3 || animatedSteps.has(3) ? 1 : 0}; pointer-events: auto; z-index: 10;">
-            <h2 class="text-2xl font-bold text-tertiary-500 mb-2 select-text">
-                {$t("datastream.layer2-title")}
-            </h2>
-            <p class="text-sm text-surface-contrast-50 leading-relaxed select-text">
-                {$t("datastream.layer2-description")}
-            </p>
-        </div>
-    </div>
-
-    <!-- Layer 4 -->
-    <div
-        class="absolute w-full h-full flex items-center justify-center transition-opacity duration-1000"
-        style="opacity: {currentStep >= 4 ? 1 : 0}; transform: translateY(-10%); pointer-events: none;"
-    >
-        <img
-            src="/datastream-layer-4.png"
-            alt="Datastream Layer 4"
-            class="w-auto h-auto max-w-[35vw] max-h-[35vh] object-contain"
-        />
-        <!-- Bottom-left text -->
-        <div class="absolute bottom-[15%] left-[8%] max-w-sm text-animation {animatedSteps.has(4) ? 'is-visible' : ''}"
-             style="opacity: {currentStep >= 4 || animatedSteps.has(4) ? 1 : 0}; pointer-events: auto; z-index: 10;">
-            <h2 class="text-2xl font-bold text-tertiary-500 mb-2 select-text">
-                {$t("datastream.layer3-title")}
-            </h2>
-            <p class="text-sm text-surface-contrast-50 leading-relaxed select-text">
-                {$t("datastream.layer3-description")}
-            </p>
-        </div>
-    </div>
-
-    <!-- Layer 5 -->
-    <div
-        class="absolute w-full h-full flex items-center justify-center transition-opacity duration-1000"
-        style="opacity: {currentStep >= 5 ? 1 : 0}; transform: translateY(-10%); pointer-events: none;"
-    >
-        <img
-            src="/datastream-layer-5.png"
-            alt="Datastream Layer 5"
-            class="w-auto h-auto max-w-[35vw] max-h-[35vh] object-contain"
-        />
-        <!-- Top-right text -->
-        <div class="absolute top-[15%] right-[8%] max-w-sm text-right text-animation {animatedSteps.has(5) ? 'is-visible' : ''}"
-             style="opacity: {currentStep >= 5 || animatedSteps.has(5) ? 1 : 0}; pointer-events: auto; z-index: 10;">
-            <h2 class="text-2xl font-bold text-tertiary-500 mb-2 select-text">
-                {$t("datastream.layer4-title")}
-            </h2>
-            <p class="text-sm text-surface-contrast-50 leading-relaxed select-text">
-                {$t("datastream.layer4-description")}
-            </p>
-        </div>
+    <!-- Right column: statements 4-6 + button -->
+    <div class="flex flex-col gap-8 items-start justify-center h-full">
+        {#each [4,5,6] as n}
+            <div class="animate-on-scroll max-w-md text-left" class:text-animation={animatedSteps.has(n)} style="opacity: {currentStep >= n || animatedSteps.has(n) ? 1 : 0};">
+                <h2 class="text-2xl font-bold text-tertiary-500 mb-2">{ $t(`datastream.layer${n}-title`) }</h2>
+                <p class="text-sm leading-relaxed">{ $t(`datastream.layer${n}-description`) }</p>
+                {#if n === 6}
+                    <button class="btn preset-filled-tertiary-500 mt-4">{ $t("datastream.layer6-button") }</button>
+                {/if}
+            </div>
+        {/each}
     </div>
 </div>
 
@@ -139,7 +53,6 @@
         transform: translateY(20px);
         transition: all 1s ease-in-out;
     }
-
     :global(.text-animation.is-visible) {
         transform: translateY(0);
     }

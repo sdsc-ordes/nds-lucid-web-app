@@ -121,6 +121,32 @@
                 />
             </div>
         </div>
+
+         <!-- Row 4 -->
+         <div
+         class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center p-6 sm:p-8"
+     >
+         <div class="order-2 lg:order-2 text-center lg:text-left animate-on-scroll">
+             <div class="max-w-md md:max-w-sm mx-auto lg:mx-0">
+                 <h2
+                     class="text-2xl font-bold text-tertiary-500 mb-2 "
+                 >
+                     {$t("lvc.sleep-title")}
+                 </h2>
+                 <p class="text-sm leading-relaxed ">
+                     {$t("lvc.sleep-description")}
+                 </p>
+             </div>
+         </div>
+         <div class="order-1 lg:order-1 flex justify-center">
+             <!-- Placeholder for Image 2 -->
+             <img
+                 src="/Tests.svg"
+                 alt="Illustration of sleep"
+                 class=" w-full max-w-xs sm:max-w-sm animate-on-scroll"
+             />
+         </div>
+     </div>
     </section>
 </div>
 

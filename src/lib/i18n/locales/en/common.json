@@ -2,39 +2,46 @@
   "hero": {
     "landing-title": "Quality of Care in Swiss University Hospitals",
     "landing-description": "Identifying, describing, and reducing the impact of low-value care in Swiss university hospitals. ",
-    "landing-description-lucid": "The LUCID project aims to build a national data stream, collecting patient reported outcomes in hospitals and providing a safe, online platform, where the data on patient treatment can be studied and compared."
+    "landing-description-lucid": "The LUCID project aims to build a national data stream, collecting patient reported outcomes in hospitals and providing a safe, online platform, where the data on patient treatment can be studied and compared.",
+    "call-to-action-patients": "Together for Better Care",
+    "call-to-action-researchers": "Access Research Data",
+    "call-to-action-healthcare-providers": "Improve Patient Care"
   },
   "lvc": {
-    "lvc-title": "What is Low-Value Care?",
-    "lab-test-title": "Too many lab tests, too often.",
-    "lab-test-description": "Lab test overuse is common and can result in adverse outcomes such as anemia, discomfort and further unnecessary testing.",
+    "lvc-title": "What is Low-Value Care in the Hospital Setting",
+    "lab-test-title": "Daily blood tests without need.",
+    "lab-test-description": "Many hospital patients get blood tests every day, even when results are stable. This overuse is common and can lead to anemia, discomfort, stress, and more unnecessary testing. The LUCID project looks into when, why, and how these tests are ordered, helping hospitals learn when they truly help and when they don’t.",
     "sedatives-title": "Sedative prescriptions for older patients.",
     "sedatives-description": "The prescription of benzodiazepines (BZD) and other sedatives in adults aged over 65 years is considered low-value care, due to its association with various complications, such as prolonged hospital stays and falls.",
     "transfusions-title": "Unnecessary blood transfusions.",
-    "transfusions-description": "Giving red blood cell (RBC) transfusions to patients who aren’t bleeding and don’t have low enough haemoglobin levels is considered low-value care. It has not been shown to improve prognosis but is associated with adverse events such as hemolytic reactions or circulatory overload. "
+    "transfusions-description": "Giving red blood cell transfusions to patients who aren’t bleeding and don’t have very low haemoglobin levels is considered low-value care. They don’t help people recover and can cause serious reactions or put too much strain on the heart.",
+    "sleep-title": "Interrupted sleep in the hospital",
+    "sleep-description": "Many patients are woken at night for routine care like blood tests or medication, even when it’s not urgent. This can disrupt sleep and slow recovery. LUCID studies this phenomenon to improve rest and healing."
   },
   "impact": {
     "impact-title": "Low Value Care in Switzerland",
     "unknown-title": "Little or no benefit to patients",
     "unknown-description": "We still don’t know how often low-value care happens in Swiss hospitals or what harm it causes. These practices provide little or no benefit to hospitalized patients and can even expose them to unnecessary risks. The LUCID research project studies this impact to help ensure care truly improves health.",
-    "billion-title": "Potential for harm",
-    "billion-description": "Some low-value care can harm patients instead of helping. Unnecessary tests, sedatives, or transfusions may cause side effects, stress, or serious complications. The LUCID research project studies these risks in Swiss hospitalized patients to help make care safer, more effective, and truly focused on patients’ needs.",
+    "harm-title": "Potential for harm",
+    "harm-description": "Some low-value care can harm patients instead of helping. Unnecessary tests, sedatives, or transfusions may cause side effects, stress, or serious complications. The LUCID research project studies these risks in Swiss hospitalized patients to help make care safer, more effective, and truly focused on patients’ needs.",
     "healthcare-cost-title": "Wasted healthcare resources",
     "healthcare-cost-description": "Low-value care wastes resources that could help patients who truly need them. In Switzerland, it costs an estimated 16 Billion swiss francs - up to 20% of healthcare spending each year. The LUCID research project studies this impact to support smarter use of hospital resources and improve care for hospitalized patients."
   },
   "datastream": {
     "datastream-title": "National Data Stream",
-    "datastream-description": "The LUCID project aims to build a national data stream, collecting patient reported outcomes in hospitals and providing a safe, online platform, where the data on patient treatment can be studied and compared.",
     "layer1-title": "What data does LUCID use?",
-    "layer1-description": "The project uses only anonymized data from patients who gave general consent during a hospital stay. Consent can be withdrawn at any time, stopping future use of their data.",
+    "layer1-description": "LUCID uses data from patients who have given general consent during a hospital stay at one of Switzerland’s five university hospitals: Geneva, Lausanne, Zurich, Bern, or Basel. Personal details are removed and replaced with secure codes to protect privacy. Patients can withdraw their consent at any time to stop future use of their data.",
     "layer2-title": "What types of data are collected?",
-    "layer2-description": "Routinely collected data from the five university hospitals is securely transferred to the BioMedIT platform and harmonized using SPHN standards to enable meaningful research.",
+    "layer2-description": "The project collects information about hospital care, including diagnoses, treatments, test results, and how patients were cared for during their stay and at discharge.",
     "layer3-title": "How does LUCID get the data?",
-    "layer3-description": "LUCID collects data from patients at Switzerland’s five university hospitals to identify low-value care, its effects, and improve future treatment. Securely stored data helps compare care and promote more effective, equitable healthcare.",
-    "layer4-title": "What does the LUCID project do with the data?",
-    "layer4-description": "The data is securely stored on a national platform and then safely transmitted to researchers to compare care across hospitals, identify patterns, and improve treatment to make it more personal, effective, and equitable across the country.",
-    "layer5-title": "Actionable Results",
-    "layer5-description": "Final results are delivered to healthcare providers, enabling evidence-based decisions to improve patient outcomes."
+    "layer3-description": "Data is regularly taken from electronic medical records, de-identified, and prepared using Swiss Personalized Health Network (SPHN) standards. It is then securely transferred to a protected national research platform.",
+    "layer4-title": "What happens to the data?",
+    "layer4-description": "Approved researchers can access and use de-identified data to study low-value care, compare treatments across hospitals, and find ways to improve care for patients.",
+    "layer5-title": "How does LUCID help improve care?",
+    "layer5-description": "By analyzing patient journeys during hospital stays, LUCID helps hospitals understand, follow and improve their low-value care practices.",
+    "layer6-title": "How can researchers access LUCID data?",
+    "layer6-description": "Researchers can request access to LUCID data for approved studies. Each request is reviewed carefully to ensure it meets ethical and legal standards.", 
+    "layer6-button": "Request Data Access"
   },
   "language": {
     "en": "English",
