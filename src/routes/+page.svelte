@@ -6,6 +6,7 @@
   import Impact from '$lib/components/Impact.svelte';
   import Datastream from '$lib/components/Datastream.svelte';
   import Goals from '$lib/components/Goals.svelte';
+  import Sources from '$lib/components/Sources.svelte';
   let scrollPosition = 0;
   let windowHeight = 0;
   let scrollIndex: number | undefined = undefined;
@@ -49,7 +50,7 @@
   <Impact/>
   <Datastream/>
   <Goals/>
-
+  <Sources/>
   <!-- Contact Section -->
   <section id="contact" class="min-h-screen bg-surface-100 py-16">
     <div class="max-w-7xl mx-auto px-6 w-full">

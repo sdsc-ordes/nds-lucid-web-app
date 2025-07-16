@@ -10,6 +10,26 @@
         window.addEventListener("scroll", updateScrollY);
         return () => window.removeEventListener("scroll", updateScrollY);
     });
+
+      // Handle navigation click with smooth scrolling
+      const handleNavClick = (event: Event, href: string) => {
+        event.preventDefault();
+
+        const targetId = href.replace("#", "");
+        const element = document.getElementById(targetId);
+
+        if (element) {
+            const yOffset = -80; // Account for header height
+            const y =
+                element.getBoundingClientRect().top +
+                window.pageYOffset +
+                yOffset;
+            window.scrollTo({
+                top: y,
+                behavior: "smooth",
+            });
+        }
+    };
 </script>
 
 <svelte:window bind:scrollY />
@@ -53,12 +73,14 @@
                             >
                                 <button
                                     class="btn preset-filled-primary-500 lg:btn-lg"
+                                    on:click={(e) => handleNavClick(e, "#low-value-care")}
                                 >
                                     {$t("hero.call-to-action-patients")}
                                 </button>
 
                                 <button
                                     class="btn preset-tonal-primary lg:btn-lg"
+                                    on:click={(e) => handleNavClick(e, "#impact")}
                                 >
                                     {$t(
                                         "hero.call-to-action-healthcare-providers",
@@ -66,6 +88,7 @@
                                 </button>
                                 <button
                                     class="btn preset-filled-tertiary-500 lg:btn-lg"
+                                    on:click={(e) => handleNavClick(e, "#contact")}
                                 >
                                     {$t("hero.call-to-action-researchers")}
                                 </button>
