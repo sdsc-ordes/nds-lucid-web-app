@@ -141,7 +141,7 @@
          <div class="order-1 lg:order-1 flex justify-center">
              <!-- Placeholder for Image 2 -->
              <img
-                 src="/lvc-examples/ dSleep.svg"
+                 src="/lvc-examples/Sleep.svg"
                  alt="Illustration of sleep"
                  class=" w-full max-w-xs sm:max-w-sm animate-on-scroll"
              />
