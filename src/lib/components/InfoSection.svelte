@@ -45,7 +45,7 @@
             class="absolute inset-0 w-full h-full flex items-start pt-64 justify-center lg:justify-end lg:pr-16"
             style="transform: translateY({scrollY * 0.5}px);"
         >
-            <img src="/Map.svg" alt="Background Map" class="w-3/4 h-3/4" />
+            <img src="/lvc-examples/Map.svg" alt="Background Map" class="w-3/4 h-3/4" />
         </div>
         <!-- Main Content Area -->
         <div class="relative z-10 flex-1 flex items-start pt-20 lg:pt-32">

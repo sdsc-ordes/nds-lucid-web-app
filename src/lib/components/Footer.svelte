@@ -1,16 +1,16 @@
-<footer class="bg-surface-800 p-4 text-center text-surface-50">
-  <div class="mb-4 flex justify-center items-center">
-    <!-- <img src="" alt="LUCID Registry Logo" class="h-5 mr-2" /> -->
-    <span class="text-xl font-bold uppercase">SDSC</span>
-  </div>
-  <div>
-    <div class="flex justify-center space-x-4">
-      <a href="https://github.com/sdsc-ordes/nds-lucid-web-app" class="hover:text-primary-400 flex items-center">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-1">
-          <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-        </svg>
-        GitHub
-      </a>
+<footer class=" p-4 text-primary-100">
+  <div class="flex justify-between items-center w-full max-w-7xl mx-auto">
+    <!-- Left: SDSC Logo -->
+    <div class="flex items-center min-w-[120px]">
+      <img src="/logos/logo_light.svg" alt="SDSC Logo" class="h-10 w-auto" />
+    </div>
+    <!-- Center: LUCID Logo -->
+    <div class="flex-1 flex justify-center">
+      <img src="/logos/final-logo.jpeg" alt="LUCID Logo" class="h-25 w-auto" />
+    </div>
+    <!-- Right: Copyright -->
+    <div class="flex items-center min-w-[180px] justify-end text-sm">
+      &copy; SDSC 2025
     </div>
   </div>
 </footer> 

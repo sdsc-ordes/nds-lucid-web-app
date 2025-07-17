@@ -3,11 +3,11 @@
 
 <section
     id="sources"
-    class="h-screen flex flex-col justify-between relative overflow-hidden"
+    class="flex flex-col justify-between relative overflow-hidden"
 >
     <div class="max-w-7xl mx-auto w-full">
-        <hr class="my-6 border-surface-contrast-50" />
-        <div class="text-sm text-surface-contrast-50 space-y-4 px-32 py-16">
+        <hr class="my-6 border-surface-contrast-50 dark:border-primary-100" />
+        <div class="text-sm text-surface-contrast-50 dark:text-primary-100 space-y-4 px-32 py-16">
             <div>
                 <span class="font-bold text-tertiary-500">Sources:</span>
             </div>

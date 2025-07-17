@@ -65,7 +65,7 @@
             </div>
             <div class="order-1 lg:order-2 flex justify-center">
                 <img
-                    src="/Tests.svg"
+                    src="/lvc-examples/Tests.svg"
                     alt="Illustration of lab tests"
                     class=" w-full max-w-xs sm:max-w-sm animate-on-scroll"
                 />
@@ -91,7 +91,7 @@
             <div class="order-1 lg:order-1 flex justify-center">
                 <!-- Placeholder for Image 2 -->
                 <img
-                    src="/Pills.svg"
+                    src="/lvc-examples/Pills.svg"
                     alt="Illustration of medication"
                     class=" w-full max-w-xs sm:max-w-sm animate-on-scroll"
                 />
@@ -115,7 +115,7 @@
             </div>
             <div class="order-1 lg:order-2 flex justify-center">
                 <img
-                    src="/Transfusion.svg"
+                    src="/lvc-examples/Transfusion.svg"
                     alt="Illustration of blood transfusion"
                     class=" w-full max-w-xs sm:max-w-sm animate-on-scroll"
                 />
@@ -141,7 +141,7 @@
          <div class="order-1 lg:order-1 flex justify-center">
              <!-- Placeholder for Image 2 -->
              <img
-                 src="/Tests.svg"
+                 src="/lvc-examples/ dSleep.svg"
                  alt="Illustration of sleep"
                  class=" w-full max-w-xs sm:max-w-sm animate-on-scroll"
              />

@@ -39,6 +39,8 @@
             if (observer) observer.disconnect();
         };
     });
+
+    
     </script>
     
     <svelte:window bind:scrollY />
@@ -62,7 +64,7 @@
                     <!-- Mobile: Image above content -->
                     <div class="block lg:hidden w-full flex items-center justify-center mb-8">
                         <img 
-                            src="/Map.svg" 
+                            src="/lvc-examples/Map.svg" 
                             alt="Background Map" 
                             class="w-3/4 h-3/4 object-contain"
                         />
@@ -73,7 +75,7 @@
                         class="hidden lg:flex absolute inset-0 w-full h-full items-center justify-center pointer-events-none dark:opacity-30"
                     >
                         <img 
-                            src="/Map.svg" 
+                            src="/lvc-examples/Map.svg" 
                             alt="Background Map" 
                             class="w-3/4 h-3/4 object-contain"
                         />

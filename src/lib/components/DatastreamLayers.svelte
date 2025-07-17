@@ -27,16 +27,16 @@
 
     <!-- Center columns: stacked images, span 2 columns -->
     <div class="relative flex flex-col items-center justify-center h-full min-h-[400px] col-span-2">
-        <img src="/datastream-layer-1.png" alt="Layer 1" class="absolute w-auto h-auto max-w-[40vw] max-h-[40vh] object-contain z-10 block dark:hidden" style="opacity: 1;" />
-        <img src="/datastream-layer-1-dark.png" alt="Layer 1 Dark" class="absolute w-auto h-auto max-w-[40vw] max-h-[40vh] object-contain z-10 hidden dark:block" style="opacity: 1;" />
-        <img src="/datastream-layer-2.png" alt="Layer 2" class="absolute w-auto h-auto max-w-[40vw] max-h-[40vh] object-contain z-20 block dark:hidden" style="opacity: {currentStep >= 2 ? 1 : 0}; transition: opacity 1s;" />
-        <img src="/datastream-layer-2-dark.png" alt="Layer 2 Dark" class="absolute w-auto h-auto max-w-[40vw] max-h-[40vh] object-contain z-20 hidden dark:block" style="opacity: {currentStep >= 2 ? 1 : 0}; transition: opacity 1s;" />
-        <img src="/datastream-layer-3.png" alt="Layer 3" class="absolute w-auto h-auto max-w-[40vw] max-h-[40vh] object-contain z-30 block dark:hidden" style="opacity: {currentStep >= 3 ? 1 : 0}; transition: opacity 1s;" />
-        <img src="/datastream-layer-3-dark.png" alt="Layer 3 Dark" class="absolute w-auto h-auto max-w-[40vw] max-h-[40vh] object-contain z-30 hidden dark:block" style="opacity: {currentStep >= 3 ? 1 : 0}; transition: opacity 1s;" />
-        <img src="/datastream-layer-4.png" alt="Layer 4" class="absolute w-auto h-auto max-w-[40vw] max-h-[40vh] object-contain z-40 block dark:hidden" style="opacity: {currentStep >= 4 ? 1 : 0}; transition: opacity 1s;" />
-        <img src="/datastream-layer-4-dark.png" alt="Layer 4 Dark" class="absolute w-auto h-auto max-w-[40vw] max-h-[40vh] object-contain z-40 hidden dark:block" style="opacity: {currentStep >= 4 ? 1 : 0}; transition: opacity 1s;" />
-        <img src="/datastream-layer-5.png" alt="Layer 5" class="absolute w-auto h-auto max-w-[40vw] max-h-[40vh] object-contain z-50 block dark:hidden" style="opacity: {currentStep >= 5 ? 1 : 0}; transition: opacity 1s;" />
-        <img src="/datastream-layer-5-dark.png" alt="Layer 5 Dark" class="absolute w-auto h-auto max-w-[40vw] max-h-[40vh] object-contain z-50 hidden dark:block" style="opacity: {currentStep >= 5 ? 1 : 0}; transition: opacity 1s;" />
+        <img src="/datastream-layers/datastream-layer-1.png" alt="Layer 1" class="absolute w-auto h-auto max-w-[40vw] max-h-[40vh] object-contain z-10 block dark:hidden" style="opacity: 1;" />
+        <img src="/datastream-layers/datastream-layer-1-dark.png" alt="Layer 1 Dark" class="absolute w-auto h-auto max-w-[40vw] max-h-[40vh] object-contain z-10 hidden dark:block" style="opacity: 1;" />
+        <img src="/datastream-layers/datastream-layer-2.png" alt="Layer 2" class="absolute w-auto h-auto max-w-[40vw] max-h-[40vh] object-contain z-20 block dark:hidden" style="opacity: {currentStep >= 2 ? 1 : 0}; transition: opacity 1s;" />
+        <img src="/datastream-layers/datastream-layer-2-dark.png" alt="Layer 2 Dark" class="absolute w-auto h-auto max-w-[40vw] max-h-[40vh] object-contain z-20 hidden dark:block" style="opacity: {currentStep >= 2 ? 1 : 0}; transition: opacity 1s;" />
+        <img src="/datastream-layers/datastream-layer-3.png" alt="Layer 3" class="absolute w-auto h-auto max-w-[40vw] max-h-[40vh] object-contain z-30 block dark:hidden" style="opacity: {currentStep >= 3 ? 1 : 0}; transition: opacity 1s;" />
+        <img src="/datastream-layers/datastream-layer-3-dark.png" alt="Layer 3 Dark" class="absolute w-auto h-auto max-w-[40vw] max-h-[40vh] object-contain z-30 hidden dark:block" style="opacity: {currentStep >= 3 ? 1 : 0}; transition: opacity 1s;" />
+        <img src="/datastream-layers/datastream-layer-4.png" alt="Layer 4" class="absolute w-auto h-auto max-w-[40vw] max-h-[40vh] object-contain z-40 block dark:hidden" style="opacity: {currentStep >= 4 ? 1 : 0}; transition: opacity 1s;" />
+        <img src="/datastream-layers/datastream-layer-4-dark.png" alt="Layer 4 Dark" class="absolute w-auto h-auto max-w-[40vw] max-h-[40vh] object-contain z-40 hidden dark:block" style="opacity: {currentStep >= 4 ? 1 : 0}; transition: opacity 1s;" />
+        <img src="/datastream-layers/datastream-layer-5.png" alt="Layer 5" class="absolute w-auto h-auto max-w-[40vw] max-h-[40vh] object-contain z-50 block dark:hidden" style="opacity: {currentStep >= 5 ? 1 : 0}; transition: opacity 1s;" />
+        <img src="/datastream-layers/datastream-layer-5-dark.png" alt="Layer 5 Dark" class="absolute w-auto h-auto max-w-[40vw] max-h-[40vh] object-contain z-50 hidden dark:block" style="opacity: {currentStep >= 5 ? 1 : 0}; transition: opacity 1s;" />
     </div>
 
     <!-- Right column: statements 4-6 + button -->
