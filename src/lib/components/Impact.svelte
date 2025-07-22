@@ -66,19 +66,29 @@
                         <img 
                             src="/lvc-examples/Map.svg" 
                             alt="Background Map" 
-                            class="w-3/4 h-3/4 object-contain"
+                            class="w-3/4 h-3/4 object-contain dark:hidden"
+                        />
+                        <img 
+                            src="/lvc-examples/Map-dark.svg" 
+                            alt="Background Map" 
+                            class="w-3/4 h-3/4 object-contain hidden dark:block"
                         />
                     </div>
 
                     <!-- Desktop: Background Map - static centered -->
                     <div 
-                        class="hidden lg:flex absolute inset-0 w-full h-full items-center justify-center pointer-events-none dark:opacity-30"
+                        class="hidden lg:flex absolute inset-0 w-full h-full items-center justify-center pointer-events-none"
                     >
                         <img 
                             src="/lvc-examples/Map.svg" 
                             alt="Background Map" 
-                            class="w-3/4 h-3/4 object-contain"
+                            class="w-3/4 h-3/4 object-contain dark:hidden"
                         />
+                        <img 
+                        src="/lvc-examples/Map-dark.svg" 
+                        alt="Background Map" 
+                        class="w-3/4 h-3/4 object-contain hidden dark:block"
+                    />
                     </div>
 
                     <!-- Section 1: Left aligned -->
