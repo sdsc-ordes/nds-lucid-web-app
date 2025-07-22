@@ -50,17 +50,17 @@
   <Impact/>
   <Datastream/>
   <Goals/>
-  <Sources/>
   <!-- Contact Section -->
-  <section id="contact" class="min-h-screen bg-surface-100 py-16">
+  <section id="contact" class="min-h-screen py-16">
     <div class="max-w-7xl mx-auto px-6 w-full">
-      <h2 class="text-3xl font-bold text-primary-900 mb-8">Contact</h2>
+      <h2 class="text-3xl font-bold text-primary-900 mb-8">Contact/Get Access</h2>
       <p class="text-lg text-surface-contrast-50">
         Content for contact section will be added here.
       </p>
     </div>
   </section>
-
+  
+  <Sources/>
   
 </div>
 
