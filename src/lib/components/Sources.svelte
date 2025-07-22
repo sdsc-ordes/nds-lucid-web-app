@@ -7,7 +7,9 @@
 >
     <div class="max-w-7xl mx-auto w-full">
         <hr class="my-6 border-surface-contrast-50 dark:border-primary-100" />
-        <div class="text-sm text-surface-contrast-50 dark:text-primary-100 space-y-4 px-32 py-16">
+        <div
+            class="text-sm text-surface-contrast-50 dark:text-primary-100 space-y-4 px-32 py-16"
+        >
             <div>
                 <span class="font-bold text-tertiary-500">Sources:</span>
             </div>
@@ -90,24 +92,30 @@
                     >https://www.20min.ch/fr/story/ils-veulent-traquer-les-soins-inutiles-prescrits-aux-patients-581037828005</a
                 >
             </div>
+            <div class="mt-8">
+                <span class="font-bold text-tertiary-500">Posters:</span>
+            </div>
+            <div>
+                <a
+                    href="/posters/20250502_SGMAI2025_E-Poster_Lab_tests.pdf"
+                    class="underline hover:text-tertiary-500"
+                    target="_blank">Lab Tests Poster (PDF)</a
+                >
+            </div>
+            <div>
+                <a
+                    href="/posters/SGAIM2025_E-Poster_BZD.pdf"
+                    class="underline hover:text-tertiary-500"
+                    target="_blank">BZD Poster (PDF)</a
+                >
+            </div>
+            <div>
+                <a
+                    href="/posters/SGAIM2025_E-Poster_Transfusions.pdf"
+                    class="underline hover:text-tertiary-500"
+                    target="_blank">Transfusions Poster (PDF)</a
+                >
+            </div>
         </div>
     </div>
 </section>
-
-<!-- Posters Section -->
-<div class="max-w-7xl mx-auto w-full">
-  <div class="text-sm text-surface-contrast-50 dark:text-primary-100 space-y-2 px-32 pb-16">
-    <div class="mt-8">
-      <span class="font-bold text-tertiary-500">Posters:</span>
-    </div>
-    <div>
-      <a href="/posters/20250502_SGMAI2025_E-Poster_Lab_tests.pdf" class="underline hover:text-tertiary-500" target="_blank">Lab Tests Poster (PDF)</a>
-    </div>
-    <div>
-      <a href="/posters/SGAIM2025_E-Poster_BZD.pdf" class="underline hover:text-tertiary-500" target="_blank">BZD Poster (PDF)</a>
-    </div>
-    <div>
-      <a href="/posters/SGAIM2025_E-Poster_Transfusions.pdf" class="underline hover:text-tertiary-500" target="_blank">Transfusions Poster (PDF)</a>
-    </div>
-  </div>
-</div>

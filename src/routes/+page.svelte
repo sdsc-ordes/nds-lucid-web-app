@@ -7,6 +7,7 @@
   import Datastream from '$lib/components/Datastream.svelte';
   import Goals from '$lib/components/Goals.svelte';
   import Sources from '$lib/components/Sources.svelte';
+  import Contact from '$lib/components/Contact.svelte';
   let scrollPosition = 0;
   let windowHeight = 0;
   let scrollIndex: number | undefined = undefined;
@@ -50,15 +51,7 @@
   <Impact/>
   <Datastream/>
   <Goals/>
-  <!-- Contact Section -->
-  <section id="contact" class="min-h-screen py-16">
-    <div class="max-w-7xl mx-auto px-6 w-full">
-      <h2 class="text-3xl font-bold text-primary-900 mb-8">Contact/Get Access</h2>
-      <p class="text-lg text-surface-contrast-50">
-        Content for contact section will be added here.
-      </p>
-    </div>
-  </section>
+  <Contact/>
   
   <Sources/>
   
