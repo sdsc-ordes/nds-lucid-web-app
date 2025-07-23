@@ -10,8 +10,8 @@
         return () => window.removeEventListener("scroll", updateScrollY);
     });
 
-      // Handle navigation click with smooth scrolling
-      const handleNavClick = (event: Event, href: string) => {
+    // Handle navigation click with smooth scrolling
+    const handleNavClick = (event: Event, href: string) => {
         event.preventDefault();
 
         const targetId = href.replace("#", "");
@@ -44,7 +44,11 @@
             class="absolute inset-0 w-full h-full flex items-start pt-64 justify-center lg:justify-end lg:pr-16"
             style="transform: translateY({scrollY * 0.5}px);"
         >
-            <img src="/lvc-examples/Map.svg" alt="Background Map" class="w-3/4 h-3/4" />
+            <img
+                src="/lvc-examples/Map.svg"
+                alt="Background Map"
+                class="w-3/4 h-3/4"
+            />
         </div>
         <!-- Main Content Area -->
         <div class="relative z-10 flex-1 flex items-start pt-20 lg:pt-32">
@@ -72,14 +76,16 @@
                             >
                                 <button
                                     class="btn preset-filled-primary-500 lg:btn-lg"
-                                    on:click={(e) => handleNavClick(e, "#low-value-care")}
+                                    on:click={(e) =>
+                                        handleNavClick(e, "#low-value-care")}
                                 >
                                     {$t("hero.call-to-action-patients")}
                                 </button>
 
                                 <button
                                     class="btn preset-tonal-primary lg:btn-lg"
-                                    on:click={(e) => handleNavClick(e, "#impact")}
+                                    on:click={(e) =>
+                                        handleNavClick(e, "#impact")}
                                 >
                                     {$t(
                                         "hero.call-to-action-healthcare-providers",
@@ -87,12 +93,11 @@
                                 </button>
                                 <button
                                     class="btn preset-filled-tertiary-500 lg:btn-lg"
-                                    on:click={(e) => handleNavClick(e, "#contact")}
+                                    on:click={(e) =>
+                                        handleNavClick(e, "#contact")}
                                 >
                                     {$t("hero.call-to-action-researchers")}
                                 </button>
-                                
-                                
                             </div>
                         </div>
                     </div>
@@ -104,13 +109,22 @@
         <div class="absolute bottom-30 w-full z-10 pb-8 sm:hidden p-6">
             <div class="container mx-auto px-6 max-w-7xl">
                 <div class="flex flex-col gap-4 justify-center items-center">
-                    <button class="btn preset-filled-primary-500 w-full">
+                    <button
+                        class="btn preset-filled-primary-500 w-full"
+                        on:click={(e) => handleNavClick(e, "#low-value-care")}
+                    >
                         {$t("hero.call-to-action-patients")}
                     </button>
-                    <button class="btn preset-tonal-primary w-full">
+                    <button
+                        class="btn preset-tonal-primary w-full"
+                        on:click={(e) => handleNavClick(e, "#impact")}
+                    >
                         {$t("hero.call-to-action-healthcare-providers")}
                     </button>
-                    <button class="btn preset-filled-tertiary-500 w-full">
+                    <button
+                        class="btn preset-filled-tertiary-500 w-full
+                    on:click={(e) => handleNavClick(e, '#contact')}>"
+                    >
                         {$t("hero.call-to-action-researchers")}
                     </button>
                 </div>

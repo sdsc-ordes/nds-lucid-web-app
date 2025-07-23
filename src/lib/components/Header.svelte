@@ -43,10 +43,10 @@
     // Nav links shared for desktop and mobile
     const navLinks = [
         { href: "#low-value-care", label: "Low-Value Care" },
-        { href: "#impact", label: "Impact" },
+        { href: "#impact", label: "Impact in Switzerland" },
         { href: "#datastream", label: "National Data Stream" },
-        { href: "#main-goals", label: "Goals" },
-        { href: "#contact", label: "Contact" },
+        { href: "#main-goals", label: "LUCID Project Goals" },
+        { href: "#contact", label: "Contact & Data Access" },
     ];
 
     // Handle navigation click with smooth scrolling
