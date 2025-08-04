@@ -14,13 +14,13 @@
 </script>
 
 <!-- 4-column grid: left (1-3), center (images, spans 2 cols), right (4-6 + button) -->
-<div class="grid grid-cols-1 lg:grid-cols-4 gap-8 w-full h-full items-center justify-center">
+<div class="grid grid-cols-1 lg:grid-cols-4 gap-8 w-full items-center justify-center pt-16 pb-16">
     <!-- Left column: statements 1-3 -->
-    <div class="flex flex-col gap-8 items-start justify-center h-full">
+    <div class="flex flex-col gap-8 items-start justify-center ">
         {#each [1,2,3] as n}
             <div class="animate-on-scroll max-w-md text-left" class:text-animation={animatedSteps.has(n)} style="opacity: {currentStep >= n || animatedSteps.has(n) ? 1 : 0};">
                 <h2 class="text-2xl font-bold text-tertiary-500 mb-2">{ $t(`datastream.layer${n}-title`) }</h2>
-                <p class="text-sm leading-relaxed">{ $t(`datastream.layer${n}-description`) }</p>
+                <p class="text-base leading-relaxed">{ $t(`datastream.layer${n}-description`) }</p>
             </div>
         {/each}
     </div>
@@ -40,11 +40,11 @@
     </div>
 
     <!-- Right column: statements 4-6 + button -->
-    <div class="flex flex-col gap-8 items-start justify-center h-full">
+    <div class="flex flex-col gap-8 items-start justify-center">
         {#each [4,5,6] as n}
             <div class="animate-on-scroll max-w-md text-left" class:text-animation={animatedSteps.has(n)} style="opacity: {currentStep >= n || animatedSteps.has(n) ? 1 : 0};">
                 <h2 class="text-2xl font-bold text-tertiary-500 mb-2">{ $t(`datastream.layer${n}-title`) }</h2>
-                <p class="text-sm leading-relaxed">{ $t(`datastream.layer${n}-description`) }</p>
+                <p class="text-base leading-relaxed">{ $t(`datastream.layer${n}-description`) }</p>
                 {#if n === 6}
                     <button class="btn preset-filled-tertiary-500 mt-4">{ $t("datastream.layer6-button") }</button>
                 {/if}

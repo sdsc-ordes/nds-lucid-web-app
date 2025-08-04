@@ -97,24 +97,6 @@
         {/snippet}
 
         {#snippet trail()}
-            <!-- Desktop Nav
-            <div class="hidden sm:flex items-center relative gap-12">
-                <nav>
-                    <ul class="flex gap-12">
-                        {#each navLinks as { href, label }}
-                            <li>
-                                <a
-                                    href={href}
-                                    class="text-surface-50 hover:text-primary-400 text-lg transition-all duration-200"
-                                    on:click={(e) => handleNavClick(e, href)}
-                                >
-                                    {label}
-                                </a>
-                            </li>
-                        {/each}
-                    </ul>
-                </nav>
-            </div> -->
 
             <!-- Language Dropdown -->
             <div class="relative flex items-center justify-center">

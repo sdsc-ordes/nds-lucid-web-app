@@ -113,8 +113,8 @@
     </div>
 
     <!-- Large Screen: Animated Layout -->
-    <div class="hidden lg:block">
-        <div class="flex items-center justify-center relative max-w-7xl mx-auto w-full" style="height: calc(100vh - 120px);">
+    <div class="hidden xl:block">
+        <div class="flex items-center justify-center relative max-w-7xl mx-auto w-full" >
             <!-- Use the animated DatastreamLayers component -->
             <DatastreamLayers {currentStep} />
             
@@ -131,7 +131,7 @@
     </div>
 
     <!-- Small/Medium Screen: Static Layout -->
-    <div class="lg:hidden min-h-screen pt-32">
+    <div class="xl:hidden min-h-screen pt-32">
         <DatastreamStatic />
     </div>
 </div>

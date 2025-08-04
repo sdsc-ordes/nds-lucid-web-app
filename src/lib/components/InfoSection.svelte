@@ -76,7 +76,7 @@
                             >
                                 <button
                                     class="btn preset-filled-primary-500 lg:btn-lg"
-                                    on:click={(e) =>
+                                    onclick={(e) =>
                                         handleNavClick(e, "#low-value-care")}
                                 >
                                     {$t("hero.call-to-action-patients")}
@@ -84,7 +84,7 @@
 
                                 <button
                                     class="btn preset-tonal-primary lg:btn-lg"
-                                    on:click={(e) =>
+                                    onclick={(e) =>
                                         handleNavClick(e, "#impact")}
                                 >
                                     {$t(
@@ -93,7 +93,7 @@
                                 </button>
                                 <button
                                     class="btn preset-filled-tertiary-500 lg:btn-lg"
-                                    on:click={(e) =>
+                                    onclick={(e) =>
                                         handleNavClick(e, "#contact")}
                                 >
                                     {$t("hero.call-to-action-researchers")}
@@ -111,19 +111,19 @@
                 <div class="flex flex-col gap-4 justify-center items-center">
                     <button
                         class="btn preset-filled-primary-500 w-full"
-                        on:click={(e) => handleNavClick(e, "#low-value-care")}
+                        onclick={(e) => handleNavClick(e, "#low-value-care")}
                     >
                         {$t("hero.call-to-action-patients")}
                     </button>
                     <button
                         class="btn preset-tonal-primary w-full"
-                        on:click={(e) => handleNavClick(e, "#impact")}
+                        onclick={(e) => handleNavClick(e, "#impact")}
                     >
                         {$t("hero.call-to-action-healthcare-providers")}
                     </button>
                     <button
-                        class="btn preset-filled-tertiary-500 w-full
-                    on:click={(e) => handleNavClick(e, '#contact')}>"
+                        class="btn preset-filled-tertiary-500 w-full"
+                        onclick={(e) => handleNavClick(e, "#contact")}
                     >
                         {$t("hero.call-to-action-researchers")}
                     </button>

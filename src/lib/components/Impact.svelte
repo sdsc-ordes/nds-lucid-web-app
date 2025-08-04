@@ -109,7 +109,7 @@
                     <!-- Section 2: Right aligned -->
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center p-6 sm:p-8 relative z-10">
                         <div class="order-1 lg:order-1"></div>
-                        <div class="order-2 lg:order-2 text-center lg:text-right animate-on-scroll">
+                        <div class="order-2 lg:order-2 text-center lg:text-left animate-on-scroll">
                             <div class="max-w-md md:max-w-sm mx-auto lg:mx-0 lg:ml-auto">
                                 <h2 class="text-lg sm:text-2xl font-bold text-surface-contrast-50 dark:text-primary-200 mb-6 ">
                                     {$t("impact.harm-title")}

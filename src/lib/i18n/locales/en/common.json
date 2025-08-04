@@ -1,7 +1,7 @@
 {
   "hero": {
     "landing-title": "Quality of Care in Swiss University Hospitals",
-    "landing-description": "Identifying, describing, and reducing the impact of low-value care in Swiss university hospitals. ",
+    "landing-description": "Identify and understand low-value care in Swiss university hospitals as the first step towards reducing it and improving patient outcomes.",
     "landing-description-lucid": "The LUCID project aims to build a national data stream, collecting patient reported outcomes in hospitals and providing a safe, online platform, where the data on patient treatment can be studied and compared.",
     "call-to-action-patients": "Together for Better Care",
     "call-to-action-researchers": "Access Research Data",
@@ -9,50 +9,56 @@
   },
   "lvc": {
     "lvc-title": "What is Low-Value Care in the Hospital Setting",
+    "lvc-description": "What services provide little or no benefit to patients or even can cause harm, cause unnecessary cost to patients, or waste limited healthcare resources ?",
     "lab-test-title": "Daily blood tests without need.",
-    "lab-test-description": "Many hospital patients get blood tests every day, even when results are stable. This overuse is common and can lead to anemia, discomfort, stress, and more unnecessary testing. The LUCID project looks into when, why, and how these tests are ordered, helping hospitals learn when they truly help and when they don’t.",
+    "lab-test-description": "Many hospitalized patients receive daily blood tests, even when results are stable. In teaching hospitals, frequent testing may stem from caution and clinical training. However, overuse can cause discomfort, anemia, and stress. The LUCID project explores when blood tests are truly necessary—helping hospitals reduce low-value care and improve decision-making9",
     "sedatives-title": "Sedative prescriptions for older patients.",
     "sedatives-description": "The prescription of benzodiazepines (BZD) and other sedatives in adults aged over 65 years is considered low-value care, due to its association with various complications, such as prolonged hospital stays and falls.",
     "transfusions-title": "Unnecessary blood transfusions.",
-    "transfusions-description": "Giving red blood cell transfusions to patients who aren’t bleeding and don’t have very low haemoglobin levels is considered low-value care. They don’t help people recover and can cause serious reactions or put too much strain on the heart.",
+    "transfusions-description": "Administering red blood cell transfusions to patients who aren’t bleeding and don’t have very low haemoglobin levels is considered low-value care. They don’t help people recover and can cause serious reactions or put too much strain on the heart.",
     "sleep-title": "Interrupted sleep in the hospital",
-    "sleep-description": "Many patients are woken at night for routine care like blood tests or medication, even when it’s not urgent. This can disrupt sleep and slow recovery. LUCID studies this phenomenon to improve rest and healing."
+    "sleep-description": "Many patients are routinely woken at night for non-urgent care, such as blood tests or medication, disrupting sleep and potentially delaying recovery. The LUCID project investigates this practice to promote better rest and support healing in hospitalized patients."
   },
   "impact": {
     "impact-title": "Low Value Care in Switzerland",
     "unknown-title": "Little or no benefit to patients",
     "unknown-description": "We still don’t know how often low-value care happens in Swiss hospitals or what harm it causes. These practices provide little or no benefit to hospitalized patients and can even expose them to unnecessary risks. The LUCID research project studies this impact to help ensure care truly improves health.",
     "harm-title": "Potential for harm",
-    "harm-description": "Some low-value care can harm patients instead of helping. Unnecessary tests, sedatives, or transfusions may cause side effects, stress, or serious complications. The LUCID research project studies these risks in Swiss hospitalized patients to help make care safer, more effective, and truly focused on patients’ needs.",
+    "harm-description": "Low-value care can harm patients with side effects, stress or complications. The LUCID project examines these risks in Swiss hospitals to make care safer, more effective, and truly patient‑focused.",
     "healthcare-cost-title": "Wasted healthcare resources",
-    "healthcare-cost-description": "Low-value care wastes resources that could help patients who truly need them. In Switzerland, it costs an estimated 16 Billion swiss francs - up to 20% of healthcare spending each year. The LUCID research project studies this impact to support smarter use of hospital resources and improve care for hospitalized patients."
+    "healthcare-cost-description": "Low-value care consumes valuable hospital resources—staff time, beds, and money—that could be better used for patients who truly need them. The LUCID research project examines this impact to promote more efficient care and smarter use of healthcare resources in Swiss hospitals."
   },
   "datastream": {
-    "datastream-title": "National Data Stream",
+    "datastream-title": "National Data Stream on Quality of Care in Swiss University Hospitals ",
     "layer1-title": "What data does LUCID use?",
-    "layer1-description": "LUCID uses data from patients who have given general consent during a hospital stay at one of Switzerland’s five university hospitals: Geneva, Lausanne, Zurich, Bern, or Basel. Personal details are removed and replaced with secure codes to protect privacy. Patients can withdraw their consent at any time to stop future use of their data.",
+    "layer1-description": "LUCID uses data from patients who have consented during a hospital stay at one of Switzerland’s five university hospitals—Geneva, Lausanne, Zurich, Bern, or Basel—for the reuse of routinely collected data. Personal details are removed and replaced with secure codes to protect privacy. Patients may withdraw consent at any time to stop future use of their data.",
     "layer2-title": "What types of data are collected?",
     "layer2-description": "The project collects information about hospital care, including diagnoses, treatments, test results, and how patients were cared for during their stay and at discharge.",
     "layer3-title": "How does LUCID get the data?",
-    "layer3-description": "Data is regularly taken from electronic medical records, de-identified, and prepared using Swiss Personalized Health Network (SPHN) standards. It is then securely transferred to a protected national research platform.",
+    "layer3-description": "Data that is regularly recorded in medical records is collected, stripped of personal information, and prepared following strict Swiss privacy and IT guidelines. It is then safely sent to a secure national research platform for analysis.",
     "layer4-title": "What happens to the data?",
-    "layer4-description": "Approved researchers can access and use de-identified data to study low-value care, compare treatments across hospitals, and find ways to improve care for patients.",
-    "layer5-title": "How does LUCID help improve care?",
+    "layer4-description": "Researchers can request access to LUCID data, but only approved researchers are allowed to use de-identified information to study low-value care and identify ways to improve patient care, while ensuring hospital identities remain confiden",
+    "layer5-title": "How  LUCID may  improve care",
     "layer5-description": "By analyzing patient journeys during hospital stays, LUCID helps hospitals understand, follow and improve their low-value care practices.",
     "layer6-title": "How can researchers access LUCID data?",
-    "layer6-description": "Researchers can request access to LUCID data for approved studies. Each request is reviewed carefully to ensure it meets ethical and legal standards.",
+    "layer6-description": "Researchers may request access to LUCID data for studies. Every request undergoes a thorough review by a committee of experts appointed by the hospitals and LUCID leaders to ensure it adheres to ethical and legal requirements.",
     "layer6-button": "Request Data Access"
   },
   "main-goals": {
     "section-title": "Main Goals of the LUCID Project",
-    "goal1-title": "Create a National Data Stream for Quality of Care",
-    "goal1-description": "The main goal of the LUCID National Data Stream (NDS) is to make it easier to share and access routine clinical data from adult patients in Switzerland’s five main university hospitals. This shared information helps monitor and study the quality of care in hospitals.",
+    "goal1-title": "Create a National Data Stream on the Quality of Hospital Care",
+    "goal1-description": "The main goal of LUCID project is to make it easier to share and access routine clinical data from adult patients in Switzerland’s five main university hospitals. This shared information helps monitor and study the quality of care in hospitals.",
     "goal2-title": "National Insights, Local Impact",
-    "goal2-description": "The LUCID NDS gives a nationwide view of hospital care quality using existing clinical data. It helps researchers and clinicians identify areas that need attention and create targeted actions to improve inpatient care.",
+    "goal2-description": "The LUCID project gives a nationwide view of hospital care quality using existing clinical data. It helps researchers and clinicians identify areas that need attention and create targeted actions to improve inpatient care.",
     "goal3-title": "Understand Patient Experiences",
     "goal3-description": "Collecting patient-reported outcome measures (PROMs) and experience measures (PREMs) is a key priority in LUCID. These tools give patients a voice and show how care impacts their health and daily life. By leading this effort, LUCID helps make care more responsive to what matters most to patients.",
     "goal4-title": "Involve Patients and the Public",
-    "goal4-description": "The project will share its findings with every stakeholder: patients, the public, healthcare professionals, and authorities. With this insight, everyone can help build a more patient-centered healthcare system that delivers higher-value care."
+    "goal4-description": "The project will share its findings with every stakeholder: patients, the public, healthcare professionals, and authorities. With this insight, everyone can help build a more patient-centered healthcare system that delivers greater care."
+  },
+  "contact": {
+    "contact-title": "Contact Us",
+    "contact-description": "If you have any questions or would like to learn more about the LUCID project, please contact us.",
+    "contact-button": "Contact Us"
   },
   "language": {
     "en": "English",

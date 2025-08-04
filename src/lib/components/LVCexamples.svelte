@@ -11,7 +11,10 @@
         observer = new IntersectionObserver(
             (entries) => {
                 entries.forEach((entry) => {
-                    if (entry.isIntersecting && !animatedElements.has(entry.target)) {
+                    if (
+                        entry.isIntersecting &&
+                        !animatedElements.has(entry.target)
+                    ) {
                         entry.target.classList.add("is-visible");
                         animatedElements.add(entry.target);
                     }
@@ -36,12 +39,20 @@
 <div class="p-6 max-w-7xl mx-auto w-full">
     <!-- Header Bar -->
     <section id="low-value-care" class="mb-12 mt-12">
+        <!-- Title Container -->
         <div
             class="bg-surface-contrast-50 dark:bg-primary-200 p-4 sm:p-4 shadow-lg sm:w-2/3 ml-auto header-slide-in animate-on-scroll"
         >
             <h1 class="text-surface-50-950 text-xl sm:text-2xl font-bold">
                 {$t("lvc.lvc-title")}
             </h1>
+        </div>
+
+        <!-- Subtitle Container (matched width/alignment) -->
+        <div
+            class="sm:w-2/3 ml-auto text-sm sm:text-base leading-relaxed text-surface-contrast-50 dark:text-primary-100 px-4 py-8 md:text-left text-center"
+        >
+            <p>{$t("lvc.lvc-description")}</p>
         </div>
     </section>
 
@@ -51,14 +62,16 @@
         <div
             class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center p-6 sm:p-8"
         >
-            <div class="order-2 lg:order-1 text-center lg:text-left animate-on-scroll">
+            <div
+                class="order-2 lg:order-1 text-center lg:text-left animate-on-scroll"
+            >
                 <div class="max-w-md md:max-w-sm mx-auto lg:mx-0">
                     <h2
-                        class="text-lg sm:text-2xl font-bold text-tertiary-500 mb-2 "
+                        class="text-lg sm:text-2xl font-bold text-tertiary-500 mb-2"
                     >
                         {$t("lvc.lab-test-title")}
                     </h2>
-                    <p class="text-sm sm:text-base leading-relaxed ">
+                    <p class="text-sm sm:text-base leading-relaxed">
                         {$t("lvc.lab-test-description")}
                     </p>
                 </div>
@@ -76,14 +89,16 @@
         <div
             class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center p-6 sm:p-8"
         >
-            <div class="order-2 lg:order-2 text-center lg:text-left animate-on-scroll">
+            <div
+                class="order-2 lg:order-2 text-center lg:text-left animate-on-scroll"
+            >
                 <div class="max-w-md md:max-w-sm mx-auto lg:mx-0">
                     <h2
-                        class="text-lg sm:text-2xl font-bold text-tertiary-500 mb-2 "
+                        class="text-lg sm:text-2xl font-bold text-tertiary-500 mb-2"
                     >
                         {$t("lvc.sedatives-title")}
                     </h2>
-                    <p class="text-sm sm:text-base leading-relaxed ">
+                    <p class="text-sm sm:text-base leading-relaxed">
                         {$t("lvc.sedatives-description")}
                     </p>
                 </div>
@@ -101,14 +116,16 @@
         <div
             class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center p-6 sm:p-8"
         >
-            <div class="order-2 lg:order-1 text-center lg:text-left animate-on-scroll">
+            <div
+                class="order-2 lg:order-1 text-center lg:text-left animate-on-scroll"
+            >
                 <div class="max-w-md md:max-w-sm mx-auto lg:mx-0">
                     <h2
-                        class="text-lg sm:text-2xl font-bold text-tertiary-500 mb-2 "
+                        class="text-lg sm:text-2xl font-bold text-tertiary-500 mb-2"
                     >
                         {$t("lvc.transfusions-title")}
                     </h2>
-                    <p class="text-sm sm:text-base leading-relaxed ">
+                    <p class="text-sm sm:text-base leading-relaxed">
                         {$t("lvc.transfusions-description")}
                     </p>
                 </div>
@@ -122,31 +139,33 @@
             </div>
         </div>
 
-         <!-- Row 4 -->
-         <div
-         class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center p-6 sm:p-8"
-     >
-         <div class="order-2 lg:order-2 text-center lg:text-left animate-on-scroll">
-             <div class="max-w-md md:max-w-sm mx-auto lg:mx-0">
-                 <h2
-                     class="text-lg sm:text-2xl font-bold text-tertiary-500 mb-2 "
-                 >
-                     {$t("lvc.sleep-title")}
-                 </h2>
-                 <p class="text-sm sm:text-base leading-relaxed ">
-                     {$t("lvc.sleep-description")}
-                 </p>
-             </div>
-         </div>
-         <div class="order-1 lg:order-1 flex justify-center">
-             <!-- Placeholder for Image 2 -->
-             <img
-                 src="/lvc-examples/Sleep.svg"
-                 alt="Illustration of sleep"
-                 class=" w-full max-w-xs sm:max-w-sm animate-on-scroll"
-             />
-         </div>
-     </div>
+        <!-- Row 4 -->
+        <div
+            class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center p-6 sm:p-8"
+        >
+            <div
+                class="order-2 lg:order-2 text-center lg:text-left animate-on-scroll"
+            >
+                <div class="max-w-md md:max-w-sm mx-auto lg:mx-0">
+                    <h2
+                        class="text-lg sm:text-2xl font-bold text-tertiary-500 mb-2"
+                    >
+                        {$t("lvc.sleep-title")}
+                    </h2>
+                    <p class="text-sm sm:text-base leading-relaxed">
+                        {$t("lvc.sleep-description")}
+                    </p>
+                </div>
+            </div>
+            <div class="order-1 lg:order-1 flex justify-center">
+                <!-- Placeholder for Image 2 -->
+                <img
+                    src="/lvc-examples/Sleep.svg"
+                    alt="Illustration of sleep"
+                    class=" w-full max-w-xs sm:max-w-sm animate-on-scroll"
+                />
+            </div>
+        </div>
     </section>
 </div>
 
