@@ -123,7 +123,7 @@
                 <div class="absolute bottom-32 left-1/2 transform -translate-x-1/2 z-20">
                     <div class="bg-primary-100 bg-opacity-90 text-surface-contrast-50 px-4 py-2 rounded-full text-sm flex items-center space-x-2">
                         <div class="w-2 h-2 bg-surface-contrast-50 rounded-full animate-pulse"></div>
-                        <span>Animation in progress...</span>
+                        <span>{$t("datastream.animation")}</span>
                     </div>
                 </div>
             {/if}

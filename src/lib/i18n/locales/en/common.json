@@ -1,4 +1,13 @@
 {
+  "sections": {
+    "label-lvc": "Low-Value Care",
+    "label-impact": "Impact of Low-Value Care",
+    "label-datastream": "National Data Stream",
+    "label-main-goals": "Main Goals of the LUCID Project",
+    "label-hero": "Hero Section",
+    "label-contact": "Contact Us",
+    "label-sources": "Sources"
+  },
   "hero": {
     "landing-title": "Quality of Care in Swiss University Hospitals",
     "landing-description": "Identify and understand low-value care in Swiss university hospitals as the first step towards reducing it and improving patient outcomes.",
@@ -42,7 +51,8 @@
     "layer5-description": "By analyzing patient journeys during hospital stays, LUCID helps hospitals understand, follow and improve their low-value care practices.",
     "layer6-title": "How can researchers access LUCID data?",
     "layer6-description": "Researchers may request access to LUCID data for studies. Every request undergoes a thorough review by a committee of experts appointed by the hospitals and LUCID leaders to ensure it adheres to ethical and legal requirements.",
-    "layer6-button": "Request Data Access"
+    "layer6-button": "Request Data Access",
+    "animation": "Animation in progress..."
   },
   "main-goals": {
     "section-title": "Main Goals of the LUCID Project",
