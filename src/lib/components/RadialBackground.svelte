@@ -2,128 +2,157 @@
     import { onMount } from "svelte";
 
     let scrollY = 0;
-    let clickRadials: Array<{id: number, x: number, y: number, size: number, speed: number, direction: 'clockwise' | 'counterclockwise'}> = [];
-    let radialId = 0;
+    let mouseX = 0;
+    let mouseY = 0;
+    let containerWidth = 0;
+    let containerHeight = 0;
+    let containerElement: HTMLElement;
+
+    // Generate multiple radial elements across the background
+    let radialElements: Array<{
+        id: number;
+        x: number;
+        y: number;
+        baseSize: number;
+        currentSize: number;
+        duration: number;
+        delay: number;
+        proximity: number;
+    }> = [];
+
+    const PROXIMITY_THRESHOLD = 100; // Distance in pixels for size increase
+    const SIZE_MULTIPLIER = 2.5; // How much larger they get when cursor is close
+    const DURATIONS = [3, 4, 5, 6, 7, 8, 9]; // Fade in/out durations in seconds
+    const SIZES = [100, 140, 180, 220, 260, 300, 340]; // Different sizes for variety
 
     onMount(() => {
         const updateScrollY = () => (scrollY = window.scrollY);
+        const updateMousePosition = (e: MouseEvent) => {
+            if (containerElement) {
+                const rect = containerElement.getBoundingClientRect();
+                mouseX = e.clientX - rect.left;
+                mouseY = e.clientY - rect.top;
+                updateProximityEffects();
+            }
+        };
+        const updateContainerSize = () => {
+            if (containerElement) {
+                containerWidth = containerElement.offsetWidth;
+                containerHeight = containerElement.offsetHeight;
+                generateRadialElements();
+            }
+        };
+
         window.addEventListener("scroll", updateScrollY);
-        return () => window.removeEventListener("scroll", updateScrollY);
+        window.addEventListener("mousemove", updateMousePosition);
+        window.addEventListener("resize", updateContainerSize);
+        
+        // Initial setup
+        updateContainerSize();
+        
+        return () => {
+            window.removeEventListener("scroll", updateScrollY);
+            window.removeEventListener("mousemove", updateMousePosition);
+            window.removeEventListener("resize", updateContainerSize);
+        };
     });
 
-    // Handle click to add new radial
-    const handleClick = (event: MouseEvent | KeyboardEvent) => {
-        const target = event.currentTarget as HTMLElement;
-        if (!target) return;
+    function generateRadialElements() {
+        const numElements = Math.floor((containerWidth * containerHeight) / 50000); // Density based on container size
+        const elements = [];
         
-        const rect = target.getBoundingClientRect();
-        let x: number, y: number;
-        
-        if (event instanceof MouseEvent) {
-            x = event.clientX - rect.left;
-            y = event.clientY - rect.top;
-        } else {
-            // For keyboard events, place in center
-            x = rect.width / 2;
-            y = rect.height / 2;
+        for (let i = 0; i < numElements; i++) {
+            const baseSize = SIZES[Math.floor(Math.random() * SIZES.length)];
+            const duration = DURATIONS[Math.floor(Math.random() * DURATIONS.length)];
+            elements.push({
+                id: i,
+                x: Math.random() * containerWidth,
+                y: Math.random() * containerHeight,
+                baseSize: baseSize,
+                currentSize: baseSize,
+                duration: duration,
+                delay: Math.random() * duration, // Random delay to stagger appearances
+                proximity: 0
+            });
         }
         
-        const sizes = [64, 80, 96, 112, 128];
-        const speeds = [60, 90, 120, 150, 180];
-        
-        clickRadials = [...clickRadials, {
-            id: radialId++,
-            x: x,
-            y: y,
-            size: sizes[Math.floor(Math.random() * sizes.length)],
-            speed: speeds[Math.floor(Math.random() * speeds.length)],
-            direction: Math.random() > 0.5 ? 'clockwise' : 'counterclockwise'
-        }];
-    };
+        radialElements = elements;
+    }
+
+    function updateProximityEffects() {
+        radialElements = radialElements.map(element => {
+            const distance = Math.sqrt(
+                Math.pow(mouseX - element.x, 2) + Math.pow(mouseY - element.y, 2)
+            );
+            
+            const proximity = Math.max(0, 1 - (distance / PROXIMITY_THRESHOLD));
+            
+            return {
+                ...element,
+                proximity
+            };
+        });
+    }
 </script>
 
 <svelte:window bind:scrollY />
 
 <style>
-    @keyframes rotate-clockwise {
-        from {
-            transform: rotate(0deg);
+    @keyframes fadeInOut {
+        0%, 100% {
+            opacity: 0;
+            transform: scale(calc(0.8 * var(--proximity-scale, 1)));
         }
-        to {
-            transform: rotate(360deg);
-        }
-    }
-
-    @keyframes rotate-counterclockwise {
-        from {
-            transform: rotate(360deg);
-        }
-        to {
-            transform: rotate(0deg);
+        50% {
+            opacity: 1;
+            transform: scale(calc(1.2 * var(--proximity-scale, 1)));
         }
     }
 
-    .rotating-radial-1 {
-        animation: rotate-clockwise 120s linear infinite;
-    }
-
-    .rotating-radial-2 {
-        animation: rotate-counterclockwise 90s linear infinite;
-    }
-
-    .rotating-radial-3 {
-        animation: rotate-clockwise 180s linear infinite;
-    }
-
-    .rotating-radial-4 {
-        animation: rotate-counterclockwise 150s linear infinite;
-    }
-
-    .click-radial {
+    .radial-container {
         position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
         pointer-events: none;
     }
 
-    .click-radial-clockwise {
-        animation: rotate-clockwise var(--speed) linear infinite;
+    .radial-element {
+        position: absolute;
+        pointer-events: none;
+        transition: filter 0.3s ease;
+        animation: fadeInOut var(--duration) ease-in-out infinite;
+        animation-delay: var(--delay);
+        transform-origin: center;
     }
 
-    .click-radial-counterclockwise {
-        animation: rotate-counterclockwise var(--speed) linear infinite;
+    .radial-element:hover {
+        filter: brightness(1.2);
     }
 </style>
 
-<!-- Background Radial SVG -->
+<!-- Interactive Radial Background -->
 <div
-    class="absolute inset-0 w-full h-full cursor-pointer"
+    bind:this={containerElement}
+    class="radial-container"
     style="transform: translateY({scrollY * 0.5}px);"
-    onclick={handleClick}
-    onkeydown={(e) => e.key === 'Enter' && handleClick(e)}
-    tabindex="0"
-    role="button"
-    aria-label="Click to add radial elements"
 >
-    <!-- Large Background Radial -->
-    <img
-        src="/Radial.svg"
-        alt="Background Radial"
-        class="absolute bottom-64 left-64 w-150 h-150 rotating-radial-1 opacity-80"
-    />
-    
-    <!-- Click-generated Radials -->
-    {#each clickRadials as radial (radial.id)}
-        <img
-            src="/Radial.svg"
-            alt="Click Radial"
-            class="click-radial click-radial-{radial.direction}"
-            style="
-                left: {radial.x - radial.size/2}px;
-                top: {radial.y - radial.size/2}px;
-                width: {radial.size}px;
-                height: {radial.size}px;
-                --speed: {radial.speed}s;
-                opacity: 1;
-            "
-        />
-    {/each}
+            {#each radialElements as element (element.id)}
+            <img
+                src="/Radial.svg"
+                alt="Radial Element"
+                class="radial-element"
+                style="
+                    left: {element.x - element.baseSize/2}px;
+                    top: {element.y - element.baseSize/2}px;
+                    width: {element.baseSize}px;
+                    height: {element.baseSize}px;
+                    --duration: {element.duration}s;
+                    --delay: {element.delay}s;
+                    --proximity-scale: {1 + element.proximity * (SIZE_MULTIPLIER - 1)};
+                    filter: brightness({1 + element.proximity * 0.5});
+                "
+            />
+        {/each}
 </div> 
