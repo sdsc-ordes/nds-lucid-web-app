@@ -1,14 +1,6 @@
 <script lang="ts">
     import { t } from "$lib/i18n/i18n";
-    import { onMount } from "svelte";
-
-    let scrollY = 0;
-
-    onMount(() => {
-        const updateScrollY = () => (scrollY = window.scrollY);
-        window.addEventListener("scroll", updateScrollY);
-        return () => window.removeEventListener("scroll", updateScrollY);
-    });
+    import RadialBackground from "./RadialBackground.svelte";
 
     // Handle navigation click with smooth scrolling
     const handleNavClick = (event: Event, href: string) => {
@@ -31,25 +23,14 @@
     };
 </script>
 
-<svelte:window bind:scrollY />
-
 <!-- Hero Section - Full Screen with Parallax -->
 <section
     id="home"
     class="h-screen flex flex-col justify-between relative overflow-hidden bg-surface-contrast-50"
->
+        ><!-- Background Layer -->
+    <RadialBackground />
     <div class="max-w-7xl mx-auto w-full">
-        <!-- Background Map -->
-        <div
-            class="absolute inset-0 w-full h-full flex items-start pt-64 justify-center lg:justify-end lg:pr-16"
-            style="transform: translateY({scrollY * 0.5}px);"
-        >
-            <img
-                src="/lvc-examples/Map.svg"
-                alt="Background Map"
-                class="w-3/4 h-3/4"
-            />
-        </div>
+        
         <!-- Main Content Area -->
         <div class="relative z-10 flex-1 flex items-start pt-20 lg:pt-32">
             <div class="container mx-auto px-6 max-w-7xl w-full">
