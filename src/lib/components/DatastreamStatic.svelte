@@ -2,6 +2,18 @@
     import { t, initLocale } from "$lib/i18n/i18n";
 
     initLocale();
+    
+    // Import all images
+    import layer1 from '/datastream-layers/datastream-layer-1.png';
+    import layer1Dark from '/datastream-layers/datastream-layer-1-dark.png';
+    import layer2 from '/datastream-layers/datastream-layer-2.png';
+    import layer2Dark from '/datastream-layers/datastream-layer-2-dark.png';
+    import layer3 from '/datastream-layers/datastream-layer-3.png';
+    import layer3Dark from '/datastream-layers/datastream-layer-3-dark.png';
+    import layer4 from '/datastream-layers/datastream-layer-4.png';
+    import layer4Dark from '/datastream-layers/datastream-layer-4-dark.png';
+    import layer5 from '/datastream-layers/datastream-layer-5.png';
+    import layer5Dark from '/datastream-layers/datastream-layer-5-dark.png';
 </script>
 
 <!-- Static Layout for Small/Medium Screens -->
@@ -11,60 +23,60 @@
         <div class="relative mb-6 flex items-center justify-center">
             <!-- Layer 1 - Base -->
             <img
-                src="/datastream-layers/datastream-layer-1.png"
+                src={layer1}
                 alt="Datastream Layer 1"
                 class="w-full max-w-md mx-auto h-auto object-contain block dark:hidden"
             />
             <img
-                src="/datastream-layers/datastream-layer-1-dark.png"
+                src={layer1Dark}
                 alt="Datastream Layer 1 Dark"
                 class="w-full max-w-md mx-auto h-auto object-contain hidden dark:block"
             />
 
             <!-- Layer 2 - Overlaid -->
             <img
-                src="/datastream-layers/datastream-layer-2.png"
+                src={layer2}
                 alt="Datastream Layer 2"
                 class="absolute inset-0 w-full max-w-md mx-auto h-auto object-contain block dark:hidden"
             />
             <img
-                src="/datastream-layers/datastream-layer-2-dark.png"
+                src={layer2Dark}
                 alt="Datastream Layer 2 Dark"
                 class="absolute inset-0 w-full max-w-md mx-auto h-auto object-contain hidden dark:block"
             />
 
             <!-- Layer 3 - Overlaid -->
             <img
-                src="/datastream-layers/datastream-layer-3.png"
+                src={layer3}
                 alt="Datastream Layer 3"
                 class="absolute inset-0 w-full max-w-md mx-auto h-auto object-contain block dark:hidden"
             />
             <img
-                src="/datastream-layers/datastream-layer-3-dark.png"
+                src={layer3Dark}
                 alt="Datastream Layer 3 Dark"
                 class="absolute inset-0 w-full max-w-md mx-auto h-auto object-contain hidden dark:block"
             />
 
             <!-- Layer 4 - Overlaid -->
             <img
-                src="/datastream-layers/datastream-layer-4.png"
+                src={layer4}
                 alt="Datastream Layer 4"
                 class="absolute inset-0 w-full max-w-md mx-auto h-auto object-contain block dark:hidden"
             />
             <img
-                src="/datastream-layers/datastream-layer-4-dark.png"
+                src={layer4Dark}
                 alt="Datastream Layer 4 Dark"
                 class="absolute inset-0 w-full max-w-md mx-auto h-auto object-contain hidden dark:block"
             />
 
             <!-- Layer 5 - Overlaid -->
             <img
-                src="/datastream-layers/datastream-layer-5.png"
+                src={layer5}
                 alt="Datastream Layer 5"
                 class="absolute inset-0 w-full max-w-md mx-auto h-auto object-contain block dark:hidden"
             />
             <img
-                src="/datastream-layers/datastream-layer-5-dark.png"
+                src={layer5Dark}
                 alt="Datastream Layer 5 Dark"
                 class="absolute inset-0 w-full max-w-md mx-auto h-auto object-contain hidden dark:block"
             />
