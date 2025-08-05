@@ -3,17 +3,12 @@
 
     initLocale();
     
-    // Import all images
-    import layer1 from '/datastream-layers/datastream-layer-1.png';
-    import layer1Dark from '/datastream-layers/datastream-layer-1-dark.png';
-    import layer2 from '/datastream-layers/datastream-layer-2.png';
-    import layer2Dark from '/datastream-layers/datastream-layer-2-dark.png';
-    import layer3 from '/datastream-layers/datastream-layer-3.png';
-    import layer3Dark from '/datastream-layers/datastream-layer-3-dark.png';
-    import layer4 from '/datastream-layers/datastream-layer-4.png';
-    import layer4Dark from '/datastream-layers/datastream-layer-4-dark.png';
-    import layer5 from '/datastream-layers/datastream-layer-5.png';
-    import layer5Dark from '/datastream-layers/datastream-layer-5-dark.png';
+    // Use SVG versions of the images
+    const layer1 = new URL('/datastream-layers/datastream-layer-1.svg', import.meta.url).href;
+    const layer2 = new URL('/datastream-layers/datastream-layer-2.svg', import.meta.url).href;
+    const layer3 = new URL('/datastream-layers/datastream-layer-3.svg', import.meta.url).href;
+    const layer4 = new URL('/datastream-layers/datastream-layer-4.svg', import.meta.url).href;
+    const layer5 = new URL('/datastream-layers/datastream-layer-5.svg', import.meta.url).href;
 </script>
 
 <!-- Static Layout for Small/Medium Screens -->
@@ -25,60 +20,35 @@
             <img
                 src={layer1}
                 alt="Datastream Layer 1"
-                class="w-full max-w-md mx-auto h-auto object-contain block dark:hidden"
-            />
-            <img
-                src={layer1Dark}
-                alt="Datastream Layer 1 Dark"
-                class="w-full max-w-md mx-auto h-auto object-contain hidden dark:block"
+                class="w-full max-w-md mx-auto h-auto object-contain"
             />
 
             <!-- Layer 2 - Overlaid -->
             <img
                 src={layer2}
                 alt="Datastream Layer 2"
-                class="absolute inset-0 w-full max-w-md mx-auto h-auto object-contain block dark:hidden"
-            />
-            <img
-                src={layer2Dark}
-                alt="Datastream Layer 2 Dark"
-                class="absolute inset-0 w-full max-w-md mx-auto h-auto object-contain hidden dark:block"
+                class="absolute inset-0 w-full max-w-md mx-auto h-auto object-contain"
             />
 
             <!-- Layer 3 - Overlaid -->
             <img
                 src={layer3}
                 alt="Datastream Layer 3"
-                class="absolute inset-0 w-full max-w-md mx-auto h-auto object-contain block dark:hidden"
-            />
-            <img
-                src={layer3Dark}
-                alt="Datastream Layer 3 Dark"
-                class="absolute inset-0 w-full max-w-md mx-auto h-auto object-contain hidden dark:block"
+                class="absolute inset-0 w-full max-w-md mx-auto h-auto object-contain"
             />
 
             <!-- Layer 4 - Overlaid -->
             <img
                 src={layer4}
                 alt="Datastream Layer 4"
-                class="absolute inset-0 w-full max-w-md mx-auto h-auto object-contain block dark:hidden"
-            />
-            <img
-                src={layer4Dark}
-                alt="Datastream Layer 4 Dark"
-                class="absolute inset-0 w-full max-w-md mx-auto h-auto object-contain hidden dark:block"
+                class="absolute inset-0 w-full max-w-md mx-auto h-auto object-contain"
             />
 
             <!-- Layer 5 - Overlaid -->
             <img
                 src={layer5}
                 alt="Datastream Layer 5"
-                class="absolute inset-0 w-full max-w-md mx-auto h-auto object-contain block dark:hidden"
-            />
-            <img
-                src={layer5Dark}
-                alt="Datastream Layer 5 Dark"
-                class="absolute inset-0 w-full max-w-md mx-auto h-auto object-contain hidden dark:block"
+                class="absolute inset-0 w-full max-w-md mx-auto h-auto object-contain"
             />
         </div>
     </div>
