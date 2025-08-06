@@ -4,6 +4,7 @@
     import { locale, locales, setLocale } from "$lib/i18n/i18n";
     import type { Locale } from "$lib/i18n/i18n";
     import { onMount } from "svelte";
+    import { handleNavClick } from "$lib/utils/scroll";
 
     // Dropdown states for language selector and mobile menu
     let dropdownOpen = false;
@@ -42,32 +43,17 @@
 
     // Nav links shared for desktop and mobile
     const navLinks = [
-        { href: "#low-value-care", label: "Low-Value Care" },
-        { href: "#impact", label: "Impact in Switzerland" },
-        { href: "#datastream", label: "National Data Stream" },
-        { href: "#main-goals", label: "LUCID Project Goals" },
-        { href: "#contact", label: "Contact & Data Access" },
+        { href: "low-value-care", label: "Low-Value Care" },
+        { href: "impact", label: "Impact in Switzerland" },
+        { href: "datastream", label: "National Data Stream" },
+        { href: "main-goals", label: "LUCID Project Goals" },
+        { href: "contact", label: "Contact & Data Access" },
     ];
 
     // Handle navigation click with smooth scrolling
-    const handleNavClick = (event: Event, href: string) => {
-        event.preventDefault();
+    const handleNavClickWithMenuClose = (event: Event, href: string) => {
         mobileMenuOpen = false; // Close mobile menu
-
-        const targetId = href.replace("#", "");
-        const element = document.getElementById(targetId);
-
-        if (element) {
-            const yOffset = -80; // Account for header height
-            const y =
-                element.getBoundingClientRect().top +
-                window.pageYOffset +
-                yOffset;
-            window.scrollTo({
-                top: y,
-                behavior: "smooth",
-            });
-        }
+        handleNavClick(event, href);
     };
 </script>
 
@@ -102,7 +88,7 @@
             <div class="relative flex items-center justify-center">
                 <button
                     class="text-surface-50 hover:text-primary-400 w-6 h-6 flex items-center justify-center transition-all duration-200"
-                    on:click={toggleDropdown}
+                    onclick={toggleDropdown}
                     aria-label="Select Language"
                 >
                     <LanguagesIcon
@@ -122,7 +108,7 @@
                                       {$locale === code
                                         ? 'bg-primary-500 text-surface-50'
                                         : 'text-surface-contrast-50 hover:bg-primary-500'}"
-                                    on:click={() => selectLocale(code)}
+                                    onclick={() => selectLocale(code)}
                                 >
                                     {name}
                                 </button>
@@ -136,7 +122,7 @@
             <div class=" flex items-center relative">
                 <button
                     aria-label="Toggle menu"
-                    on:click={toggleMobileMenu}
+                    onclick={toggleMobileMenu}
                     class="text-surface-50 transition-all duration-200"
                 >
                     <Menu
@@ -147,7 +133,7 @@
 
                 {#if mobileMenuOpen}
                     <nav
-                        class="absolute right-0 top-full mt-2 bg-surface-50 rounded-lg p-4 shadow-lg z-40 w-60"
+                        class="absolute right-0 top-full mt-2 bg-surface-50 rounded-lg p-4 shadow-lg z-1000 w-60"
                     >
                         <ul class="flex flex-col gap-4">
                             {#each navLinks as { href, label }}
@@ -155,8 +141,8 @@
                                     <a
                                         {href}
                                         class="text-primary-900 active:text-primary-500 focus:text-primary-500 transition-colors duration-200"
-                                        on:click={(e) =>
-                                            handleNavClick(e, href)}
+                                        onclick={(e) =>
+                                            handleNavClickWithMenuClose(e, href)}
                                     >
                                         {label}
                                     </a>

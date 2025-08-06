@@ -1,6 +1,6 @@
 <script lang="ts">
     import { t, initLocale } from "$lib/i18n/i18n";
-
+    import { handleNavClick } from "$lib/utils/scroll";
     initLocale();
 </script>
 
@@ -81,7 +81,7 @@
             </p>
         </div>
 
-        <button class="btn preset-filled-tertiary-500 mx-auto animate-on-scroll">
+        <button class="btn preset-filled-tertiary-500 mx-auto animate-on-scroll" onclick={(e) => handleNavClick(e, "contact")}>
             {$t("datastream.layer6-button")}
         </button>
     </div>

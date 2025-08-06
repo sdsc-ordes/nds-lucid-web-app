@@ -1,5 +1,7 @@
 <script lang="ts">
     import { t, initLocale } from "$lib/i18n/i18n";
+    import { handleNavClick
+     } from "$lib/utils/scroll";
     initLocale();
     export let currentStep: number = 0;
     let animatedSteps = new Set();
@@ -56,7 +58,7 @@
                 <h2 class="text-2xl font-bold text-tertiary-500 mb-2">{ $t(`datastream.layer${n}-title`) }</h2>
                 <p class="text-base leading-relaxed">{ $t(`datastream.layer${n}-description`) }</p>
                 {#if n === 6}
-                    <button class="btn preset-filled-tertiary-500 mt-4">{ $t("datastream.layer6-button") }</button>
+                    <button class="btn preset-filled-tertiary-500 mt-4" onclick={(e) => handleNavClick(e, "contact")}>{ $t("datastream.layer6-button") }</button>
                 {/if}
             </div>
         {/each}
