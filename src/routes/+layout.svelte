@@ -7,11 +7,11 @@
 </script>
 
 
-	<div class="min-h-screen w-full flex flex-col overflow-x-hidden">
+	<div class="min-h-screen w-full flex flex-col">
 		<header class="sticky top-0 z-50">
 			<Header />
 		</header>
-		<main class="w-full">
+		<main class="w-full overflow-x-hidden">
 			{@render children()}
 		</main>
 
