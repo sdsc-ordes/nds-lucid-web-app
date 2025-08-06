@@ -7,11 +7,11 @@
 </script>
 
 
-	<div class="min-h-screen min-w-screen flex flex-col">
+	<div class="min-h-screen w-full flex flex-col overflow-x-hidden">
 		<header class="sticky top-0 z-50">
 			<Header />
 		</header>
-		<main class="">
+		<main class="w-full">
 			{@render children()}
 		</main>
 
@@ -22,4 +22,9 @@
 
 
 <style>
+	:global(html, body) {
+		overflow-x: hidden;
+		width: 100%;
+		max-width: 100vw;
+	}
 </style>
