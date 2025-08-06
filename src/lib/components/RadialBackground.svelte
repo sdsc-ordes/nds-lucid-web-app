@@ -64,10 +64,17 @@
         for (let i = 0; i < numElements; i++) {
             const baseSize = SIZES[Math.floor(Math.random() * SIZES.length)];
             const duration = DURATIONS[Math.floor(Math.random() * DURATIONS.length)];
+            
+            // Ensure elements are positioned within container bounds, accounting for their size
+            const maxX = containerWidth - baseSize;
+            const maxY = containerHeight - baseSize;
+            const x = Math.max(0, Math.min(maxX, Math.random() * containerWidth));
+            const y = Math.max(0, Math.min(maxY, Math.random() * containerHeight));
+            
             elements.push({
                 id: i,
-                x: Math.random() * containerWidth,
-                y: Math.random() * containerHeight,
+                x: x,
+                y: y,
                 baseSize: baseSize,
                 currentSize: baseSize,
                 duration: duration,
@@ -116,6 +123,8 @@
         height: 100%;
         overflow: hidden;
         pointer-events: none;
+        max-width: 100vw;
+        max-height: 100vh;
     }
 
     .radial-element {
@@ -125,6 +134,8 @@
         animation: fadeInOut var(--duration) ease-in-out infinite;
         animation-delay: var(--delay);
         transform-origin: center;
+        max-width: 100%;
+        max-height: 100%;
     }
 
     .radial-element:hover {
@@ -144,8 +155,8 @@
                 alt="Radial Element"
                 class="radial-element"
                 style="
-                    left: {element.x - element.baseSize/2}px;
-                    top: {element.y - element.baseSize/2}px;
+                    left: {element.x}px;
+                    top: {element.y}px;
                     width: {element.baseSize}px;
                     height: {element.baseSize}px;
                     --duration: {element.duration}s;

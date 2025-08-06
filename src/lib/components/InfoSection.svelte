@@ -26,10 +26,10 @@
 <!-- Hero Section - Full Screen with Parallax -->
 <section
     id="home"
-    class="h-screen flex flex-col justify-between relative overflow-hidden bg-surface-contrast-50"
+    class="h-screen flex flex-col justify-between relative overflow-hidden overflow-x-hidden bg-surface-contrast-50 w-full"
         ><!-- Background Layer -->
     <RadialBackground />
-    <div class="max-w-7xl mx-auto w-full">
+    <div class="max-w-7xl mx-auto w-full px-4 sm:px-6">
         
         <!-- Main Content Area -->
         <div class="relative z-10 flex-1 flex items-start pt-20 lg:pt-32">
