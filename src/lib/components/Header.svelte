@@ -133,7 +133,7 @@
 
                 {#if mobileMenuOpen}
                     <nav
-                        class="absolute right-0 top-full mt-2 bg-surface-50 rounded-lg p-4 shadow-lg z-1000 w-60"
+                        class="absolute right-0 top-full mt-2 bg-surface-50 rounded-lg p-4 shadow-lg z-100 w-60"
                     >
                         <ul class="flex flex-col gap-4">
                             {#each navLinks as { href, label }}

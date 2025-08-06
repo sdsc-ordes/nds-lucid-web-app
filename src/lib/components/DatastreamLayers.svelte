@@ -35,20 +35,20 @@
         <img src="/datastream-layers/datastream-layer-1-dark.svg" alt="Layer 1" class="absolute w-full h-auto max-w-full object-contain z-10 hidden dark:block" style="opacity: 1;" />
         
         <!-- Layer 2 -->
-        <img src="/datastream-layers/datastream-layer-2.svg" alt="Layer 2" class="absolute w-full h-auto max-w-full object-contain z-20 dark:hidden" style="opacity: {currentStep >= 2 ? 1 : 0}; transition: opacity 1s;" />
-        <img src="/datastream-layers/datastream-layer-2-dark.svg" alt="Layer 2" class="absolute w-full h-auto max-w-full object-contain z-20 hidden dark:block" style="opacity: {currentStep >= 2 ? 1 : 0}; transition: opacity 1s;" />
+        <img src="/datastream-layers/datastream-layer-2.svg" alt="Layer 2" class="absolute w-full h-auto max-w-full object-contain z-11 dark:hidden" style="opacity: {currentStep >= 2 ? 1 : 0}; transition: opacity 1s;" />
+        <img src="/datastream-layers/datastream-layer-2-dark.svg" alt="Layer 2" class="absolute w-full h-auto max-w-full object-contain z-11 hidden dark:block" style="opacity: {currentStep >= 2 ? 1 : 0}; transition: opacity 1s;" />
         
         <!-- Layer 3 -->
-        <img src="/datastream-layers/datastream-layer-3.svg" alt="Layer 3" class="absolute w-full h-auto max-w-full object-contain z-30 dark:hidden" style="opacity: {currentStep >= 3 ? 1 : 0}; transition: opacity 1s;" />
-        <img src="/datastream-layers/datastream-layer-3-dark.svg" alt="Layer 3" class="absolute w-full h-auto max-w-full object-contain z-30 hidden dark:block" style="opacity: {currentStep >= 3 ? 1 : 0}; transition: opacity 1s;" />
+        <img src="/datastream-layers/datastream-layer-3.svg" alt="Layer 3" class="absolute w-full h-auto max-w-full object-contain z-12 dark:hidden" style="opacity: {currentStep >= 3 ? 1 : 0}; transition: opacity 1s;" />
+        <img src="/datastream-layers/datastream-layer-3-dark.svg" alt="Layer 3" class="absolute w-full h-auto max-w-full object-contain z-12 hidden dark:block" style="opacity: {currentStep >= 3 ? 1 : 0}; transition: opacity 1s;" />
         
         <!-- Layer 4 -->
-        <img src="/datastream-layers/datastream-layer-4.svg" alt="Layer 4" class="absolute w-full h-auto max-w-full object-contain z-40 dark:hidden" style="opacity: {currentStep >= 4 ? 1 : 0}; transition: opacity 1s;" />
-        <img src="/datastream-layers/datastream-layer-4-dark.svg" alt="Layer 4" class="absolute w-full h-auto max-w-full object-contain z-40 hidden dark:block" style="opacity: {currentStep >= 4 ? 1 : 0}; transition: opacity 1s;" />
+        <img src="/datastream-layers/datastream-layer-4.svg" alt="Layer 4" class="absolute w-full h-auto max-w-full object-contain z-13 dark:hidden" style="opacity: {currentStep >= 4 ? 1 : 0}; transition: opacity 1s;" />
+        <img src="/datastream-layers/datastream-layer-4-dark.svg" alt="Layer 4" class="absolute w-full h-auto max-w-full object-contain z-13 hidden dark:block" style="opacity: {currentStep >= 4 ? 1 : 0}; transition: opacity 1s;" />
         
         <!-- Layer 5 -->
-        <img src="/datastream-layers/datastream-layer-5.svg" alt="Layer 5" class="absolute w-full h-auto max-w-full object-contain z-50 dark:hidden" style="opacity: {currentStep >= 5 ? 1 : 0}; transition: opacity 1s;" />
-        <img src="/datastream-layers/datastream-layer-5-dark.svg" alt="Layer 5" class="absolute w-full h-auto max-w-full object-contain z-50 hidden dark:block" style="opacity: {currentStep >= 5 ? 1 : 0}; transition: opacity 1s;" />
+        <img src="/datastream-layers/datastream-layer-5.svg" alt="Layer 5" class="absolute w-full h-auto max-w-full object-contain z-14 dark:hidden" style="opacity: {currentStep >= 5 ? 1 : 0}; transition: opacity 1s;" />
+        <img src="/datastream-layers/datastream-layer-5-dark.svg" alt="Layer 5" class="absolute w-full h-auto max-w-full object-contain z-14 hidden dark:block" style="opacity: {currentStep >= 5 ? 1 : 0}; transition: opacity 1s;" />
     </div>
 
     <!-- Right column: statements 4-6 + button -->
