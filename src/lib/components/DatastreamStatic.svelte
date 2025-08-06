@@ -2,53 +2,24 @@
     import { t, initLocale } from "$lib/i18n/i18n";
 
     initLocale();
-    
-    // Use SVG versions of the images
-    const layer1 = new URL('/datastream-layers/datastream-layer-1.svg', import.meta.url).href;
-    const layer2 = new URL('/datastream-layers/datastream-layer-2.svg', import.meta.url).href;
-    const layer3 = new URL('/datastream-layers/datastream-layer-3.svg', import.meta.url).href;
-    const layer4 = new URL('/datastream-layers/datastream-layer-4.svg', import.meta.url).href;
-    const layer5 = new URL('/datastream-layers/datastream-layer-5.svg', import.meta.url).href;
 </script>
 
 <!-- Static Layout for Small/Medium Screens -->
-<div class="w-full max-w-4xl mx-auto px-4 py-8">
-    <!-- All layers overlaid -->
+<div class="w-full max-w-4xl mx-auto px-4 py-8 mt-32">
+    <!-- Map image -->
     <div class="mb-16 text-center">
         <div class="relative mb-6 flex items-center justify-center">
-            <!-- Layer 1 - Base -->
+            <!-- Light mode map -->
             <img
-                src={layer1}
-                alt="Datastream Layer 1"
-                class="w-full max-w-md mx-auto h-auto object-contain"
+                src="/datastream-layers/Map-light.svg"
+                alt="Datastream Map"
+                class="w-full max-w-md mx-auto h-auto object-contain dark:hidden"
             />
-
-            <!-- Layer 2 - Overlaid -->
+            <!-- Dark mode map -->
             <img
-                src={layer2}
-                alt="Datastream Layer 2"
-                class="absolute inset-0 w-full max-w-md mx-auto h-auto object-contain"
-            />
-
-            <!-- Layer 3 - Overlaid -->
-            <img
-                src={layer3}
-                alt="Datastream Layer 3"
-                class="absolute inset-0 w-full max-w-md mx-auto h-auto object-contain"
-            />
-
-            <!-- Layer 4 - Overlaid -->
-            <img
-                src={layer4}
-                alt="Datastream Layer 4"
-                class="absolute inset-0 w-full max-w-md mx-auto h-auto object-contain"
-            />
-
-            <!-- Layer 5 - Overlaid -->
-            <img
-                src={layer5}
-                alt="Datastream Layer 5"
-                class="absolute inset-0 w-full max-w-md mx-auto h-auto object-contain"
+                src="/datastream-layers/Map-dark.svg"
+                alt="Datastream Map"
+                class="w-full max-w-md mx-auto h-auto object-contain hidden dark:block"
             />
         </div>
     </div>

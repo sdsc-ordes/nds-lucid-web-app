@@ -4,13 +4,6 @@
     export let currentStep: number = 0;
     let animatedSteps = new Set();
     
-    // Use SVG versions of the images
-    const layer1 = new URL('/datastream-layers/datastream-layer-1.svg', import.meta.url).href;
-    const layer2 = new URL('/datastream-layers/datastream-layer-2.svg', import.meta.url).href;
-    const layer3 = new URL('/datastream-layers/datastream-layer-3.svg', import.meta.url).href;
-    const layer4 = new URL('/datastream-layers/datastream-layer-4.svg', import.meta.url).href;
-    const layer5 = new URL('/datastream-layers/datastream-layer-5.svg', import.meta.url).href;
-    
     $: {
         if (currentStep >= 1 && !animatedSteps.has(1)) { animatedSteps.add(1); animatedSteps = animatedSteps; }
         if (currentStep >= 2 && !animatedSteps.has(2)) { animatedSteps.add(2); animatedSteps = animatedSteps; }
@@ -35,11 +28,25 @@
 
     <!-- Center columns: stacked images, span 2 columns -->
     <div class="relative flex flex-col items-center justify-center h-full min-h-[400px] col-span-2">
-        <img src={layer1} alt="Layer 1" class="absolute w-auto h-auto max-w-[40vw] max-h-[40vh] object-contain z-10" style="opacity: 1;" />
-        <img src={layer2} alt="Layer 2" class="absolute w-auto h-auto max-w-[40vw] max-h-[40vh] object-contain z-20" style="opacity: {currentStep >= 2 ? 1 : 0}; transition: opacity 1s;" />
-        <img src={layer3} alt="Layer 3" class="absolute w-auto h-auto max-w-[40vw] max-h-[40vh] object-contain z-30" style="opacity: {currentStep >= 3 ? 1 : 0}; transition: opacity 1s;" />
-        <img src={layer4} alt="Layer 4" class="absolute w-auto h-auto max-w-[40vw] max-h-[40vh] object-contain z-40" style="opacity: {currentStep >= 4 ? 1 : 0}; transition: opacity 1s;" />
-        <img src={layer5} alt="Layer 5" class="absolute w-auto h-auto max-w-[40vw] max-h-[40vh] object-contain z-50" style="opacity: {currentStep >= 5 ? 1 : 0}; transition: opacity 1s;" />
+        <!-- Layer 1 -->
+        <img src="/datastream-layers/datastream-layer-1.svg" alt="Layer 1" class="absolute w-auto h-auto max-w-[40vw] max-h-[40vh] object-contain z-10 dark:hidden" style="opacity: 1;" />
+        <img src="/datastream-layers/datastream-layer-1-dark.svg" alt="Layer 1" class="absolute w-auto h-auto max-w-[40vw] max-h-[40vh] object-contain z-10 hidden dark:block" style="opacity: 1;" />
+        
+        <!-- Layer 2 -->
+        <img src="/datastream-layers/datastream-layer-2.svg" alt="Layer 2" class="absolute w-auto h-auto max-w-[40vw] max-h-[40vh] object-contain z-20 dark:hidden" style="opacity: {currentStep >= 2 ? 1 : 0}; transition: opacity 1s;" />
+        <img src="/datastream-layers/datastream-layer-2-dark.svg" alt="Layer 2" class="absolute w-auto h-auto max-w-[40vw] max-h-[40vh] object-contain z-20 hidden dark:block" style="opacity: {currentStep >= 2 ? 1 : 0}; transition: opacity 1s;" />
+        
+        <!-- Layer 3 -->
+        <img src="/datastream-layers/datastream-layer-3.svg" alt="Layer 3" class="absolute w-auto h-auto max-w-[40vw] max-h-[40vh] object-contain z-30 dark:hidden" style="opacity: {currentStep >= 3 ? 1 : 0}; transition: opacity 1s;" />
+        <img src="/datastream-layers/datastream-layer-3-dark.svg" alt="Layer 3" class="absolute w-auto h-auto max-w-[40vw] max-h-[40vh] object-contain z-30 hidden dark:block" style="opacity: {currentStep >= 3 ? 1 : 0}; transition: opacity 1s;" />
+        
+        <!-- Layer 4 -->
+        <img src="/datastream-layers/datastream-layer-4.svg" alt="Layer 4" class="absolute w-auto h-auto max-w-[40vw] max-h-[40vh] object-contain z-40 dark:hidden" style="opacity: {currentStep >= 4 ? 1 : 0}; transition: opacity 1s;" />
+        <img src="/datastream-layers/datastream-layer-4-dark.svg" alt="Layer 4" class="absolute w-auto h-auto max-w-[40vw] max-h-[40vh] object-contain z-40 hidden dark:block" style="opacity: {currentStep >= 4 ? 1 : 0}; transition: opacity 1s;" />
+        
+        <!-- Layer 5 -->
+        <img src="/datastream-layers/datastream-layer-5.svg" alt="Layer 5" class="absolute w-auto h-auto max-w-[40vw] max-h-[40vh] object-contain z-50 dark:hidden" style="opacity: {currentStep >= 5 ? 1 : 0}; transition: opacity 1s;" />
+        <img src="/datastream-layers/datastream-layer-5-dark.svg" alt="Layer 5" class="absolute w-auto h-auto max-w-[40vw] max-h-[40vh] object-contain z-50 hidden dark:block" style="opacity: {currentStep >= 5 ? 1 : 0}; transition: opacity 1s;" />
     </div>
 
     <!-- Right column: statements 4-6 + button -->
