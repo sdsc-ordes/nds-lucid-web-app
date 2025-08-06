@@ -22,9 +22,4 @@
 
 
 <style>
-	:global(html, body) {
-		overflow-x: hidden;
-		width: 100%;
-		max-width: 100vw;
-	}
 </style>
