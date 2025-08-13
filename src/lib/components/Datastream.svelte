@@ -2,16 +2,56 @@
     import { t } from "$lib/i18n/i18n";
     import { onMount } from "svelte";
     import { tick } from "svelte";
+    import { ChevronLeft, ChevronRight } from "lucide-svelte";
 
     let observer: IntersectionObserver;
     let animatedElements = new Set();
+    let carouselContainer: HTMLDivElement;
+    let currentSlide = 0;
+
+    // Carousel data with images and content
+    const carouselData = [
+        {
+            image: "/images/carousel/carousel-1.png",
+            title: "datastream.layer1-title",
+            description: "datastream.layer1-description",
+        },
+        {
+            image: "/images/carousel/carousel-2.png",
+            title: "datastream.layer2-title",
+            description: "datastream.layer2-description",
+        },
+        {
+            image: "/images/carousel/carousel-3.png",
+            title: "datastream.layer3-title",
+            description: "datastream.layer3-description",
+        },
+        {
+            image: "/images/carousel/carousel-4.png",
+            title: "datastream.layer4-title",
+            description: "datastream.layer4-description",
+        },
+        {
+            image: "/images/carousel/carousel-5.png",
+            title: "datastream.layer5-title",
+            description: "datastream.layer5-description",
+        },
+        {
+            image: "/images/carousel/carousel-6.png",
+            title: "datastream.layer6-title",
+            description: "datastream.layer6-description",
+        },
+    ];
 
     onMount(() => {
         tick().then(() => {
             observer = new IntersectionObserver(
                 (entries) => {
                     entries.forEach((entry) => {
-                        if (entry.isIntersecting && !animatedElements.has(entry.target)) {
+                        if (
+                            entry.isIntersecting &&
+                            !animatedElements.has(entry.target)
+                        ) {
                             entry.target.classList.add("is-visible");
                             animatedElements.add(entry.target);
                         }
@@ -22,22 +62,62 @@
                     rootMargin: "0px 0px -100px 0px",
                 },
             );
-    
+
             document.querySelectorAll(".animate-on-scroll").forEach((el) => {
                 observer.observe(el);
             });
         });
+
+        // Add scroll listener to track current slide
+        if (carouselContainer) {
+            const updateCurrentSlide = () => {
+                const slideWidth = carouselContainer.clientWidth;
+                const scrollLeft = carouselContainer.scrollLeft;
+                const newSlide = Math.round(scrollLeft / slideWidth);
+                if (newSlide !== currentSlide) {
+                    currentSlide = newSlide;
+                }
+            };
+
+            carouselContainer.addEventListener('scroll', updateCurrentSlide);
+        }
     });
 
+    function carouselLeft() {
+        if (!carouselContainer) return;
+        const newSlide =
+            currentSlide === 0 ? carouselData.length - 1 : currentSlide - 1;
+        const x =
+            currentSlide === 0
+                ? carouselContainer.clientWidth * (carouselData.length - 1)
+                : carouselContainer.scrollLeft - carouselContainer.clientWidth;
+        carouselContainer.scrollTo({ left: x, behavior: "smooth" });
+        currentSlide = newSlide;
+    }
 
+    function carouselRight() {
+        if (!carouselContainer) return;
+        const newSlide =
+            currentSlide === carouselData.length - 1 ? 0 : currentSlide + 1;
+        const x =
+            currentSlide === carouselData.length - 1
+                ? 0
+                : carouselContainer.scrollLeft + carouselContainer.clientWidth;
+        carouselContainer.scrollTo({ left: x, behavior: "smooth" });
+        currentSlide = newSlide;
+    }
 </script>
 
 <!-- Datastream Section -->
 <section id="datastream" class="relative w-full py-16">
     <!-- Header -->
     <div class="max-w-7xl mx-auto px-6 mb-16">
-        <div class="bg-surface-contrast-50 dark:bg-primary-200 p-4 sm:p-4 shadow-lg header-slide-in animate-on-scroll">
-            <h1 class="text-surface-50-950 text-xl sm:text-2xl font-bold text-center">
+        <div
+            class="bg-surface-contrast-50 dark:bg-primary-200 p-4 sm:p-4 shadow-lg header-slide-in animate-on-scroll"
+        >
+            <h1
+                class="text-surface-50-950 text-xl sm:text-2xl font-bold text-center"
+            >
                 {$t("datastream.datastream-title")}
             </h1>
         </div>
@@ -45,10 +125,106 @@
 
     <!-- Content -->
     <div class="max-w-7xl mx-auto px-6">
-        
+        <div class="w-full relative">
+            <!-- Carousel Container -->
+            <div class="relative w-full">
+                <!-- Full Images -->
+                <div
+                    bind:this={carouselContainer}
+                    class="snap-x snap-mandatory scroll-smooth flex overflow-x-auto scrollbar-hide"
+                >
+                    {#each carouselData as item, i}
+                        <!-- Desktop Layout -->
+                        <div class="snap-center w-full flex-shrink-0 hidden lg:flex flex-row gap-0 h-[600px]">
+                            <!-- Text box -->
+                            <div class="w-1/2 bg-surface-contrast-50 flex flex-col justify-center p-24">
+                                <div class="space-y-4">
+                                    <h2 class="text-2xl font-bold text-tertiary-500">
+                                        {$t(item.title)}
+                                    </h2>
+                                    <p class="text-base leading-relaxed text-surface-50 font-normal">
+                                        {@html $t(item.description)}
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Image -->
+                            <div class="w-1/2 h-full overflow-hidden flex items-center justify-center">
+                                <img
+                                    class="w-full h-full object-cover object-center"
+                                    src={item.image}
+                                    alt={`Layer ${i + 1}`}
+                                    loading={i === 0 ? "eager" : "lazy"}
+                                    decoding="async"
+                                />
+                            </div>
+                        </div>
+
+                        <!-- Mobile Layout -->
+                        <div class="snap-center w-full flex-shrink-0 flex lg:hidden flex-col gap-0 h-[400px]">
+                            <!-- Text box -->
+                            <div class="w-full flex flex-col justify-center p-16 h-full">
+                                <div class="space-y-4">
+                                    <h2 class="text-xl font-bold text-tertiary-500 text-center">
+                                        {$t(item.title)}
+                                    </h2>
+                                    <p class="text-sm leading-relaxed text-surface-950-50 text-center ">
+                                        {@html $t(item.description)}
+                                    </p>
+                                  
+                                </div>
+                            </div>
+                        </div>
+                    {/each}
+                </div>
+
+                <!-- Navigation Buttons (Layered on top) -->
+                <div
+                    class="absolute inset-0 pointer-events-none flex items-center justify-between p-4"
+                >
+                    <!-- Button: Left -->
+                    <button
+                        type="button"
+                        class="btn pointer-events-auto"
+                        onclick={carouselLeft}
+                        title="Previous slide"
+                        aria-label="Previous slide"
+                    >
+                        <ChevronLeft size={40} class="text-surface-950-50" />
+                    </button>
+
+                    <!-- Button: Right -->
+                    <button
+                        type="button"
+                        class="btn  pointer-events-auto"
+                        onclick={carouselRight}
+                        title="Next slide"
+                        aria-label="Next slide"
+                    >
+                        <ChevronRight size={40} class="text-surface-950-50" />
+                    </button>
+                </div>
+
+                <!-- Indicator Circles -->
+                <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 pointer-events-none">
+                    {#each carouselData as _, i}
+                        <button
+                            class="w-3 h-3 rounded-full pointer-events-auto transition-all duration-200 {currentSlide === i ? 'bg-tertiary-500' : 'bg-surface-950-50/70'}"
+                            onclick={() => {
+                                if (carouselContainer) {
+                                    carouselContainer.scrollTo({ left: carouselContainer.clientWidth * i, behavior: "smooth" });
+                                    currentSlide = i;
+                                }
+                            }}
+                            aria-label="Go to slide {i + 1}"
+                        >
+                        </button>
+                    {/each}
+                </div>
+            </div>
+        </div>
     </div>
 </section>
-
 <style>
     :global(.animate-on-scroll) {
         opacity: 0;
@@ -71,4 +247,14 @@
         opacity: 1;
         transform: translateX(0);
     }
+
+    /* Hide scrollbar */
+    :global(.scrollbar-hide) {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+    :global(.scrollbar-hide::-webkit-scrollbar) {
+        display: none;  /* Chrome, Safari and Opera */
+    }
 </style>
+
