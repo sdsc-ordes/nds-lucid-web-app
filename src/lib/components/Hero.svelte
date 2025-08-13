@@ -6,7 +6,7 @@
 <!-- Hero Section - Full Screen with Parallax -->
 <section
     id="home"
-    class="h-screen flex flex-col justify-center items-center relative overflow-hidden overflow-x-hidden w-full"
+    class="w-full flex flex-col justify-center items-center relative overflow-hidden overflow-x-hidden min-h-screen"
 >
     <!-- Background Image -->
     <img
@@ -23,7 +23,7 @@
         <div class="flex flex-col gap-8">
             <div>
                 <h1
-                    class="text-xl md:text-5xl lg:text-6xl text-white leading-tight mb-8"
+                    class="text-3xl md:text-5xl lg:text-6xl text-white leading-tight mb-8"
                 >
                     {@html $t("hero.landing-title")}
                 </h1>
