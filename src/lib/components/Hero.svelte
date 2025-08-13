@@ -6,7 +6,7 @@
 <!-- Hero Section - Full Screen with Parallax -->
 <section
     id="home"
-    class="w-full flex flex-col justify-center items-center relative overflow-hidden overflow-x-hidden min-h-screen"
+    class="w-full flex flex-col justify-center items-center relative overflow-hidden overflow-x-hidden h-[800px]"
 >
     <!-- Background Image -->
     <img
