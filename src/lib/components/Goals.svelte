@@ -42,10 +42,10 @@
     <!-- Header Bar -->
     <section id="main-goals" class="mb-12 mt-12">
         <div
-            class="bg-surface-contrast-50 dark:bg-primary-200 p-4 sm:p-4 shadow-lg sm:w-2/3 header-slide-in animate-on-scroll text-left"
+            class="bg-surface-contrast-50 dark:bg-primary-200 p-4 sm:p-4 shadow-lg header-slide-in animate-on-scroll"
         >
             <h1
-                class="text-surface-50-950 text-xl sm:text-2xl font-bold text-left"
+                class="text-surface-50-950 text-xl sm:text-2xl font-bold text-center"
             >
                 {$t("main-goals.section-title")}
             </h1>

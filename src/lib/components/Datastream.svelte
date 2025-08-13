@@ -1,145 +1,69 @@
 <script lang="ts">
-    import { t, initLocale } from "$lib/i18n/i18n";
+    import { t } from "$lib/i18n/i18n";
     import { onMount } from "svelte";
-    import DatastreamLayers from './DatastreamLayers.svelte';
-    import DatastreamStatic from './DatastreamStatic.svelte';
-    
-    initLocale();
+    import { tick } from "svelte";
 
-    let datastreamContainer: HTMLElement;
-    let currentStep = 0;
-    let hasAnimated = false;
-    let animationTimeouts: number[] = [];
-    let animationsComplete = false;
-    let isLargeScreen = false;
+    let observer: IntersectionObserver;
+    let animatedElements = new Set();
 
     onMount(() => {
-        let observer: IntersectionObserver;
-        
-        // Check if screen is large
-        const checkScreenSize = () => {
-            isLargeScreen = window.innerWidth >= 1024; // lg breakpoint
-        };
-        
-        checkScreenSize();
-        window.addEventListener('resize', checkScreenSize);
-
-        // Only set up intersection observer for large screens
-        if (isLargeScreen) {
+        tick().then(() => {
             observer = new IntersectionObserver(
                 (entries) => {
                     entries.forEach((entry) => {
-                        if (entry.isIntersecting && !hasAnimated) {
-                            hasAnimated = true;
-                            startTimeBasedAnimation();
-                            observer.unobserve(entry.target);
+                        if (entry.isIntersecting && !animatedElements.has(entry.target)) {
+                            entry.target.classList.add("is-visible");
+                            animatedElements.add(entry.target);
                         }
                     });
                 },
                 {
-                    threshold: 0.3,
-                    rootMargin: "0px 0px -20% 0px"
-                }
+                    threshold: 0.2,
+                    rootMargin: "0px 0px -100px 0px",
+                },
             );
-
-            if (datastreamContainer) {
-                observer.observe(datastreamContainer);
-            }
-        }
-
-        return () => {
-            window.removeEventListener('resize', checkScreenSize);
-            if (observer) observer.disconnect();
-            // Clear any pending timeouts
-            animationTimeouts.forEach(timeout => clearTimeout(timeout));
-        };
+    
+            document.querySelectorAll(".animate-on-scroll").forEach((el) => {
+                observer.observe(el);
+            });
+        });
     });
 
-    function startTimeBasedAnimation() {
-        // Only run animations on large screens
-        if (!isLargeScreen) return;
-        
-        // Layer 1: Immediate
-        currentStep = 1;
-        
-        // Layer 2: After 2 seconds
-        animationTimeouts.push(setTimeout(() => {
-            currentStep = 2;
-        }, 2000));
-        
-        // Layer 3: After 4 seconds
-        animationTimeouts.push(setTimeout(() => {
-            currentStep = 3;
-        }, 4000));
-        
-        // Layer 4: After 6 seconds
-        animationTimeouts.push(setTimeout(() => {
-            currentStep = 4;
-        }, 6000));
-        
-        // Layer 5: After 8 seconds
-        animationTimeouts.push(setTimeout(() => {
-            currentStep = 5;
-        }, 8000));
 
-         // Layer 6: After 10 seconds
-         animationTimeouts.push(setTimeout(() => {
-            currentStep = 6;
-        }, 10000));
-        
-        // Mark animations as complete after all layers are shown
-        animationTimeouts.push(setTimeout(() => {
-            animationsComplete = true;
-        }, 12000)); // 2 second buffer after last animation
-    }
 </script>
 
 <!-- Datastream Section -->
-<div 
-    bind:this={datastreamContainer}
-    class="relative max-w-7xl mx-auto w-full"
->
-    <!-- Header Section -->
-    <div class="absolute top-0 left-0 right-0 z-10 p-6 lg:relative lg:p-6">
-        <section id="datastream" class="mt-12">
-            <div
-                class="bg-surface-contrast-50 dark:bg-primary-200 p-4 sm:p-4 shadow-lg sm:w-2/3 ml-auto header-slide-in animate-on-scroll"
-            >
-                <h1 class="text-surface-50-950 text-xl sm:text-2xl font-bold">
-                    {$t("datastream.datastream-title")}
-                </h1>
-            </div>
-        </section>
-    </div>
-
-    <!-- Large Screen: Animated Layout -->
-    <div class="hidden xl:block">
-        <div class="flex items-center justify-center relative max-w-7xl mx-auto w-full" >
-            <!-- Use the animated DatastreamLayers component -->
-            <DatastreamLayers {currentStep} />
-            
-            <!-- Scroll blocking indicator -->
-            {#if hasAnimated && !animationsComplete}
-                <div class="absolute bottom-32 left-1/2 transform -translate-x-1/2 z-20">
-                    <div class="bg-primary-100 bg-opacity-90 text-surface-contrast-50 px-4 py-2 rounded-full text-sm flex items-center space-x-2">
-                        <div class="w-2 h-2 bg-surface-contrast-50 rounded-full animate-pulse"></div>
-                        <span>{$t("datastream.animation")}</span>
-                    </div>
-                </div>
-            {/if}
+<section id="datastream" class="relative w-full py-16">
+    <!-- Header -->
+    <div class="max-w-7xl mx-auto px-6 mb-16">
+        <div class="bg-surface-contrast-50 dark:bg-primary-200 p-4 sm:p-4 shadow-lg header-slide-in animate-on-scroll">
+            <h1 class="text-surface-50-950 text-xl sm:text-2xl font-bold text-center">
+                {$t("datastream.datastream-title")}
+            </h1>
         </div>
     </div>
 
-    <!-- Small/Medium Screen: Static Layout -->
-    <div class="xl:hidden min-h-screen pt-32">
-        <DatastreamStatic />
+    <!-- Content -->
+    <div class="max-w-7xl mx-auto px-6">
+        
     </div>
-</div>
+</section>
 
 <style>
+    :global(.animate-on-scroll) {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 1s ease-in-out;
+    }
+
+    :global(.animate-on-scroll.is-visible) {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
     :global(.header-slide-in) {
         opacity: 0;
-        transform: translateX(-30px);
+        transform: translateX(30px);
         transition: all 0.8s ease-out;
     }
 
