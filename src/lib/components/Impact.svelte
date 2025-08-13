@@ -45,15 +45,20 @@
     
     <svelte:window bind:scrollY />
     
-    <div class="relative h-full pb-32">
+    <section class="w-full flex flex-col justify-center items-center relative overflow-hidden">
+
+
+    <div class="absolute inset-0 bg-tertiary-500/10 dark:bg-primary-900"></div>
+
+
         <div class="max-w-7xl mx-auto w-full">
             <div class="relative z-10 p-6">
                 <!-- Header Bar -->
                 <section id="impact" class="mb-12 mt-12">
                     <div
-                        class="bg-surface-contrast-50 dark:bg-primary-200 p-4 sm:p-4 shadow-lg sm:w-2/3 mr-auto header-slide-in animate-on-scroll"
+                        class="bg-surface-contrast-50 dark:bg-primary-200 p-4 sm:p-4 shadow-lg header-slide-in animate-on-scroll"
                     >
-                        <h1 class="text-surface-50-950  text-xl sm:text-2xl font-bold">
+                        <h1 class="text-surface-50-950 text-xl sm:text-2xl font-bold text-center">
                             {$t("impact.impact-title")}
                         </h1>
                     </div>
@@ -138,7 +143,7 @@
                 </section>
             </div>
         </div>
-    </div>
+    </section>
     
     <style>
         :global(.animate-on-scroll) {
