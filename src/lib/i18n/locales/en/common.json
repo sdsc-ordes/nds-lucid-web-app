@@ -9,8 +9,8 @@
     "label-sources": "Sources"
   },
   "hero": {
-    "landing-title": "Quality of Care in Swiss University Hospitals",
-    "landing-description": "Identify and understand low-value care in Swiss university hospitals as the first step towards reducing it and improving patient outcomes.",
+    "landing-title": "Quality of Care in<br><b>Swiss University Hospitals</b>",
+    "landing-description": "<b>Identify and understand</b> low-value care in Swiss university hospitals as the first step towards <b>reducing it</b> and <b>improving patient outcomes</b>.",
     "landing-description-lucid": "The LUCID project aims to build a national data stream, collecting patient reported outcomes in hospitals and providing a safe, online platform, where the data on patient treatment can be studied and compared.",
     "call-to-action-patients": "Together for Better Care",
     "call-to-action-researchers": "Access Research Data",

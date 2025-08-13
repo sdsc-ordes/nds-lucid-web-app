@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onMount } from 'svelte';
-  import InfoSection from '$lib/components/InfoSection.svelte';
+  import Hero from '$lib/components/Hero.svelte';
   import { t, initLocale } from '$lib/i18n/i18n';
   import LVCexamples from '$lib/components/LVCexamples.svelte';
   import Impact from '$lib/components/Impact.svelte';
@@ -46,7 +46,7 @@
 
 <div>
 
-  <InfoSection/>
+  <Hero/>
   <LVCexamples/>
   <Impact/>
   <Datastream/>
