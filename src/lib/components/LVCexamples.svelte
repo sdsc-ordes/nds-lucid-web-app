@@ -50,7 +50,7 @@
 
         <!-- Subtitle Container (matched width/alignment) -->
         <div
-            class="w-2/3 mx-auto text-lg sm:text-2xl leading-relaxed text-surface-contrast-50 dark:text-primary-100 px-4 py-8 text-center"
+            class="sm:w-2/3 mx-auto text-lg sm:text-2xl leading-relaxed text-surface-contrast-50 dark:text-primary-100 px-4 py-8 text-center"
         >
             <p>{$t("lvc.lvc-description")}</p>
         </div>
