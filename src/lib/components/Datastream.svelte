@@ -4,11 +4,11 @@
     import { tick } from "svelte";
     import { ChevronLeft, ChevronRight } from "lucide-svelte";
     import Carousel1 from "/images/datastream/carousel-1.png";
-    import Carousel2 from "/images/datastream/carousel-2.png";
-    import Carousel3 from "/images/datastream/carousel-3.png";
-    import Carousel4 from "/images/datastream/carousel-4.png";
-    import Carousel5 from "/images/datastream/carousel-5.png";
-    import Carousel6 from "/images/datastream/carousel-6.png";
+import Carousel2 from "/images/datastream/carousel-2.png";
+import Carousel3 from "/images/datastream/carousel-3.png";
+import Carousel4 from "/images/datastream/carousel-4.png";
+import Carousel5 from "/images/datastream/carousel-5.png";
+import Carousel6 from "/images/datastream/carousel-6.png";
 
     let observer: IntersectionObserver;
     let animatedElements = new Set();
