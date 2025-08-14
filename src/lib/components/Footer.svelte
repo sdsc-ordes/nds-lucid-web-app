@@ -1,17 +1,17 @@
-<footer class="text-surface-contrast-50 dark:text-primary-100 px-4 py-8 max-w-7xl mx-auto w-full">
-  <hr class="my-6 border-surface-contrast-50 dark:border-primary-100" />
-  <div class="flex justify-between items-center w-full mx-auto">
+<script>
+  import { Heart } from "lucide-svelte";
+</script>
+
+<footer class="bg-surface-950 px-4 py-6 w-full">
+  <div class="flex justify-between items-center max-w-7xl mx-auto w-full">
     <!-- Left: Copyright -->
-    <div class="flex items-center min-w-[180px] text-sm">
-      &copy; SDSC 2025
+    <div class="text-sm text-surface-50">
+      &copy;2025. LUCID. All rights reserved.
     </div>
     <!-- Right: Logos -->
-    <div class="flex items-end space-x-4">
-      <a href="https://www.datascience.ch" target="_blank">
-        <img src="/logos/sdsc.svg" alt="SDSC Logo" class="h-10 sm:h-15 w-auto dark:hidden" />
-        <img src="/logos/sdsc_white.svg" alt="SDSC Logo" class="h-10 sm:h-15 w-auto hidden dark:block" />
-      </a>
-      <img src="/logos/final-logo.jpeg" alt="LUCID Logo" class="h-10 sm:h-20 w-auto" />
+    <div class="flex items-center gap-2 text-sm text-surface-50">
+      Built with <img src="/heart-full.svg" alt="Heart" class="h-5 w-auto" /> at the 
+      <img src="/logos/sdsc-colour-light.svg" alt="SDSC Logo" class="h-5 w-auto dark:hidden" />
     </div>
   </div>
-</footer> 
+</footer>

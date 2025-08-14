@@ -9,7 +9,7 @@
     <div class="max-w-7xl mx-auto w-full">
         <hr class="my-6 border-surface-contrast-50 dark:border-primary-100" />
         <div
-            class="text-sm text-surface-contrast-50 dark:text-primary-100 space-y-4  sm:w-3/4 mx-auto px-8 py-8"
+            class="text-sm text-surface-contrast-50 dark:text-primary-100 space-y-4 sm:w-3/4 px-8 py-8"
         >
             <div class="flex items-center gap-2">
                 <Globe size={25} class="text-tertiary-500" />
@@ -53,7 +53,7 @@
                 >
                 <a
                     href="https://doi.org/10.1136/bmjopen-2024-089662"
-                    class="flex items-center gap-2 hover:text-tertiary-500"
+                    class="flex items-center gap-2 hover:text-tertiary-500 underline"
                     target="_blank"
                 >
                     BMJ Open 2024;14:e089662. doi: 10.1136/bmjopen-2024-089662
@@ -67,7 +67,7 @@
                 >
                 <a
                     href="https://www.reiso.org/articles/themes/soins/12655-surmedicalisation-en-suisse-impact-et-solutions"
-                    class="flex items-center gap-2 hover:text-tertiary-500"
+                    class="flex items-center gap-2 hover:text-tertiary-500 underline"
                     target="_blank"
                 >
                     REISO.org, Revue d'Information Sociale, 17 June 2024 (in French)
@@ -81,7 +81,7 @@
                 >
                 <a
                     href="https://sphn.ch/wp-content/uploads/2024/03/bms-2023-1250296756.pdf"
-                    class="flex items-center gap-2 hover:text-tertiary-500"
+                    class="flex items-center gap-2 hover:text-tertiary-500 underline"
                     target="_blank"
                 >
                     Bulletin des médecins suisse 2023;104(43):18–21 (in French)
@@ -95,7 +95,7 @@
                 >
                 <a
                     href="https://sphn.ch/wp-content/uploads/2024/03/saez-2023-1250296756.pdf"
-                    class="flex items-center gap-2 hover:text-tertiary-500"
+                    class="flex items-center gap-2 hover:text-tertiary-500 underline"
                     target="_blank"
                 >
                     Schweizerische Ärztezeitung 2023;104(43):18–21 (in German)
@@ -116,7 +116,7 @@
                 >
                 <a
                     href="https://www.20min.ch/fr/story/ils-veulent-traquer-les-soins-inutiles-prescrits-aux-patients-581037828005"
-                    class="flex items-center gap-2 hover:text-tertiary-500"
+                    class="flex items-center gap-2 hover:text-tertiary-500 underline"
                     target="_blank"
                 >
                     20 Minutes, 25 August 2022 (in French)

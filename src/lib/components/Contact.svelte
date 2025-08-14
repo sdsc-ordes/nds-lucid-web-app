@@ -1,62 +1,66 @@
 <script lang="ts">
-// You can add props or logic here if needed in the future
-import { onMount } from "svelte";
-import { t } from "$lib/i18n/i18n";
+    // You can add props or logic here if needed in the future
+    import { onMount } from "svelte";
+    import { t } from "$lib/i18n/i18n";
 
-let observer: IntersectionObserver;
-let animatedElements = new Set();
+    let observer: IntersectionObserver;
+    let animatedElements = new Set();
 
-onMount(() => {
-    observer = new IntersectionObserver(
-        (entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting && !animatedElements.has(entry.target)) {
-                    entry.target.classList.add("is-visible");
-                    animatedElements.add(entry.target);
-                }
-            });
-        },
-        {
-            threshold: 0.3,
-            rootMargin: "0px 0px -200px 0px",
-        },
-    );
+    onMount(() => {
+        observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (
+                        entry.isIntersecting &&
+                        !animatedElements.has(entry.target)
+                    ) {
+                        entry.target.classList.add("is-visible");
+                        animatedElements.add(entry.target);
+                    }
+                });
+            },
+            {
+                threshold: 0.3,
+                rootMargin: "0px 0px -200px 0px",
+            },
+        );
 
-    document.querySelectorAll(".animate-on-scroll").forEach((el) => {
-        observer.observe(el);
+        document.querySelectorAll(".animate-on-scroll").forEach((el) => {
+            observer.observe(el);
+        });
+
+        return () => {
+            if (observer) observer.disconnect();
+        };
     });
-
-    return () => {
-        if (observer) observer.disconnect();
-    };
-});
 </script>
 
+<section id="contact" class="w-full flex flex-col justify-center items-center relative overflow-hidden">
+    <div class="absolute inset-0 bg-tertiary-500/13"></div>
 
-<section id="contact" class="mb-12 mt-12">
-  <div class="max-w-7xl mx-auto w-full">
-    <div class="relative z-10 p-6">
-      <div
-        class="bg-surface-contrast-50 dark:bg-primary-200 p-4 sm:p-4 shadow-lg sm:w-2/3 ml-auto header-slide-in animate-on-scroll"
-      >
-        <h1 class="text-surface-50-950 text-xl sm:text-2xl font-bold text-right">
-          {$t("contact.contact-title")}
-        </h1>
-      </div>
-      <div class="text-base text-surface-contrast-50 dark:text-primary-100 space-y-4 px-4 py-8 text-right">
-        <p>{$t("contact.contact-description")}</p>
-        <button
-          class="btn preset-filled-tertiary-500 mt-4"
-          onclick={() => window.open('mailto:jean.regina@chuv.ch')}
-        >
-          {$t("contact.contact-button")}
-        </button>
-        <!-- You can add more contact details or a form here -->
-      </div>
+    <div class="max-w-7xl mx-auto w-full">
+        <div class="relative z-10 p-8">
+            <h5
+                class="text-surface-950 text-lg sm:text-xl font-bold text-left"
+            >
+                {$t("contact.contact-title")}
+            </h5>
+
+            <div
+                class="text-base text-surface-contrast-50 dark:text-primary-100 text-left"
+            >
+                <p>{$t("contact.contact-description")}</p>
+                <button
+                    class="btn bg-surface-contrast-50 text-surface-50 font-light rounded-lg mt-4"
+                    onclick={() => window.open("mailto:jean.regina@chuv.ch")}
+                >
+                    {$t("contact.contact-button")}
+                </button>
+                <!-- You can add more contact details or a form here -->
+            </div>
+        </div>
     </div>
-  </div>
-</section> 
-
+</section>
 
 <style>
     :global(.animate-on-scroll) {
