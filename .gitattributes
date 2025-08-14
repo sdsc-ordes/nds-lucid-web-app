@@ -6,13 +6,16 @@
 # staging/commiting.
 #
 # Please read the docs first: https://git-scm.com/docs/gitattributes
+#
 # Restrictions:
 #  - No backslashes for paths! (also on Windows)
 #  - For spaces in paths use `[[:space:]]`.
+
 # Overall LF lineendings for the
 # following files.
 # ===============================
 * text=auto eol=lf
+
 # Default attribute patterns for common binary files
 # which should be stored in Git LFS.
 # ==================================================
@@ -26,8 +29,10 @@
 *.[Tt][Ii][Ff][Ff] filter=lfs diff=lfs merge=lfs -text
 *.[Pp][Ss][Dd] filter=lfs diff=lfs merge=lfs -text
 *.[Aa][Ii] filter=lfs diff=lfs merge=lfs -text
+
 # Media
 *.[Pp][Dd][Ff] filter=lfs diff=lfs merge=lfs -text
+
 # Video/Audio
 *.[Mm][Oo][Vv] filter=lfs diff=lfs merge=lfs -text
 *.[Mm][Pp]4 filter=lfs diff=lfs merge=lfs -text
@@ -42,6 +47,7 @@
 *.[Oo][Gg][Gg] filter=lfs diff=lfs merge=lfs -text
 *.[Mm][Pp]3 filter=lfs diff=lfs merge=lfs -text
 *.[Ww][Aa][Vv] filter=lfs diff=lfs merge=lfs -text
+
 # MS Office
 *.[Dd][Oo][Cc] filter=lfs diff=lfs merge=lfs -text
 *.[Dd][Oo][Cc][Xx] filter=lfs diff=lfs merge=lfs -text
@@ -50,11 +56,13 @@
 *.[Xx][Ll][Ss] filter=lfs diff=lfs merge=lfs -text
 *.[Xx][Ll][Ss][Xx] filter=lfs diff=lfs merge=lfs -text
 *.[Dd][Oo][Tt][Xx] filter=lfs diff=lfs merge=lfs -text
+
 # Fonts
 *.[Tt][Tt][Ff] filter=lfs diff=lfs merge=lfs -text
 *.[Oo][Tt][Ff] filter=lfs diff=lfs merge=lfs -text
 *.[Ww][Oo][Ff][Ff] filter=lfs diff=lfs merge=lfs -text
 *.[Ww][Oo][Ff][Ff]2 filter=lfs diff=lfs merge=lfs -text
+
 # Data Zips
 *.[Zz][Ii][Pp] filter=lfs diff=lfs merge=lfs -text
 *.[Zz] filter=lfs diff=lfs merge=lfs -text
@@ -69,6 +77,7 @@
 *.[Ss]7[Zz] filter=lfs diff=lfs merge=lfs -text
 *.[Rr][Aa][Rr] filter=lfs diff=lfs merge=lfs -text
 *.[Bb][Zz][Ii][Pp] filter=lfs diff=lfs merge=lfs -text
+
 # Packages
 *.[Xx][Pp][Ii] filter=lfs diff=lfs merge=lfs -text
 *.[Dd][Mm][Gg] filter=lfs diff=lfs merge=lfs -text
@@ -83,13 +92,16 @@
 *.[Dd][Ee][Bb] filter=lfs diff=lfs merge=lfs -text
 *.[Rr][Pp][Mm] filter=lfs diff=lfs merge=lfs -text
 *.[Jj][Aa][Rr] filter=lfs diff=lfs merge=lfs -text
+
 # Libraries
 *.[Pp][Dd][Bb] filter=lfs diff=lfs merge=lfs -text
 *.[Dd][Ll][Ll] filter=lfs diff=lfs merge=lfs -text
 *.[Ll][Ii][Bb] filter=lfs diff=lfs merge=lfs -text
+
 # General binary
 *.[Bb][Ii][Nn] filter=lfs diff=lfs merge=lfs -text
 *.[Ee][Xx][Ee] filter=lfs diff=lfs merge=lfs -text
+
 # Override LFS settings for static directory
 static/**/*.png !filter !diff !merge text
 static/**/*.jpg !filter !diff !merge text
@@ -97,3 +109,4 @@ static/**/*.jpeg !filter !diff !merge text
 static/**/*.svg !filter !diff !merge text
 static/**/*.pdf !filter !diff !merge text
 static/images/hero-background.jpg !text !filter !merge !diff
+static/images/datastream/carousel-*.png !text !filter !merge !diff
