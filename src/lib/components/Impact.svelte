@@ -1,8 +1,6 @@
 <script lang="ts">  
     import { t, initLocale } from "$lib/i18n/i18n";
     import { onMount, tick } from "svelte";
-    import Map from "/images/impact/Map.svg";
-    import MapDark from "/images/impact/Map-dark.svg";
     initLocale();
     
     let observer: IntersectionObserver;
@@ -50,7 +48,7 @@
     <section class="w-full flex flex-col justify-center items-center relative overflow-hidden">
 
 
-    <div class="absolute inset-0 bg-tertiary-500/10 dark:bg-primary-900"></div>
+    <div class="absolute inset-0 bg-tertiary-500/13 dark:bg-surface-50"></div>
 
 
         <div class="max-w-7xl mx-auto w-full">
@@ -58,9 +56,9 @@
                 <!-- Header Bar -->
                 <section id="impact" class="mb-12 mt-12">
                     <div
-                        class="bg-surface-contrast-50 dark:bg-primary-200 p-4 sm:p-4 shadow-lg header-slide-in animate-on-scroll"
+                        class="bg-surface-contrast-50 p-4 sm:p-4 shadow-lg header-slide-in animate-on-scroll"
                     >
-                        <h1 class="text-surface-50-950 text-xl sm:text-2xl font-bold text-center">
+                        <h1 class="text-surface-50 text-xl sm:text-2xl font-bold text-center">
                             {$t("impact.impact-title")}
                         </h1>
                     </div>
@@ -71,14 +69,9 @@
                     <!-- Mobile: Image above content -->
                     <div class="block lg:hidden w-full flex items-center justify-center mb-8">
                         <img 
-                            src={Map} 
+                            src="/images/impact/Map.svg" 
                             alt="Background Map" 
-                            class="w-3/4 h-3/4 object-contain dark:hidden"
-                        />
-                        <img 
-                            src={MapDark} 
-                            alt="Background Map" 
-                            class="w-3/4 h-3/4 object-contain hidden dark:block"
+                            class="w-3/4 h-3/4 object-contain"
                         />
                     </div>
 
@@ -87,25 +80,20 @@
                         class="hidden lg:flex absolute inset-0 w-full h-full items-center justify-center pointer-events-none"
                     >
                         <img 
-                            src={Map} 
+                            src="/images/impact/Map.svg" 
                             alt="Background Map" 
-                            class="w-3/4 h-3/4 object-contain dark:hidden"
+                            class="w-3/4 h-3/4 object-contain"
                         />
-                        <img 
-                        src={MapDark} 
-                        alt="Background Map" 
-                        class="w-3/4 h-3/4 object-contain hidden dark:block"
-                    />
                     </div>
 
                     <!-- Section 1: Left aligned -->
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center p-6 sm:p-8 relative z-10">
                         <div class="order-2 lg:order-1 text-center lg:text-left animate-on-scroll">
                             <div class="max-w-md md:max-w-sm mx-auto lg:mx-0">
-                                <h2 class="text-lg sm:text-2xl font-bold text-surface-contrast-50 dark:text-primary-200 mb-6 ">
+                                <h2 class="text-lg sm:text-2xl font-bold text-tertiary-500 mb-6 ">
                                     {$t("impact.unknown-title")}
                                 </h2>
-                                <p class="text-sm sm:text-base text-surface-contrast-50 dark:text-primary-200 leading-relaxed ">
+                                <p class="text-sm sm:text-base text-surface-contrast-50 leading-relaxed ">
                                     {$t("impact.unknown-description")}
                                 </p>
                             </div>
@@ -118,10 +106,10 @@
                         <div class="order-1 lg:order-1"></div>
                         <div class="order-2 lg:order-2 text-center lg:text-left animate-on-scroll">
                             <div class="max-w-md md:max-w-sm mx-auto lg:mx-0 lg:ml-auto">
-                                <h2 class="text-lg sm:text-2xl font-bold text-surface-contrast-50 dark:text-primary-200 mb-6 ">
+                                <h2 class="text-lg sm:text-2xl font-bold text-tertiary-500 mb-6 ">
                                     {$t("impact.harm-title")}
                                 </h2>
-                                <p class="text-sm sm:text-base text-surface-contrast-50 dark:text-primary-200 leading-relaxed ">
+                                <p class="text-sm sm:text-base text-surface-contrast-50 leading-relaxed ">
                                     {$t("impact.harm-description")}
                                 </p>
                             </div>
@@ -132,10 +120,10 @@
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center p-6 sm:p-8 relative z-10">
                         <div class="order-2 lg:order-1 text-center lg:text-left animate-on-scroll">
                             <div class="max-w-md md:max-w-sm mx-auto lg:mx-0">
-                                <h2 class="text-lg sm:text-2xl font-bold text-surface-contrast-50 dark:text-primary-200 mb-6 ">
+                                <h2 class="text-lg sm:text-2xl font-bold text-tertiary-500 mb-6 ">
                                     {$t("impact.healthcare-cost-title")}
                                 </h2>   
-                                <p class="text-sm sm:text-base text-surface-contrast-50 dark:text-primary-200 leading-relaxed ">
+                                <p class="text-sm sm:text-base text-surface-contrast-50 leading-relaxed ">
                                     {$t("impact.healthcare-cost-description")}
                                 </p>
                             </div>

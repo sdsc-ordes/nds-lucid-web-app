@@ -1,7 +1,5 @@
 <script lang="ts">
     import { t } from "$lib/i18n/i18n";
-    import { handleNavClick } from "$lib/utils/scroll";
-    import HeroBackground from "/images/hero/hero-background.jpg";
 </script>
 
 <!-- Hero Section - Full Screen with Parallax -->
@@ -11,7 +9,7 @@
 >
     <!-- Background Image -->
     <img
-        src={HeroBackground}
+        src="/images/hero/hero-background.jpg"
         alt="Hero background"
         class="absolute inset-0 w-full h-full object-cover"
     />

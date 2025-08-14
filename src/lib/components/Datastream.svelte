@@ -3,12 +3,14 @@
     import { onMount } from "svelte";
     import { tick } from "svelte";
     import { ChevronLeft, ChevronRight } from "lucide-svelte";
-    import Carousel1 from "/images/datastream/carousel-1.jpg";
-import Carousel2 from "/images/datastream/carousel-2.jpg";
-import Carousel3 from "/images/datastream/carousel-3.jpg";
-import Carousel4 from "/images/datastream/carousel-4.jpg";
-import Carousel5 from "/images/datastream/carousel-5.jpg";
-import Carousel6 from "/images/datastream/carousel-6.jpg";
+    const carouselImages = [
+    "/images/datastream/carousel-1.jpg",
+    "/images/datastream/carousel-2.jpg",
+    "/images/datastream/carousel-3.jpg",
+    "/images/datastream/carousel-4.jpg",
+    "/images/datastream/carousel-5.jpg",
+    "/images/datastream/carousel-6.jpg"
+];
 
     let observer: IntersectionObserver;
     let animatedElements = new Set();
@@ -16,38 +18,11 @@ import Carousel6 from "/images/datastream/carousel-6.jpg";
     let currentSlide = 0;
 
     // Carousel data with images and content
-    const carouselData = [
-        {
-            image: Carousel1,
-            title: "datastream.layer1-title",
-            description: "datastream.layer1-description",
-        },
-        {
-            image: Carousel2,
-            title: "datastream.layer2-title",
-            description: "datastream.layer2-description",
-        },
-        {
-            image: Carousel3,
-            title: "datastream.layer3-title",
-            description: "datastream.layer3-description",
-        },
-        {
-            image: Carousel4,
-            title: "datastream.layer4-title",
-            description: "datastream.layer4-description",
-        },
-        {
-            image: Carousel5,
-            title: "datastream.layer5-title",
-            description: "datastream.layer5-description",
-        },
-        {
-            image: Carousel6,
-            title: "datastream.layer6-title",
-            description: "datastream.layer6-description",
-        },
-    ];
+    const carouselData = carouselImages.map((image, index) => ({
+        image,
+        title: `datastream.layer${index + 1}-title`,
+        description: `datastream.layer${index + 1}-description`,
+    }));
 
     onMount(() => {
         tick().then(() => {
