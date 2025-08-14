@@ -186,24 +186,26 @@
                     </button>
                 </div>
 
-                <!-- Indicator Circles -->
-                <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-6 pointer-events-none">
-                    {#each carouselData as _, i}
-                        <button
-                            class="w-3 h-3 rounded-full pointer-events-auto transition-all duration-200 {currentSlide === i ? 'bg-tertiary-500' : 'bg-surface-950-50/90'}"
-                            onclick={() => {
-                                if (carouselContainer) {
-                                    carouselContainer.scrollTo({ left: carouselContainer.clientWidth * i, behavior: "smooth" });
-                                    currentSlide = i;
-                                }
-                            }}
-                            aria-label="Go to slide {i + 1}"
-                        >
-                        </button>
-                    {/each}
-                </div>
+
             </div>
         </div>
+    </div>
+
+    <!-- Indicator Circles -->
+    <div class="flex justify-center space-x-6 mt-8">
+        {#each carouselData as _, i}
+            <button
+                class="w-3 h-3 rounded-full transition-all duration-200 {currentSlide === i ? 'bg-tertiary-500' : 'bg-surface-950-50/90'}"
+                onclick={() => {
+                    if (carouselContainer) {
+                        carouselContainer.scrollTo({ left: carouselContainer.clientWidth * i, behavior: "smooth" });
+                        currentSlide = i;
+                    }
+                }}
+                aria-label="Go to slide {i + 1}"
+            >
+            </button>
+        {/each}
     </div>
 </section>
 <style>
