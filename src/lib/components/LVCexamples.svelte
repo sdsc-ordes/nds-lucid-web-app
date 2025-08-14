@@ -1,6 +1,10 @@
 <script lang="ts">
     import { t, initLocale } from "$lib/i18n/i18n";
     import { onMount, onDestroy, tick } from "svelte";
+    import Tests from "/images/lvc-examples/Tests.svg";
+    import Pills from "/images/lvc-examples/Pills.svg";
+    import Transfusion from "/images/lvc-examples/Transfusion.svg";
+    import Sleep from "/images/lvc-examples/Sleep.svg";
     initLocale();
 
     let observer: IntersectionObserver;
@@ -78,7 +82,7 @@
             </div>
             <div class="order-1 lg:order-2 flex justify-center">
                 <img
-                    src="/lvc-examples/Tests.svg"
+                    src={Tests}
                     alt="Illustration of lab tests"
                     class=" w-full max-w-xs sm:max-w-sm animate-on-scroll"
                 />
@@ -106,7 +110,7 @@
             <div class="order-1 lg:order-1 flex justify-center">
                 <!-- Placeholder for Image 2 -->
                 <img
-                    src="/lvc-examples/Pills.svg"
+                    src={Pills}
                     alt="Illustration of medication"
                     class=" w-full max-w-xs sm:max-w-sm animate-on-scroll"
                 />
@@ -132,7 +136,7 @@
             </div>
             <div class="order-1 lg:order-2 flex justify-center">
                 <img
-                    src="/lvc-examples/Transfusion.svg"
+                    src={Transfusion}
                     alt="Illustration of blood transfusion"
                     class=" w-full max-w-xs sm:max-w-sm animate-on-scroll"
                 />
@@ -160,7 +164,7 @@
             <div class="order-1 lg:order-1 flex justify-center">
                 <!-- Placeholder for Image 2 -->
                 <img
-                    src="/lvc-examples/Sleep.svg"
+                    src={Sleep}
                     alt="Illustration of sleep"
                     class=" w-full max-w-xs sm:max-w-sm animate-on-scroll"
                 />

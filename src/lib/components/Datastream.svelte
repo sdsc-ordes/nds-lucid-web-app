@@ -3,6 +3,12 @@
     import { onMount } from "svelte";
     import { tick } from "svelte";
     import { ChevronLeft, ChevronRight } from "lucide-svelte";
+    import Carousel1 from "/images/datastream/carousel-1.png";
+    import Carousel2 from "/images/datastream/carousel-2.png";
+    import Carousel3 from "/images/datastream/carousel-3.png";
+    import Carousel4 from "/images/datastream/carousel-4.png";
+    import Carousel5 from "/images/datastream/carousel-5.png";
+    import Carousel6 from "/images/datastream/carousel-6.png";
 
     let observer: IntersectionObserver;
     let animatedElements = new Set();
@@ -12,32 +18,32 @@
     // Carousel data with images and content
     const carouselData = [
         {
-            image: "/images/carousel/carousel-1.png",
+            image: Carousel1,
             title: "datastream.layer1-title",
             description: "datastream.layer1-description",
         },
         {
-            image: "/images/carousel/carousel-2.png",
+            image: Carousel2,
             title: "datastream.layer2-title",
             description: "datastream.layer2-description",
         },
         {
-            image: "/images/carousel/carousel-3.png",
+            image: Carousel3,
             title: "datastream.layer3-title",
             description: "datastream.layer3-description",
         },
         {
-            image: "/images/carousel/carousel-4.png",
+            image: Carousel4,
             title: "datastream.layer4-title",
             description: "datastream.layer4-description",
         },
         {
-            image: "/images/carousel/carousel-5.png",
+            image: Carousel5,
             title: "datastream.layer5-title",
             description: "datastream.layer5-description",
         },
         {
-            image: "/images/carousel/carousel-6.png",
+            image: Carousel6,
             title: "datastream.layer6-title",
             description: "datastream.layer6-description",
         },

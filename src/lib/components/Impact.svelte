@@ -1,6 +1,8 @@
 <script lang="ts">  
     import { t, initLocale } from "$lib/i18n/i18n";
     import { onMount, tick } from "svelte";
+    import Map from "/images/impact/Map.svg";
+    import MapDark from "/images/impact/Map-dark.svg";
     initLocale();
     
     let observer: IntersectionObserver;
@@ -69,12 +71,12 @@
                     <!-- Mobile: Image above content -->
                     <div class="block lg:hidden w-full flex items-center justify-center mb-8">
                         <img 
-                            src="/lvc-examples/Map.svg" 
+                            src={Map} 
                             alt="Background Map" 
                             class="w-3/4 h-3/4 object-contain dark:hidden"
                         />
                         <img 
-                            src="/lvc-examples/Map-dark.svg" 
+                            src={MapDark} 
                             alt="Background Map" 
                             class="w-3/4 h-3/4 object-contain hidden dark:block"
                         />
@@ -85,12 +87,12 @@
                         class="hidden lg:flex absolute inset-0 w-full h-full items-center justify-center pointer-events-none"
                     >
                         <img 
-                            src="/lvc-examples/Map.svg" 
+                            src={Map} 
                             alt="Background Map" 
                             class="w-3/4 h-3/4 object-contain dark:hidden"
                         />
                         <img 
-                        src="/lvc-examples/Map-dark.svg" 
+                        src={MapDark} 
                         alt="Background Map" 
                         class="w-3/4 h-3/4 object-contain hidden dark:block"
                     />
