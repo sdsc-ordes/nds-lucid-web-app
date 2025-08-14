@@ -35,20 +35,21 @@
     });
 </script>
 
-<section id="contact" class="w-full flex flex-col justify-center items-center relative overflow-hidden">
+<section
+    id="contact"
+    class="w-full flex flex-col justify-center items-center relative overflow-hidden"
+>
+    <!-- backgrouund for dark mode -->
+    <div class="absolute inset-0 bg-surface-50"></div>
     <div class="absolute inset-0 bg-tertiary-500/13"></div>
 
     <div class="max-w-7xl mx-auto w-full">
         <div class="relative z-10 p-8">
-            <h5
-                class="text-surface-950 text-lg sm:text-xl font-bold text-left"
-            >
+            <h5 class="text-surface-950 text-lg sm:text-xl font-bold text-left">
                 {$t("contact.contact-title")}
             </h5>
 
-            <div
-                class="text-base text-surface-contrast-50 dark:text-primary-100 text-left"
-            >
+            <div class="text-base text-surface-contrast-50 text-left">
                 <p>{$t("contact.contact-description")}</p>
                 <button
                     class="btn bg-surface-contrast-50 text-surface-50 font-light rounded-lg mt-4"

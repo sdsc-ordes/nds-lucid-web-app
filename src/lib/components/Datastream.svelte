@@ -94,7 +94,7 @@
     <!-- Header -->
     <div class="max-w-7xl mx-auto px-6 mb-16">
         <div
-            class="bg-surface-contrast-50 dark:bg-primary-200 p-4 sm:p-4 shadow-lg header-slide-in animate-on-scroll"
+            class="bg-surface-contrast-50-950 p-4 sm:p-4 shadow-lg header-slide-in animate-on-scroll"
         >
             <h1
                 class="text-surface-50-950 text-xl sm:text-2xl font-bold text-center"
@@ -123,7 +123,7 @@
                                     <h2 class="text-2xl font-bold text-tertiary-500">
                                         {$t(item.title)}
                                     </h2>
-                                    <p class="text-base leading-relaxed text-surface-50 font-normal">
+                                    <p class="text-base leading-relaxed text-surface-50">
                                         {@html $t(item.description)}
                                     </p>
                                 </div>
@@ -187,10 +187,10 @@
                 </div>
 
                 <!-- Indicator Circles -->
-                <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 pointer-events-none">
+                <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-6 pointer-events-none">
                     {#each carouselData as _, i}
                         <button
-                            class="w-3 h-3 rounded-full pointer-events-auto transition-all duration-200 {currentSlide === i ? 'bg-tertiary-500' : 'bg-surface-950-50/70'}"
+                            class="w-3 h-3 rounded-full pointer-events-auto transition-all duration-200 {currentSlide === i ? 'bg-tertiary-500' : 'bg-surface-950-50/90'}"
                             onclick={() => {
                                 if (carouselContainer) {
                                     carouselContainer.scrollTo({ left: carouselContainer.clientWidth * i, behavior: "smooth" });

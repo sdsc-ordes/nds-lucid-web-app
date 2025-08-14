@@ -41,7 +41,7 @@
     <section id="low-value-care" class="mb-12 mt-12">
         <!-- Title Container -->
         <div
-            class="bg-surface-contrast-50 dark:bg-primary-200 p-4 sm:p-4 shadow-lg ml-auto header-slide-in animate-on-scroll"
+            class="bg-surface-contrast-50-950 p-4 sm:p-4 shadow-lg ml-auto header-slide-in animate-on-scroll"
         >
             <h1 class="text-surface-50-950 text-xl sm:text-2xl font-bold text-center">
                 {$t("lvc.lvc-title")}
@@ -50,7 +50,7 @@
 
         <!-- Subtitle Container (matched width/alignment) -->
         <div
-            class="sm:w-2/3 mx-auto text-lg sm:text-2xl leading-relaxed text-surface-contrast-50 dark:text-primary-100 px-4 py-8 text-center"
+            class="sm:w-2/3 mx-auto text-lg sm:text-2xl leading-relaxed text-surface-contrast-50-950 px-4 py-8 text-center"
         >
             <p>{$t("lvc.lvc-description")}</p>
         </div>
