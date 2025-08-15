@@ -1,40 +1,69 @@
 <p align="center">
-  <img src="./docs/assets/logo.svg" alt="project logo" width="250">
+  <img src="./static/logos/logo.svg" alt="LUCID Project Logo" width="250">
 </p>
 
 <h1 align="center">
-  my-project
+  LUCID Web Application
 </h1>
 <p align="center">
+  Quality of Care in Swiss University Hospitals
 </p>
 
-[![Current Release](https://img.shields.io/github/release/swissdatasciencecenter/my-project.svg?label=release)](https://github.com/swissdatasciencecenter/my-project/releases/latest)
-[![Pipeline Status](https://img.shields.io/github/actions/workflow/status/swissdatasciencecenter/my-project/normal.yaml?label=ci)](https://github.com/swissdatasciencecenter/my-project/actions/workflows/normal.yaml)
 [![License label](https://img.shields.io/badge/License-Apache2.0-blue.svg?)](http://www.apache.org/licenses/LICENSE-2.0.html)
 
-**Authors:**
+## About LUCID
 
-- [Alice Wonderland](mailto:alice.wonderland@sdsc.ethz.ch)
-- [Bob Wonderland](mailto:bob.wonderland@sdsc.ethz.ch)
+The LUCID project aims to improve healthcare quality in Swiss university hospitals through data-driven insights and patient-centered care. This web application serves as the central platform for:
 
-## Installation
+- Creating a national data stream for monitoring hospital care quality
+- Identifying and understanding low-value care practices
+- Collecting and analyzing patient-reported outcomes (PROMs) and experiences (PREMs)
+- Providing researchers with access to valuable healthcare data
+- Engaging stakeholders in improving patient care
 
-Describe the installation instruction here.
+## Features
 
-## Usage
+- 🌍 Multi-language support (English, French, German)
+- 🏥 Low-value care examples and impact analysis
+- 📈 National data stream explanation
+- 👥 Stakeholder-specific information portals
+- 📱 Responsive design for all devices
 
-Describe the installation instruction here.
+## Technology Stack
+
+- Frontend Framework: Svelte
+- Styling: Tailwind CSS
+- Internationalization: i18n
+- Build Tool: Vite
+- Language: TypeScript
 
 ## Development
 
-Read first the [Contribution Guidelines](/CONTRIBUTING.md).
+1. Install dependencies:
+   ```bash
+   pnpm install
+   ```
 
-For technical documentation on setup and development, see the
-[Development Guide](docs/development-guide.md)
+2. Start development server:
+   ```bash
+   pnpm dev
+   ```
 
-## Acknowledgement
+For detailed technical documentation and contribution guidelines, see:
+- [Contribution Guidelines](/CONTRIBUTING.md)
+- [Development Guide](docs/development-guide.md)
 
-Acknowledge all contributors and external collaborators here.
+## Project Structure
+
+```
+src/
+├── lib/            # Shared components and utilities
+│   ├── components/ # Svelte components
+│   ├── i18n/      # Internationalization
+│   └── utils/     # Utility functions
+├── routes/         # Page routes
+└── static/        # Static assets
+```
 
 ## Copyright
 
