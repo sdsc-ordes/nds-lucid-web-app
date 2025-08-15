@@ -1,20 +1,16 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
-title: "My Project"
+title: "LUCID web application"
 
 authors:
-    - family-names: Wonderland
-      given-names: Alice
-      orcid: "..."
-      affiliation: "SDSC - Swiss Data Science Center"
-    - family-names: Wonderland
-      given-names: Bob
+    - family-names: Casey
+      given-names: Hannah Laureen
       orcid: "..."
       affiliation: "SDSC - Swiss Data Science Center"
 date-released: 2025-13-14
 version: "0.0.1"
 doi: ""
-url: https://github.com/swissdatasciencecenter/my-project
-repository-code: https://github.com/swissdatasciencecenter/my-project
+url: https://github.com/sdsc-ordes/nds-lucid-web-app
+repository-code: https://github.com/sdsc-ordes/nds-lucid-web-app
 keywords: []
 license: apache2
