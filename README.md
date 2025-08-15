@@ -11,9 +11,9 @@
 
 [![License label](https://img.shields.io/badge/License-Apache2.0-blue.svg?)](http://www.apache.org/licenses/LICENSE-2.0.html)
 
-## About LUCID
+## 🎯 About LUCID
 
-The LUCID project aims to improve healthcare quality in Swiss university hospitals through data-driven insights and patient-centered care. This web application serves as the central platform for:
+The LUCID project aims to improve healthcare quality in Swiss university hospitals through data-driven insights and patient-centered care. This web application serves as the landing page for the LUCID project:
 
 - Creating a national data stream for monitoring hospital care quality
 - Identifying and understanding low-value care practices
@@ -21,7 +21,7 @@ The LUCID project aims to improve healthcare quality in Swiss university hospita
 - Providing researchers with access to valuable healthcare data
 - Engaging stakeholders in improving patient care
 
-## Features
+## ✨ Features
 
 - 🌍 Multi-language support (English, French, German)
 - 🏥 Low-value care examples and impact analysis
@@ -29,15 +29,15 @@ The LUCID project aims to improve healthcare quality in Swiss university hospita
 - 👥 Stakeholder-specific information portals
 - 📱 Responsive design for all devices
 
-## Technology Stack
+## 🛠️ Technology Stack
 
 - Frontend Framework: Svelte
-- Styling: Tailwind CSS
+- Styling: Tailwind CSS, Skeleton dev
 - Internationalization: i18n
 - Build Tool: Vite
 - Language: TypeScript
 
-## Development
+## 💻 Development
 
 1. Install dependencies:
    ```bash
@@ -53,7 +53,7 @@ For detailed technical documentation and contribution guidelines, see:
 - [Contribution Guidelines](/CONTRIBUTING.md)
 - [Development Guide](docs/development-guide.md)
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 src/
@@ -65,7 +65,7 @@ src/
 └── static/        # Static assets
 ```
 
-## Copyright
+## ©️ Copyright
 
 Copyright © 2025-2028 Swiss Data Science Center (SDSC),
 [www.datascience.ch](http://www.datascience.ch/). All rights reserved. The SDSC
