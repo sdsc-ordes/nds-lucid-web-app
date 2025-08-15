@@ -40,6 +40,7 @@ The LUCID project aims to improve healthcare quality in Swiss university hospita
 ## 💻 Development
 
 1. Install dependencies:
+
    ```bash
    pnpm install
    ```
@@ -50,6 +51,7 @@ The LUCID project aims to improve healthcare quality in Swiss university hospita
    ```
 
 For detailed technical documentation and contribution guidelines, see:
+
 - [Contribution Guidelines](/CONTRIBUTING.md)
 - [Development Guide](docs/development-guide.md)
 

@@ -10,10 +10,10 @@ const config = {
     kit: {
         // Use Vercel adapter for proper deployment
         adapter: adapter({
-            runtime: 'nodejs20.x',
+            runtime: "nodejs20.x",
             // Enable asset handling
-            assets: true
-        })
+            assets: true,
+        }),
     },
 };
 
