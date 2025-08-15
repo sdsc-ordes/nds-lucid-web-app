@@ -4,7 +4,7 @@
     import { locale, locales, setLocale } from "$lib/i18n/i18n";
     import type { Locale } from "$lib/i18n/i18n";
     import { onMount } from "svelte";
-    import { handleNavClick } from "$lib/utils/scroll";
+    import { handleNavClick, getHeaderHeight } from "$lib/utils/scroll";
 
     // Dropdown states for language selector and mobile menu
     let dropdownOpen = false;
@@ -19,25 +19,21 @@
             scrollY = window.scrollY;
             isScrolled = scrollY > 50;
 
-            // Get header height for offset calculations
-            const headerHeight = document.querySelector('.navbar-wrapper')?.clientHeight || 0;
+            // Get header height and calculate threshold
+            const headerHeight = getHeaderHeight();
+            const scrollThreshold = headerHeight + 10; // 10px buffer
             
             // Update active section based on scroll position
             const sections = navLinks.map(link => link.href);
-            const windowHeight = window.innerHeight;
-            const documentHeight = document.documentElement.scrollHeight;
             
             // Check if we're at the bottom of the page
-            if (window.innerHeight + window.scrollY >= documentHeight - 50) {
+            if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 50) {
                 activeSection = sections[sections.length - 1];
                 return;
             }
 
-            // Calculate the scroll threshold considering header height
-            const scrollThreshold = headerHeight + 10; // 10px buffer
-
             // Find the section that's currently in view
-            let currentSection = '';
+            let bestSection = '';
             let minDistance = Infinity;
 
             for (const section of sections) {
@@ -46,23 +42,21 @@
                     const rect = element.getBoundingClientRect();
                     const distance = Math.abs(rect.top - scrollThreshold);
                     
-                    // If this section is closer to our threshold than the previous best match
+                    // Update if this section is closer to our threshold
                     if (distance < minDistance) {
                         minDistance = distance;
-                        currentSection = section;
+                        bestSection = section;
                     }
                 }
             }
 
-            if (currentSection) {
-                activeSection = currentSection;
+            if (bestSection) {
+                activeSection = bestSection;
             }
         };
 
-        // Initial update
+        // Initial update and event listeners
         updateScroll();
-
-        // Add scroll listener
         window.addEventListener("scroll", updateScroll, { passive: true });
         return () => window.removeEventListener("scroll", updateScroll);
     });
