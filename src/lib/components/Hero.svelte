@@ -9,7 +9,7 @@
 >
     <!-- Background Image -->
     <img
-        src="/images/hero/hero-background.jpeg"
+        src="/images/hero/hero-background.webp"
         alt="Hero background"
         class="absolute inset-0 w-full h-full object-cover"
     />

@@ -4,12 +4,12 @@
     import { tick } from "svelte";
     import { ChevronLeft, ChevronRight } from "lucide-svelte";
     const carouselImages = [
-    "/images/datastream/carousel-1-min.jpeg",
-    "/images/datastream/carousel-2-min.jpeg",
-    "/images/datastream/carousel-3-min.jpeg",
-    "/images/datastream/carousel-4-min.jpeg",
-    "/images/datastream/carousel-5-min.jpeg",
-    "/images/datastream/carousel-6-min.jpeg"
+    "/images/datastream/carousel-1-min.webp",
+    "/images/datastream/carousel-2-min.webp",
+    "/images/datastream/carousel-3-min.webp",
+    "/images/datastream/carousel-4-min.webp",
+    "/images/datastream/carousel-5-min.webp",
+    "/images/datastream/carousel-6-min.webp"
 ];
 
     let observer: IntersectionObserver;
