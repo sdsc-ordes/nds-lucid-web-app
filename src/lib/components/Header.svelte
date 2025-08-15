@@ -19,6 +19,9 @@
             scrollY = window.scrollY;
             isScrolled = scrollY > 50;
 
+            // Get header height for offset calculations
+            const headerHeight = document.querySelector('.navbar-wrapper')?.clientHeight || 0;
+            
             // Update active section based on scroll position
             const sections = navLinks.map(link => link.href);
             const windowHeight = window.innerHeight;
@@ -30,19 +33,36 @@
                 return;
             }
 
-            // Otherwise check each section
+            // Calculate the scroll threshold considering header height
+            const scrollThreshold = headerHeight + 10; // 10px buffer
+
+            // Find the section that's currently in view
+            let currentSection = '';
+            let minDistance = Infinity;
+
             for (const section of sections) {
                 const element = document.getElementById(section);
                 if (element) {
                     const rect = element.getBoundingClientRect();
-                    if (rect.top <= 200 && rect.bottom >= 200) {
-                        activeSection = section;
-                        break;
+                    const distance = Math.abs(rect.top - scrollThreshold);
+                    
+                    // If this section is closer to our threshold than the previous best match
+                    if (distance < minDistance) {
+                        minDistance = distance;
+                        currentSection = section;
                     }
                 }
             }
+
+            if (currentSection) {
+                activeSection = currentSection;
+            }
         };
 
+        // Initial update
+        updateScroll();
+
+        // Add scroll listener
         window.addEventListener("scroll", updateScroll, { passive: true });
         return () => window.removeEventListener("scroll", updateScroll);
     });
@@ -79,10 +99,7 @@
         event.preventDefault();
         mobileMenuOpen = false; // Close mobile menu
         activeSection = href; // Update active section immediately
-        const element = document.getElementById(href);
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
-        }
+        handleNavClick(event, href);
     };
 </script>
 
