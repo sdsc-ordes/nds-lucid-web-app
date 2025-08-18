@@ -1,9 +1,8 @@
-[data-theme="lucid"] {
+[data-theme='lucid'] {
     --text-scaling: 1.067;
     --base-font-color: var(--color-surface-950);
     --base-font-color-dark: var(--color-surface-50);
-    --base-font-family:
-        Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro, sans-serif;
+    --base-font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
     --base-font-size: inherit;
     --base-line-height: inherit;
     --base-font-weight: inherit;
@@ -12,8 +11,7 @@
     --heading-font-color: inherit;
     --heading-font-color-dark: inherit;
     --heading-font-family:
-        Seravek, "Gill Sans Nova", Ubuntu, Calibri, "DejaVu Sans",
-        source-sans-pro, sans-serif;
+        Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
     --heading-font-weight: bolder;
     --heading-font-style: normal;
     --heading-letter-spacing: 0.05em;

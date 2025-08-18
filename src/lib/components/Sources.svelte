@@ -1,11 +1,8 @@
 <script lang="ts">
-    import { ExternalLink, FileText, FolderHeart, Globe } from "lucide-svelte";
+    import { ExternalLink, FileText, FolderHeart, Globe } from 'lucide-svelte'
 </script>
 
-<section
-    id="sources"
-    class="flex flex-col justify-between relative overflow-hidden"
->
+<section id="sources" class="flex flex-col justify-between relative overflow-hidden">
     <div class="max-w-7xl mx-auto w-full">
         <hr class="my-6 border-surface-contrast-50 dark:border-primary-100" />
         <div
@@ -13,15 +10,11 @@
         >
             <div class="flex items-center gap-2">
                 <Globe size={25} class="text-tertiary-500" />
-                <span class="font-bold text-tertiary-500 text-lg sm:text-xl"
-                    >Sources</span
-                >
+                <span class="font-bold text-tertiary-500 text-lg sm:text-xl">Sources</span>
             </div>
             <div class="flex items-center gap-2 hover:text-tertiary-500">
-                <a
-                    href="https://www.smartermedicine.ch/de/home"
-                    class=" underline"
-                    target="_blank">Smarter Medicine Website</a
+                <a href="https://www.smartermedicine.ch/de/home" class=" underline" target="_blank"
+                    >Smarter Medicine Website</a
                 >
                 <ExternalLink size={15} />
             </div>
@@ -34,9 +27,7 @@
                 <ExternalLink size={15} />
             </div>
             <div class="flex items-center gap-2 hover:text-tertiary-500">
-                <a href="https://sphn.ch/" class=" underline" target="_blank"
-                    >SPHN website</a
-                >
+                <a href="https://sphn.ch/" class=" underline" target="_blank">SPHN website</a>
                 <ExternalLink size={15} />
             </div>
 
@@ -49,7 +40,9 @@
             <div class="flex flex-col">
                 <span>T. Guffi, J. Ehrsam, M. Débieux et al. </span>
                 <span class="font-bold"
-                    >Monitoring low-value care in medical patients from Swiss university hospitals using a Findable, Accessible, Interoperable, Reusable (FAIR) national data stream and patient and public involvement: LUCID study protocol.</span
+                    >Monitoring low-value care in medical patients from Swiss university hospitals
+                    using a Findable, Accessible, Interoperable, Reusable (FAIR) national data
+                    stream and patient and public involvement: LUCID study protocol.</span
                 >
                 <a
                     href="https://doi.org/10.1136/bmjopen-2024-089662"
@@ -62,9 +55,7 @@
             </div>
             <div class="flex flex-col">
                 <span>M. Débieux, M. Méan</span>
-                <span class="font-bold"
-                    >Surmédicalisation en Suisse: impact et solutions.</span
-                >
+                <span class="font-bold">Surmédicalisation en Suisse: impact et solutions.</span>
                 <a
                     href="https://www.reiso.org/articles/themes/soins/12655-surmedicalisation-en-suisse-impact-et-solutions"
                     class="flex items-center gap-2 hover:text-tertiary-500 underline"
@@ -90,9 +81,7 @@
             </div>
             <div class="flex flex-col">
                 <span>I. Böhm</span>
-                <span class="font-bold"
-                    >Ein Ökosystem für die personalisierte Medizin.</span
-                >
+                <span class="font-bold">Ein Ökosystem für die personalisierte Medizin.</span>
                 <a
                     href="https://sphn.ch/wp-content/uploads/2024/03/saez-2023-1250296756.pdf"
                     class="flex items-center gap-2 hover:text-tertiary-500 underline"
@@ -125,9 +114,7 @@
             </div>
             <div class="flex items-center gap-2">
                 <FolderHeart size={25} class="text-tertiary-500" />
-                <span class="font-bold text-tertiary-500 text-lg sm:text-xl"
-                    >Posters</span
-                >
+                <span class="font-bold text-tertiary-500 text-lg sm:text-xl">Posters</span>
             </div>
             <div class="flex items-center gap-2 hover:text-tertiary-500">
                 <a
@@ -138,10 +125,8 @@
                 <ExternalLink size={15} />
             </div>
             <div class="flex items-center gap-2 hover:text-tertiary-500">
-                <a
-                    href="/posters/SGAIM2025_E-Poster_BZD.pdf"
-                    class="underline"
-                    target="_blank">BZD Poster (PDF)</a
+                <a href="/posters/SGAIM2025_E-Poster_BZD.pdf" class="underline" target="_blank"
+                    >BZD Poster (PDF)</a
                 >
                 <ExternalLink size={15} />
             </div>

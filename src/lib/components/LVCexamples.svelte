@@ -1,39 +1,36 @@
 <script lang="ts">
-    import { t, initLocale } from "$lib/i18n/i18n";
-    import { onMount, onDestroy, tick } from "svelte";
-    initLocale();
+    import { t, initLocale } from '$lib/i18n/i18n'
+    import { onMount, onDestroy, tick } from 'svelte'
+    initLocale()
 
-    let observer: IntersectionObserver;
-    let animatedElements = new Set();
+    let observer: IntersectionObserver
+    let animatedElements = new Set()
 
     onMount(async () => {
-        await tick(); // Wait for DOM
+        await tick() // Wait for DOM
         observer = new IntersectionObserver(
             (entries) => {
                 entries.forEach((entry) => {
-                    if (
-                        entry.isIntersecting &&
-                        !animatedElements.has(entry.target)
-                    ) {
-                        entry.target.classList.add("is-visible");
-                        animatedElements.add(entry.target);
+                    if (entry.isIntersecting && !animatedElements.has(entry.target)) {
+                        entry.target.classList.add('is-visible')
+                        animatedElements.add(entry.target)
                     }
-                });
+                })
             },
             {
                 threshold: 0.3,
-                rootMargin: "0px 0px -200px 0px",
-            },
-        );
+                rootMargin: '0px 0px -200px 0px',
+            }
+        )
 
-        document.querySelectorAll(".animate-on-scroll").forEach((el) => {
-            observer.observe(el);
-        });
-    });
+        document.querySelectorAll('.animate-on-scroll').forEach((el) => {
+            observer.observe(el)
+        })
+    })
 
     onDestroy(() => {
-        if (observer) observer.disconnect();
-    });
+        if (observer) observer.disconnect()
+    })
 </script>
 
 <div class="p-6 max-w-7xl mx-auto w-full">
@@ -44,7 +41,7 @@
             class="bg-surface-contrast-50-950 p-4 sm:p-4 shadow-lg ml-auto header-slide-in animate-on-scroll"
         >
             <h1 class="text-surface-50-950 text-xl sm:text-2xl font-bold text-center">
-                {$t("lvc.lvc-title")}
+                {$t('lvc.lvc-title')}
             </h1>
         </div>
 
@@ -52,27 +49,21 @@
         <div
             class="sm:w-2/3 mx-auto text-lg sm:text-2xl leading-relaxed text-surface-contrast-50-950 px-4 py-8 text-center"
         >
-            <p>{$t("lvc.lvc-description")}</p>
+            <p>{$t('lvc.lvc-description')}</p>
         </div>
     </section>
 
     <!-- Grid -->
     <section>
         <!-- Row 1 -->
-        <div
-            class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center p-6 sm:p-8"
-        >
-            <div
-                class="order-2 lg:order-1 text-center lg:text-left animate-on-scroll"
-            >
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center p-6 sm:p-8">
+            <div class="order-2 lg:order-1 text-center lg:text-left animate-on-scroll">
                 <div class="max-w-md md:max-w-sm mx-auto lg:mx-0">
-                    <h2
-                        class="text-lg sm:text-2xl font-bold text-tertiary-500 mb-2"
-                    >
-                        {$t("lvc.lab-test-title")}
+                    <h2 class="text-lg sm:text-2xl font-bold text-tertiary-500 mb-2">
+                        {$t('lvc.lab-test-title')}
                     </h2>
                     <p class="text-sm sm:text-base leading-relaxed">
-                        {$t("lvc.lab-test-description")}
+                        {$t('lvc.lab-test-description')}
                     </p>
                 </div>
             </div>
@@ -86,20 +77,14 @@
         </div>
 
         <!-- Row 2 -->
-        <div
-            class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center p-6 sm:p-8"
-        >
-            <div
-                class="order-2 lg:order-2 text-center lg:text-left animate-on-scroll"
-            >
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center p-6 sm:p-8">
+            <div class="order-2 lg:order-2 text-center lg:text-left animate-on-scroll">
                 <div class="max-w-md md:max-w-sm mx-auto lg:mx-0">
-                    <h2
-                        class="text-lg sm:text-2xl font-bold text-tertiary-500 mb-2"
-                    >
-                        {$t("lvc.sedatives-title")}
+                    <h2 class="text-lg sm:text-2xl font-bold text-tertiary-500 mb-2">
+                        {$t('lvc.sedatives-title')}
                     </h2>
                     <p class="text-sm sm:text-base leading-relaxed">
-                        {$t("lvc.sedatives-description")}
+                        {$t('lvc.sedatives-description')}
                     </p>
                 </div>
             </div>
@@ -113,20 +98,14 @@
             </div>
         </div>
         <!-- Row 3 -->
-        <div
-            class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center p-6 sm:p-8"
-        >
-            <div
-                class="order-2 lg:order-1 text-center lg:text-left animate-on-scroll"
-            >
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center p-6 sm:p-8">
+            <div class="order-2 lg:order-1 text-center lg:text-left animate-on-scroll">
                 <div class="max-w-md md:max-w-sm mx-auto lg:mx-0">
-                    <h2
-                        class="text-lg sm:text-2xl font-bold text-tertiary-500 mb-2"
-                    >
-                        {$t("lvc.transfusions-title")}
+                    <h2 class="text-lg sm:text-2xl font-bold text-tertiary-500 mb-2">
+                        {$t('lvc.transfusions-title')}
                     </h2>
                     <p class="text-sm sm:text-base leading-relaxed">
-                        {$t("lvc.transfusions-description")}
+                        {$t('lvc.transfusions-description')}
                     </p>
                 </div>
             </div>
@@ -140,20 +119,14 @@
         </div>
 
         <!-- Row 4 -->
-        <div
-            class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center p-6 sm:p-8"
-        >
-            <div
-                class="order-2 lg:order-2 text-center lg:text-left animate-on-scroll"
-            >
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center p-6 sm:p-8">
+            <div class="order-2 lg:order-2 text-center lg:text-left animate-on-scroll">
                 <div class="max-w-md md:max-w-sm mx-auto lg:mx-0">
-                    <h2
-                        class="text-lg sm:text-2xl font-bold text-tertiary-500 mb-2"
-                    >
-                        {$t("lvc.sleep-title")}
+                    <h2 class="text-lg sm:text-2xl font-bold text-tertiary-500 mb-2">
+                        {$t('lvc.sleep-title')}
                     </h2>
                     <p class="text-sm sm:text-base leading-relaxed">
-                        {$t("lvc.sleep-description")}
+                        {$t('lvc.sleep-description')}
                     </p>
                 </div>
             </div>
