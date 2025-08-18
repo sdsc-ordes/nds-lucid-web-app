@@ -1,10 +1,10 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
-@import "@skeletonlabs/skeleton";
-@import "@skeletonlabs/skeleton/optional/presets";
-@import "@skeletonlabs/skeleton/themes/cerberus";
+@import '@skeletonlabs/skeleton';
+@import '@skeletonlabs/skeleton/optional/presets';
+@import '@skeletonlabs/skeleton/themes/cerberus';
 
 @source '../node_modules/@skeletonlabs/skeleton-svelte/dist';
 
-@import "../static/themes/lucid.css";
-@import "../static/themes/coolwind.css";
+@import '../static/themes/lucid.css';
+@import '../static/themes/coolwind.css';

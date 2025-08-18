@@ -1,38 +1,35 @@
 <script lang="ts">
     // You can add props or logic here if needed in the future
-    import { onMount } from "svelte";
-    import { t } from "$lib/i18n/i18n";
+    import { onMount } from 'svelte'
+    import { t } from '$lib/i18n/i18n'
 
-    let observer: IntersectionObserver;
-    let animatedElements = new Set();
+    let observer: IntersectionObserver
+    let animatedElements = new Set()
 
     onMount(() => {
         observer = new IntersectionObserver(
             (entries) => {
                 entries.forEach((entry) => {
-                    if (
-                        entry.isIntersecting &&
-                        !animatedElements.has(entry.target)
-                    ) {
-                        entry.target.classList.add("is-visible");
-                        animatedElements.add(entry.target);
+                    if (entry.isIntersecting && !animatedElements.has(entry.target)) {
+                        entry.target.classList.add('is-visible')
+                        animatedElements.add(entry.target)
                     }
-                });
+                })
             },
             {
                 threshold: 0.3,
-                rootMargin: "0px 0px -200px 0px",
-            },
-        );
+                rootMargin: '0px 0px -200px 0px',
+            }
+        )
 
-        document.querySelectorAll(".animate-on-scroll").forEach((el) => {
-            observer.observe(el);
-        });
+        document.querySelectorAll('.animate-on-scroll').forEach((el) => {
+            observer.observe(el)
+        })
 
         return () => {
-            if (observer) observer.disconnect();
-        };
-    });
+            if (observer) observer.disconnect()
+        }
+    })
 </script>
 
 <section
@@ -46,16 +43,16 @@
     <div class="max-w-7xl mx-auto w-full">
         <div class="relative z-10 p-8">
             <h5 class="text-surface-950 text-lg sm:text-xl font-bold text-left">
-                {$t("contact.contact-title")}
+                {$t('contact.contact-title')}
             </h5>
 
             <div class="text-base text-surface-contrast-50 text-left">
-                <p>{$t("contact.contact-description")}</p>
+                <p>{$t('contact.contact-description')}</p>
                 <button
                     class="btn bg-surface-contrast-50 text-surface-50 font-light rounded-lg mt-4"
-                    onclick={() => window.open("mailto:jean.regina@chuv.ch")}
+                    onclick={() => window.open('mailto:jean.regina@chuv.ch')}
                 >
-                    {$t("contact.contact-button")}
+                    {$t('contact.contact-button')}
                 </button>
                 <!-- You can add more contact details or a form here -->
             </div>

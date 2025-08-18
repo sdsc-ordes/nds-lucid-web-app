@@ -1,109 +1,105 @@
 <script lang="ts">
-    import { AppBar } from "@skeletonlabs/skeleton-svelte";
-    import { Menu, LanguagesIcon } from "@lucide/svelte";
-    import { locale, locales, setLocale } from "$lib/i18n/i18n";
-    import type { Locale } from "$lib/i18n/i18n";
-    import { onMount } from "svelte";
-    import { handleNavClick, getHeaderHeight } from "$lib/utils/scroll";
+    import { AppBar } from '@skeletonlabs/skeleton-svelte'
+    import { Menu, LanguagesIcon } from '@lucide/svelte'
+    import { locale, locales, setLocale } from '$lib/i18n/i18n'
+    import type { Locale } from '$lib/i18n/i18n'
+    import { onMount } from 'svelte'
+    import { handleNavClick, getHeaderHeight } from '$lib/utils/scroll'
 
     // Dropdown states for language selector and mobile menu
-    let dropdownOpen = false;
-    let mobileMenuOpen = false;
-    let scrollY = 0;
-    let isScrolled = false;
-    let activeSection = "low-value-care"; // Default active section
+    let dropdownOpen = false
+    let mobileMenuOpen = false
+    let scrollY = 0
+    let isScrolled = false
+    let activeSection = 'low-value-care' // Default active section
 
     // Track scroll position and active section
     onMount(() => {
         const updateScroll = () => {
-            scrollY = window.scrollY;
-            isScrolled = scrollY > 50;
+            scrollY = window.scrollY
+            isScrolled = scrollY > 50
 
             // Get header height and calculate threshold
-            const headerHeight = getHeaderHeight();
-            const scrollThreshold = headerHeight + 10; // 10px buffer
-            
+            const headerHeight = getHeaderHeight()
+            const scrollThreshold = headerHeight + 10 // 10px buffer
+
             // Update active section based on scroll position
-            const sections = navLinks.map(link => link.href);
-            
+            const sections = navLinks.map((link) => link.href)
+
             // Check if we're at the bottom of the page
             if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 50) {
-                activeSection = sections[sections.length - 1];
-                return;
+                activeSection = sections[sections.length - 1]
+                return
             }
 
             // Find the section that's currently in view
-            let bestSection = '';
-            let minDistance = Infinity;
+            let bestSection = ''
+            let minDistance = Infinity
 
             for (const section of sections) {
-                const element = document.getElementById(section);
+                const element = document.getElementById(section)
                 if (element) {
-                    const rect = element.getBoundingClientRect();
-                    const distance = Math.abs(rect.top - scrollThreshold);
-                    
+                    const rect = element.getBoundingClientRect()
+                    const distance = Math.abs(rect.top - scrollThreshold)
+
                     // Update if this section is closer to our threshold
                     if (distance < minDistance) {
-                        minDistance = distance;
-                        bestSection = section;
+                        minDistance = distance
+                        bestSection = section
                     }
                 }
             }
 
             if (bestSection) {
-                activeSection = bestSection;
+                activeSection = bestSection
             }
-        };
+        }
 
         // Initial update and event listeners
-        updateScroll();
-        window.addEventListener("scroll", updateScroll, { passive: true });
-        return () => window.removeEventListener("scroll", updateScroll);
-    });
+        updateScroll()
+        window.addEventListener('scroll', updateScroll, { passive: true })
+        return () => window.removeEventListener('scroll', updateScroll)
+    })
 
     // Toggle language dropdown, close mobile menu if open
     const toggleDropdown = () => {
-        mobileMenuOpen = false;
-        dropdownOpen = !dropdownOpen;
-    };
+        mobileMenuOpen = false
+        dropdownOpen = !dropdownOpen
+    }
 
     // Toggle mobile menu dropdown, close language dropdown if open
     const toggleMobileMenu = () => {
-        dropdownOpen = false;
-        mobileMenuOpen = !mobileMenuOpen;
-    };
+        dropdownOpen = false
+        mobileMenuOpen = !mobileMenuOpen
+    }
 
     // Select language and close dropdown
     const selectLocale = (code: string) => {
-        setLocale(code as Locale);
-        dropdownOpen = false;
-    };
+        setLocale(code as Locale)
+        dropdownOpen = false
+    }
 
     // Nav links shared for desktop and mobile
     const navLinks = [
-        { href: "low-value-care", label: "Low-Value Care" },
-        { href: "impact", label: "Impact" },
-        { href: "datastream", label: "National Data Stream" },
-        { href: "main-goals", label: "Project Goals" },
-        { href: "contact", label: "Contact" },
-    ];
+        { href: 'low-value-care', label: 'Low-Value Care' },
+        { href: 'impact', label: 'Impact' },
+        { href: 'datastream', label: 'National Data Stream' },
+        { href: 'main-goals', label: 'Project Goals' },
+        { href: 'contact', label: 'Contact' },
+    ]
 
     // Handle navigation click with smooth scrolling
     const handleNavClickWithMenuClose = (event: Event, href: string) => {
-        event.preventDefault();
-        mobileMenuOpen = false; // Close mobile menu
-        activeSection = href; // Update active section immediately
-        handleNavClick(event, href);
-    };
+        event.preventDefault()
+        mobileMenuOpen = false // Close mobile menu
+        activeSection = href // Update active section immediately
+        handleNavClick(event, href)
+    }
 </script>
 
 <svelte:window bind:scrollY />
 
-<div
-    class="navbar-wrapper transition-all duration-300 ease-in-out {isScrolled
-        ? 'scrolled'
-        : ''}"
->
+<div class="navbar-wrapper transition-all duration-300 ease-in-out {isScrolled ? 'scrolled' : ''}">
     <AppBar
         background="bg-surface-contrast-50"
         base="py-2 sm:py-3 transition-all duration-300 ease-in-out {isScrolled
@@ -177,10 +173,7 @@
                         onclick={toggleMobileMenu}
                         class="text-surface-50 transition-all duration-200"
                     >
-                        <Menu
-                            class="transition-all duration-200"
-                            size={isScrolled ? 24 : 32}
-                        />
+                        <Menu class="transition-all duration-200" size={isScrolled ? 24 : 32} />
                     </button>
 
                     {#if mobileMenuOpen}
@@ -194,8 +187,7 @@
                                             {href}
                                             class="text-primary-900 active:text-primary-500 focus:text-primary-500 transition-colors duration-200 block
                                                 {activeSection === href ? 'text-tertiary-500' : ''}"
-                                            onclick={(e) =>
-                                                handleNavClickWithMenuClose(e, href)}
+                                            onclick={(e) => handleNavClickWithMenuClose(e, href)}
                                         >
                                             {label}
                                         </a>
