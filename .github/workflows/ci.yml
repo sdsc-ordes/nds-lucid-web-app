@@ -31,6 +31,9 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
 
+      - name: Verify pnpm lockfile
+        run: pnpm install --frozen-lockfile --lockfile-only
+        
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
