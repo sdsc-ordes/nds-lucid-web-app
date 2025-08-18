@@ -1,11 +1,11 @@
 {
   "sections": {
     "label-lvc": "Low-Value Care",
-    "label-impact": "Impact of Low-Value Care",
+    "label-impact": "Impact",
     "label-datastream": "National Data Stream",
-    "label-main-goals": "Main Goals of the LUCID Project",
+    "label-main-goals": "Project Goals",
     "label-hero": "Hero Section",
-    "label-contact": "Contact Us",
+    "label-contact": "Contact",
     "label-sources": "Sources"
   },
   "hero": {
