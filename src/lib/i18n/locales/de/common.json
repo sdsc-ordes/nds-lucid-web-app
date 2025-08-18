@@ -1,26 +1,74 @@
 {
+  "sections": {
+    "label-lvc": "Low-Value Care",
+    "label-impact": "Auswirkungen",
+    "label-datastream": "Nationaler Datenstrom",
+    "label-main-goals": "Projektziele",
+    "label-hero": "Startsektion",
+    "label-contact": "Kontakt",
+    "label-sources": "Quellen"
+  },
   "hero": {
-    "explore": "Entdecken"
+    "landing-title": "Qualität der Versorgung in<br><b>Schweizer Universitätsspitälern</b>",
+    "landing-description": "<b>Identifizieren und verstehen</b> Sie Low-Value Care in Schweizer Universitätsspitälern als ersten Schritt zur <b>Reduzierung</b> und <b>Verbesserung der Patientenergebnisse</b>.",
+    "landing-description-lucid": "Das LUCID-Projekt zielt darauf ab, einen nationalen Datenstrom aufzubauen, der patientenberichtete Ergebnisse in Krankenhäusern sammelt und eine sichere Online-Plattform bereitstellt, auf der die Daten zur Patientenbehandlung studiert und verglichen werden können.",
+    "call-to-action-patients": "Gemeinsam für bessere Pflege",
+    "call-to-action-researchers": "Zugang zu Forschungsdaten",
+    "call-to-action-healthcare-providers": "Patientenversorgung verbessern"
   },
-  "welcome": {
-    "title": "Willkommen bei LUCID",
-    "p1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.",
-    "p2": "Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio."
+  "lvc": {
+    "lvc-title": "Was ist Low-Value Care im Krankenhausumfeld",
+    "lvc-description": "Welche Leistungen bringen den Patienten wenig oder gar keinen Nutzen oder können sogar Schaden verursachen, unnötige Kosten für Patienten verursachen oder begrenzte Gesundheitsressourcen verschwenden?",
+    "lab-test-title": "Tägliche Bluttests ohne Bedarf.",
+    "lab-test-description": "Viele hospitalisierte Patienten erhalten tägliche Bluttests, auch wenn die Ergebnisse stabil sind. In Lehrkrankenhäusern können häufige Tests aus Vorsicht und klinischer Ausbildung resultieren. Übermäßige Nutzung kann jedoch Unbehagen, Anämie und Stress verursachen. Das LUCID-Projekt untersucht, wann Bluttests wirklich notwendig sind und hilft Krankenhäusern, Low-Value Care zu reduzieren und die Entscheidungsfindung zu verbessern.",
+    "sedatives-title": "Sedativa-Verschreibungen für ältere Patienten.",
+    "sedatives-description": "Die Verschreibung von Benzodiazepinen (BZD) und anderen Sedativa bei Erwachsenen über 65 Jahren gilt als Low-Value Care, da sie mit verschiedenen Komplikationen wie verlängerten Krankenhausaufenthalten und Stürzen verbunden ist.",
+    "transfusions-title": "Unnötige Bluttransfusionen.",
+    "transfusions-description": "Die Verabreichung von Erythrozytentransfusionen an Patienten, die nicht bluten und keine sehr niedrigen Hämoglobinwerte haben, gilt als Low-Value Care. Sie helfen Menschen nicht bei der Genesung und können schwere Reaktionen verursachen oder das Herz zu stark belasten.",
+    "sleep-title": "Unterbrochener Schlaf im Krankenhaus",
+    "sleep-description": "Viele Patienten werden routinemäßig nachts für nicht dringende Pflege wie Bluttests oder Medikamente geweckt, was den Schlaf stört und möglicherweise die Genesung verzögert. Das LUCID-Projekt untersucht diese Praxis, um bessere Ruhe zu fördern und die Heilung hospitalisierter Patienten zu unterstützen."
   },
-  "mission": {
-    "title": "Unsere Mission",
-    "p1": "Proin pharetra nonummy pede. Mauris et orci. Aenean nec lorem. In porttitor. Donec laoreet nonummy augue. Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc.",
-    "p2": "Ut nonummy. Fusce aliquet pede non pede. Suspendisse dapibus. Nam at justo vitae lectus hendrerit hendrerit. Mauris massa. Vestibulum lacinia arcu eget nulla."
+  "impact": {
+    "impact-title": "Low-Value Care in der Schweiz",
+    "unknown-title": "Wenig oder kein Nutzen für Patienten",
+    "unknown-description": "Wir wissen immer noch nicht, wie häufig Low-Value Care in Schweizer Krankenhäusern vorkommt oder welchen Schaden sie verursacht. Diese Praktiken bringen hospitalisierten Patienten wenig oder gar keinen Nutzen und können sie sogar unnötigen Risiken aussetzen. Das LUCID-Forschungsprojekt untersucht diese Auswirkungen, um sicherzustellen, dass die Pflege die Gesundheit wirklich verbessert.",
+    "harm-title": "Potenzial für Schaden",
+    "harm-description": "Low-Value Care kann Patienten durch Nebenwirkungen, Stress oder Komplikationen schaden. Das LUCID-Projekt untersucht diese Risiken in Schweizer Krankenhäusern, um die Pflege sicherer, effektiver und wirklich patientenzentriert zu gestalten.",
+    "healthcare-cost-title": "Verschwendete Gesundheitsressourcen",
+    "healthcare-cost-description": "Low-Value Care verbraucht wertvolle Krankenhausressourcen - Personalzeit, Betten und Geld - die besser für Patienten genutzt werden könnten, die sie wirklich brauchen. Das LUCID-Forschungsprojekt untersucht diese Auswirkungen, um effizientere Pflege und intelligentere Nutzung von Gesundheitsressourcen in Schweizer Krankenhäusern zu fördern."
   },
-  "join": {
-    "title": "Machen Sie mit",
-    "p1": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent dapibus. Neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat.",
-    "p2": "Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus. Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus."
+  "datastream": {
+    "datastream-title": "Nationaler Datenstrom zur Versorgungsqualität in Schweizer Universitätsspitälern",
+    "layer1-title": "Welche Daten verwendet LUCID?",
+    "layer1-description": "<b>LUCID verwendet Daten von Patienten, die während eines Krankenhausaufenthalts</b> in einem der fünf Schweizer Universitätsspitäler - Genf, Lausanne, Zürich, Bern oder Basel - der Wiederverwendung routinemäßig erhobener Daten zugestimmt haben. Persönliche Details werden entfernt und durch sichere Codes ersetzt, um die Privatsphäre zu schützen. <b>Patienten können ihre Einwilligung jederzeit widerrufen, um die zukünftige Nutzung ihrer Daten zu stoppen.</b>",
+    "layer2-title": "Welche Arten von Daten werden gesammelt?",
+    "layer2-description": "Das Projekt sammelt Informationen über <b>Krankenhausversorgung, einschließlich Diagnosen, Behandlungen, Testergebnisse und wie Patienten während ihres Aufenthalts und bei der Entlassung versorgt wurden.</b>",
+    "layer3-title": "Wie erhält LUCID die Daten?",
+    "layer3-description": "Regelmäßig in Krankenakten erfasste Daten <b>werden gesammelt, von persönlichen Informationen bereinigt und nach strengen Schweizer Datenschutz- und IT-Richtlinien aufbereitet.</b> Sie werden dann sicher an eine gesicherte nationale Forschungsplattform zur Analyse gesendet.",
+    "layer4-title": "Was passiert mit den Daten?",
+    "layer4-description": "Forscher können Zugang zu LUCID-Daten beantragen, aber <b>nur zugelassene Forscher dürfen anonymisierte Informationen verwenden, um Low-Value Care zu untersuchen</b> und Wege zur Verbesserung der Patientenversorgung zu identifizieren, während die Vertraulichkeit der Krankenhausidentitäten gewahrt bleibt.",
+    "layer5-title": "Wie LUCID die Versorgung verbessern kann",
+    "layer5-description": "Durch die Analyse der Patientenreisen während Krankenhausaufenthalten <b>hilft LUCID Krankenhäusern, ihre Low-Value Care-Praktiken zu verstehen, zu verfolgen und zu verbessern.</b>",
+    "layer6-title": "Wie können Forscher auf LUCID-Daten zugreifen?",
+    "layer6-description": "Forscher können Zugang zu LUCID-Daten für Studien beantragen. <b>Jeder Antrag wird gründlich geprüft</b> von einem Expertenkomitee, das von den Krankenhäusern und LUCID-Leitern ernannt wurde, um sicherzustellen, dass er die <b>ethischen und rechtlichen Anforderungen</b> erfüllt.",
+    "layer6-button": "Datenzugang beantragen",
+    "animation": "Animation läuft..."
   },
-  "buttons": {
-    "continue": "Fortfahren",
-    "learnMore": "Mehr Erfahren",
-    "requestAccess": "Zugang Beantragen"
+  "main-goals": {
+    "section-title": "Hauptziele des LUCID-Projekts",
+    "goal1-title": "Einen nationalen Datenstrom zur Qualität der Krankenhausversorgung schaffen",
+    "goal1-description": "Das Hauptziel des LUCID-Projekts ist es, den Austausch und Zugang zu routinemäßigen klinischen Daten von erwachsenen Patienten in den fünf wichtigsten Schweizer Universitätsspitälern zu erleichtern. Diese geteilten Informationen helfen, die Qualität der Versorgung in Krankenhäusern zu überwachen und zu untersuchen.",
+    "goal2-title": "Nationale Einblicke, lokale Wirkung",
+    "goal2-description": "Das LUCID-Projekt gibt einen landesweiten Überblick über die Qualität der Krankenhausversorgung anhand bestehender klinischer Daten. Es hilft Forschern und Klinikern, Bereiche zu identifizieren, die Aufmerksamkeit benötigen, und gezielte Maßnahmen zur Verbesserung der stationären Versorgung zu entwickeln.",
+    "goal3-title": "Patientenerfahrungen verstehen",
+    "goal3-description": "Die Erfassung von patientenberichteten Ergebnismaßen (PROMs) und Erfahrungsmaßen (PREMs) ist eine Schlüsselpriorität in LUCID. Diese Werkzeuge geben Patienten eine Stimme und zeigen, wie sich die Versorgung auf ihre Gesundheit und ihr tägliches Leben auswirkt. Durch die Leitung dieser Bemühung hilft LUCID, die Versorgung besser auf das abzustimmen, was für Patienten am wichtigsten ist.",
+    "goal4-title": "Patienten und Öffentlichkeit einbeziehen",
+    "goal4-description": "Das Projekt wird seine Erkenntnisse mit allen Beteiligten teilen: Patienten, Öffentlichkeit, Gesundheitsfachkräfte und Behörden. Mit dieser Einsicht kann jeder dazu beitragen, ein stärker patientenorientiertes Gesundheitssystem aufzubauen, das bessere Versorgung bietet."
+  },
+  "contact": {
+    "contact-title": "Bereit, etwas zu bewirken?",
+    "contact-description": "Wenn Sie Fragen haben oder mehr über das LUCID-Projekt erfahren möchten, kontaktieren Sie uns bitte.",
+    "contact-button": "Dialog beginnen"
   },
   "language": {
     "en": "English",
