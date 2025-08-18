@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./static/logos/logo.svg" alt="LUCID Project Logo" width="250">
+  <img src="./static/logos/lucid_logo.svg" alt="LUCID Project Logo" width="250">
 </p>
 
 <h1 align="center">
