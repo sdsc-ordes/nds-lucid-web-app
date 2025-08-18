@@ -54,7 +54,11 @@
         base="py-2 sm:py-3 transition-all duration-300 {isScrolled ? 'py-1 sm:py-2' : ''}"
     >
         {#snippet lead()}
-            <h1 class="h1 text-primary-100 font-semibold transition-all duration-300 {isScrolled ? 'text-lg' : ''}">
+            <h1
+                class="h1 text-primary-100 font-semibold transition-all duration-300 {isScrolled
+                    ? 'text-lg'
+                    : ''}"
+            >
                 LUCID
             </h1>
         {/snippet}
@@ -82,16 +86,23 @@
                         onclick={toggleDropdown}
                         aria-label="Select Language"
                     >
-                        <LanguagesIcon size={isScrolled ? 24 : 32} class="transition-all duration-200" />
+                        <LanguagesIcon
+                            size={isScrolled ? 24 : 32}
+                            class="transition-all duration-200"
+                        />
                     </button>
 
                     {#if dropdownOpen}
-                        <div class="absolute right-0 top-full mt-2 bg-surface-50 rounded-lg p-2 shadow-lg z-30 min-w-[8rem]">
+                        <div
+                            class="absolute right-0 top-full mt-2 bg-surface-50 rounded-lg p-2 shadow-lg z-30 min-w-[8rem]"
+                        >
                             <div class="flex flex-col space-y-1">
                                 {#each Object.entries(locales) as [code, name]}
                                     <button
                                         class="text-sm text-left px-3 py-1 rounded transition-colors duration-200
-                                            {$locale === code ? 'bg-primary-500 text-surface-50' : 'text-surface-contrast-50 hover:bg-primary-500'}"
+                                            {$locale === code
+                                            ? 'bg-primary-500 text-surface-50'
+                                            : 'text-surface-contrast-50 hover:bg-primary-500'}"
                                         onclick={() => selectLocale(code)}
                                     >
                                         {name}
@@ -113,7 +124,9 @@
                     </button>
 
                     {#if mobileMenuOpen}
-                        <nav class="absolute right-0 top-full mt-2 bg-surface-50 rounded-lg p-4 shadow-lg z-100 w-60">
+                        <nav
+                            class="absolute right-0 top-full mt-2 bg-surface-50 rounded-lg p-4 shadow-lg z-100 w-60"
+                        >
                             <ul class="flex flex-col gap-4">
                                 {#each navLinks as { href, label }}
                                     <li>
