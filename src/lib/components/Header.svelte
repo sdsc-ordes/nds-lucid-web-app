@@ -107,13 +107,11 @@
             : ''}"
     >
         {#snippet lead()}
-            <h1
-                class="h1 text-primary-100 font-semibold transition-all duration-300 {isScrolled
-                    ? 'text-lg'
-                    : ''}"
-            >
-                LUCID
-            </h1>
+            <img
+                src="/logos/lucid-logo-light.svg"
+                alt="LUCID"
+                class="transition-all duration-300 {isScrolled ? 'h-10' : 'h-25'}"
+            />
         {/snippet}
 
         {#snippet trail()}
