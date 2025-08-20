@@ -112,7 +112,7 @@
                     <ExternalLink size={15} />
                 </a>
             </div>
-            <div class="flex items-center gap-2">
+            <!-- <div class="flex items-center gap-2">
                 <FolderHeart size={25} class="text-tertiary-500" />
                 <span class="font-bold text-tertiary-500 text-lg sm:text-xl">Posters</span>
             </div>
@@ -137,7 +137,7 @@
                     target="_blank">Transfusions Poster (PDF)</a
                 >
                 <ExternalLink size={15} />
-            </div>
+            </div> -->
         </div>
     </div>
 </section>
