@@ -107,11 +107,23 @@
             : ''}"
     >
         {#snippet lead()}
-            <img
-                src="/logos/lucid-logo-light.svg"
-                alt="LUCID"
-                class="transition-all duration-300 {isScrolled ? 'h-10' : 'h-25'}"
-            />
+            <button
+                type="button"
+                class="focus:outline-none"
+                onclick={() => {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                }}
+                title="Scroll to top"
+            >
+                <img
+                    src="/logos/lucid-logo-light.svg"
+                    alt="LUCID"
+                    class="transition-all duration-300 {isScrolled ? 'h-10' : 'h-25'}"
+                />
+            </button>
         {/snippet}
 
         {#snippet trail()}
