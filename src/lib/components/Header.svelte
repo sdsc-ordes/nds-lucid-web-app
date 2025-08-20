@@ -113,8 +113,8 @@
                 onclick={() => {
                     window.scrollTo({
                         top: 0,
-                        behavior: 'smooth'
-                    });
+                        behavior: 'smooth',
+                    })
                 }}
                 title="Scroll to top"
             >
