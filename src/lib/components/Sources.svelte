@@ -132,7 +132,7 @@
             </div>
             <div class="flex items-center gap-2 hover:text-tertiary-500">
                 <a
-                    href="/posters/SGAIM2025_E-Poster_Transfusions.pdf"
+                    href="/posters/SGAIM2025_E-Poster_Transfusions_outline.pdf"
                     class="underline"
                     target="_blank">Transfusions Poster (PDF)</a
                 >
