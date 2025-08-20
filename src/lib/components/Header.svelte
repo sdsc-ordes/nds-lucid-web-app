@@ -121,7 +121,7 @@
                 <img
                     src="/logos/lucid-logo-light.svg"
                     alt="LUCID"
-                    class="transition-all duration-300 {isScrolled ? 'h-10' : 'h-25'}"
+                    class="transition-all duration-300 {isScrolled ? 'h-15' : 'h-25'}"
                 />
             </button>
         {/snippet}
