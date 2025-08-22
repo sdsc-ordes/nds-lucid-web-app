@@ -54,21 +54,64 @@
                 >
                     {$t('contact.contact-button')}
                 </button>
-            <h5 class="text-surface-950 text-sm sm:text-md text-left mt-16"> A project by </h5>
-            <div class="flex flex-wrap justify-start gap-8 mt-8 items-center w-2/3">
-                    <img src="/partner-logos/lucid_logo.svg" alt="Lucid Logo" class="h-10 md:h-14 object-contain transition-all duration-300" />
-                    <img src="/partner-logos/sdsc.svg" alt="SDSC Logo" class="h-8 md:h-12 object-contain transition-all duration-300" />
-                    <img src="/partner-logos/PHRT.png" alt="PHRT Logo" class="h-8 md:h-12 object-contain transition-all duration-300" />
-                    <img src="/partner-logos/sphn.png" alt="SPHN Logo" class="h-10 md:h-14 object-contain transition-all duration-300" />
-                    <img src="/partner-logos/usz.png" alt="USZ Logo" class="h-4 md:h-8 object-contain transition-all duration-300" />
-                    <img src="/partner-logos/chuv.png" alt="CHUV Logo" class="h-8 md:h-12 object-contain transition-all duration-300" />
-                    <img src="/partner-logos/hug.png" alt="HUG Logo" class="h-6 md:h-10 object-contain transition-all duration-300" />
-                    <img src="/partner-logos/inselspital.png" alt="Inselspital Logo" class="h-8 md:h-12 object-contain transition-all duration-300" />
-                    <img src="/partner-logos/unispital-basel.png" alt="Unispital Basel Logo" class="h-6 md:h-10 object-contain transition-all duration-300" />
-                    <img src="/partner-logos/unifr.png" alt="UniFR Logo" class="h-8 md:h-12 object-contain transition-all duration-300" />
-                    <img src="/partner-logos/biomedit.png" alt="Biomedit Logo" class="h-8 md:h-12 object-contain transition-all duration-300" />
-
-            </div>
+                <h5 class="text-surface-950 text-sm sm:text-md text-left mt-16">A project by</h5>
+                <div class="flex flex-wrap justify-start gap-8 mt-8 items-center w-2/3">
+                    <img
+                        src="/partner-logos/lucid_logo.svg"
+                        alt="Lucid Logo"
+                        class="h-10 md:h-14 object-contain transition-all duration-300"
+                    />
+                    <img
+                        src="/partner-logos/sdsc.svg"
+                        alt="SDSC Logo"
+                        class="h-8 md:h-12 object-contain transition-all duration-300"
+                    />
+                    <img
+                        src="/partner-logos/PHRT.png"
+                        alt="PHRT Logo"
+                        class="h-8 md:h-12 object-contain transition-all duration-300"
+                    />
+                    <img
+                        src="/partner-logos/sphn.png"
+                        alt="SPHN Logo"
+                        class="h-10 md:h-14 object-contain transition-all duration-300"
+                    />
+                    <img
+                        src="/partner-logos/usz.png"
+                        alt="USZ Logo"
+                        class="h-4 md:h-8 object-contain transition-all duration-300"
+                    />
+                    <img
+                        src="/partner-logos/chuv.png"
+                        alt="CHUV Logo"
+                        class="h-8 md:h-12 object-contain transition-all duration-300"
+                    />
+                    <img
+                        src="/partner-logos/hug.png"
+                        alt="HUG Logo"
+                        class="h-6 md:h-10 object-contain transition-all duration-300"
+                    />
+                    <img
+                        src="/partner-logos/inselspital.png"
+                        alt="Inselspital Logo"
+                        class="h-8 md:h-12 object-contain transition-all duration-300"
+                    />
+                    <img
+                        src="/partner-logos/unispital-basel.png"
+                        alt="Unispital Basel Logo"
+                        class="h-6 md:h-10 object-contain transition-all duration-300"
+                    />
+                    <img
+                        src="/partner-logos/unifr.png"
+                        alt="UniFR Logo"
+                        class="h-8 md:h-12 object-contain transition-all duration-300"
+                    />
+                    <img
+                        src="/partner-logos/biomedit.png"
+                        alt="Biomedit Logo"
+                        class="h-8 md:h-12 object-contain transition-all duration-300"
+                    />
+                </div>
             </div>
         </div>
     </div>

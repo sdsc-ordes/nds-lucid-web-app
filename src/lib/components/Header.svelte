@@ -92,7 +92,7 @@
 
         // Add scroll event listener
         window.addEventListener('scroll', updateScroll, { passive: true })
-        
+
         // Initial update
         updateScroll()
 
