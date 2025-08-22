@@ -34,7 +34,7 @@
 
 <section
     id="contact"
-    class="w-full flex flex-col justify-center items-center relative overflow-hidden"
+    class="w-full flex flex-col justify-center items-center relative overflow-hidden animate-on-scroll"
 >
     <!-- backgrouund for dark mode -->
     <div class="absolute inset-0 bg-surface-50"></div>
