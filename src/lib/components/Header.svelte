@@ -4,14 +4,18 @@
     import { locale, locales, setLocale } from '$lib/i18n/i18n'
     import type { Locale } from '$lib/i18n/i18n'
     import { handleNavClick } from '$lib/utils/scroll'
+    import { onMount } from 'svelte'
 
     let dropdownOpen = false
     let mobileMenuOpen = false
     let scrollY = 0
+    let isScrolled = false
     let activeSection = 'low-value-care'
 
-    // Simple reactive statement for scroll state
-    $: isScrolled = scrollY > 50
+    function getHeaderHeight() {
+        const header = document.querySelector('.navbar-wrapper')
+        return header ? header.getBoundingClientRect().height : 0
+    }
 
     // Nav links shared for desktop and mobile
     const navLinks = [
@@ -44,6 +48,58 @@
         activeSection = href
         handleNavClick(event, href)
     }
+
+    onMount(() => {
+        const updateScroll = () => {
+            scrollY = window.scrollY
+            isScrolled = scrollY > 50
+
+            // Get header height and calculate threshold
+            const headerHeight = getHeaderHeight()
+            const scrollThreshold = headerHeight + 10 // 10px buffer
+
+            // Update active section based on scroll position
+            const sections = navLinks.map((link) => link.href)
+
+            // Check if we're at the bottom of the page
+            if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 50) {
+                activeSection = sections[sections.length - 1]
+                return
+            }
+
+            // Find the section that's currently in view
+            let bestSection = ''
+            let minDistance = Infinity
+
+            for (const section of sections) {
+                const element = document.getElementById(section)
+                if (element) {
+                    const rect = element.getBoundingClientRect()
+                    const distance = Math.abs(rect.top - scrollThreshold)
+
+                    // Update if this section is closer to our threshold
+                    if (distance < minDistance) {
+                        minDistance = distance
+                        bestSection = section
+                    }
+                }
+            }
+
+            if (bestSection) {
+                activeSection = bestSection
+            }
+        }
+
+        // Add scroll event listener
+        window.addEventListener('scroll', updateScroll, { passive: true })
+
+        // Initial update
+        updateScroll()
+
+        return () => {
+            window.removeEventListener('scroll', updateScroll)
+        }
+    })
 </script>
 
 <svelte:window bind:scrollY />
