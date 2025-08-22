@@ -67,47 +67,47 @@
                         class="h-8 md:h-12 object-contain transition-all duration-300"
                     />
                     <img
-                        src="/partner-logos/PHRT.png"
+                        src="/partner-logos/PHRT.webp"
                         alt="PHRT Logo"
                         class="h-8 md:h-12 object-contain transition-all duration-300"
                     />
                     <img
-                        src="/partner-logos/sphn.png"
+                        src="/partner-logos/sphn.webp"
                         alt="SPHN Logo"
                         class="h-10 md:h-14 object-contain transition-all duration-300"
                     />
                     <img
-                        src="/partner-logos/usz.png"
+                        src="/partner-logos/usz.webp"
                         alt="USZ Logo"
                         class="h-4 md:h-8 object-contain transition-all duration-300"
                     />
                     <img
-                        src="/partner-logos/chuv.png"
+                        src="/partner-logos/chuv.webp"
                         alt="CHUV Logo"
                         class="h-8 md:h-12 object-contain transition-all duration-300"
                     />
                     <img
-                        src="/partner-logos/hug.png"
+                        src="/partner-logos/hug.webp"
                         alt="HUG Logo"
                         class="h-6 md:h-10 object-contain transition-all duration-300"
                     />
                     <img
-                        src="/partner-logos/inselspital.png"
+                        src="/partner-logos/inselspital.webp"
                         alt="Inselspital Logo"
                         class="h-8 md:h-12 object-contain transition-all duration-300"
                     />
                     <img
-                        src="/partner-logos/unispital-basel.png"
+                        src="/partner-logos/unispital-basel.webp"
                         alt="Unispital Basel Logo"
                         class="h-6 md:h-10 object-contain transition-all duration-300"
                     />
                     <img
-                        src="/partner-logos/unifr.png"
+                        src="/partner-logos/unifr.webp"
                         alt="UniFR Logo"
                         class="h-8 md:h-12 object-contain transition-all duration-300"
                     />
                     <img
-                        src="/partner-logos/biomedit.png"
+                        src="/partner-logos/biomedit.webp"
                         alt="Biomedit Logo"
                         class="h-8 md:h-12 object-contain transition-all duration-300"
                     />
