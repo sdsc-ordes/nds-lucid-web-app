@@ -36,12 +36,12 @@
     id="contact"
     class="w-full flex flex-col justify-center items-center relative overflow-hidden animate-on-scroll"
 >
-    <!-- backgrouund for dark mode -->
+    <!-- background for dark mode -->
     <div class="absolute inset-0 bg-surface-50"></div>
     <div class="absolute inset-0 bg-tertiary-500/13"></div>
 
-    <div class="max-w-7xl mx-auto w-full">
-        <div class="relative z-10 p-8">
+    <div class="max-w-7xl mx-auto w-full relative z-10">
+        <div class="p-8">
             <h5 class="text-surface-950 text-lg sm:text-xl font-bold text-left">
                 {$t('contact.contact-title')}
             </h5>
@@ -54,64 +54,26 @@
                 >
                     {$t('contact.contact-button')}
                 </button>
-                <h5 class="text-surface-950 text-sm sm:text-md text-left mt-16">A project by</h5>
-                <div class="flex flex-wrap justify-start gap-8 mt-8 items-center w-2/3">
-                    <img
-                        src="/partner-logos/lucid_logo.svg"
-                        alt="Lucid Logo"
-                        class="h-10 md:h-14 object-contain transition-all duration-300"
-                    />
-                    <img
-                        src="/partner-logos/sdsc.svg"
-                        alt="SDSC Logo"
-                        class="h-8 md:h-12 object-contain transition-all duration-300"
-                    />
-                    <img
-                        src="/partner-logos/PHRT.webp"
-                        alt="PHRT Logo"
-                        class="h-8 md:h-12 object-contain transition-all duration-300"
-                    />
-                    <img
-                        src="/partner-logos/sphn.webp"
-                        alt="SPHN Logo"
-                        class="h-10 md:h-14 object-contain transition-all duration-300"
-                    />
-                    <img
-                        src="/partner-logos/usz.webp"
-                        alt="USZ Logo"
-                        class="h-4 md:h-8 object-contain transition-all duration-300"
-                    />
-                    <img
-                        src="/partner-logos/chuv.webp"
-                        alt="CHUV Logo"
-                        class="h-8 md:h-12 object-contain transition-all duration-300"
-                    />
-                    <img
-                        src="/partner-logos/hug.webp"
-                        alt="HUG Logo"
-                        class="h-6 md:h-10 object-contain transition-all duration-300"
-                    />
-                    <img
-                        src="/partner-logos/inselspital.webp"
-                        alt="Inselspital Logo"
-                        class="h-8 md:h-12 object-contain transition-all duration-300"
-                    />
-                    <img
-                        src="/partner-logos/unispital-basel.webp"
-                        alt="Unispital Basel Logo"
-                        class="h-6 md:h-10 object-contain transition-all duration-300"
-                    />
-                    <img
-                        src="/partner-logos/unifr.webp"
-                        alt="UniFR Logo"
-                        class="h-8 md:h-12 object-contain transition-all duration-300"
-                    />
-                    <img
-                        src="/partner-logos/biomedit.webp"
-                        alt="Biomedit Logo"
-                        class="h-8 md:h-12 object-contain transition-all duration-300"
-                    />
-                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Logos on surface-50 background -->
+    <div class="w-full bg-surface-50 mt-8 relative z-10">
+        <div class="max-w-7xl mx-auto w-full p-8 ">
+            <h5 class="text-surface-950 text-lg sm:text-xl font-bold text-left mb-8">A project by</h5>
+            <div class="flex flex-wrap justify-start gap-[90px] items-center">
+                <img src="/partner-logos/lucid_logo.svg" alt="Lucid Logo" class="h-10 md:h-14 object-contain transition-all duration-300" />
+                <img src="/partner-logos/sdsc.svg" alt="SDSC Logo" class="h-8 md:h-12 object-contain transition-all duration-300" />
+                <img src="/partner-logos/PHRT.webp" alt="PHRT Logo" class="h-8 md:h-12 object-contain transition-all duration-300" />
+                <img src="/partner-logos/sphn.webp" alt="SPHN Logo" class="h-10 md:h-14 object-contain transition-all duration-300" />
+                <img src="/partner-logos/usz.webp" alt="USZ Logo" class="h-4 md:h-8 object-contain transition-all duration-300" />
+                <img src="/partner-logos/chuv.webp" alt="CHUV Logo" class="h-8 md:h-12 object-contain transition-all duration-300" />
+                <img src="/partner-logos/hug.webp" alt="HUG Logo" class="h-6 md:h-10 object-contain transition-all duration-300" />
+                <img src="/partner-logos/inselspital.webp" alt="Inselspital Logo" class="h-8 md:h-12 object-contain transition-all duration-300" />
+                <img src="/partner-logos/unispital-basel.webp" alt="Unispital Basel Logo" class="h-6 md:h-10 object-contain transition-all duration-300" />
+                <img src="/partner-logos/unifr.webp" alt="UniFR Logo" class="h-8 md:h-12 object-contain transition-all duration-300" />
+                <img src="/partner-logos/biomedit.webp" alt="Biomedit Logo" class="h-8 md:h-12 object-contain transition-all duration-300" />
             </div>
         </div>
     </div>
