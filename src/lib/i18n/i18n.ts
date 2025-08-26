@@ -12,7 +12,7 @@ export const locales = {
     en: 'English',
     fr: 'Français',
     de: 'Deutsch',
-    it: 'Italiano'
+    it: 'Italiano',
 }
 
 // Type for translations
