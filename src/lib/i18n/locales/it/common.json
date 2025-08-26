@@ -1,0 +1,79 @@
+{
+  "sections": {
+    "label-lvc": "Cure di Basso Valore",
+    "label-impact": "Impatto",
+    "label-datastream": "Flusso Dati Nazionale",
+    "label-main-goals": "Obiettivi del Progetto",
+    "label-hero": "Sezione Principale",
+    "label-contact": "Contatto",
+    "label-sources": "Fonti"
+  },
+  "hero": {
+    "landing-title": "Qualità delle Cure negli<br><b>Ospedali Universitari Svizzeri</b>",
+    "landing-description": "<b>Identificare e comprendere</b> le cure di basso valore negli ospedali universitari svizzeri come primo passo verso la loro <b>riduzione</b> e il <b>miglioramento dei risultati per i pazienti</b>.",
+    "landing-description-lucid": "Il progetto LUCID mira a costruire un flusso di dati nazionale, raccogliendo i risultati riportati dai pazienti negli ospedali e fornendo una piattaforma online sicura, dove i dati sul trattamento dei pazienti possono essere studiati e confrontati.",
+    "call-to-action-patients": "Insieme per Cure Migliori",
+    "call-to-action-researchers": "Accesso ai Dati di Ricerca",
+    "call-to-action-healthcare-providers": "Migliorare l'Assistenza ai Pazienti"
+  },
+  "lvc": {
+    "lvc-title": "Cosa sono le Cure di Basso Valore in Ambito Ospedaliero",
+    "lvc-description": "Quali servizi forniscono poco o nessun beneficio ai pazienti o possono addirittura causare danni, generare costi inutili per i pazienti o sprecare risorse sanitarie limitate?",
+    "lab-test-title": "Analisi del sangue quotidiane non necessarie.",
+    "lab-test-description": "Molti pazienti ospedalizzati ricevono analisi del sangue quotidiane, anche quando i risultati sono stabili. Negli ospedali universitari, i test frequenti possono derivare dalla cautela e dalla formazione clinica. Tuttavia, l'uso eccessivo può causare disagio, anemia e stress. Il progetto LUCID esplora quando le analisi del sangue sono veramente necessarie, aiutando gli ospedali a ridurre le cure di basso valore e migliorare il processo decisionale.",
+    "sedatives-title": "Prescrizione di sedativi per pazienti anziani.",
+    "sedatives-description": "La prescrizione di benzodiazepine (BZD) e altri sedativi in adulti di età superiore ai 65 anni è considerata una cura di basso valore, a causa della sua associazione con varie complicazioni, come degenze ospedaliere prolungate e cadute. Il progetto LUCID esplora quando la prescrizione di sedativi non è appropriata.",
+    "transfusions-title": "Trasfusioni di sangue non necessarie.",
+    "transfusions-description": "La somministrazione di trasfusioni di globuli rossi a pazienti che non sanguinano e non hanno livelli di emoglobina molto bassi è considerata una cura di basso valore. Non aiutano le persone a riprendersi e possono causare reazioni gravi o sovraccaricare il cuore. Il progetto LUCID esplora le opportunità per ridurre le trasfusioni di sangue non necessarie garantendo al contempo cure sicure ed efficaci per i pazienti.",
+    "sleep-title": "Sonno interrotto in ospedale",
+    "sleep-description": "Molti pazienti vengono regolarmente svegliati di notte per cure non urgenti, come analisi del sangue o farmaci, disturbando il sonno e potenzialmente ritardando la guarigione. Il progetto LUCID studia questa pratica per promuovere un riposo migliore e supportare la guarigione dei pazienti ospedalizzati."
+  },
+  "impact": {
+    "impact-title": "Cure di Basso Valore in Svizzera",
+    "unknown-title": "Poco o nessun beneficio per i pazienti",
+    "unknown-description": "Non sappiamo ancora quanto spesso si verifichino cure di basso valore negli ospedali svizzeri o quali danni causino. Queste pratiche forniscono poco o nessun beneficio ai pazienti ospedalizzati e possono persino esporli a rischi non necessari. Il progetto di ricerca LUCID mira a monitorare e identificare le cure di basso valore nei pazienti ospedalizzati.",
+    "harm-title": "Potenziale di danno",
+    "harm-description": "Le cure di basso valore possono danneggiare i pazienti con effetti collaterali, stress o complicazioni. Il progetto LUCID esamina questi rischi negli ospedali svizzeri per rendere le cure più sicure, più efficaci e veramente incentrate sul paziente.",
+    "healthcare-cost-title": "Risorse sanitarie sprecate",
+    "healthcare-cost-description": "Le cure di basso valore consumano preziose risorse ospedaliere - tempo del personale, letti e denaro - che potrebbero essere utilizzate meglio per i pazienti che ne hanno veramente bisogno. Il progetto di ricerca LUCID esamina questo impatto per promuovere cure più efficienti e un uso più intelligente delle risorse sanitarie negli ospedali svizzeri."
+  },
+  "datastream": {
+    "datastream-title": "Flusso Dati Nazionale sulla Qualità delle Cure negli Ospedali Universitari Svizzeri",
+    "layer1-title": "Quali dati utilizza LUCID?",
+    "layer1-description": "<b>LUCID utilizza i dati dei pazienti che hanno dato il consenso durante un ricovero ospedaliero</b> in uno dei cinque ospedali universitari svizzeri - Ginevra, Losanna, Zurigo, Berna o Basilea - per il riutilizzo dei dati raccolti di routine. I dettagli personali vengono rimossi e sostituiti con codici sicuri per proteggere la privacy. <b>I pazienti possono ritirare il consenso in qualsiasi momento per interrompere l'uso futuro dei loro dati.</b>",
+    "layer2-title": "Che tipo di dati vengono raccolti?",
+    "layer2-description": "Il progetto raccoglie informazioni sulle <b>cure ospedaliere, inclusi diagnosi, trattamenti e risultati dei test durante il ricovero e alla dimissione.</b>",
+    "layer3-title": "Come ottiene LUCID i dati?",
+    "layer3-description": "I dati regolarmente registrati nelle cartelle cliniche <b>vengono raccolti, privati delle informazioni personali e preparati seguendo rigide linee guida svizzere sulla privacy e l'IT.</b> Vengono poi inviati in modo sicuro a una piattaforma nazionale di ricerca protetta per l'analisi.",
+    "layer4-title": "Cosa succede ai dati?",
+    "layer4-description": "I ricercatori possono richiedere l'accesso ai dati LUCID, ma <b>solo i ricercatori approvati sono autorizzati a utilizzare informazioni anonimizzate per studiare le cure di basso valore</b> e identificare modi per migliorare l'assistenza ai pazienti, garantendo al contempo la riservatezza delle identità ospedaliere.",
+    "layer5-title": "Come LUCID può migliorare le cure",
+    "layer5-description": "Analizzando i percorsi dei pazienti durante i ricoveri ospedalieri, <b>LUCID aiuta a comprendere, monitorare e migliorare le pratiche di cure di basso valore.</b>",
+    "layer6-title": "Come possono i ricercatori accedere ai dati LUCID?",
+    "layer6-description": "I ricercatori possono richiedere l'accesso ai dati LUCID per gli studi. <b>Ogni richiesta viene sottoposta a un'attenta revisione</b> da parte di un comitato di esperti nominato dagli ospedali e dai leader LUCID per garantire che rispetti i <b>requisiti etici e legali.</b>",
+    "layer6-button": "Richiedi Accesso ai Dati",
+    "animation": "Animazione in corso..."
+  },
+  "main-goals": {
+    "section-title": "Obiettivi Principali del Progetto LUCID",
+    "goal1-title": "Creare un Flusso Dati Nazionale sulla Qualità delle Cure Ospedaliere",
+    "goal1-description": "L'obiettivo principale del progetto LUCID è facilitare la condivisione e l'accesso ai dati clinici di routine dei pazienti adulti nei cinque principali ospedali universitari svizzeri. Queste informazioni condivise aiutano a monitorare e studiare la qualità delle cure negli ospedali.",
+    "goal2-title": "Prospettive Nazionali, Impatto Locale",
+    "goal2-description": "Il progetto LUCID fornisce una visione nazionale della qualità delle cure ospedaliere utilizzando i dati clinici esistenti. Aiuta ricercatori e clinici a identificare le aree che necessitano di attenzione e a creare azioni mirate per migliorare l'assistenza ai pazienti ricoverati.",
+    "goal3-title": "Comprendere le Esperienze dei Pazienti",
+    "goal3-description": "La raccolta delle misure dei risultati riportati dai pazienti (PROMs) e delle misure dell'esperienza riportate dai pazienti (PREMs) è una priorità chiave in LUCID. Danno voce ai pazienti e evidenziano come le cure influenzano sia la loro salute che la vita quotidiana. Attraverso questo lavoro, LUCID aiuta a garantire che le cure siano più strettamente allineate con ciò che è più importante per i pazienti.",
+    "goal4-title": "Coinvolgere i Pazienti e il Pubblico",
+    "goal4-description": "Il progetto condividerà i suoi risultati con ogni stakeholder: pazienti, pubblico, professionisti sanitari e autorità. Con questa visione, tutti possono contribuire a costruire un sistema sanitario più centrato sul paziente che fornisce cure migliori."
+  },
+  "contact": {
+    "contact-title": "Pronto a fare la differenza?",
+    "contact-description": "Se hai domande o desideri saperne di più sul progetto LUCID, contattaci.",
+    "contact-button": "Inizia un dialogo"
+  },
+  "language": {
+    "en": "English",
+    "fr": "Français",
+    "de": "Deutsch",
+    "it": "Italiano"
+  }
+}
