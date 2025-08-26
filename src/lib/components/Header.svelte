@@ -1,7 +1,7 @@
 <script lang="ts">
     import { AppBar } from '@skeletonlabs/skeleton-svelte'
     import { Menu, LanguagesIcon } from '@lucide/svelte'
-    import { locale, locales, setLocale } from '$lib/i18n/i18n'
+    import { locale, locales, setLocale, t } from '$lib/i18n/i18n'
     import type { Locale } from '$lib/i18n/i18n'
     import { handleNavClick } from '$lib/utils/scroll'
     import { onMount } from 'svelte'
@@ -19,11 +19,11 @@
 
     // Nav links shared for desktop and mobile
     const navLinks = [
-        { href: 'low-value-care', label: 'Low-Value Care' },
-        { href: 'impact', label: 'Impact' },
-        { href: 'datastream', label: 'National Data Stream' },
-        { href: 'main-goals', label: 'Project Goals' },
-        { href: 'contact', label: 'Contact' },
+        { href: 'low-value-care', label: 'sections.label-lvc' },
+        { href: 'impact', label: 'sections.label-impact' },
+        { href: 'datastream', label: 'sections.label-datastream' },
+        { href: 'main-goals', label: 'sections.label-main-goals' },
+        { href: 'contact', label: 'sections.label-contact' },
     ]
 
     // Simple toggle functions
@@ -140,7 +140,7 @@
                                 {activeSection === href ? 'text-tertiary-500' : ''}"
                             onclick={(e) => handleNavClickWithMenuClose(e, href)}
                         >
-                            {label}
+                            {$t(label)}
                         </a>
                     {/each}
                 </nav>
@@ -202,7 +202,7 @@
                                                 {activeSection === href ? 'text-tertiary-500' : ''}"
                                             onclick={(e) => handleNavClickWithMenuClose(e, href)}
                                         >
-                                            {label}
+                                            {$t(label)}
                                         </a>
                                     </li>
                                 {/each}
