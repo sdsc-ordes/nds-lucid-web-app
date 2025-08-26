@@ -65,61 +65,87 @@
                 A project by
             </h5>
             <div class="flex flex-wrap justify-start gap-[90px] items-center">
-                <img
-                    src="/partner-logos/lucid_logo.svg"
-                    alt="Lucid Logo"
-                    class="h-10 md:h-14 object-contain transition-all duration-300"
-                />
-                <img
-                    src="/partner-logos/sdsc.svg"
-                    alt="SDSC Logo"
-                    class="h-8 md:h-12 object-contain transition-all duration-300"
-                />
-                <img
-                    src="/partner-logos/PHRT.webp"
-                    alt="PHRT Logo"
-                    class="h-8 md:h-12 object-contain transition-all duration-300"
-                />
-                <img
-                    src="/partner-logos/sphn.webp"
-                    alt="SPHN Logo"
-                    class="h-10 md:h-14 object-contain transition-all duration-300"
-                />
-                <img
-                    src="/partner-logos/usz.webp"
-                    alt="USZ Logo"
-                    class="h-4 md:h-8 object-contain transition-all duration-300"
-                />
-                <img
-                    src="/partner-logos/chuv.webp"
-                    alt="CHUV Logo"
-                    class="h-8 md:h-12 object-contain transition-all duration-300"
-                />
-                <img
-                    src="/partner-logos/hug.webp"
-                    alt="HUG Logo"
-                    class="h-6 md:h-10 object-contain transition-all duration-300"
-                />
-                <img
-                    src="/partner-logos/inselspital.webp"
-                    alt="Inselspital Logo"
-                    class="h-8 md:h-12 object-contain transition-all duration-300"
-                />
-                <img
-                    src="/partner-logos/unispital-basel.webp"
-                    alt="Unispital Basel Logo"
-                    class="h-6 md:h-10 object-contain transition-all duration-300"
-                />
-                <img
-                    src="/partner-logos/unifr.webp"
-                    alt="UniFR Logo"
-                    class="h-8 md:h-12 object-contain transition-all duration-300"
-                />
-                <img
-                    src="/partner-logos/biomedit.webp"
-                    alt="Biomedit Logo"
-                    class="h-8 md:h-12 object-contain transition-all duration-300"
-                />
+                <button
+                    type="button"
+                    class="focus:outline-none"
+                    onclick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                >
+                    <img
+                        src="/partner-logos/lucid_logo.svg"
+                        alt="Lucid Logo"
+                        class="h-10 md:h-14 object-contain transition-all duration-300"
+                    />
+                </button>
+                <a href="https://datascience.ch" target="_blank" rel="noopener noreferrer">
+                    <img
+                        src="/partner-logos/sdsc.svg"
+                        alt="SDSC Logo"
+                        class="h-8 md:h-12 object-contain transition-all duration-300"
+                    />
+                </a>
+                <a href="https://www.sfa-phrt.ch/" target="_blank" rel="noopener noreferrer">
+                    <img
+                        src="/partner-logos/PHRT.webp"
+                        alt="PHRT Logo"
+                        class="h-8 md:h-12 object-contain transition-all duration-300"
+                    />
+                </a>
+                <a href="https://sphn.ch/" target="_blank" rel="noopener noreferrer">
+                    <img
+                        src="/partner-logos/sphn.webp"
+                        alt="SPHN Logo"
+                        class="h-10 md:h-14 object-contain transition-all duration-300"
+                    />
+                </a>
+                <a href="https://www.usz.ch/" target="_blank" rel="noopener noreferrer">
+                    <img
+                        src="/partner-logos/usz.webp"
+                        alt="USZ Logo"
+                        class="h-4 md:h-8 object-contain transition-all duration-300"
+                    />
+                </a>
+                <a href="https://www.chuv.ch/fr/" target="_blank" rel="noopener noreferrer">
+                    <img
+                        src="/partner-logos/chuv.webp"
+                        alt="CHUV Logo"
+                        class="h-8 md:h-12 object-contain transition-all duration-300"
+                    />
+                </a>
+                <a href="https://www.hug.ch/" target="_blank" rel="noopener noreferrer">
+                    <img
+                        src="/partner-logos/hug.webp"
+                        alt="HUG Logo"
+                        class="h-6 md:h-10 object-contain transition-all duration-300"
+                    />
+                </a>
+                <a href="https://www.insel.ch/de/" target="_blank" rel="noopener noreferrer">
+                    <img
+                        src="/partner-logos/inselspital.webp"
+                        alt="Inselspital Logo"
+                        class="h-8 md:h-12 object-contain transition-all duration-300"
+                    />
+                </a>
+                <a href="https://www.unispital-basel.ch/" target="_blank" rel="noopener noreferrer">
+                    <img
+                        src="/partner-logos/unispital-basel.webp"
+                        alt="Unispital Basel Logo"
+                        class="h-6 md:h-10 object-contain transition-all duration-300"
+                    />
+                </a>
+                <a href="https://www.unifr.ch" target="_blank" rel="noopener noreferrer">
+                    <img
+                        src="/partner-logos/unifr.webp"
+                        alt="UniFR Logo"
+                        class="h-8 md:h-12 object-contain transition-all duration-300"
+                    />
+                </a>
+                <a href="https://www.biomedit.ch/" target="_blank" rel="noopener noreferrer">
+                    <img
+                        src="/partner-logos/biomedit.webp"
+                        alt="Biomedit Logo"
+                        class="h-8 md:h-12 object-contain transition-all duration-300"
+                    />
+                </a>
             </div>
         </div>
     </div>
