@@ -5,12 +5,14 @@ import type { Writable } from 'svelte/store'
 import en from './locales/en/common.json'
 import fr from './locales/fr/common.json'
 import de from './locales/de/common.json'
+import it from './locales/it/common.json'
 
 // Define available locales
 export const locales = {
     en: 'English',
     fr: 'Français',
     de: 'Deutsch',
+    it: 'Italiano'
 }
 
 // Type for translations
@@ -21,6 +23,7 @@ const translations: Record<string, TranslationDict> = {
     en,
     fr,
     de,
+    it,
 }
 
 // Type for locale keys
