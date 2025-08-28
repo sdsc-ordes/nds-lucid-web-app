@@ -2,6 +2,8 @@
     import '../app.css'
     import Header from '$lib/components/Header.svelte'
     import Footer from '$lib/components/Footer.svelte'
+    import { injectAnalytics } from '@vercel/analytics/sveltekit'
+    injectAnalytics()
 
     let { children } = $props()
 </script>
