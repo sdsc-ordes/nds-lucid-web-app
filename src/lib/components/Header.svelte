@@ -71,43 +71,40 @@
 
             // Update active section based on scroll position
             const sections = navLinks.map((link) => link.href)
-            const documentHeight = document.documentElement.scrollHeight
 
-            // Check if we're at the bottom of the page
-            if (window.innerHeight + window.scrollY >= documentHeight - 50) {
-                activeSection = sections[sections.length - 1]
-                return
-            }
+            try {
+                const documentHeight = document.documentElement.scrollHeight
 
-            // Otherwise check each section
-            for (const section of sections) {
-                const element = document.getElementById(section)
-                if (element) {
-                    const rect = element.getBoundingClientRect()
-                    if (rect.top <= 200 && rect.bottom >= 200) {
-                        activeSection = section
-                        break
+                // Check if we're at the bottom of the page
+                if (window.innerHeight + window.scrollY >= documentHeight - 50) {
+                    activeSection = sections[sections.length - 1]
+                    return
+                }
+
+                // Otherwise check each section (with error handling)
+                for (const section of sections) {
+                    const element = document.getElementById(section)
+                    if (element) {
+                        try {
+                            const rect = element.getBoundingClientRect()
+                            if (rect.top <= 200 && rect.bottom >= 200) {
+                                activeSection = section
+                                break
+                            }
+                        } catch (e) {
+                            // Ignore errors during loading - element might be in flux
+                            continue
+                        }
                     }
                 }
+            } catch (e) {
+                // Ignore errors during page loading
+                return
             }
         }
 
-        // Delay scroll listener setup to ensure page is fully loaded
-        // Wait for fonts and images to load
-        Promise.all([
-            document.fonts.ready,
-            new Promise((resolve) => {
-                if (document.readyState === 'complete') {
-                    resolve(true)
-                } else {
-                    window.addEventListener('load', () => resolve(true))
-                }
-            }),
-        ]).then(() => {
-            setTimeout(() => {
-                window.addEventListener('scroll', updateScroll, { passive: true })
-            }, 200)
-        })
+        // Enable scroll immediately, but make section tracking more resilient
+        window.addEventListener('scroll', updateScroll, { passive: true })
 
         return () => {
             window.removeEventListener('scroll', updateScroll)
