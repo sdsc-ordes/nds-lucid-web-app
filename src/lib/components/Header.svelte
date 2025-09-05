@@ -54,47 +54,34 @@
             scrollY = window.scrollY
             isScrolled = scrollY > 50
 
-            // Get header height and calculate threshold
-            const headerHeight = getHeaderHeight()
-            const scrollThreshold = headerHeight + 10 // 10px buffer
-
             // Update active section based on scroll position
-            const sections = navLinks.map((link) => link.href)
-
+            const sections = navLinks.map(link => link.href)
+            const documentHeight = document.documentElement.scrollHeight
+            
             // Check if we're at the bottom of the page
-            if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 50) {
+            if (window.innerHeight + window.scrollY >= documentHeight - 50) {
                 activeSection = sections[sections.length - 1]
                 return
             }
 
-            // Find the section that's currently in view
-            let bestSection = ''
-            let minDistance = Infinity
-
+            // Otherwise check each section
             for (const section of sections) {
                 const element = document.getElementById(section)
                 if (element) {
                     const rect = element.getBoundingClientRect()
-                    const distance = Math.abs(rect.top - scrollThreshold)
-
-                    // Update if this section is closer to our threshold
-                    if (distance < minDistance) {
-                        minDistance = distance
-                        bestSection = section
+                    if (rect.top <= 200 && rect.bottom >= 200) {
+                        activeSection = section
+                        break
                     }
                 }
-            }
-
-            if (bestSection) {
-                activeSection = bestSection
             }
         }
 
         // Add scroll event listener
         window.addEventListener('scroll', updateScroll, { passive: true })
-
-        // Initial update
-        updateScroll()
+        
+        // Delay initial update to ensure content is laid out
+        setTimeout(updateScroll, 100)
 
         return () => {
             window.removeEventListener('scroll', updateScroll)
