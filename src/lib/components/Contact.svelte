@@ -7,24 +7,27 @@
     let animatedElements = new Set()
 
     onMount(() => {
-        observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting && !animatedElements.has(entry.target)) {
-                        entry.target.classList.add('is-visible')
-                        animatedElements.add(entry.target)
-                    }
-                })
-            },
-            {
-                threshold: 0.3,
-                rootMargin: '0px 0px -200px 0px',
-            }
-        )
+        // Defer observer creation to avoid blocking initial render
+        setTimeout(() => {
+            observer = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting && !animatedElements.has(entry.target)) {
+                            entry.target.classList.add('is-visible')
+                            animatedElements.add(entry.target)
+                        }
+                    })
+                },
+                {
+                    threshold: 0.3,
+                    rootMargin: '0px 0px -200px 0px',
+                }
+            )
 
-        document.querySelectorAll('.animate-on-scroll').forEach((el) => {
-            observer.observe(el)
-        })
+            document.querySelectorAll('.animate-on-scroll').forEach((el) => {
+                observer.observe(el)
+            })
+        }, 100) // Small delay to let initial render complete
 
         return () => {
             if (observer) observer.disconnect()

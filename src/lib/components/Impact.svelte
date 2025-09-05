@@ -7,25 +7,23 @@
     let animatedElements = new Set()
 
     onMount(() => {
-        tick().then(() => {
-            observer = new IntersectionObserver(
-                (entries) => {
-                    entries.forEach((entry) => {
-                        if (entry.isIntersecting && !animatedElements.has(entry.target)) {
-                            entry.target.classList.add('is-visible')
-                            animatedElements.add(entry.target)
-                        }
-                    })
-                },
-                {
-                    threshold: 0.2,
-                    rootMargin: '0px 0px -100px 0px',
-                }
-            )
+        observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting && !animatedElements.has(entry.target)) {
+                        entry.target.classList.add('is-visible')
+                        animatedElements.add(entry.target)
+                    }
+                })
+            },
+            {
+                threshold: 0.2,
+                rootMargin: '0px 0px -100px 0px',
+            }
+        )
 
-            document.querySelectorAll('.animate-on-scroll').forEach((el) => {
-                observer.observe(el)
-            })
+        document.querySelectorAll('.animate-on-scroll').forEach((el) => {
+            observer.observe(el)
         })
 
         // Return cleanup function
