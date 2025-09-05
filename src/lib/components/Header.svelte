@@ -48,11 +48,11 @@
         event.preventDefault()
         mobileMenuOpen = false
         activeSection = href
-        
+
         // Disable scroll tracking during smooth scroll
         isProgrammaticScroll = true
         handleNavClick(event, href)
-        
+
         // Re-enable scroll tracking after smooth scroll completes
         setTimeout(() => {
             isProgrammaticScroll = false
@@ -96,13 +96,13 @@
         // Wait for fonts and images to load
         Promise.all([
             document.fonts.ready,
-            new Promise(resolve => {
+            new Promise((resolve) => {
                 if (document.readyState === 'complete') {
                     resolve(true)
                 } else {
                     window.addEventListener('load', () => resolve(true))
                 }
-            })
+            }),
         ]).then(() => {
             setTimeout(() => {
                 window.addEventListener('scroll', updateScroll, { passive: true })
