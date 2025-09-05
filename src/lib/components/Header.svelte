@@ -55,9 +55,9 @@
             isScrolled = scrollY > 50
 
             // Update active section based on scroll position
-            const sections = navLinks.map(link => link.href)
+            const sections = navLinks.map((link) => link.href)
             const documentHeight = document.documentElement.scrollHeight
-            
+
             // Check if we're at the bottom of the page
             if (window.innerHeight + window.scrollY >= documentHeight - 50) {
                 activeSection = sections[sections.length - 1]
@@ -79,7 +79,7 @@
 
         // Add scroll event listener
         window.addEventListener('scroll', updateScroll, { passive: true })
-        
+
         // Delay initial update to ensure content is laid out
         setTimeout(updateScroll, 100)
 
