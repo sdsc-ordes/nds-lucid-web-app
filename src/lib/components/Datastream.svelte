@@ -136,7 +136,7 @@
                                     alt={`Layer ${i + 1}`}
                                     width="600"
                                     height="600"
-                                    loading={i === 0 ? 'eager' : 'lazy'}
+                                    loading="eager"
                                     decoding="async"
                                 />
                             </div>

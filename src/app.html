@@ -10,6 +10,13 @@
             href="https://fonts.googleapis.com/css2?family=Iceland&family=Tektur&family=HostGrotesk:wght@400..900&display=swap"
             rel="stylesheet"
         />
+
+        <!-- Preload critical images to speed up initial load -->
+        <link rel="preload" as="image" href="/images/hero/hero-background.webp" />
+        <link rel="preload" as="image" href="/logos/lucid-logo-light.svg" />
+        <link rel="preload" as="image" href="/images/impact/Map.svg" />
+        <link rel="preload" as="image" href="/images/datastream/carousel-1-min.webp" />
+
         %sveltekit.head%
     </head>
     <body data-sveltekit-preload-data="hover">
