@@ -59,13 +59,15 @@
         }, 1000)
     }
 
+    let pageLoaded = false
+
     onMount(() => {
         const updateScroll = () => {
             scrollY = window.scrollY
             isScrolled = scrollY > 50
 
-            // Skip section tracking during programmatic scrolling
-            if (isProgrammaticScroll) {
+            // Skip section tracking during programmatic scrolling or initial load
+            if (isProgrammaticScroll || !pageLoaded) {
                 return
             }
 
@@ -103,8 +105,13 @@
             }
         }
 
-        // Enable scroll immediately, but make section tracking more resilient
+        // Enable scroll immediately
         window.addEventListener('scroll', updateScroll, { passive: true })
+
+        // Enable section tracking after page is fully loaded
+        setTimeout(() => {
+            pageLoaded = true
+        }, 3000) // 3 seconds should be enough for everything to load
 
         return () => {
             window.removeEventListener('scroll', updateScroll)
