@@ -42,17 +42,32 @@
         dropdownOpen = false
     }
 
+    let isProgrammaticScroll = false
+
     const handleNavClickWithMenuClose = (event: Event, href: string) => {
         event.preventDefault()
         mobileMenuOpen = false
         activeSection = href
+        
+        // Disable scroll tracking during smooth scroll
+        isProgrammaticScroll = true
         handleNavClick(event, href)
+        
+        // Re-enable scroll tracking after smooth scroll completes
+        setTimeout(() => {
+            isProgrammaticScroll = false
+        }, 1000)
     }
 
     onMount(() => {
         const updateScroll = () => {
             scrollY = window.scrollY
             isScrolled = scrollY > 50
+
+            // Skip section tracking during programmatic scrolling
+            if (isProgrammaticScroll) {
+                return
+            }
 
             // Update active section based on scroll position
             const sections = navLinks.map((link) => link.href)
@@ -78,9 +93,21 @@
         }
 
         // Delay scroll listener setup to ensure page is fully loaded
-        setTimeout(() => {
-            window.addEventListener('scroll', updateScroll, { passive: true })
-        }, 100)
+        // Wait for fonts and images to load
+        Promise.all([
+            document.fonts.ready,
+            new Promise(resolve => {
+                if (document.readyState === 'complete') {
+                    resolve(true)
+                } else {
+                    window.addEventListener('load', () => resolve(true))
+                }
+            })
+        ]).then(() => {
+            setTimeout(() => {
+                window.addEventListener('scroll', updateScroll, { passive: true })
+            }, 200)
+        })
 
         return () => {
             window.removeEventListener('scroll', updateScroll)
