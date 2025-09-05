@@ -55,9 +55,9 @@
             isScrolled = scrollY > 50
 
             // Update active section based on scroll position
-            const sections = navLinks.map((link) => link.href)
+            const sections = navLinks.map(link => link.href)
             const documentHeight = document.documentElement.scrollHeight
-
+            
             // Check if we're at the bottom of the page
             if (window.innerHeight + window.scrollY >= documentHeight - 50) {
                 activeSection = sections[sections.length - 1]
@@ -77,11 +77,10 @@
             }
         }
 
-        // Add scroll event listener
-        window.addEventListener('scroll', updateScroll, { passive: true })
-
-        // Delay initial update to ensure content is laid out
-        setTimeout(updateScroll, 100)
+        // Delay scroll listener setup to ensure page is fully loaded
+        setTimeout(() => {
+            window.addEventListener('scroll', updateScroll, { passive: true })
+        }, 100)
 
         return () => {
             window.removeEventListener('scroll', updateScroll)
@@ -89,7 +88,6 @@
     })
 </script>
 
-<svelte:window bind:scrollY />
 
 <div class="navbar-wrapper {isScrolled ? 'scrolled' : ''} transition-all duration-300">
     <AppBar
