@@ -35,7 +35,6 @@
     })
 </script>
 
-
 <section class="w-full flex flex-col justify-center items-center relative overflow-hidden">
     <div class="absolute inset-0 bg-tertiary-500/13 dark:bg-surface-50"></div>
 

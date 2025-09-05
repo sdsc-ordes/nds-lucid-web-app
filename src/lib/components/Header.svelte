@@ -55,9 +55,9 @@
             isScrolled = scrollY > 50
 
             // Update active section based on scroll position
-            const sections = navLinks.map(link => link.href)
+            const sections = navLinks.map((link) => link.href)
             const documentHeight = document.documentElement.scrollHeight
-            
+
             // Check if we're at the bottom of the page
             if (window.innerHeight + window.scrollY >= documentHeight - 50) {
                 activeSection = sections[sections.length - 1]
@@ -87,7 +87,6 @@
         }
     })
 </script>
-
 
 <div class="navbar-wrapper {isScrolled ? 'scrolled' : ''} transition-all duration-300">
     <AppBar

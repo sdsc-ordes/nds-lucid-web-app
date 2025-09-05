@@ -48,7 +48,30 @@ The LUCID project aims to improve healthcare quality in Swiss university hospita
 2. Start development server:
    ```bash
    pnpm dev
+   # or using just
+   just develop
    ```
+
+### Available Commands
+
+
+```bash
+just develop      # Start development server
+just build        # Build for production
+just check        # Run type checking
+just format       # Format code
+just format-check # Check formatting
+just check-all    # Run both format check and type check
+```
+
+Or using pnpm directly:
+
+```bash
+pnpm dev          # Start development server
+pnpm build        # Build for production
+pnpm check        # Run type checking
+pnpm format       # Format code
+```
 
 For detailed technical documentation and contribution guidelines, see:
 
