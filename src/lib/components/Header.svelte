@@ -12,11 +12,6 @@
     let isScrolled = false
     let activeSection = 'low-value-care'
 
-    function getHeaderHeight() {
-        const header = document.querySelector('.navbar-wrapper')
-        return header ? header.getBoundingClientRect().height : 0
-    }
-
     // Nav links shared for desktop and mobile
     const navLinks = [
         { href: 'low-value-care', label: 'sections.label-lvc' },
@@ -42,76 +37,41 @@
         dropdownOpen = false
     }
 
-    let isProgrammaticScroll = false
-
     const handleNavClickWithMenuClose = (event: Event, href: string) => {
         event.preventDefault()
         mobileMenuOpen = false
         activeSection = href
-
-        // Disable scroll tracking during smooth scroll
-        isProgrammaticScroll = true
         handleNavClick(event, href)
-
-        // Re-enable scroll tracking after smooth scroll completes
-        setTimeout(() => {
-            isProgrammaticScroll = false
-        }, 1000)
     }
-
-    let pageLoaded = false
 
     onMount(() => {
         const updateScroll = () => {
             scrollY = window.scrollY
             isScrolled = scrollY > 50
 
-            // Skip section tracking during programmatic scrolling or initial load
-            if (isProgrammaticScroll || !pageLoaded) {
+            // Simple section tracking - find which section is in view
+            const sections = navLinks.map((link) => link.href)
+
+            // Check if we're at the bottom of the page
+            if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 50) {
+                activeSection = sections[sections.length - 1]
                 return
             }
 
-            // Update active section based on scroll position
-            const sections = navLinks.map((link) => link.href)
-
-            try {
-                const documentHeight = document.documentElement.scrollHeight
-
-                // Check if we're at the bottom of the page
-                if (window.innerHeight + window.scrollY >= documentHeight - 50) {
-                    activeSection = sections[sections.length - 1]
-                    return
-                }
-
-                // Otherwise check each section (with error handling)
-                for (const section of sections) {
-                    const element = document.getElementById(section)
-                    if (element) {
-                        try {
-                            const rect = element.getBoundingClientRect()
-                            if (rect.top <= 200 && rect.bottom >= 200) {
-                                activeSection = section
-                                break
-                            }
-                        } catch (e) {
-                            // Ignore errors during loading - element might be in flux
-                            continue
-                        }
+            // Find the section that's currently in view
+            for (const section of sections) {
+                const element = document.getElementById(section)
+                if (element) {
+                    const rect = element.getBoundingClientRect()
+                    if (rect.top <= 200 && rect.bottom >= 200) {
+                        activeSection = section
+                        break
                     }
                 }
-            } catch (e) {
-                // Ignore errors during page loading
-                return
             }
         }
 
-        // Enable scroll immediately
         window.addEventListener('scroll', updateScroll, { passive: true })
-
-        // Enable section tracking after page is fully loaded
-        setTimeout(() => {
-            pageLoaded = true
-        }, 3000) // 3 seconds should be enough for everything to load
 
         return () => {
             window.removeEventListener('scroll', updateScroll)

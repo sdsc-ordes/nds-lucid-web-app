@@ -64,9 +64,7 @@
 <section id="datastream" class="relative w-full py-16">
     <!-- Header -->
     <div class="max-w-7xl mx-auto px-6 mb-16">
-        <div
-            class="bg-surface-contrast-50-950 p-4 sm:p-4 shadow-lg"
-        >
+        <div class="bg-surface-contrast-50-950 p-4 sm:p-4 shadow-lg">
             <h1 class="text-surface-50-950 text-xl sm:text-2xl font-bold text-center">
                 {$t('datastream.datastream-title')}
             </h1>
