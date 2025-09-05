@@ -12,11 +12,6 @@
     let isScrolled = false
     let activeSection = 'low-value-care'
 
-    function getHeaderHeight() {
-        const header = document.querySelector('.navbar-wrapper')
-        return header ? header.getBoundingClientRect().height : 0
-    }
-
     // Nav links shared for desktop and mobile
     const navLinks = [
         { href: 'low-value-care', label: 'sections.label-lvc' },
@@ -54,11 +49,7 @@
             scrollY = window.scrollY
             isScrolled = scrollY > 50
 
-            // Get header height and calculate threshold
-            const headerHeight = getHeaderHeight()
-            const scrollThreshold = headerHeight + 10 // 10px buffer
-
-            // Update active section based on scroll position
+            // Simple section tracking - find which section is in view
             const sections = navLinks.map((link) => link.href)
 
             // Check if we're at the bottom of the page
@@ -68,41 +59,25 @@
             }
 
             // Find the section that's currently in view
-            let bestSection = ''
-            let minDistance = Infinity
-
             for (const section of sections) {
                 const element = document.getElementById(section)
                 if (element) {
                     const rect = element.getBoundingClientRect()
-                    const distance = Math.abs(rect.top - scrollThreshold)
-
-                    // Update if this section is closer to our threshold
-                    if (distance < minDistance) {
-                        minDistance = distance
-                        bestSection = section
+                    if (rect.top <= 200 && rect.bottom >= 200) {
+                        activeSection = section
+                        break
                     }
                 }
             }
-
-            if (bestSection) {
-                activeSection = bestSection
-            }
         }
 
-        // Add scroll event listener
         window.addEventListener('scroll', updateScroll, { passive: true })
-
-        // Initial update
-        updateScroll()
 
         return () => {
             window.removeEventListener('scroll', updateScroll)
         }
     })
 </script>
-
-<svelte:window bind:scrollY />
 
 <div class="navbar-wrapper {isScrolled ? 'scrolled' : ''} transition-all duration-300">
     <AppBar

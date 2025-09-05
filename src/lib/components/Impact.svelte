@@ -4,44 +4,34 @@
     initLocale()
 
     let observer: IntersectionObserver
-    let scrollY = 0
     let animatedElements = new Set()
 
     onMount(() => {
-        tick().then(() => {
-            observer = new IntersectionObserver(
-                (entries) => {
-                    entries.forEach((entry) => {
-                        if (entry.isIntersecting && !animatedElements.has(entry.target)) {
-                            entry.target.classList.add('is-visible')
-                            animatedElements.add(entry.target)
-                        }
-                    })
-                },
-                {
-                    threshold: 0.2,
-                    rootMargin: '0px 0px -100px 0px',
-                }
-            )
+        observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting && !animatedElements.has(entry.target)) {
+                        entry.target.classList.add('is-visible')
+                        animatedElements.add(entry.target)
+                    }
+                })
+            },
+            {
+                threshold: 0.2,
+                rootMargin: '0px 0px -100px 0px',
+            }
+        )
 
-            document.querySelectorAll('.animate-on-scroll').forEach((el) => {
-                observer.observe(el)
-            })
+        document.querySelectorAll('.animate-on-scroll').forEach((el) => {
+            observer.observe(el)
         })
-
-        // Track scroll for parallax
-        const updateScrollY = () => (scrollY = window.scrollY)
-        window.addEventListener('scroll', updateScrollY)
 
         // Return cleanup function
         return () => {
-            window.removeEventListener('scroll', updateScrollY)
             if (observer) observer.disconnect()
         }
     })
 </script>
-
-<svelte:window bind:scrollY />
 
 <section class="w-full flex flex-col justify-center items-center relative overflow-hidden">
     <div class="absolute inset-0 bg-tertiary-500/13 dark:bg-surface-50"></div>

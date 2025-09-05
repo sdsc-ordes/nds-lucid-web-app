@@ -6,8 +6,7 @@
     let observer: IntersectionObserver
     let animatedElements = new Set()
 
-    onMount(async () => {
-        await tick() // Wait for DOM
+    onMount(() => {
         observer = new IntersectionObserver(
             (entries) => {
                 entries.forEach((entry) => {

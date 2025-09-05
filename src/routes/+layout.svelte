@@ -8,14 +8,14 @@
     let { children } = $props()
 </script>
 
-<div class="min-h-screen w-full flex flex-col">
-    <header class="sticky top-0 z-50 flex-shrink-0">
+<div class="w-full">
+    <header class="sticky top-0 z-50">
         <Header />
     </header>
-    <main class="flex-1 w-full overflow-x-hidden">
+    <main class="w-full">
         {@render children()}
     </main>
-    <footer class="flex-shrink-0">
+    <footer>
         <Footer />
     </footer>
 </div>
