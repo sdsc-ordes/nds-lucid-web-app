@@ -11,7 +11,10 @@
     <img
         src="/images/hero/hero-background.webp"
         alt="Hero background"
+        width="1920"
+        height="800"
         class="absolute inset-0 w-full h-full object-cover"
+        loading="eager"
     />
 
     <div class="absolute inset-0 bg-surface-contrast-50/75"></div>

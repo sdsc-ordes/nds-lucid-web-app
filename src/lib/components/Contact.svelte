@@ -68,11 +68,15 @@
                 <button
                     type="button"
                     class="focus:outline-none"
-                    onclick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                    onclick={() => {
+                        window.scrollTo({ top: 0, behavior: 'smooth' })
+                    }}
                 >
                     <img
                         src="/partner-logos/lucid_logo.svg"
                         alt="Lucid Logo"
+                        width="80"
+                        height="56"
                         class="h-10 md:h-14 object-contain transition-all duration-300"
                     />
                 </button>
@@ -80,6 +84,8 @@
                     <img
                         src="/partner-logos/sdsc.svg"
                         alt="SDSC Logo"
+                        width="80"
+                        height="48"
                         class="h-8 md:h-12 object-contain transition-all duration-300"
                     />
                 </a>
@@ -87,6 +93,8 @@
                     <img
                         src="/partner-logos/PHRT.webp"
                         alt="PHRT Logo"
+                        width="80"
+                        height="48"
                         class="h-8 md:h-12 object-contain transition-all duration-300"
                     />
                 </a>
@@ -94,6 +102,8 @@
                     <img
                         src="/partner-logos/sphn.webp"
                         alt="SPHN Logo"
+                        width="80"
+                        height="56"
                         class="h-10 md:h-14 object-contain transition-all duration-300"
                     />
                 </a>
@@ -101,6 +111,8 @@
                     <img
                         src="/partner-logos/usz.webp"
                         alt="USZ Logo"
+                        width="60"
+                        height="32"
                         class="h-4 md:h-8 object-contain transition-all duration-300"
                     />
                 </a>
@@ -108,6 +120,8 @@
                     <img
                         src="/partner-logos/chuv.webp"
                         alt="CHUV Logo"
+                        width="80"
+                        height="48"
                         class="h-8 md:h-12 object-contain transition-all duration-300"
                     />
                 </a>
@@ -115,6 +129,8 @@
                     <img
                         src="/partner-logos/hug.webp"
                         alt="HUG Logo"
+                        width="70"
+                        height="40"
                         class="h-6 md:h-10 object-contain transition-all duration-300"
                     />
                 </a>
@@ -122,6 +138,8 @@
                     <img
                         src="/partner-logos/inselspital.webp"
                         alt="Inselspital Logo"
+                        width="80"
+                        height="48"
                         class="h-8 md:h-12 object-contain transition-all duration-300"
                     />
                 </a>
@@ -129,6 +147,8 @@
                     <img
                         src="/partner-logos/unispital-basel.webp"
                         alt="Unispital Basel Logo"
+                        width="70"
+                        height="40"
                         class="h-6 md:h-10 object-contain transition-all duration-300"
                     />
                 </a>
@@ -136,6 +156,8 @@
                     <img
                         src="/partner-logos/unifr.webp"
                         alt="UniFR Logo"
+                        width="80"
+                        height="48"
                         class="h-8 md:h-12 object-contain transition-all duration-300"
                     />
                 </a>
@@ -143,6 +165,8 @@
                     <img
                         src="/partner-logos/biomedit.webp"
                         alt="Biomedit Logo"
+                        width="80"
+                        height="48"
                         class="h-8 md:h-12 object-contain transition-all duration-300"
                     />
                 </a>
