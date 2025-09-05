@@ -15,7 +15,9 @@
         <link rel="preload" as="image" href="/images/hero/hero-background.webp" />
         <link rel="preload" as="image" href="/logos/lucid-logo-light.svg" />
         <link rel="preload" as="image" href="/images/impact/Map.svg" />
-        <link rel="preload" as="image" href="/images/datastream/carousel-1-min.webp" />
+        
+        <!-- Preload datastream image only on desktop -->
+        <link rel="preload" as="image" href="/images/datastream/carousel-1-min.webp" media="(min-width: 1024px)" />
 
         %sveltekit.head%
     </head>
