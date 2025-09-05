@@ -4,7 +4,6 @@
     initLocale()
 
     let observer: IntersectionObserver
-    let scrollY = 0
     let animatedElements = new Set()
 
     onMount(() => {
@@ -29,19 +28,13 @@
             })
         })
 
-        // Track scroll for parallax
-        const updateScrollY = () => (scrollY = window.scrollY)
-        window.addEventListener('scroll', updateScrollY)
-
         // Return cleanup function
         return () => {
-            window.removeEventListener('scroll', updateScrollY)
             if (observer) observer.disconnect()
         }
     })
 </script>
 
-<svelte:window bind:scrollY />
 
 <section class="w-full flex flex-col justify-center items-center relative overflow-hidden">
     <div class="absolute inset-0 bg-tertiary-500/13 dark:bg-surface-50"></div>
