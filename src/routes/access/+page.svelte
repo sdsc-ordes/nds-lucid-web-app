@@ -1,6 +1,9 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import JsonFormViewer from '$lib/components/JsonFormViewer.svelte';
+	import NavigationItems from '$lib/components/NavigationItems.svelte';
+	import { goto } from '$app/navigation';
+	import { setLayoutSlots } from '$lib/utils/layout';
 	import {
 		loadConcepts,
 		createSchema,
@@ -18,7 +21,21 @@
 	let selectedConcepts = $state<string[]>([]);
 	let searchQuery = $state<string>('');
 
+	// Nav links for access page - redirect to home page sections
+	const navLinks = [
+		{ href: '/', label: 'sections.label-home', action: 'navigate' as const },
+		
+	];
+
+	const handleNavClickWithMenuClose = (event: Event, href: string) => {
+		event.preventDefault();
+		goto(href);
+	};
+
 	onMount(async () => {
+		// Set up navigation snippet
+		setLayoutSlots({ topnavigationitems })
+
 		// Load concepts and create schema
 		concepts = await loadConcepts();
 		filteredConcepts = concepts;
@@ -65,6 +82,14 @@
 
     
 </script>
+
+{#snippet topnavigationitems()}
+	<NavigationItems 
+		navLinks={navLinks} 
+		activeSection="" 
+		onNavClick={handleNavClickWithMenuClose}
+	/>
+{/snippet}
 
 <div class="container mx-auto p-8">
 	<h1 class="text-3xl font-bold mb-4">Data Access Request</h1>

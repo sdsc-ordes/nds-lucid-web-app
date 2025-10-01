@@ -6,7 +6,9 @@
     "label-main-goals": "Objectifs du Projet",
     "label-hero": "Section d'Accueil",
     "label-contact": "Contact",
-    "label-sources": "Sources"
+    "label-sources": "Sources",
+    "label-home": "Accueil"
+  
   },
   "hero": {
     "landing-title": "Qualité des Soins dans les<br><b>Hôpitaux Universitaires Suisses</b>",
