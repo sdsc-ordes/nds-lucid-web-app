@@ -13,6 +13,7 @@
 		type Concept
 	} from './schema';
 	import { SearchIcon } from 'lucide-svelte';
+    import { t, initLocale } from '$lib/i18n/i18n'
 
 	let concepts = $state<Concept[]>([]);
 	let filteredConcepts = $state<Concept[]>([]);
@@ -22,25 +23,32 @@
 	let searchQuery = $state<string>('');
 
 	// Nav links for access page - redirect to home page sections
-	const navLinks = [
-		{ href: '/', label: 'sections.label-home', action: 'navigate' as const },
-		
-	];
+	let navLinks = $state([
+		{ href: '/', label: 'Home', action: 'navigate' as const },
+	]);
 
 	const handleNavClickWithMenuClose = (event: Event, href: string) => {
 		event.preventDefault();
 		goto(href);
 	};
 
+	// Navigation snippets will be set up after they're defined
+
 	onMount(async () => {
-		// Set up navigation snippet
-		setLayoutSlots({ topnavigationitems })
+		// Initialize locale from localStorage if available
+		initLocale()
 
 		// Load concepts and create schema
 		concepts = await loadConcepts();
 		filteredConcepts = concepts;
 		updateSchema();
 	});
+
+	// Set up navigation snippets after component is initialized
+	setLayoutSlots({ 
+		desktopnavigationitems,
+		mobilenavigationitems
+	})
 
 	function updateSchema() {
 		schema = createSchema(filteredConcepts);
@@ -83,13 +91,24 @@
     
 </script>
 
-{#snippet topnavigationitems()}
+{#snippet desktopnavigationitems()}
 	<NavigationItems 
 		navLinks={navLinks} 
 		activeSection="" 
 		onNavClick={handleNavClickWithMenuClose}
+		isMobile={false}
 	/>
 {/snippet}
+
+{#snippet mobilenavigationitems()}
+	<NavigationItems 
+		navLinks={navLinks} 
+		activeSection="" 
+		onNavClick={handleNavClickWithMenuClose}
+		isMobile={true}
+	/>
+{/snippet}
+
 
 <div class="container mx-auto p-8">
 	<h1 class="text-3xl font-bold mb-4">Data Access Request</h1>

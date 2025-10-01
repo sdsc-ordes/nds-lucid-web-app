@@ -2,6 +2,7 @@
 	import { t } from '$lib/i18n/i18n';
 	import { handleNavClick } from '$lib/utils/scroll';
 	import { goto } from '$app/navigation';
+	import { getContext } from 'svelte';
 
 	interface NavLink {
 		href: string;
@@ -18,7 +19,18 @@
 
 	let { navLinks, activeSection, onNavClick, isMobile = false }: Props = $props();
 
+	// Get mobile menu context
+	const mobileMenuState = getContext<{ isOpen: boolean; close: () => void }>('mobile-menu-state');
+
+	// Auto-detect mobile mode if not explicitly set
+	let isMobileMode = $state(isMobile);
+
 	const handleClick = (event: Event, href: string, action: 'scroll' | 'navigate' = 'scroll') => {
+		// Close mobile menu if it's open
+		if (mobileMenuState?.isOpen) {
+			mobileMenuState.close();
+		}
+
 		if (action === 'navigate') {
 			event.preventDefault();
 			goto(href);
@@ -30,24 +42,22 @@
 	};
 </script>
 
-{#if isMobile}
+{#if isMobileMode}
 	<!-- Mobile Navigation -->
-	<nav class="absolute right-0 top-full mt-2 bg-surface-50 rounded-lg p-4 shadow-lg z-100 w-60">
-		<ul class="flex flex-col gap-4">
-			{#each navLinks as { href, label, action = 'scroll' }}
-				<li>
-					<a
-						{href}
-						class="text-primary-900 active:text-primary-500 focus:text-primary-500 transition-colors duration-200 block
-							{activeSection === href ? 'text-tertiary-500' : ''}"
-						onclick={(e) => handleClick(e, href, action)}
-					>
-						{$t(label)}
-					</a>
-				</li>
-			{/each}
-		</ul>
-	</nav>
+	<ul class="flex flex-col gap-4">
+		{#each navLinks as { href, label, action = 'scroll' }}
+			<li>
+				<a
+					{href}
+					class="text-primary-900 active:text-primary-500 focus:text-primary-500 transition-colors duration-200 block
+						{activeSection === href ? 'text-tertiary-500' : ''}"
+					onclick={(e) => handleClick(e, href, action)}
+				>
+					{$t(label)}
+				</a>
+			</li>
+		{/each}
+	</ul>
 {:else}
 	<!-- Desktop Navigation -->
 	<nav class="hidden md:flex items-center">

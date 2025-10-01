@@ -33,9 +33,6 @@
         // Initialize locale from localStorage if available
         initLocale()
 
-        // Set up navigation snippet
-        setLayoutSlots({ topnavigationitems })
-
         // Simple section tracking - find which section is in view
         const updateActiveSection = () => {
             const sections = navLinks.map((link) => link.href)
@@ -65,15 +62,32 @@
             window.removeEventListener('scroll', updateActiveSection)
         }
     })
+
+    // Set up navigation snippets after component is initialized
+    setLayoutSlots({ 
+        desktopnavigationitems,
+        mobilenavigationitems
+    })
 </script>
 
-{#snippet topnavigationitems()}
+{#snippet desktopnavigationitems()}
     <NavigationItems 
         navLinks={navLinks} 
         activeSection={activeSection} 
         onNavClick={handleNavClickWithMenuClose}
+        isMobile={false}
     />
 {/snippet}
+
+{#snippet mobilenavigationitems()}
+    <NavigationItems 
+        navLinks={navLinks} 
+        activeSection={activeSection} 
+        onNavClick={handleNavClickWithMenuClose}
+        isMobile={true}
+    />
+{/snippet}
+
 
 <Hero />
 <LVCexamples />

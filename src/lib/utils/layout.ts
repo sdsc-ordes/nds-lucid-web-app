@@ -3,7 +3,8 @@ import type { Snippet } from 'svelte';
 
 // Define the shape of your slots for type safety
 export type LayoutSlots = {
-	topnavigationitems: Snippet;
+	desktopnavigationitems: Snippet;
+	mobilenavigationitems: Snippet;
 	content: Snippet;
 };
 

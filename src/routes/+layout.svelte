@@ -12,14 +12,20 @@
 
     let { children, slots } = $props<{ children: any; slots: LayoutSlots }>()
 
-    // Set up the layout slots context
-    const layoutSlots = $state<Partial<LayoutSlots>>({})
-    setContext('layout-slots', layoutSlots)
-
     let dropdownOpen = $state(false)
     let mobileMenuOpen = $state(false)
     let scrollY = $state(0)
     let isScrolled = $state(false)
+
+    // Set up the layout slots context
+    const layoutSlots = $state<Partial<LayoutSlots>>({})
+    setContext('layout-slots', layoutSlots)
+    
+    // Provide mobile menu state to child components
+    setContext('mobile-menu-state', {
+        get isOpen() { return mobileMenuOpen },
+        close: () => { mobileMenuOpen = false }
+    })
 
     // Simple toggle functions
     const toggleDropdown = () => {
@@ -61,8 +67,8 @@
 
                 {#snippet trail()}
                     <div class="flex items-center gap-6">
-                        <!-- Navigation Items from snippet -->
-                        {@render layoutSlots.topnavigationitems?.()}
+                        <!-- Desktop Navigation Items from snippet -->
+                        {@render layoutSlots.desktopnavigationitems?.()}
 
                         <!-- Language Dropdown -->
                         <LanguageButton 
@@ -79,7 +85,9 @@
                             />
 
                             {#if mobileMenuOpen}
-                                {@render layoutSlots.topnavigationitems?.()}
+                                <div class="absolute right-0 top-full mt-2 bg-surface-50 rounded-lg p-4 shadow-lg z-100 w-60">
+                                    {@render layoutSlots.mobilenavigationitems?.()}
+                                </div>
                             {/if}
                         </div>
                     </div>
