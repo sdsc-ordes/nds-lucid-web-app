@@ -1,0 +1,5325 @@
+[
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-ontology/sphn#AdministrativeGender",
+    "label": "Administrative Gender",
+    "definition": "Administrative Gender",
+    "properties": []
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-ontology/sphn#Biosample",
+    "label": "Biosample",
+    "definition": "Biosample",
+    "properties": []
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-ontology/sphn#Catheter",
+    "label": "Catheter",
+    "definition": "Catheter",
+    "properties": []
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-ontology/sphn#CentralVenousPressure",
+    "label": "Central Venous Pressure",
+    "definition": "Central Venous Pressure",
+    "properties": []
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-ontology/sphn#CircumferenceMeasure",
+    "label": "Circumference Measure",
+    "definition": "Circumference Measure",
+    "properties": []
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-ontology/sphn#DataProviderInstitute",
+    "label": "Data Provider Institute",
+    "definition": "Data Provider Institute",
+    "properties": []
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-ontology/sphn#DeathStatus",
+    "label": "Death Status",
+    "definition": "Death Status",
+    "properties": []
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-ontology/sphn#DiagnosticRadiologicExamination",
+    "label": "Diagnostic Radiologic Examination",
+    "definition": "Diagnostic Radiologic Examination",
+    "properties": []
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-ontology/sphn#FOPHDiagnosis",
+    "label": "FOPH Diagnosis",
+    "definition": "FOPH Diagnosis",
+    "properties": []
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-ontology/sphn#FOPHProcedure",
+    "label": "FOPH Procedure",
+    "definition": "FOPH Procedure",
+    "properties": []
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-ontology/sphn#ICDODiagnosis",
+    "label": "ICD-O Diagnosis",
+    "definition": "ICD-O Diagnosis",
+    "properties": []
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-ontology/sphn#MeasurementMethod",
+    "label": "Measurement Method",
+    "definition": "Measurement Method",
+    "properties": []
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-ontology/sphn#Reference",
+    "label": "Reference",
+    "definition": "Reference",
+    "properties": []
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-ontology/sphn#SimpleScore",
+    "label": "Simple Score",
+    "definition": "Simple Score",
+    "properties": []
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-ontology/sphn#SystemicArterialBloodPressure",
+    "label": "Systemic Arterial Blood Pressure",
+    "definition": "Systemic Arterial Blood Pressure",
+    "properties": []
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-ontology/sphn#TNMClassification",
+    "label": "TNM Classification",
+    "definition": "TNM Classification",
+    "properties": []
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-ontology/sphn#TumorGrade",
+    "label": "Tumor Grade",
+    "definition": "Tumor Grade",
+    "properties": []
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-ontology/sphn#TumorStage",
+    "label": "Tumor Stage",
+    "definition": "Tumor Stage",
+    "properties": []
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#AccessDevice",
+    "label": "Access Device",
+    "definition": "product intended for medical use to gain access to the body, such as cannula, tube, catheter or drainage",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasProductCode",
+        "label": "has product code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSoftware",
+        "label": "has software"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasTypeCode",
+        "label": "has type code"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#AccessDevicePresence",
+    "label": "Access Device Presence",
+    "definition": "application of medical access device, such as cannula, tube, catheter or drainage",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasEndDateTime",
+        "label": "has end datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasInsertionPoint",
+        "label": "has insertion point"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasMedicalDevice",
+        "label": "has medical device"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasRestingPoint",
+        "label": "has resting point"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasStartDateTime",
+        "label": "has start datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#AdministrativeCase",
+    "label": "Administrative Case",
+    "definition": "administrative artifact for billing according to national healthcare billing guidelines, e.g. Swiss Diagnosis Related Groups, and local settings",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdmissionDateTime",
+        "label": "has admission datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCareHandling",
+        "label": "has care handling"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDischargeDateTime",
+        "label": "has discharge datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDischargeLocation",
+        "label": "has discharge location"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasIdentifier",
+        "label": "has identifier"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasOriginLocation",
+        "label": "has origin location"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#AdministrativeSex",
+    "label": "Administrative Sex",
+    "definition": "the sex of the individual used for administrative purposes",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasRecordDateTime",
+        "label": "has record datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#AdverseEvent",
+    "label": "Adverse Event",
+    "definition": "results from an intervention that caused unintentional harm",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasConsequences",
+        "label": "has consequences"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasIntervention",
+        "label": "has intervention"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasOnsetDateTime",
+        "label": "has onset datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasOutcome",
+        "label": "has outcome"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSeverityCode",
+        "label": "has severity code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#AdverseEvent_consequences",
+    "label": "Adverse Event consequences",
+    "definition": "consequences of the concept",
+    "properties": []
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#AdverseEvent_outcome",
+    "label": "Adverse Event outcome",
+    "definition": "result or effect of an action, situation, or event of the concept",
+    "properties": []
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#Age",
+    "label": "Age",
+    "definition": "time elapsed since birth of the individual",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDeterminationDateTime",
+        "label": "has determination datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasQuantity",
+        "label": "has quantity"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#Allergen",
+    "label": "Allergen",
+    "definition": "any substance, product or physical force producing immediate hypersensitivity",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#Allergy",
+    "label": "Allergy",
+    "definition": "risk of harmful or undesirable, physiological response which is unique to an individual and associated with exposure to an allergen",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAllergen",
+        "label": "has allergen"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasFirstRecordDateTime",
+        "label": "has first record datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasLastReactionDateTime",
+        "label": "has last reaction datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasReactionTypeCode",
+        "label": "has reaction type code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSeverityCode",
+        "label": "has severity code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasVerificationStatusCode",
+        "label": "has verification status code"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#AllergyEpisode",
+    "label": "Allergy Episode",
+    "definition": "manifestation of an allergic reaction following an exposure to an allergen",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAllergen",
+        "label": "has allergen"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasBodySite",
+        "label": "has body site"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCertaintyCode",
+        "label": "has certainty code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDateTime",
+        "label": "has datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDuration",
+        "label": "has duration"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasExposure",
+        "label": "has exposure"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasManifestationCode",
+        "label": "has manifestation code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSeverityCode",
+        "label": "has severity code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#AntimicrobialSusceptibilityLabTest",
+    "label": "Antimicrobial Susceptibility Lab Test",
+    "definition": "specific lab test performed on an isolate against a chemical agent for determining antimicrobial susceptibility",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasChemicalAgent",
+        "label": "has chemical agent"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasInstrument",
+        "label": "has instrument"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasResult",
+        "label": "has result"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasTestKit",
+        "label": "has test kit"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#AntimicrobialSusceptibilityLabTestEvent",
+    "label": "Antimicrobial Susceptibility Lab Test Event",
+    "definition": "occurrence in which one or multiple laboratory tests are performed on an isolate at a given time for determining antimicrobial susceptibility",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDateTime",
+        "label": "has datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasLabTest",
+        "label": "has lab test"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasReportDateTime",
+        "label": "has report datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSample",
+        "label": "has sample"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#AntimicrobialSusceptibilityResult",
+    "label": "Antimicrobial Susceptibility Result",
+    "definition": "result of a antimicrobial susceptibility lab analysis",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasNumericalReference",
+        "label": "has numerical reference"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasQuantity",
+        "label": "has quantity"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasStandardGuideline",
+        "label": "has standard guideline"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasStringValue",
+        "label": "has string value"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#Assay",
+    "label": "Assay",
+    "definition": "a process with the objective to produce information about a sample by examining it",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataFile",
+        "label": "has data file"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasIdentifier",
+        "label": "has identifier"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasPredecessor",
+        "label": "has predecessor"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSample",
+        "label": "has sample"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasStandardOperatingProcedure",
+        "label": "has standard operating procedure"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasStartDateTime",
+        "label": "has start datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#Assessment",
+    "label": "Assessment",
+    "definition": "assessment scale, classification, staging or scoring system",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasComponent",
+        "label": "has component"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasName",
+        "label": "has name"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasResult",
+        "label": "has result"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#AssessmentComponent",
+    "label": "Assessment Component",
+    "definition": "component of an assessment",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasName",
+        "label": "has name"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasResult",
+        "label": "has result"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#AssessmentEvent",
+    "label": "Assessment Event",
+    "definition": "evaluation at a given time, which takes into account a predefined scale, classification, staging or scoring system",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAssessment",
+        "label": "has assessment"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDateTime",
+        "label": "has datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasPerformer",
+        "label": "has performer"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#AssessmentResult",
+    "label": "Assessment Result",
+    "definition": "outcome of an assessment",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasQuantity",
+        "label": "has quantity"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasStringValue",
+        "label": "has string value"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#BilledDiagnosis",
+    "label": "Billed Diagnosis",
+    "definition": "discharge diagnosis used for the billing system (e.g. for building the Diagnosis Related Groups) according to guidelines of the national authority (e.g. Swiss Federal Office of Public Health), e.g. K35.3 acute appendicitis with localized peritonitis",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasRank",
+        "label": "has rank"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasRecordDateTime",
+        "label": "has record datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectAge",
+        "label": "has subject age"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#BilledDiagnosis_rank",
+    "label": "Billed Diagnosis rank",
+    "definition": "specifies the level of the concept",
+    "properties": []
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#BilledProcedure",
+    "label": "Billed Procedure",
+    "definition": "procedure, coded for billing (e.g. for building the Diagnosis Related Groups) according to guidelines of the national authority (e.g. Swiss Federal Office of Public Health), e.g. Z57.34 open biopsy of the urinary bladder",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasBodySite",
+        "label": "has body site"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasEndDateTime",
+        "label": "has end datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasIntent",
+        "label": "has intent"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasRank",
+        "label": "has rank"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasStartDateTime",
+        "label": "has start datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#BilledProcedure_rank",
+    "label": "Billed Procedure rank",
+    "definition": "specifies the level of the concept",
+    "properties": []
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#Biobanksample",
+    "label": "Biobanksample",
+    "definition": "biosample stored in a biobank",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasBiobankName",
+        "label": "has biobank name"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasIdentifier",
+        "label": "has identifier"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSample",
+        "label": "has sample"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#Birth",
+    "label": "Birth",
+    "definition": "the event of being born",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCountry",
+        "label": "has country"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDate",
+        "label": "has date"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDeliveryModeCode",
+        "label": "has delivery mode code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasGestationalAge",
+        "label": "has gestational age"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasMedicalDevice",
+        "label": "has medical device"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#BirthDate",
+    "label": "Birth Date",
+    "definition": "the date and time of birth of the individual",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasComparator",
+        "label": "has comparator"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDay",
+        "label": "has day"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasMonth",
+        "label": "has month"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasTime",
+        "label": "has time"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasYear",
+        "label": "has year"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#BloodPressure",
+    "label": "Blood Pressure",
+    "definition": "blood pressure of the individual",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataFile",
+        "label": "has data file"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDateTime",
+        "label": "has datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDiastolicPressure",
+        "label": "has diastolic pressure"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasMeanPressure",
+        "label": "has mean pressure"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSystolicPressure",
+        "label": "has systolic pressure"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#BloodPressureMeasurement",
+    "label": "Blood Pressure Measurement",
+    "definition": "measurement process of a blood pressure on an individual",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasBodySite",
+        "label": "has body site"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasEndDateTime",
+        "label": "has end datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasMedicalDevice",
+        "label": "has medical device"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasMethodCode",
+        "label": "has method code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasPerformer",
+        "label": "has performer"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasResult",
+        "label": "has result"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasStartDateTime",
+        "label": "has start datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#BodyHeight",
+    "label": "Body Height",
+    "definition": "height of the individual",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataDetermination",
+        "label": "has data determination"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDateTime",
+        "label": "has datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasQuantity",
+        "label": "has quantity"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#BodyHeightMeasurement",
+    "label": "Body Height Measurement",
+    "definition": "measurement of the height of the individual",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasEndDateTime",
+        "label": "has end datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasMedicalDevice",
+        "label": "has medical device"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasMethodCode",
+        "label": "has method code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasPerformer",
+        "label": "has performer"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasResult",
+        "label": "has result"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasStartDateTime",
+        "label": "has start datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#BodyMassIndex",
+    "label": "Body Mass Index",
+    "definition": "body weight in kilograms divided by the square of the body height in meters",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDeterminationDateTime",
+        "label": "has determination datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasQuantity",
+        "label": "has quantity"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#BodyPosition",
+    "label": "Body Position",
+    "definition": "position of the body during a certain time interval, examination or therapy",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasEndDateTime",
+        "label": "has end datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasStartDateTime",
+        "label": "has start datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#BodySite",
+    "label": "Body Site",
+    "definition": "any anatomical structure, any nonspecific and anatomical site, as well as morphologic abnormalities",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasLaterality",
+        "label": "has laterality"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#BodySurfaceArea",
+    "label": "Body Surface Area",
+    "definition": "two dimensional measure of the outer layer of the body",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCalculationMethod",
+        "label": "has calculation method"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDeterminationDateTime",
+        "label": "has determination datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasQuantity",
+        "label": "has quantity"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#BodySurfaceArea_calculationMethod",
+    "label": "Body Surface Area calculation method",
+    "definition": "formula or method for calculating the concept",
+    "properties": []
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#BodyTemperature",
+    "label": "Body Temperature",
+    "definition": "body temperature of the individual",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataFile",
+        "label": "has data file"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDateTime",
+        "label": "has datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasQuantity",
+        "label": "has quantity"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#BodyTemperatureMeasurement",
+    "label": "Body Temperature Measurement",
+    "definition": "measurement of the body temperature of the individual",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasBodySite",
+        "label": "has body site"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasEndDateTime",
+        "label": "has end datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasMedicalDevice",
+        "label": "has medical device"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasMethodCode",
+        "label": "has method code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasPerformer",
+        "label": "has performer"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasResult",
+        "label": "has result"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasStartDateTime",
+        "label": "has start datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#BodyWeight",
+    "label": "Body Weight",
+    "definition": "weight of the individual",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataDetermination",
+        "label": "has data determination"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDateTime",
+        "label": "has datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasQuantity",
+        "label": "has quantity"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#BodyWeightMeasurement",
+    "label": "Body Weight Measurement",
+    "definition": "measurement of the weight of the individual",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasEndDateTime",
+        "label": "has end datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasMedicalDevice",
+        "label": "has medical device"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasMethodCode",
+        "label": "has method code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasPerformer",
+        "label": "has performer"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasResult",
+        "label": "has result"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasStartDateTime",
+        "label": "has start datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#CardiacIndex",
+    "label": "Cardiac Index",
+    "definition": "cardiac output in relation to the body surface area (BSA)",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDeterminationDateTime",
+        "label": "has determination datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasMethodCode",
+        "label": "has method code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasQuantity",
+        "label": "has quantity"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#CardiacOutput",
+    "label": "Cardiac Output",
+    "definition": "volume of blood passing through the heart per unit of time",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataFile",
+        "label": "has data file"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDateTime",
+        "label": "has datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasQuantity",
+        "label": "has quantity"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#CardiacOutputMeasurement",
+    "label": "Cardiac Output Measurement",
+    "definition": "measurement of the cardiac output of the individual",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasEndDateTime",
+        "label": "has end datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasMedicalDevice",
+        "label": "has medical device"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasMethodCode",
+        "label": "has method code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasPerformer",
+        "label": "has performer"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasResult",
+        "label": "has result"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasStartDateTime",
+        "label": "has start datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#CareHandling",
+    "label": "Care Handling",
+    "definition": "describes the relationship between the individual and care provider institute",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasTypeCode",
+        "label": "has type code"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#ChromosomalLocation",
+    "label": "Chromosomal Location",
+    "definition": "chromosome locus defined as cytoband intervals",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasChromosome",
+        "label": "has chromosome"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasEndCytobandCode",
+        "label": "has end cytoband code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasStartCytobandCode",
+        "label": "has start cytoband code"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#Chromosome",
+    "label": "Chromosome",
+    "definition": "thread-like structure composed of tightly coiled DNA and histones or circular DNA (mitochondrial DNA). These structures act as carriers of genetic information",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#Circumference",
+    "label": "Circumference",
+    "definition": "circumference of a body site",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDateTime",
+        "label": "has datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasQuantity",
+        "label": "has quantity"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#CircumferenceMeasurement",
+    "label": "Circumference Measurement",
+    "definition": "measurement of the circumference measure of a body site",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasBodySite",
+        "label": "has body site"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasEndDateTime",
+        "label": "has end datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasMedicalDevice",
+        "label": "has medical device"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasMethodCode",
+        "label": "has method code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasPerformer",
+        "label": "has performer"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasResult",
+        "label": "has result"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasStartDateTime",
+        "label": "has start datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#CivilStatus",
+    "label": "Civil Status",
+    "definition": "the civil status indicates the familial and social situation of the individual",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasEventDateTime",
+        "label": "has event datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#Code",
+    "label": "Code",
+    "definition": "symbols and/or expressions defined in a coding system",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCodingSystemAndVersion",
+        "label": "has coding system and version"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasIdentifier",
+        "label": "has identifier"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasName",
+        "label": "has name"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#Comparator",
+    "label": "Comparator",
+    "definition": "qualifier describing whether the value is the precise one or not",
+    "properties": []
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#Consent",
+    "label": "Consent",
+    "definition": "information on the individual’s permission to make health related data and collected samples available for research purposes",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDateTime",
+        "label": "has datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasStatusCode",
+        "label": "has status code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasTemplateIdentifier",
+        "label": "has template identifier"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasTypeCode",
+        "label": "has type code"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#CopyNumberVariation",
+    "label": "Copy Number Variation",
+    "definition": "structural genomic variant characterized by relative changes in the number of copies of a specific genomic segment compared to a reference sequence",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAffectedGenomicFeature",
+        "label": "has affected genomic feature"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasChromosomalLocation",
+        "label": "has chromosomal location"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasGenomicPosition",
+        "label": "has genomic position"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasTotalCopyNumber",
+        "label": "has total copy number"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasTypeCode",
+        "label": "has type code"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#Country",
+    "label": "Country",
+    "definition": "distinct part of the world, such as a state, nation, or other political entity, often but not necessarily a sovereign state",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#DataDetermination",
+    "label": "Data Determination",
+    "definition": "describes how the data was determined, e.g. measured, calculated",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasMethodCode",
+        "label": "has method code"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#DataFile",
+    "label": "Data File",
+    "definition": "electronic resource of information, which can be stored, accessed and transferred as a single unit",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCreationDateTime",
+        "label": "has creation datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasEncoding",
+        "label": "has encoding"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasFormatCode",
+        "label": "has format code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasHash",
+        "label": "has hash"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasName",
+        "label": "has name"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasUniformResourceIdentifier",
+        "label": "has uniform resource identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#DataFile_encoding",
+    "label": "Data File encoding",
+    "definition": "encoding of the concept",
+    "properties": []
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#DataProcessing",
+    "label": "Data Processing",
+    "definition": "a process that produces output data from input data",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasInput",
+        "label": "has input"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasOutput",
+        "label": "has output"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasPredecessor",
+        "label": "has predecessor"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasQualityControlMetric",
+        "label": "has quality control metric"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSoftware",
+        "label": "has software"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasStandardOperatingProcedure",
+        "label": "has standard operating procedure"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasStartDateTime",
+        "label": "has start datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#DataProvider",
+    "label": "Data Provider",
+    "definition": "provider of data of interest",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCategory",
+        "label": "has category"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDepartment",
+        "label": "has department"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasInstitutionCode",
+        "label": "has institution code"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#DataProvider_category",
+    "label": "Data Provider category",
+    "definition": "category associated to the concept",
+    "properties": []
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#DataRelease",
+    "label": "Data Release",
+    "definition": "Metadata about the release of the data",
+    "properties": [
+      {
+        "iri": "http://purl.org/dc/terms/conformsTo",
+        "label": "conformsTo"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasExtractionDateTime",
+        "label": "has extraction datetime"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#Death",
+    "label": "Death",
+    "definition": "cessation of all vital bodily functions",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCircumstanceCode",
+        "label": "has circumstance code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasConditionCode",
+        "label": "has condition code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDate",
+        "label": "has date"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasReportDateTime",
+        "label": "has report datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#DeathDate",
+    "label": "Death Date",
+    "definition": "the date and time of death of the individual",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDay",
+        "label": "has day"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasMonth",
+        "label": "has month"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasTime",
+        "label": "has time"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasYear",
+        "label": "has year"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#Department",
+    "label": "Department",
+    "definition": "dedicated division of an organization",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasName",
+        "label": "has name"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#Deprecated",
+    "label": "Deprecated",
+    "definition": "Deprecated classes of SPHN that existed in the previous version",
+    "properties": []
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#Diagnosis",
+    "label": "Diagnosis",
+    "definition": "determination of the presence of a disease, condition, or injury from expressed signs and symptoms and assessments such as physical examination, laboratory test, or the like",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasRecordDateTime",
+        "label": "has record datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectAge",
+        "label": "has subject age"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#Drug",
+    "label": "Drug",
+    "definition": "any substance with the intent to prevent, diagnose, treat, or relieve symptoms of a disease or abnormal condition",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasActiveIngredient",
+        "label": "has active ingredient"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasArticle",
+        "label": "has article"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasInactiveIngredient",
+        "label": "has inactive ingredient"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasQuantity",
+        "label": "has quantity"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#DrugAdministrationEvent",
+    "label": "Drug Administration Event",
+    "definition": "single event at which a drug was administered to the patient; this could be a single time point in case of a pill/cream or a duration in case of a single infusion pack or a single patch; one or many drug administration events are initiated by a drug prescription depending on the frequency stated in the prescription",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrationRouteCode",
+        "label": "has administration route code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDrug",
+        "label": "has drug"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDuration",
+        "label": "has duration"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasEndDateTime",
+        "label": "has end datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasReasonToStopCode",
+        "label": "has reason to stop code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasStartDateTime",
+        "label": "has start datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasTimePattern",
+        "label": "has time pattern"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#DrugArticle",
+    "label": "Drug Article",
+    "definition": "general details identifying a medication on the level of its commercial article",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasManufacturedDoseForm",
+        "label": "has manufactured dose form"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasName",
+        "label": "has name"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#DrugPrescription",
+    "label": "Drug Prescription",
+    "definition": "plan that defines at which frequency a drug should be administered to a patient with a given quantity; at every frequency time point a drug administration event should occur",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrationRouteCode",
+        "label": "has administration route code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDrug",
+        "label": "has drug"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasFirstAdministrationDateTime",
+        "label": "has first administration datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasFrequency",
+        "label": "has frequency"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasIndicationToStart",
+        "label": "has indication to start"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasIntent",
+        "label": "has intent"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasLastAdministrationDateTime",
+        "label": "has last administration datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasRecordDateTime",
+        "label": "has record datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasTimePattern",
+        "label": "has time pattern"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#Electrocardiogram",
+    "label": "Electrocardiogram",
+    "definition": "output of an electrocardiographic procedure",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataFile",
+        "label": "has data file"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#ElectrocardiographicProcedure",
+    "label": "Electrocardiographic Procedure",
+    "definition": "electrographic procedure on the heart which results in a graph of voltage versus time visualizing the electrical activity of the heart muscle using electrodes placed on the skin",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasBodySite",
+        "label": "has body site"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasEndDateTime",
+        "label": "has end datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasIntent",
+        "label": "has intent"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasNumberOfLeads",
+        "label": "has number of leads"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasOutput",
+        "label": "has output"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasStartDateTime",
+        "label": "has start datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPhysiologicState",
+        "label": "has subject physiologic state"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#ExcludedDisorder",
+    "label": "Excluded Disorder",
+    "definition": "determination of the absence of a disease",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasRecordDateTime",
+        "label": "has record datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#Exposure",
+    "label": "Exposure",
+    "definition": "contact between a physical, biological, or chemical agent and an individual",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAgentCode",
+        "label": "has agent code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDegreeCode",
+        "label": "has degree code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDuration",
+        "label": "has duration"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasEndDateTime",
+        "label": "has end datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasQuantity",
+        "label": "has quantity"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasRecordDateTime",
+        "label": "has record datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasRouteCode",
+        "label": "has route code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasStartDateTime",
+        "label": "has start datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#FluidBalance",
+    "label": "Fluid Balance",
+    "definition": "difference between fluid input and output during a specified time interval",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasEndDateTime",
+        "label": "has end datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasFluidInputOutput",
+        "label": "has fluid input output"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasQuantity",
+        "label": "has quantity"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasStartDateTime",
+        "label": "has start datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#FluidInputOutput",
+    "label": "Fluid Input Output",
+    "definition": "gain or loss of fluid that impacts the fluid balance",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasEndDateTime",
+        "label": "has end datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasStartDateTime",
+        "label": "has start datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubstance",
+        "label": "has substance"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#FollowUp",
+    "label": "Follow Up",
+    "definition": "procedure for following up on the patient status",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDateTime",
+        "label": "has datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasResult",
+        "label": "has result"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#Gene",
+    "label": "Gene",
+    "definition": "fundamental unit of heredity that contains necessary elements to encode for a transcript",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasOrganism",
+        "label": "has organism"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasProtein",
+        "label": "has protein"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasTranscript",
+        "label": "has transcript"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#GenePanel",
+    "label": "Gene Panel",
+    "definition": "collection of genes that have been grouped for testing",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataFile",
+        "label": "has data file"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasFocusGene",
+        "label": "has focus gene"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#GeneticVariation",
+    "label": "Genetic Variation",
+    "definition": "a genetic variation occurring at a defined position",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasChromosomalLocation",
+        "label": "has chromosomal location"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasGenomicPosition",
+        "label": "has genomic position"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#GenomicDeletion",
+    "label": "Genomic Deletion",
+    "definition": "genetic variant involving the deletion of a specific location in a DNA sequence",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasChromosomalLocation",
+        "label": "has chromosomal location"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasGenomicPosition",
+        "label": "has genomic position"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasGenomicSequence",
+        "label": "has genomic sequence"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSequenceLength",
+        "label": "has sequence length"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#GenomicInsertion",
+    "label": "Genomic Insertion",
+    "definition": "genetic variant involving the addition of a DNA sequence in a specific location",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasChromosomalLocation",
+        "label": "has chromosomal location"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasGenomicPosition",
+        "label": "has genomic position"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasGenomicSequence",
+        "label": "has genomic sequence"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSequenceLength",
+        "label": "has sequence length"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#GenomicPosition",
+    "label": "Genomic Position",
+    "definition": "genomic position with respect to a reference",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCoordinateConvention",
+        "label": "has coordinate convention"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasEnd",
+        "label": "has end"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasReference",
+        "label": "has reference"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasStart",
+        "label": "has start"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#GenomicPosition_coordinateConvention",
+    "label": "Genomic Position coordinate convention",
+    "definition": "convention used for the interpretation of coordinates used in the concept",
+    "properties": []
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#GestationalAgeAtBirth",
+    "label": "Gestational Age At Birth",
+    "definition": "gestational age of a child at birth",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasQuantity",
+        "label": "has quantity"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#Hash",
+    "label": "Hash",
+    "definition": "irreversible unique number computed on an information entity used to check its validity and integrity",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAlgorithm",
+        "label": "has algorithm"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasStringValue",
+        "label": "has string value"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#Hash_algorithm",
+    "label": "Hash algorithm",
+    "definition": "algorithm applied to the concept",
+    "properties": []
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#HealthcareEncounter",
+    "label": "Healthcare Encounter",
+    "definition": "an interaction between an individual and a specific unit or service of a healthcare provider institute, e.g. emergency, intensive care unit, for the purpose of providing healthcare service(s) or assessing the health status of an individual",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCurrentLocation",
+        "label": "has current location"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasEndDateTime",
+        "label": "has end datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasIdentifier",
+        "label": "has identifier"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasOriginLocation",
+        "label": "has origin location"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasStartDateTime",
+        "label": "has start datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasTargetLocation",
+        "label": "has target location"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasTherapeuticArea",
+        "label": "has therapeutic area"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#HealthcarePrimaryInformationSystem",
+    "label": "Healthcare Primary Information System",
+    "definition": "primary source system of the healthcare data",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasName",
+        "label": "has name"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#HeartRate",
+    "label": "Heart Rate",
+    "definition": "frequency of the heart beats, i.e. the number of time a heart beats per unit of time",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataFile",
+        "label": "has data file"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDateTime",
+        "label": "has datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasQuantity",
+        "label": "has quantity"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasRegularityCode",
+        "label": "has regularity code"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement",
+    "label": "Heart Rate Measurement",
+    "definition": "measurement of the heart rate of the individual",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasBodySite",
+        "label": "has body site"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasEndDateTime",
+        "label": "has end datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasMedicalDevice",
+        "label": "has medical device"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasMethodCode",
+        "label": "has method code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasPerformer",
+        "label": "has performer"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasResult",
+        "label": "has result"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasStartDateTime",
+        "label": "has start datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPhysiologicState",
+        "label": "has subject physiologic state"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#HomeAddress",
+    "label": "Home Address",
+    "definition": "permanent place of residence of an individual",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCountry",
+        "label": "has country"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasEndDateTime",
+        "label": "has end datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasStartDateTime",
+        "label": "has start datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSwissSocioEconomicPosition",
+        "label": "has swiss socio economic position"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#ImagingProcedure",
+    "label": "Imaging Procedure",
+    "definition": "imaging procedure used for examination of a body site or function",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasBodySite",
+        "label": "has body site"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasEndDateTime",
+        "label": "has end datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasIntent",
+        "label": "has intent"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasStartDateTime",
+        "label": "has start datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#Implant",
+    "label": "Implant",
+    "definition": "implanted medical device, includes, e.g., heart valve prostheses or joint prostheses",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasProductCode",
+        "label": "has product code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSoftware",
+        "label": "has software"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasTypeCode",
+        "label": "has type code"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#ImplantPresence",
+    "label": "Implant Presence",
+    "definition": "presence of an implanted medical device",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasBodySite",
+        "label": "has body site"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasEndDateTime",
+        "label": "has end datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasMedicalDevice",
+        "label": "has medical device"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasRecordDateTime",
+        "label": "has record datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasStartDateTime",
+        "label": "has start datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#InhaledOxygenConcentration",
+    "label": "Inhaled Oxygen Concentration",
+    "definition": "fraction of inspired oxygen (FiO2) either calculated knowing the device used and the amount of oxygen administered or coming from the respiratory system settings",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataDetermination",
+        "label": "has data determination"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDateTime",
+        "label": "has datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasOxygenEquipment",
+        "label": "has oxygen equipment"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasOxygenFlowRate",
+        "label": "has oxygen flow rate"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasQuantity",
+        "label": "has quantity"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#InsuranceStatus",
+    "label": "Insurance Status",
+    "definition": "status of the patient's medical insurance",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCoverageType",
+        "label": "has coverage type"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasEndDateTime",
+        "label": "has end datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasStartDateTime",
+        "label": "has start datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#InsuranceStatus_coverageType",
+    "label": "Insurance Status coverage type",
+    "definition": "coverage type of the concept",
+    "properties": []
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#Intent",
+    "label": "Intent",
+    "definition": "treatment or procedure purpose",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#Interpretation",
+    "label": "Interpretation",
+    "definition": "process of making sense of an outcome to derive meaningful conclusions",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDateTime",
+        "label": "has datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasInput",
+        "label": "has input"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasOutput",
+        "label": "has output"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasStandardGuideline",
+        "label": "has standard guideline"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#Isolate",
+    "label": "Isolate",
+    "definition": "a specific individual microbe and its clone separated on a single occasion from a sample taken from a host or culture system",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasBodySite",
+        "label": "has body site"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCollectionDateTime",
+        "label": "has collection datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasFixationType",
+        "label": "has fixation type"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasIdentifier",
+        "label": "has identifier"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasMaterialTypeCode",
+        "label": "has material type code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasOrganism",
+        "label": "has organism"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasPrimaryContainer",
+        "label": "has primary container"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#LabAnalyzer",
+    "label": "Lab Analyzer",
+    "definition": "laboratory analyzer used to assess medical laboratory samples",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasProductCode",
+        "label": "has product code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSoftware",
+        "label": "has software"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasTypeCode",
+        "label": "has type code"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#LabResult",
+    "label": "Lab Result",
+    "definition": "outcome, value, or information which gives insight about a laboratory test",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasNumericalReference",
+        "label": "has numerical reference"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasQuantity",
+        "label": "has quantity"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasStringValue",
+        "label": "has string value"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#LabTest",
+    "label": "Lab Test",
+    "definition": "specific laboratory test performed to analyze a sample with a given equipment and leading to specific results",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasInstrument",
+        "label": "has instrument"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasResult",
+        "label": "has result"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasTestKit",
+        "label": "has test kit"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#LabTestEvent",
+    "label": "Lab Test Event",
+    "definition": "occurrence in which one or multiple laboratory tests are performed on a biological specimen at a given time",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDateTime",
+        "label": "has datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasLabTest",
+        "label": "has lab test"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasReportDateTime",
+        "label": "has report datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSample",
+        "label": "has sample"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#Laterality",
+    "label": "Laterality",
+    "definition": "localization with respect to the side of the body",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#LibraryPreparation",
+    "label": "Library Preparation",
+    "definition": "process which results in the creation of a library from fragments of DNA",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasGenePanel",
+        "label": "has gene panel"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasInput",
+        "label": "has input"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasIntendedInsertSize",
+        "label": "has intended insert size"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasKitCode",
+        "label": "has kit code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasOutput",
+        "label": "has output"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasPredecessor",
+        "label": "has predecessor"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasQualityControlMetric",
+        "label": "has quality control metric"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasStandardOperatingProcedure",
+        "label": "has standard operating procedure"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasStartDateTime",
+        "label": "has start datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasTargetEnrichmentKitCode",
+        "label": "has target enrichment kit code"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#Location",
+    "label": "Location",
+    "definition": "physical location or medical division taking care of the individual",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasExact",
+        "label": "has exact"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasTypeCode",
+        "label": "has type code"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#Measurement",
+    "label": "Measurement",
+    "definition": "process of quantitatively defining the value or magnitude of an attribute or characteristic in comparison to a defined standard",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasEndDateTime",
+        "label": "has end datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasMedicalDevice",
+        "label": "has medical device"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasMethodCode",
+        "label": "has method code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasPerformer",
+        "label": "has performer"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasResult",
+        "label": "has result"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasStartDateTime",
+        "label": "has start datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#MedicalDevice",
+    "label": "Medical Device",
+    "definition": "product intended for medical use when the main effect is not achieved by a medicinal product; medical devices include, but are not limited to, implants, instruments, devices, in vitro diagnostics",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasProductCode",
+        "label": "has product code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSoftware",
+        "label": "has software"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasTypeCode",
+        "label": "has type code"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#MedicalProcedure",
+    "label": "Medical Procedure",
+    "definition": "invasive or non-invasive intervention performed for, with or on behalf of an individual whose purpose is to assess, improve, maintain, promote or modify health, functioning or health conditions",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasBodySite",
+        "label": "has body site"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasEndDateTime",
+        "label": "has end datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasIntent",
+        "label": "has intent"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasStartDateTime",
+        "label": "has start datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#MicrobiologyBiomoleculePresenceLabTest",
+    "label": "Microbiology Biomolecule Presence Lab Test",
+    "definition": "specific lab test performed on an isolate for detecting the presence of a target biomolecule",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasInstrument",
+        "label": "has instrument"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasResult",
+        "label": "has result"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasTargetMolecule",
+        "label": "has target molecule"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasTestKit",
+        "label": "has test kit"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#MicrobiologyBiomoleculePresenceLabTestEvent",
+    "label": "Microbiology Biomolecule Presence Lab Test Event",
+    "definition": "occurrence in which one or multiple laboratory tests are performed on an isolate at a given time to detect the presence of a biomolecule",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDateTime",
+        "label": "has datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasLabTest",
+        "label": "has lab test"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasReportDateTime",
+        "label": "has report datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSample",
+        "label": "has sample"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#MicrobiologyBiomoleculePresenceResult",
+    "label": "Microbiology Biomolecule Presence Result",
+    "definition": "result of microbiology biomolecule presence test for a specific isolate analyzed",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasNumericalReference",
+        "label": "has numerical reference"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasQuantity",
+        "label": "has quantity"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasStringValue",
+        "label": "has string value"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#MicrobiologyMicroscopyLabTest",
+    "label": "Microbiology Microscopy Lab Test",
+    "definition": "specific microbiology microscopy lab test performed on a sample",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasInstrument",
+        "label": "has instrument"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasResult",
+        "label": "has result"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasStainingMethodCode",
+        "label": "has staining method code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasTestKit",
+        "label": "has test kit"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#MicrobiologyMicroscopyLabTestEvent",
+    "label": "Microbiology Microscopy Lab Test Event",
+    "definition": "occurrence in which one or multiple microbiology microscopy laboratory tests are performed on a sample at a given time",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDateTime",
+        "label": "has datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasLabTest",
+        "label": "has lab test"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasReportDateTime",
+        "label": "has report datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSample",
+        "label": "has sample"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#MicrobiologyMicroscopyResult",
+    "label": "Microbiology Microscopy Result",
+    "definition": "microscopy analysis results for a specific studied biosample in microbiology",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCellCountEstimateCode",
+        "label": "has cell count estimate code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCellMorphology",
+        "label": "has cell morphology"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCellOrganization",
+        "label": "has cell organization"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasNumericalReference",
+        "label": "has numerical reference"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasQuantity",
+        "label": "has quantity"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasStainingResultCode",
+        "label": "has staining result code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasStringValue",
+        "label": "has string value"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#MicrobiologyMicroscopyResult_cellMorphology",
+    "label": "Microbiology Microscopy Result cell morphology",
+    "definition": "cell morphology associated to the concept",
+    "properties": []
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#MicrobiologyMicroscopyResult_cellOrganization",
+    "label": "Microbiology Microscopy Result cell organization",
+    "definition": "cell organization associated to the concept",
+    "properties": []
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#MicroorganismIdentificationLabTest",
+    "label": "Microorganism Identification Lab Test",
+    "definition": "specific lab test performed on a sample for identifying microorganism(s)",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasInstrument",
+        "label": "has instrument"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasResult",
+        "label": "has result"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasTestKit",
+        "label": "has test kit"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#MicroorganismIdentificationLabTestEvent",
+    "label": "Microorganism Identification Lab Test Event",
+    "definition": "occurrence in which one or multiple laboratory tests are performed on a sample at a given time for identifying microorganism(s)",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDateTime",
+        "label": "has datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasLabTest",
+        "label": "has lab test"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasReportDateTime",
+        "label": "has report datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSample",
+        "label": "has sample"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#MicroorganismIdentificationResult",
+    "label": "Microorganism Identification Result",
+    "definition": "result of the microorganism identification lab test",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasNumericalReference",
+        "label": "has numerical reference"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasOrganism",
+        "label": "has organism"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasStringValue",
+        "label": "has string value"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasTimeToPositivity",
+        "label": "has time to positivity"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#Nationality",
+    "label": "Nationality",
+    "definition": "nationality of the individual",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAcquistionCode",
+        "label": "has acquistion code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAssociatedCountry",
+        "label": "has associated country"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasRecordDateTime",
+        "label": "has record datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#NursingDiagnosis",
+    "label": "Nursing Diagnosis",
+    "definition": "clinical judgment concerning a human response to health conditions/life processes, or a vulnerability for that response, by an individual, family, group or community; a nursing diagnosis provides the basis for selection of nursing interventions to achieve outcomes for which the nurse has accountability",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasRecordDateTime",
+        "label": "has record datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectAge",
+        "label": "has subject age"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#NutritionIntake",
+    "label": "Nutrition Intake",
+    "definition": "intake of nutritious substance and/or the respective amount of energy consumed",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasEndDateTime",
+        "label": "has end datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasEnergyQuantity",
+        "label": "has energy quantity"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasModeCode",
+        "label": "has mode code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasStartDateTime",
+        "label": "has start datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubstance",
+        "label": "has substance"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#OncologyDiagnosis",
+    "label": "Oncology Diagnosis",
+    "definition": "determination of the presence of an oncological disease, from expressed signs and symptoms and assessments such as biopsy, tumor marker test, imaging, or the like",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasBodySite",
+        "label": "has body site"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasIncidenceDateTime",
+        "label": "has incidence datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasRecordDateTime",
+        "label": "has record datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectAge",
+        "label": "has subject age"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#OncologySurgery",
+    "label": "Oncology Surgery",
+    "definition": "invasive intervention performed for, with or on behalf of an individual whose purpose is to improve, maintain or promote health, or functioning conditions in the context of an oncological disease, by the means of partial or complete exeresis of a solid tumor lesion that is the organic substrate of this disease",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasBodySite",
+        "label": "has body site"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasEndDateTime",
+        "label": "has end datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasIntent",
+        "label": "has intent"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasStartDateTime",
+        "label": "has start datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#OrganSupport",
+    "label": "Organ Support",
+    "definition": "type and time period when patient was supported by organ support procedures",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasBodySite",
+        "label": "has body site"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasEndDateTime",
+        "label": "has end datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasIntent",
+        "label": "has intent"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasStartDateTime",
+        "label": "has start datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#Organism",
+    "label": "Organism",
+    "definition": "living system capable of replicating or reproducing, growth and maintenance. An organism may be unicellular or multicellular",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#OxygenSaturation",
+    "label": "Oxygen Saturation",
+    "definition": "fraction of oxygen present in the blood",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataFile",
+        "label": "has data file"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDateTime",
+        "label": "has datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasQuantity",
+        "label": "has quantity"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#OxygenSaturationMeasurement",
+    "label": "Oxygen Saturation Measurement",
+    "definition": "measurement of the oxygen saturation of the individual",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasBodySite",
+        "label": "has body site"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasEndDateTime",
+        "label": "has end datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasMedicalDevice",
+        "label": "has medical device"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasMethodCode",
+        "label": "has method code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasPerformer",
+        "label": "has performer"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasResult",
+        "label": "has result"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasStartDateTime",
+        "label": "has start datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#Performer",
+    "label": "Performer",
+    "definition": "person who carried out the action",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#PharmaceuticalDoseForm",
+    "label": "Pharmaceutical Dose Form",
+    "definition": "physical manifestation of a product that contains the active ingredient(s) and/or inactive ingredient(s) that are intended to be delivered to the patient",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#PhysiologicState",
+    "label": "Physiologic State",
+    "definition": "physiologic state of the individual, e.g. resting, exercise",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#ProblemCondition",
+    "label": "Problem Condition",
+    "definition": "clinical condition, problem, diagnosis, or other event, situation, issue, or clinical concept that has risen to a level of concern",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasOnsetDateTime",
+        "label": "has onset datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasRecordDateTime",
+        "label": "has record datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasRelativeTemporalityCode",
+        "label": "has relative temporality code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasStringValue",
+        "label": "has string value"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#Protein",
+    "label": "Protein",
+    "definition": "molecule composed by one or more chains of amino acids",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasOrganism",
+        "label": "has organism"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#QualityControlMetric",
+    "label": "Quality Control Metric",
+    "definition": "report of the quality control review that was made of factors involved in a procedure",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasQuantity",
+        "label": "has quantity"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#Quantity",
+    "label": "Quantity",
+    "definition": "an amount or a number of something",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasComparator",
+        "label": "has comparator"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasUnit",
+        "label": "has unit"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasValue",
+        "label": "has value"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#RadiotherapyProcedure",
+    "label": "Radiotherapy Procedure",
+    "definition": "given radiotherapy procedure during oncological treatment",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasBodySite",
+        "label": "has body site"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasEndDateTime",
+        "label": "has end datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasFractionsNumber",
+        "label": "has fractions number"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasIntent",
+        "label": "has intent"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasRadiationQuantity",
+        "label": "has radiation quantity"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasStartDateTime",
+        "label": "has start datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#ReferenceInterpretation",
+    "label": "Reference Interpretation",
+    "definition": "process of making sense of a quantitative result to derive meaningful conclusions in comparison to a reference",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDateTime",
+        "label": "has datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasInput",
+        "label": "has input"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasOutput",
+        "label": "has output"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasStandardGuideline",
+        "label": "has standard guideline"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#ReferenceInterpretationResult",
+    "label": "Reference Interpretation Result",
+    "definition": "outcome of the interpretation of a reference range or value",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#ReferenceRange",
+    "label": "Reference Range",
+    "definition": "interval of values that is deemed normal for a physiologic measurement in healthy individuals",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasLowerLimit",
+        "label": "has lower limit"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasUpperLimit",
+        "label": "has upper limit"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#ReferenceSequence",
+    "label": "Reference Sequence",
+    "definition": "reference construct used for comparison purposes",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#ReferenceValue",
+    "label": "Reference Value",
+    "definition": "numeric data point serving as reference for comparison and interpretation",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasQuantity",
+        "label": "has quantity"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#RespiratoryRate",
+    "label": "Respiratory Rate",
+    "definition": "frequency at which the breathing occurs",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataDetermination",
+        "label": "has data determination"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataFile",
+        "label": "has data file"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDateTime",
+        "label": "has datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasQuantity",
+        "label": "has quantity"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#RespiratoryRateMeasurement",
+    "label": "Respiratory Rate Measurement",
+    "definition": "measurement of the frequency at which the breathing occurs",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasEndDateTime",
+        "label": "has end datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasMedicalDevice",
+        "label": "has medical device"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasMethodCode",
+        "label": "has method code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasPerformer",
+        "label": "has performer"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasResult",
+        "label": "has result"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasStartDateTime",
+        "label": "has start datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#Result",
+    "label": "Result",
+    "definition": "outcome, value, or information which gives insight about something",
+    "properties": []
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#ResuscitationDirective",
+    "label": "Resuscitation Directive",
+    "definition": "decision about the extent of resuscitation interventions appropriate for a specific individual",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasRecordDateTime",
+        "label": "has record datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#SPHNConcept",
+    "label": "SPHN Concept",
+    "definition": "SPHN Concepts defined by the SPHN dataset",
+    "properties": []
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#Sample",
+    "label": "Sample",
+    "definition": "any material sample for testing, diagnostic, propagation, treatment or research purposes",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasBodySite",
+        "label": "has body site"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCollectionDateTime",
+        "label": "has collection datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasFixationType",
+        "label": "has fixation type"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasIdentifier",
+        "label": "has identifier"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasMaterialTypeCode",
+        "label": "has material type code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasPrimaryContainer",
+        "label": "has primary container"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#SampleProcessing",
+    "label": "Sample Processing",
+    "definition": "a process that prepares a sample for a subsequent process",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasInput",
+        "label": "has input"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasOutput",
+        "label": "has output"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasPredecessor",
+        "label": "has predecessor"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasQualityControlMetric",
+        "label": "has quality control metric"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasStandardOperatingProcedure",
+        "label": "has standard operating procedure"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasStartDateTime",
+        "label": "has start datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#Sample_fixationType",
+    "label": "Sample fixation type",
+    "definition": "fixation or stabilization type",
+    "properties": []
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#Sample_primaryContainer",
+    "label": "Sample primary container",
+    "definition": "type of primary container of the concept",
+    "properties": []
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping",
+    "label": "Semantic Mapping",
+    "definition": "process of transforming data elements to a code",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDateTime",
+        "label": "has datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasMethodCode",
+        "label": "has method code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasOutputCode",
+        "label": "has output code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasPurpose",
+        "label": "has purpose"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceData",
+        "label": "has source data"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping_purpose",
+    "label": "Semantic Mapping purpose",
+    "definition": "objective of the concept",
+    "properties": []
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#SequencingAnalysis",
+    "label": "Sequencing Analysis",
+    "definition": "analysis of the output of a nucleic acid sequencing assay",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasInput",
+        "label": "has input"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasOutput",
+        "label": "has output"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasPredecessor",
+        "label": "has predecessor"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasQualityControlMetric",
+        "label": "has quality control metric"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasReferenceSequence",
+        "label": "has reference sequence"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSoftware",
+        "label": "has software"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasStandardOperatingProcedure",
+        "label": "has standard operating procedure"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasStartDateTime",
+        "label": "has start datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#SequencingAssay",
+    "label": "Sequencing Assay",
+    "definition": "an assay that exploits a sequencer as the instrument to generate results",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataFile",
+        "label": "has data file"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasIdentifier",
+        "label": "has identifier"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasIntendedReadDepth",
+        "label": "has intended read depth"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasIntendedReadLength",
+        "label": "has intended read length"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasLibraryPreparation",
+        "label": "has library preparation"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasPredecessor",
+        "label": "has predecessor"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSample",
+        "label": "has sample"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSequencingInstrument",
+        "label": "has sequencing instrument"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSequencingRun",
+        "label": "has sequencing run"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasStandardOperatingProcedure",
+        "label": "has standard operating procedure"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasStartDateTime",
+        "label": "has start datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#SequencingInstrument",
+    "label": "Sequencing Instrument",
+    "definition": "A sequencing instrument that is used in a sequencing assay",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#SequencingRun",
+    "label": "Sequencing Run",
+    "definition": "the valid and completed operation of a high-throughput sequencing instrument associated with a sequencing assay",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAverageInsertSize",
+        "label": "has average insert size"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAverageReadLength",
+        "label": "has average read length"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataFile",
+        "label": "has data file"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDateTime",
+        "label": "has datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasIdentifier",
+        "label": "has identifier"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasMeanReadDepth",
+        "label": "has mean read depth"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasQualityControlMetric",
+        "label": "has quality control metric"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasReadCount",
+        "label": "has read count"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#SingleNucleotideVariation",
+    "label": "Single Nucleotide Variation",
+    "definition": "single nucleotide change in a DNA sequence at a specific location",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAlternateAllele",
+        "label": "has alternate allele"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasChromosomalLocation",
+        "label": "has chromosomal location"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasGenomicPosition",
+        "label": "has genomic position"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasReferenceAllele",
+        "label": "has reference allele"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#Software",
+    "label": "Software",
+    "definition": "Set of procedures and instructions in a data processing system",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDescription",
+        "label": "has description"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasName",
+        "label": "has name"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasUniformResourceLocator",
+        "label": "has uniform resource locator"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasVersion",
+        "label": "has version"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#SourceData",
+    "label": "Source Data",
+    "definition": "raw data that has not been processed for meaningful use",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasStringValue",
+        "label": "has string value"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#SourceSystem",
+    "label": "Source System",
+    "definition": "electronic system the data has been retrieved from",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCategory",
+        "label": "has category"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasName",
+        "label": "has name"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasPrimarySystem",
+        "label": "has primary system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasPurpose",
+        "label": "has purpose"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#SourceSystem_category",
+    "label": "Source System category",
+    "definition": "category associated to the concept",
+    "properties": []
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#SourceSystem_purpose",
+    "label": "Source System purpose",
+    "definition": "objective of the concept",
+    "properties": []
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#StandardOperatingProcedure",
+    "label": "Standard Operating Procedure",
+    "definition": "step-by-step instructions for carrying out routine operations imposed by the organization",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataFile",
+        "label": "has data file"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDescription",
+        "label": "has description"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasName",
+        "label": "has name"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasVersion",
+        "label": "has version"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#SubjectPseudoIdentifier",
+    "label": "Subject Pseudo Identifier",
+    "definition": "a coded unique identifier assigned by a data provider for a specific project to conceal the identity of an individual",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasIdentifier",
+        "label": "has identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#Substance",
+    "label": "Substance",
+    "definition": "any matter of defined composition that has discrete existence, whose origin may be biological, mineral or chemical",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasGenericName",
+        "label": "has generic name"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasQuantity",
+        "label": "has quantity"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#SwissSocioEconomicPosition",
+    "label": "Swiss Socio Economic Position",
+    "definition": "characterization or classification of the Swiss position in a neighbourhood of an individual that takes into account income, education, occupation, and housing conditions",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDistance",
+        "label": "has distance"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasValue",
+        "label": "has value"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasVersion",
+        "label": "has version"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#Terminology",
+    "label": "Terminology",
+    "definition": "Terminology class for grouping external resources used in the SPHN project",
+    "properties": []
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#TherapeuticArea",
+    "label": "Therapeutic Area",
+    "definition": "professional health care specialization",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSpecialtyName",
+        "label": "has specialty name"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#TherapeuticArea_specialtyName",
+    "label": "Therapeutic Area specialty name",
+    "definition": "name of professional health care specialization",
+    "properties": []
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#TimePattern",
+    "label": "Time Pattern",
+    "definition": "type of time period during which a treatment was given or an assessment was performed; this can be single time points or a continuous event",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasTypeCode",
+        "label": "has type code"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#TimeSeriesDataFile",
+    "label": "Time Series Data File",
+    "definition": "electronic resource that contains all the results related to a measurement as time series",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCreationDateTime",
+        "label": "has creation datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasEncoding",
+        "label": "has encoding"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasEntryCount",
+        "label": "has entry count"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasFormatCode",
+        "label": "has format code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasHash",
+        "label": "has hash"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasName",
+        "label": "has name"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasUniformResourceIdentifier",
+        "label": "has uniform resource identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#TobaccoExposure",
+    "label": "Tobacco Exposure",
+    "definition": "episode of exposure of an individual to tobacco in various forms",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAgentCode",
+        "label": "has agent code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDegreeCode",
+        "label": "has degree code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDuration",
+        "label": "has duration"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasEndDateTime",
+        "label": "has end datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasQuantity",
+        "label": "has quantity"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasRecordDateTime",
+        "label": "has record datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasRouteCode",
+        "label": "has route code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasStartDateTime",
+        "label": "has start datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasTypeCode",
+        "label": "has type code"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#Transcript",
+    "label": "Transcript",
+    "definition": "RNA molecules that are made from a DNA template",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasOrganism",
+        "label": "has organism"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasProtein",
+        "label": "has protein"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#Transplant",
+    "label": "Transplant",
+    "definition": "transplanted organ or tissue from self or donor, including, e.g., kidney graft or bone marrow fluid",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasGraftTypeCode",
+        "label": "has graft type code"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#TransplantPresence",
+    "label": "Transplant Presence",
+    "definition": "presence of a transplanted organ or tissue such as, e.g., a kidney graft",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasBodySite",
+        "label": "has body site"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasEndDateTime",
+        "label": "has end datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasRecordDateTime",
+        "label": "has record datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasStartDateTime",
+        "label": "has start datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasTransplant",
+        "label": "has transplant"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#TumorGradeAssessment",
+    "label": "Tumor Grade Assessment",
+    "definition": "grading system used to assess the differentiation of the tumor cells based on histology",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasComponent",
+        "label": "has component"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasName",
+        "label": "has name"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasResult",
+        "label": "has result"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#TumorGradeAssessmentEvent",
+    "label": "Tumor Grade Assessment Event",
+    "definition": "evaluation of the tumor grade at a given time, which takes into account a predefined grading system",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAssessment",
+        "label": "has assessment"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDateTime",
+        "label": "has datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasPerformer",
+        "label": "has performer"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#TumorGradeAssessmentResult",
+    "label": "Tumor Grade Assessment Result",
+    "definition": "outcome of a tumor grade assessment",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasQuantity",
+        "label": "has quantity"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasStringValue",
+        "label": "has string value"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#TumorSpecimen",
+    "label": "Tumor Specimen",
+    "definition": "tumor specimen, volume and fixation method used",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasBodySite",
+        "label": "has body site"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCollectionDateTime",
+        "label": "has collection datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasFixationType",
+        "label": "has fixation type"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasIdentifier",
+        "label": "has identifier"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasMaterialTypeCode",
+        "label": "has material type code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasPrimaryContainer",
+        "label": "has primary container"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasTumorPurity",
+        "label": "has tumor purity"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#TumorStageAssessment",
+    "label": "Tumor Stage Assessment",
+    "definition": "staging system used to assess the spread of the oncology disease",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasComponent",
+        "label": "has component"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasName",
+        "label": "has name"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasResult",
+        "label": "has result"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#TumorStageAssessmentEvent",
+    "label": "Tumor Stage Assessment Event",
+    "definition": "evaluation of the tumor stage at a given time, which takes into account a predefined staging system",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAssessment",
+        "label": "has assessment"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDateTime",
+        "label": "has datetime"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasPerformer",
+        "label": "has performer"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#TumorStageAssessmentResult",
+    "label": "Tumor Stage Assessment Result",
+    "definition": "outcome of a tumor stage assessment",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasQuantity",
+        "label": "has quantity"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasStringValue",
+        "label": "has string value"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#Unit",
+    "label": "Unit",
+    "definition": "unit of measurement",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#ValueSet",
+    "label": "Value Set",
+    "definition": "List of value sets provided by SPHN",
+    "properties": []
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#VariantDescriptor",
+    "label": "Variant Descriptor",
+    "definition": "human-readable description of the variant",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAdministrativeCase",
+        "label": "has administrative case"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasAlleleOriginCode",
+        "label": "has allele origin code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasGene",
+        "label": "has gene"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasGeneticVariation",
+        "label": "has genetic variation"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasNotation",
+        "label": "has notation"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasTypeCode",
+        "label": "has type code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasZygosityCode",
+        "label": "has zygosity code"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#VariantNotation",
+    "label": "Variant Notation",
+    "definition": "description of the variant using a specific nomenclature",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCodingSystemAndVersion",
+        "label": "has coding system and version"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasValue",
+        "label": "has value"
+      }
+    ]
+  },
+  {
+    "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#VitalStatus",
+    "label": "Vital Status",
+    "definition": "state or condition of being living or deceased",
+    "properties": [
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasCode",
+        "label": "has code"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDataProvider",
+        "label": "has data provider"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasDeath",
+        "label": "has death"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSourceSystem",
+        "label": "has source system"
+      },
+      {
+        "iri": "https://biomedit.ch/rdf/sphn-schema/sphn#hasSubjectPseudoIdentifier",
+        "label": "has subject pseudo identifier"
+      }
+    ]
+  }
+]
