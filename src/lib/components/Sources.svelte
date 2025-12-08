@@ -13,8 +13,11 @@
                 <span class="font-bold text-tertiary-500 text-lg sm:text-xl">Sources</span>
             </div>
             <div class="flex items-center gap-2 hover:text-tertiary-500">
-                <a href="https://www.smartermedicine.ch/de/home" class=" underline" target="_blank"
-                    >Smarter Medicine Website</a
+                <a
+                    href="https://www.smartermedicine.ch/de/home"
+                    class=" underline"
+                    target="_blank"
+                    rel="noopener noreferrer">Smarter Medicine Website</a
                 >
                 <ExternalLink size={15} />
             </div>
@@ -22,12 +25,18 @@
                 <a
                     href="https://sphn.ch/network/projects/project-page_nds_lucid/"
                     class=" underline"
-                    target="_blank">LUCID NDS webpage</a
+                    target="_blank"
+                    rel="noopener noreferrer">LUCID NDS webpage</a
                 >
                 <ExternalLink size={15} />
             </div>
             <div class="flex items-center gap-2 hover:text-tertiary-500">
-                <a href="https://sphn.ch/" class=" underline" target="_blank">SPHN website</a>
+                <a
+                    href="https://sphn.ch/"
+                    class=" underline"
+                    target="_blank"
+                    rel="noopener noreferrer">SPHN website</a
+                >
                 <ExternalLink size={15} />
             </div>
 
@@ -48,6 +57,7 @@
                     href="https://doi.org/10.1136/bmjopen-2024-089662"
                     class="flex items-center gap-2 hover:text-tertiary-500 underline"
                     target="_blank"
+                    rel="noopener noreferrer"
                 >
                     BMJ Open 2024;14:e089662. doi: 10.1136/bmjopen-2024-089662
                     <ExternalLink size={15} />
@@ -60,6 +70,7 @@
                     href="https://www.reiso.org/articles/themes/soins/12655-surmedicalisation-en-suisse-impact-et-solutions"
                     class="flex items-center gap-2 hover:text-tertiary-500 underline"
                     target="_blank"
+                    rel="noopener noreferrer"
                 >
                     REISO.org, Revue d'Information Sociale, 17 June 2024 (in French)
                     <ExternalLink size={15} />
@@ -74,6 +85,7 @@
                     href="https://sphn.ch/wp-content/uploads/2024/03/bms-2023-1250296756.pdf"
                     class="flex items-center gap-2 hover:text-tertiary-500 underline"
                     target="_blank"
+                    rel="noopener noreferrer"
                 >
                     Bulletin des médecins suisse 2023;104(43):18–21 (in French)
                     <ExternalLink size={15} />
@@ -86,6 +98,7 @@
                     href="https://sphn.ch/wp-content/uploads/2024/03/saez-2023-1250296756.pdf"
                     class="flex items-center gap-2 hover:text-tertiary-500 underline"
                     target="_blank"
+                    rel="noopener noreferrer"
                 >
                     Schweizerische Ärztezeitung 2023;104(43):18–21 (in German)
                     <ExternalLink size={15} />
@@ -107,37 +120,25 @@
                     href="https://www.20min.ch/fr/story/ils-veulent-traquer-les-soins-inutiles-prescrits-aux-patients-581037828005"
                     class="flex items-center gap-2 hover:text-tertiary-500 underline"
                     target="_blank"
+                    rel="noopener noreferrer"
                 >
                     20 Minutes, 25 August 2022 (in French)
                     <ExternalLink size={15} />
                 </a>
             </div>
-            <!-- <div class="flex items-center gap-2">
+            <div class="flex items-center gap-2">
                 <FolderHeart size={25} class="text-tertiary-500" />
                 <span class="font-bold text-tertiary-500 text-lg sm:text-xl">Posters</span>
             </div>
             <div class="flex items-center gap-2 hover:text-tertiary-500">
                 <a
-                    href="/posters/20250502_SGMAI2025_E-Poster_Lab_tests.pdf"
+                    href="https://zenodo.org/records/17788637"
                     class="underline"
-                    target="_blank">Lab Tests Poster (PDF)</a
+                    target="_blank"
+                    rel="noopener noreferrer">Designing the LUCID Website Together</a
                 >
                 <ExternalLink size={15} />
             </div>
-            <div class="flex items-center gap-2 hover:text-tertiary-500">
-                <a href="/posters/SGAIM2025_E-Poster_BZD.pdf" class="underline" target="_blank"
-                    >BZD Poster (PDF)</a
-                >
-                <ExternalLink size={15} />
-            </div>
-            <div class="flex items-center gap-2 hover:text-tertiary-500">
-                <a
-                    href="/posters/SGAIM2025_E-Poster_Transfusions.pdf"
-                    class="underline"
-                    target="_blank">Transfusions Poster (PDF)</a
-                >
-                <ExternalLink size={15} />
-            </div> -->
         </div>
     </div>
 </section>
