@@ -112,32 +112,16 @@
                     <ExternalLink size={15} />
                 </a>
             </div>
-            <!-- <div class="flex items-center gap-2">
+            <div class="flex items-center gap-2">
                 <FolderHeart size={25} class="text-tertiary-500" />
                 <span class="font-bold text-tertiary-500 text-lg sm:text-xl">Posters</span>
             </div>
             <div class="flex items-center gap-2 hover:text-tertiary-500">
-                <a
-                    href="/posters/20250502_SGMAI2025_E-Poster_Lab_tests.pdf"
-                    class="underline"
-                    target="_blank">Lab Tests Poster (PDF)</a
+                <a href="https://zenodo.org/records/17788637" class="underline" target="_blank"
+                    >Designing the LUCID Website Together</a
                 >
                 <ExternalLink size={15} />
             </div>
-            <div class="flex items-center gap-2 hover:text-tertiary-500">
-                <a href="/posters/SGAIM2025_E-Poster_BZD.pdf" class="underline" target="_blank"
-                    >BZD Poster (PDF)</a
-                >
-                <ExternalLink size={15} />
-            </div>
-            <div class="flex items-center gap-2 hover:text-tertiary-500">
-                <a
-                    href="/posters/SGAIM2025_E-Poster_Transfusions.pdf"
-                    class="underline"
-                    target="_blank">Transfusions Poster (PDF)</a
-                >
-                <ExternalLink size={15} />
-            </div> -->
         </div>
     </div>
 </section>
