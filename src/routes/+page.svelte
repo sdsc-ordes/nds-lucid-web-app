@@ -11,7 +11,7 @@
     import NavigationItems from '$lib/components/NavigationItems.svelte'
     import { handleNavClick } from '$lib/utils/scroll'
     import { setLayoutSlots } from '$lib/utils/layout'
-    
+
     let activeSection = $state('low-value-care')
 
     // Nav links for home page - scroll behavior
@@ -64,30 +64,29 @@
     })
 
     // Set up navigation snippets after component is initialized
-    setLayoutSlots({ 
+    setLayoutSlots({
         desktopnavigationitems,
-        mobilenavigationitems
+        mobilenavigationitems,
     })
 </script>
 
 {#snippet desktopnavigationitems()}
-    <NavigationItems 
-        navLinks={navLinks} 
-        activeSection={activeSection} 
+    <NavigationItems
+        {navLinks}
+        {activeSection}
         onNavClick={handleNavClickWithMenuClose}
         isMobile={false}
     />
 {/snippet}
 
 {#snippet mobilenavigationitems()}
-    <NavigationItems 
-        navLinks={navLinks} 
-        activeSection={activeSection} 
+    <NavigationItems
+        {navLinks}
+        {activeSection}
         onNavClick={handleNavClickWithMenuClose}
         isMobile={true}
     />
 {/snippet}
-
 
 <Hero />
 <LVCexamples />

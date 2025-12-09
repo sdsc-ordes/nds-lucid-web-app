@@ -20,11 +20,15 @@
     // Set up the layout slots context
     const layoutSlots = $state<Partial<LayoutSlots>>({})
     setContext('layout-slots', layoutSlots)
-    
+
     // Provide mobile menu state to child components
     setContext('mobile-menu-state', {
-        get isOpen() { return mobileMenuOpen },
-        close: () => { mobileMenuOpen = false }
+        get isOpen() {
+            return mobileMenuOpen
+        },
+        close: () => {
+            mobileMenuOpen = false
+        },
     })
 
     // Simple toggle functions
@@ -71,7 +75,7 @@
                         {@render layoutSlots.desktopnavigationitems?.()}
 
                         <!-- Language Dropdown -->
-                        <LanguageButton 
+                        <LanguageButton
                             {isScrolled}
                             {dropdownOpen}
                             onToggleDropdown={toggleDropdown}
@@ -79,13 +83,12 @@
 
                         <!-- Mobile Menu Icon and Dropdown -->
                         <div class="md:hidden flex items-center relative">
-                            <MobileMenuButton 
-                                {isScrolled}
-                                onToggleMobileMenu={toggleMobileMenu}
-                            />
+                            <MobileMenuButton {isScrolled} onToggleMobileMenu={toggleMobileMenu} />
 
                             {#if mobileMenuOpen}
-                                <div class="absolute right-0 top-full mt-2 bg-surface-50 rounded-lg p-4 shadow-lg z-100 w-60">
+                                <div
+                                    class="absolute right-0 top-full mt-2 bg-surface-50 rounded-lg p-4 shadow-lg z-100 w-60"
+                                >
                                     {@render layoutSlots.mobilenavigationitems?.()}
                                 </div>
                             {/if}
@@ -95,7 +98,7 @@
             </AppBar>
         </div>
     </header>
-	<main class="w-full flex-1">
+    <main class="w-full flex-1">
         {@render children()}
     </main>
     <footer>

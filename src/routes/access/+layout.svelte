@@ -5,4 +5,3 @@
 <main class="w-full">
     {@render children()}
 </main>
-
