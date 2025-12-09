@@ -54,7 +54,7 @@
     injectAnalytics()
 </script>
 
-<div class="w-full">
+<div class="w-full min-h-screen flex flex-col">
     <header class="sticky top-0 z-50">
         <div class="navbar-wrapper {isScrolled ? 'scrolled' : ''} transition-all duration-300">
             <AppBar
@@ -95,7 +95,7 @@
             </AppBar>
         </div>
     </header>
-    <main class="w-full">
+	<main class="w-full flex-1">
         {@render children()}
     </main>
     <footer>
