@@ -1,0 +1,66 @@
+name: Sync Translations from Google Sheets
+
+on:
+  repository_dispatch:
+    types: [sync-translations]
+  workflow_dispatch: # Allow manual triggering from GitHub UI
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: '10.7.1'
+
+      - name: Get pnpm store directory
+        shell: bash
+        run: |
+          echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
+
+      - uses: actions/cache@v4
+        name: Setup pnpm cache
+        with:
+          path: ${{ env.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Sync translations from Google Sheets
+        env:
+          GOOGLE_SERVICE_ACCOUNT_KEY: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_KEY }}
+          TRANSLATION_SHEET_ID: ${{ secrets.TRANSLATION_SHEET_ID }}
+        run: pnpm sync-translations
+
+      - name: Check for changes
+        id: check_changes
+        run: |
+          if [[ -n $(git status --porcelain src/lib/i18n/locales/) ]]; then
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit and push changes
+        if: steps.check_changes.outputs.has_changes == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add src/lib/i18n/locales/
+          git commit -m "chore: sync translations from Google Sheets"
+          git push
+
