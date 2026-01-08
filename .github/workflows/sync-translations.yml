@@ -44,7 +44,7 @@ jobs:
         env:
           GOOGLE_SERVICE_ACCOUNT_KEY: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_KEY }}
           TRANSLATION_SHEET_ID: ${{ secrets.TRANSLATION_SHEET_ID }}
-        run: pnpm tsx scripts/sync-translations.ts
+        run: pnpm sync-translations
 
       - name: Check for changes
         id: check_changes

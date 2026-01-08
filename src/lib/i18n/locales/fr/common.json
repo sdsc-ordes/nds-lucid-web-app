@@ -1,80 +1,80 @@
 {
-  "sections": {
-    "label-lvc": "Soins de Faible Valeur",
-    "label-impact": "Impact",
-    "label-datastream": "Flux de Données National",
-    "label-main-goals": "Objectifs du Projet",
-    "label-hero": "Section d'Accueil",
-    "label-contact": "Contact",
-    "label-sources": "Sources",
-    "label-home": "Accueil"
-  
-  },
-  "hero": {
-    "landing-title": "Qualité des Soins dans les<br><b>Hôpitaux Universitaires Suisses</b>",
-    "landing-description": "<b>Identifier et comprendre</b> les soins de faible valeur dans les hôpitaux universitaires suisses comme première étape vers leur <b>réduction</b> et l'<b>amélioration des résultats pour les patients</b>.",
-    "landing-description-lucid": "Le projet LUCID vise à construire un flux de données national, collectant les résultats rapportés par les patients dans les hôpitaux et fournissant une plateforme en ligne sécurisée, où les données sur le traitement des patients peuvent être étudiées et comparées.",
-    "call-to-action-patients": "Ensemble pour de Meilleurs Soins",
-    "call-to-action-researchers": "Accéder aux Données de Recherche",
-    "call-to-action-healthcare-providers": "Améliorer les Soins aux Patients"
-  },
-  "lvc": {
-    "lvc-title": "Qu'est-ce que les Soins de Faible Valeur en Milieu Hospitalier",
-    "lvc-description": "Quels services apportent peu ou pas de bénéfices aux patients ou peuvent même causer des dommages, engendrer des coûts inutiles pour les patients ou gaspiller des ressources de santé limitées ?",
-    "lab-test-title": "Tests sanguins quotidiens sans nécessité.",
-    "lab-test-description": "De nombreux patients hospitalisés reçoivent des tests sanguins quotidiens, même lorsque les résultats sont stables. Dans les hôpitaux universitaires, les tests fréquents peuvent découler de la prudence et de la formation clinique. Cependant, la surutilisation peut causer de l'inconfort, de l'anémie et du stress. Le projet LUCID explore quand les tests sanguins sont vraiment nécessaires, aidant les hôpitaux à réduire les soins de faible valeur et à améliorer la prise de décision.",
-    "sedatives-title": "Prescriptions de sédatifs pour les patients âgés.",
-    "sedatives-description": "La prescription de benzodiazépines (BZD) et d'autres sédatifs chez les adultes de plus de 65 ans est considérée comme un soin de faible valeur, en raison de son association avec diverses complications, telles que des séjours hospitaliers prolongés et des chutes. Le projet LUCID étudie les situations où la prescription de sédatifs n'est pas appropriée.",
-    "transfusions-title": "Transfusions sanguines inutiles.",
-    "transfusions-description": "L'administration de transfusions de globules rouges à des patients qui ne saignent pas et qui n'ont pas de taux d'hémoglobine très bas est considérée comme un soin de faible valeur. Elles n'aident pas les patients à se rétablir et peuvent provoquer des réactions graves ou surcharger le cœur. Le projet LUCID explore les possibilités de réduire les transfusions sanguines inutiles tout en garantissant des soins sûrs et efficaces aux patients.",
-    "sleep-title": "Sommeil interrompu à l'hôpital",
-    "sleep-description": "De nombreux patients sont régulièrement réveillés la nuit pour des soins non urgents, comme des tests sanguins ou des médicaments, perturbant le sommeil et potentiellement retardant la guérison. Le projet LUCID étudie cette pratique pour promouvoir un meilleur repos et soutenir la guérison des patients hospitalisés."
-  },
-  "impact": {
-    "impact-title": "Soins de Faible Valeur en Suisse",
-    "unknown-title": "Peu ou pas de bénéfices pour les patients",
-    "unknown-description": "Nous ne savons toujours pas à quelle fréquence les soins de faible valeur ont lieu dans les hôpitaux suisses ni quels dommages ils causent. Ces pratiques apportent peu ou pas de bénéfice aux patients hospitalisés et peuvent même les exposer à des risques inutiles. Le projet de recherche LUCID vise à surveiller et à identifier les soins de faible valeur chez les patients hospitalisés.",
-    "harm-title": "Potentiel de préjudice",
-    "harm-description": "Les soins de faible valeur peuvent nuire aux patients avec des effets secondaires, du stress ou des complications. Le projet LUCID examine ces risques dans les hôpitaux suisses pour rendre les soins plus sûrs, plus efficaces et véritablement centrés sur le patient.",
-    "healthcare-cost-title": "Ressources de santé gaspillées",
-    "healthcare-cost-description": "Les soins de faible valeur consomment des ressources hospitalières précieuses - temps du personnel, lits et argent - qui pourraient être mieux utilisées pour les patients qui en ont vraiment besoin. Le projet de recherche LUCID examine cet impact pour promouvoir des soins plus efficaces et une utilisation plus intelligente des ressources de santé dans les hôpitaux suisses."
+  "contact": {
+    "contact-button": "Commencer un dialogue",
+    "contact-description": "Si vous avez des questions ou souhaitez en savoir plus sur le projet LUCID, veuillez nous contacter.",
+    "contact-title": "Prêt à faire la différence ?"
   },
   "datastream": {
+    "animation": "Animation en cours...",
     "datastream-title": "Flux de Données National sur la Qualité des Soins dans les Hôpitaux Universitaires Suisses",
-    "layer1-title": "Quelles données LUCID utilise-t-il ?",
     "layer1-description": "<b>LUCID utilise les données des patients qui ont consenti pendant leur séjour hospitalier</b> dans l'un des cinq hôpitaux universitaires suisses - Genève, Lausanne, Zurich, Berne ou Bâle - pour la réutilisation des données collectées en routine. Les détails personnels sont supprimés et remplacés par des codes sécurisés pour protéger la vie privée. <b>Les patients peuvent retirer leur consentement à tout moment pour arrêter l'utilisation future de leurs données.</b>",
-    "layer2-title": "Quels types de données sont collectés ?",
+    "layer1-title": "Quelles données LUCID utilise-t-il ?",
     "layer2-description": "Le projet collecte des informations sur <b>les soins hospitaliers, y compris les diagnostics, les traitements et les résultats des tests pendant leur séjour et à leur sortie.</b>",
-    "layer3-title": "Comment LUCID obtient-il les données ?",
+    "layer2-title": "Quels types de données sont collectés ?",
     "layer3-description": "Les données régulièrement enregistrées dans les dossiers médicaux <b>sont collectées, dépouillées des informations personnelles et préparées selon des directives strictes suisses en matière de confidentialité et d'informatique.</b> Elles sont ensuite envoyées en toute sécurité à une plateforme nationale de recherche sécurisée pour analyse.",
-    "layer4-title": "Que deviennent les données ?",
+    "layer3-title": "Comment LUCID obtient-il les données ?",
     "layer4-description": "Les chercheurs peuvent demander l'accès aux données LUCID, mais <b>seuls les chercheurs approuvés sont autorisés à utiliser des informations dépersonnalisées pour étudier les soins de faible valeur</b> et identifier des moyens d'améliorer les soins aux patients, tout en garantissant la confidentialité des identités hospitalières.",
-    "layer5-title": "Comment LUCID peut améliorer les soins",
+    "layer4-title": "Que deviennent les données ?",
     "layer5-description": "En analysant les parcours des patients pendant les séjours hospitaliers, <b>LUCID aide à comprendre, suivre et améliorer leurs pratiques de soins de faible valeur.</b>",
-    "layer6-title": "Comment les chercheurs peuvent-ils accéder aux données LUCID ?",
-    "layer6-description": "Les chercheurs peuvent demander l'accès aux données LUCID pour des études. <b>Chaque demande fait l'objet d'un examen approfondi</b> par un comité d'experts nommés par les hôpitaux et les dirigeants de LUCID pour s'assurer qu'elle respecte les <b>exigences éthiques et légales.</b>",
+    "layer5-title": "Comment LUCID peut améliorer les soins",
     "layer6-button": "Demander l'Accès aux Données",
-    "animation": "Animation en cours..."
+    "layer6-description": "Les chercheurs peuvent demander l'accès aux données LUCID pour des études. <b>Chaque demande fait l'objet d'un examen approfondi</b> par un comité d'experts nommés par les hôpitaux et les dirigeants de LUCID pour s'assurer qu'elle respecte les <b>exigences éthiques et légales.</b>",
+    "layer6-title": "Comment les chercheurs peuvent-ils accéder aux données LUCID ?"
   },
-  "main-goals": {
-    "section-title": "Objectifs Principaux du Projet LUCID",
-    "goal1-title": "Créer un Flux de Données National sur la Qualité des Soins Hospitaliers",
-    "goal1-description": "L'objectif principal du projet LUCID est de faciliter le partage et l'accès aux données cliniques de routine des patients adultes dans les cinq principaux hôpitaux universitaires suisses. Ces informations partagées aident à surveiller et à étudier la qualité des soins dans les hôpitaux.",
-    "goal2-title": "Perspectives Nationales, Impact Local",
-    "goal2-description": "Le projet LUCID donne une vue nationale de la qualité des soins hospitaliers en utilisant les données cliniques existantes. Il aide les chercheurs et les cliniciens à identifier les domaines nécessitant une attention et à créer des actions ciblées pour améliorer les soins aux patients hospitalisés.",
-    "goal3-title": "Comprendre les Expériences des Patients",
-    "goal3-description": "La collecte des mesures des résultats rapportés par les patients (PROMs) et des mesures d'expérience rapportées par les patients (PREMs) est une priorité clé dans LUCID. Elles donnent une voix aux patients et mettent en évidence la manière dont les soins influencent à la fois leur santé et leur vie quotidienne. En faisant progresser ce travail, LUCID contribue à garantir que les soins soient plus étroitement alignés sur ce qui compte le plus pour les patients.",
-    "goal4-title": "Impliquer les Patients et le Public",
-    "goal4-description": "Le projet partagera ses résultats avec chaque partie prenante : patients, public, professionnels de santé et autorités. Avec cette perspective, chacun peut aider à construire un système de santé plus centré sur le patient qui offre de meilleurs soins."
+  "hero": {
+    "call-to-action-healthcare-providers": "Améliorer les Soins aux Patients",
+    "call-to-action-patients": "Ensemble pour de Meilleurs Soins",
+    "call-to-action-researchers": "Accéder aux Données de Recherche",
+    "landing-description": "<b>Identifier et comprendre</b> les soins de faible valeur dans les hôpitaux universitaires suisses comme première étape vers leur <b>réduction</b> et l'<b>amélioration des résultats pour les patients</b>.",
+    "landing-description-lucid": "Le projet LUCID vise à construire un flux de données national, collectant les résultats rapportés par les patients dans les hôpitaux et fournissant une plateforme en ligne sécurisée, où les données sur le traitement des patients peuvent être étudiées et comparées.",
+    "landing-title": "Qualité des Soins dans les<br><b>Hôpitaux Universitaires Suisses</b>"
   },
-  "contact": {
-    "contact-title": "Prêt à faire la différence ?",
-    "contact-description": "Si vous avez des questions ou souhaitez en savoir plus sur le projet LUCID, veuillez nous contacter.",
-    "contact-button": "Commencer un dialogue"
+  "impact": {
+    "harm-description": "Les soins de faible valeur peuvent nuire aux patients avec des effets secondaires, du stress ou des complications. Le projet LUCID examine ces risques dans les hôpitaux suisses pour rendre les soins plus sûrs, plus efficaces et véritablement centrés sur le patient.",
+    "harm-title": "Potentiel de préjudice",
+    "healthcare-cost-description": "Les soins de faible valeur consomment des ressources hospitalières précieuses - temps du personnel, lits et argent - qui pourraient être mieux utilisées pour les patients qui en ont vraiment besoin. Le projet de recherche LUCID examine cet impact pour promouvoir des soins plus efficaces et une utilisation plus intelligente des ressources de santé dans les hôpitaux suisses.",
+    "healthcare-cost-title": "Ressources de santé gaspillées",
+    "impact-title": "Soins de Faible Valeur en Suisse",
+    "unknown-description": "Nous ne savons toujours pas à quelle fréquence les soins de faible valeur ont lieu dans les hôpitaux suisses ni quels dommages ils causent. Ces pratiques apportent peu ou pas de bénéfice aux patients hospitalisés et peuvent même les exposer à des risques inutiles. Le projet de recherche LUCID vise à surveiller et à identifier les soins de faible valeur chez les patients hospitalisés.",
+    "unknown-title": "Peu ou pas de bénéfices pour les patients"
   },
   "language": {
+    "de": "Deutsch",
     "en": "English",
     "fr": "Français",
-    "de": "Deutsch"
+    "it": "Italiano"
+  },
+  "lvc": {
+    "lab-test-description": "De nombreux patients hospitalisés reçoivent des tests sanguins quotidiens, même lorsque les résultats sont stables. Dans les hôpitaux universitaires, les tests fréquents peuvent découler de la prudence et de la formation clinique. Cependant, la surutilisation peut causer de l'inconfort, de l'anémie et du stress. Le projet LUCID explore quand les tests sanguins sont vraiment nécessaires, aidant les hôpitaux à réduire les soins de faible valeur et à améliorer la prise de décision.",
+    "lab-test-title": "Tests sanguins quotidiens sans nécessité.",
+    "lvc-description": "Quels services apportent peu ou pas de bénéfices aux patients ou peuvent même causer des dommages, engendrer des coûts inutiles pour les patients ou gaspiller des ressources de santé limitées ?",
+    "lvc-title": "Qu'est-ce que les Soins de Faible Valeur en Milieu Hospitalier",
+    "sedatives-description": "La prescription de benzodiazépines (BZD) et d'autres sédatifs chez les adultes de plus de 65 ans est considérée comme un soin de faible valeur, en raison de son association avec diverses complications, telles que des séjours hospitaliers prolongés et des chutes. Le projet LUCID étudie les situations où la prescription de sédatifs n'est pas appropriée.",
+    "sedatives-title": "Prescriptions de sédatifs pour les patients âgés.",
+    "sleep-description": "De nombreux patients sont régulièrement réveillés la nuit pour des soins non urgents, comme des tests sanguins ou des médicaments, perturbant le sommeil et potentiellement retardant la guérison. Le projet LUCID étudie cette pratique pour promouvoir un meilleur repos et soutenir la guérison des patients hospitalisés.",
+    "sleep-title": "Sommeil interrompu à l'hôpital",
+    "transfusions-description": "L'administration de transfusions de globules rouges à des patients qui ne saignent pas et qui n'ont pas de taux d'hémoglobine très bas est considérée comme un soin de faible valeur. Elles n'aident pas les patients à se rétablir et peuvent provoquer des réactions graves ou surcharger le cœur. Le projet LUCID explore les possibilités de réduire les transfusions sanguines inutiles tout en garantissant des soins sûrs et efficaces aux patients.",
+    "transfusions-title": "Transfusions sanguines inutiles."
+  },
+  "main-goals": {
+    "goal1-description": "L'objectif principal du projet LUCID est de faciliter le partage et l'accès aux données cliniques de routine des patients adultes dans les cinq principaux hôpitaux universitaires suisses. Ces informations partagées aident à surveiller et à étudier la qualité des soins dans les hôpitaux.",
+    "goal1-title": "Créer un Flux de Données National sur la Qualité des Soins Hospitaliers",
+    "goal2-description": "Le projet LUCID donne une vue nationale de la qualité des soins hospitaliers en utilisant les données cliniques existantes. Il aide les chercheurs et les cliniciens à identifier les domaines nécessitant une attention et à créer des actions ciblées pour améliorer les soins aux patients hospitalisés.",
+    "goal2-title": "Perspectives Nationales, Impact Local",
+    "goal3-description": "La collecte des mesures des résultats rapportés par les patients (PROMs) et des mesures d'expérience rapportées par les patients (PREMs) est une priorité clé dans LUCID. Elles donnent une voix aux patients et mettent en évidence la manière dont les soins influencent à la fois leur santé et leur vie quotidienne. En faisant progresser ce travail, LUCID contribue à garantir que les soins soient plus étroitement alignés sur ce qui compte le plus pour les patients.",
+    "goal3-title": "Comprendre les Expériences des Patients",
+    "goal4-description": "Le projet partagera ses résultats avec chaque partie prenante : patients, public, professionnels de santé et autorités. Avec cette perspective, chacun peut aider à construire un système de santé plus centré sur le patient qui offre de meilleurs soins.",
+    "goal4-title": "Impliquer les Patients et le Public",
+    "section-title": "Objectifs Principaux du Projet LUCID"
+  },
+  "sections": {
+    "label-contact": "Contact",
+    "label-datastream": "Flux de Données National",
+    "label-hero": "Section d'Accueil",
+    "label-home": "Accueil",
+    "label-impact": "Impact",
+    "label-lvc": "Soins de Faible Valeur",
+    "label-main-goals": "Objectifs du Projet",
+    "label-sources": "Sources"
   }
 }
