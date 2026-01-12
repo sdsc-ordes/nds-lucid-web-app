@@ -103,10 +103,10 @@
 *.[Ee][Xx][Ee] filter=lfs diff=lfs merge=lfs -text
 
 # Override LFS settings for static directory
-static/**/*.png !filter !diff !merge text
-static/**/*.jpg !filter !diff !merge text
-static/**/*.jpeg !filter !diff !merge text
+static/**/*.png !filter !diff !merge binary
+static/**/*.jpg !filter !diff !merge binary
+static/**/*.jpeg !filter !diff !merge binary
 static/**/*.svg !filter !diff !merge text
-static/**/*.pdf !filter !diff !merge text
+static/**/*.pdf !filter !diff !merge binary
 static/images/hero-background.jpg !text !filter !merge !diff
 static/images/datastream/carousel-*.png !text !filter !merge !diff
