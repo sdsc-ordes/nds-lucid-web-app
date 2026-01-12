@@ -69,3 +69,5 @@ jobs:
           body: "Automated translation sync from Google Sheets"
           branch: chore/sync-translations
           delete-branch: true
+          add-paths: |
+            src/lib/i18n/locales/
