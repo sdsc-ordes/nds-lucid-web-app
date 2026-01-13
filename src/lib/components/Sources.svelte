@@ -126,6 +126,21 @@
                     <ExternalLink size={15} />
                 </a>
             </div>
+            <div class="flex flex-col">
+                <span>Aurélie Toninato</span>
+                <span class="font-bold"
+                    >Faire mieux avec moins: la «smarter medicine» gagne du terrain</span
+                >
+                <a
+                    href="https://www.24heures.ch/faire-mieux-avec-moins-la-smarter-medicine-gagne-du-terrain-943206885710"
+                    class="flex items-center gap-2 hover:text-tertiary-500 underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    24 Heures, 16 November 2025 (in French)
+                    <ExternalLink size={15} />
+                </a>
+            </div>
             <div class="flex items-center gap-2">
                 <FolderHeart size={25} class="text-tertiary-500" />
                 <span class="font-bold text-tertiary-500 text-lg sm:text-xl">Posters</span>
