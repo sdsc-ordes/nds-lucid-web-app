@@ -27,7 +27,7 @@
     "call-to-action-researchers": "Access Research Data",
     "landing-description": "<b>Identify and understand</b> low-value care in Swiss university hospitals as the first step towards <b>reducing it</b> and <b>improving patient outcomes</b>.",
     "landing-description-lucid": "The LUCID project aims to build a national data stream, collecting patient reported outcomes in hospitals and providing a safe, online platform, where the data on patient treatment can be studied and compared.",
-    "landing-title": "Quality of Care in<br><b>Swiss University Hospitals</b>"
+    "landing-title": "Quality of Care in<br><b>Swiss University Hospitals</b>. STEFAN YOU GO GURL"
   },
   "impact": {
     "harm-description": "Low-value care can harm patients with side effects, stress or complications. The LUCID project examines these risks in Swiss hospitals to make care safer, more effective, and truly patient‑focused.",
@@ -71,7 +71,7 @@
     "label-contact": "Contact",
     "label-datastream": "National Data Stream",
     "label-hero": "Hero Section",
-    "label-impact": "Impact",
+    "label-impact": "label-impact",
     "label-lvc": "Low-Value Care",
     "label-main-goals": "Project Goals",
     "label-sources": "Sources"
