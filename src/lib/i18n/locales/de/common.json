@@ -46,7 +46,7 @@
   },
   "lvc": {
     "lab-test-description": "Viele hospitalisierte Patienten erhalten tägliche Bluttests, auch wenn die Ergebnisse stabil sind. In Lehrkrankenhäusern können häufige Tests aus Vorsicht und klinischer Ausbildung resultieren. Übermäßige Nutzung kann jedoch Unbehagen, Anämie und Stress verursachen. Das LUCID-Projekt untersucht, wann Bluttests wirklich notwendig sind und hilft Krankenhäusern, Low-Value Care zu reduzieren und die Entscheidungsfindung zu verbessern.",
-    "lab-test-title": "Tägliche Bluttests ohne Bedarf.",
+    "lab-test-title": "Tägliche Bluttests ohne Bedarf",
     "lvc-description": "Welche Leistungen bringen den Patienten wenig oder gar keinen Nutzen oder können sogar Schaden verursachen, unnötige Kosten für Patienten verursachen oder begrenzte Gesundheitsressourcen verschwenden?",
     "lvc-title": "Was ist Low-Value Care im Krankenhausumfeld",
     "sedatives-description": "Die Verschreibung von Benzodiazepinen (BZD) und anderen Sedativa bei Erwachsenen über 65 Jahren wird als Versorgung mit geringem Nutzen angesehen, da sie mit verschiedenen Komplikationen wie verlängerten Krankenhausaufenthalten und Stürzen verbunden ist. Das LUCID-Projekt untersucht, wann die Verschreibung von Sedativa nicht angemessen ist.",
@@ -54,7 +54,7 @@
     "sleep-description": "Viele Patienten werden routinemäßig nachts für nicht dringende Pflege wie Bluttests oder Medikamente geweckt, was den Schlaf stört und möglicherweise die Genesung verzögert. Das LUCID-Projekt untersucht diese Praxis, um bessere Ruhe zu fördern und die Heilung hospitalisierter Patienten zu unterstützen.",
     "sleep-title": "Unterbrochener Schlaf im Krankenhaus",
     "transfusions-description": "Die Verabreichung von Bluttransfusionen mit roten Blutkörperchen an Patienten, die nicht bluten und keinen sehr niedrigen Hämoglobinwert haben, wird als Versorgung mit geringem Nutzen angesehen. Sie tragen nicht zur Genesung bei und können schwere Reaktionen hervorrufen oder das Herz übermäßig belasten. Das LUCID-Projekt untersucht Möglichkeiten, unnötige Bluttransfusionen zu reduzieren und gleichzeitig eine sichere und wirksame Patientenversorgung zu gewährleisten.",
-    "transfusions-title": "Unnötige Bluttransfusionen."
+    "transfusions-title": "Unnötige Bluttransfusionen"
   },
   "main-goals": {
     "goal1-description": "Das Hauptziel des LUCID-Projekts ist es, den Austausch und Zugang zu routinemäßigen klinischen Daten von erwachsenen Patienten in den fünf wichtigsten Schweizer Universitätsspitälern zu erleichtern. Diese geteilten Informationen helfen, die Qualität der Versorgung in Krankenhäusern zu überwachen und zu untersuchen.",
