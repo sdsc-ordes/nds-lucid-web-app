@@ -25,7 +25,7 @@
     "call-to-action-healthcare-providers": "Improve Patient Care",
     "call-to-action-patients": "Together for Better Care",
     "call-to-action-researchers": "Access Research Data",
-    "landing-description": "<b>Identify and understand</b> low-value care in Swiss university hospitals as the first step towards <b>reducing it</b> and <b>improving patient outcomes</b>.",
+    "landing-description": "LUCID’s aim is to identify and understand low-value care in Swiss university hospitals as a critical first step toward reducing it and improving patient outcomes",
     "landing-description-lucid": "The LUCID project aims to build a national data stream, collecting patient reported outcomes in hospitals and providing a safe, online platform, where the data on patient treatment can be studied and compared.",
     "landing-title": "Quality of Care in<br><b>Swiss University Hospitals</b>"
   },
@@ -46,15 +46,15 @@
   },
   "lvc": {
     "lab-test-description": "Many hospitalized patients receive daily blood tests, even when results are stable. In teaching hospitals, frequent testing may stem from caution and clinical training. However, overuse can cause discomfort, anemia, and stress. The LUCID project explores when blood tests are truly necessary—helping hospitals reduce low-value care and improve decision-making.",
-    "lab-test-title": "Daily blood tests without need.",
-    "lvc-description": "What services provide little or no benefit to patients or even can cause harm, cause unnecessary cost to patients, or waste limited healthcare resources ?",
+    "lab-test-title": "Daily blood tests without clinical indication",
+    "lvc-description": "Low-value care in hospitals refers to services that offer minimal or no clinical benefit, pose potential risks, generate avoidable patient costs, or unnecessarily consume scarce healthcare resources.",
     "lvc-title": "What is Low-Value Care in the Hospital Setting",
-    "sedatives-description": "The prescription of benzodiazepines (BZD) and other sedatives in adults aged over 65 years is considered low-value care, due to its association with various complications, such as prolonged hospital stays and falls. The LUCID project explores when prescription of sedatives are not appropriate.",
-    "sedatives-title": "Sedative prescriptions for older patients.",
+    "sedatives-description": "The prescription of benzodiazepines (BZD) and other sedatives in adults aged over 65 years is considered low-value care, because it can increase the risk of prolonged hospital stays and falls. The LUCID project explores when prescription of sedatives are not appropriate.",
+    "sedatives-title": "Sedative prescriptions for older patients",
     "sleep-description": "Many patients are routinely woken at night for non-urgent care, such as blood tests or medication, disrupting sleep and potentially delaying recovery. The LUCID project investigates this practice to promote better rest and support healing in hospitalized patients.",
     "sleep-title": "Interrupted sleep in the hospital",
-    "transfusions-description": "Administering red blood cell transfusions to patients who aren't bleeding and don't have very low haemoglobin levels is considered low-value care. They don't help people recover and can cause serious reactions or put too much strain on the heart. The LUCID project explores opportunities to reduce unnecessary blood transfusions while ensuring safe and effective patient care.",
-    "transfusions-title": "Unnecessary blood transfusions."
+    "transfusions-description": "Administering red blood cell transfusions to patients who aren't bleeding and don't have very low haemoglobin levels is considered low-value care. They don't help people recover and may cause serious reactions or put too much strain on the heart. The LUCID project examines when transfusions are truly needed and helps hospitals reduce unnecessary use, while ensuring that patients always receive safe, effective, and evidence-based care.",
+    "transfusions-title": "Unnecessary blood transfusions"
   },
   "main-goals": {
     "goal1-description": "The main goal of the LUCID project is to make it easier to share and access routine clinical data from adult patients in Switzerland's five main university hospitals. This shared information helps monitor and study the quality of care in hospitals.",
@@ -65,7 +65,7 @@
     "goal3-title": "Understand Patient Experiences",
     "goal4-description": "The project will share its findings with every stakeholder: patients, the public, healthcare professionals, and authorities. With this insight, everyone can help build a more patient-centered healthcare system that delivers greater care.",
     "goal4-title": "Involve Patients and the Public",
-    "section-title": "Main Goals of the LUCID Project"
+    "section-title": "Main Objectives of LUCID"
   },
   "sections": {
     "label-contact": "Contact",

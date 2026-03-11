@@ -25,7 +25,7 @@
     "call-to-action-healthcare-providers": "Améliorer les Soins aux Patients",
     "call-to-action-patients": "Ensemble pour de Meilleurs Soins",
     "call-to-action-researchers": "Accéder aux Données de Recherche",
-    "landing-description": "<b>Identifier et comprendre</b> les soins de faible valeur dans les hôpitaux universitaires suisses comme première étape vers leur <b>réduction</b> et l'<b>amélioration des résultats pour les patients</b>.",
+    "landing-description": "L’objectif du LUCID est d’identifier et comprendre les soins de faible valeur dans les hôpitaux universitaires suisses, une première étape indispensable pour les réduire et améliorer les résultats pour les patients.",
     "landing-description-lucid": "Le projet LUCID vise à construire un flux de données national, collectant les résultats rapportés par les patients dans les hôpitaux et fournissant une plateforme en ligne sécurisée, où les données sur le traitement des patients peuvent être étudiées et comparées.",
     "landing-title": "Qualité des Soins dans les<br><b>Hôpitaux Universitaires Suisses</b>"
   },
@@ -46,15 +46,15 @@
   },
   "lvc": {
     "lab-test-description": "De nombreux patients hospitalisés reçoivent des tests sanguins quotidiens, même lorsque les résultats sont stables. Dans les hôpitaux universitaires, les tests fréquents peuvent découler de la prudence et de la formation clinique. Cependant, la surutilisation peut causer de l'inconfort, de l'anémie et du stress. Le projet LUCID explore quand les tests sanguins sont vraiment nécessaires, aidant les hôpitaux à réduire les soins de faible valeur et à améliorer la prise de décision.",
-    "lab-test-title": "Tests sanguins quotidiens sans nécessité.",
-    "lvc-description": "Quels services apportent peu ou pas de bénéfices aux patients ou peuvent même causer des dommages, engendrer des coûts inutiles pour les patients ou gaspiller des ressources de santé limitées ?",
+    "lab-test-title": "Tests sanguins quotidiens sans nécessité",
+    "lvc-description": "Les soins de faible valeur à l’hôpital désignent des prestations qui offrent peu ou pas de bénéfice clinique, qui peuvent présenter des risques potentiels, engendrer des coûts évitables pour les patients, ou consommer inutilement des ressources de santé limitées.",
     "lvc-title": "Qu'est-ce que les Soins de Faible Valeur en Milieu Hospitalier",
     "sedatives-description": "La prescription de benzodiazépines (BZD) et d'autres sédatifs chez les adultes de plus de 65 ans est considérée comme un soin de faible valeur, en raison de son association avec diverses complications, telles que des séjours hospitaliers prolongés et des chutes. Le projet LUCID étudie les situations où la prescription de sédatifs n'est pas appropriée.",
-    "sedatives-title": "Prescriptions de sédatifs pour les patients âgés.",
+    "sedatives-title": "Prescriptions de sédatifs pour les patients âgés",
     "sleep-description": "De nombreux patients sont régulièrement réveillés la nuit pour des soins non urgents, comme des tests sanguins ou des médicaments, perturbant le sommeil et potentiellement retardant la guérison. Le projet LUCID étudie cette pratique pour promouvoir un meilleur repos et soutenir la guérison des patients hospitalisés.",
     "sleep-title": "Sommeil interrompu à l'hôpital",
     "transfusions-description": "L'administration de transfusions de globules rouges à des patients qui ne saignent pas et qui n'ont pas de taux d'hémoglobine très bas est considérée comme un soin de faible valeur. Elles n'aident pas les patients à se rétablir et peuvent provoquer des réactions graves ou surcharger le cœur. Le projet LUCID explore les possibilités de réduire les transfusions sanguines inutiles tout en garantissant des soins sûrs et efficaces aux patients.",
-    "transfusions-title": "Transfusions sanguines inutiles."
+    "transfusions-title": "Transfusions sanguines inutiles"
   },
   "main-goals": {
     "goal1-description": "L'objectif principal du projet LUCID est de faciliter le partage et l'accès aux données cliniques de routine des patients adultes dans les cinq principaux hôpitaux universitaires suisses. Ces informations partagées aident à surveiller et à étudier la qualité des soins dans les hôpitaux.",
