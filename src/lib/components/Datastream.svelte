@@ -1,7 +1,7 @@
 <script lang="ts">
-    import { t } from '$lib/i18n/i18n'
+    import { t } from '#lib/i18n/i18n.ts'
     import { onMount } from 'svelte'
-    import { ChevronLeft, ChevronRight } from 'lucide-svelte'
+    import { ChevronLeft, ChevronRight } from '@lucide/svelte'
     const carouselImages = [
         '/images/datastream/carousel-1-min.webp',
         '/images/datastream/carousel-2-min.webp',
@@ -127,7 +127,7 @@
                                         {$t(item.title)}
                                     </h2>
                                     <p
-                                        class="text-sm leading-relaxed text-surface-950-50 text-center"
+                                        class="text-sm leading-relaxed text-surface-950 dark:text-surface-50 text-center"
                                     >
                                         {@html $t(item.description)}
                                     </p>
@@ -144,23 +144,23 @@
                     <!-- Button: Left -->
                     <button
                         type="button"
-                        class="btn pointer-events-auto"
+                        class="btn px-4 py-1 pointer-events-auto [&>svg]:size-[40px]"
                         onclick={carouselLeft}
                         title="Previous slide"
                         aria-label="Previous slide"
                     >
-                        <ChevronLeft size={40} class="text-surface-950-50" />
+                        <ChevronLeft size={40} class="text-surface-950 dark:text-surface-50" />
                     </button>
 
                     <!-- Button: Right -->
                     <button
                         type="button"
-                        class="btn pointer-events-auto"
+                        class="btn px-4 py-1 pointer-events-auto [&>svg]:size-[40px]"
                         onclick={carouselRight}
                         title="Next slide"
                         aria-label="Next slide"
                     >
-                        <ChevronRight size={40} class="text-surface-950-50" />
+                        <ChevronRight size={40} class="text-surface-950 dark:text-surface-50" />
                     </button>
                 </div>
             </div>
@@ -173,7 +173,7 @@
             <button
                 class="w-3 h-3 rounded-full transition-all duration-200 {currentSlide === i
                     ? 'bg-tertiary-500'
-                    : 'bg-surface-950-50/90'}"
+                    : 'bg-surface-950/90 dark:bg-surface-50/90'}"
                 onclick={() => {
                     if (carouselContainer) {
                         carouselContainer.scrollTo({

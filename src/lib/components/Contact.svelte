@@ -1,7 +1,7 @@
 <script lang="ts">
     // You can add props or logic here if needed in the future
     import { onMount } from 'svelte'
-    import { t } from '$lib/i18n/i18n'
+    import { t } from '#lib/i18n/i18n.ts'
 
     let observer: IntersectionObserver
     let animatedElements = new Set()

@@ -2,13 +2,13 @@
     import '../app.css'
     import { AppBar } from '@skeletonlabs/skeleton-svelte'
     import { onMount } from 'svelte'
-    import { injectAnalytics } from '@vercel/analytics/sveltekit'
-    import Footer from '$lib/components/Footer.svelte'
-    import Logo from '$lib/components/Logo.svelte'
-    import LanguageButton from '$lib/components/LanguageButton.svelte'
-    import MobileMenuButton from '$lib/components/MobileMenuButton.svelte'
+    import { injectAnalytics } from '#lib/utils/analytics.svelte.ts'
+    import Footer from '#lib/components/Footer.svelte'
+    import Logo from '#lib/components/Logo.svelte'
+    import LanguageButton from '#lib/components/LanguageButton.svelte'
+    import MobileMenuButton from '#lib/components/MobileMenuButton.svelte'
     import { setContext } from 'svelte'
-    import { setLayoutSlots, type LayoutSlots } from '$lib/utils/layout'
+    import { setLayoutSlots, type LayoutSlots } from '#lib/utils/layout.ts'
 
     let { children, slots }: { children: any; slots: LayoutSlots } = $props()
 
@@ -62,39 +62,45 @@
     <header class="sticky top-0 z-50">
         <div class="navbar-wrapper {isScrolled ? 'scrolled' : ''} transition-all duration-300">
             <AppBar
-                background="bg-surface-contrast-50"
-                base="py-2 sm:py-3 transition-all duration-300 {isScrolled ? 'py-1 sm:py-2' : ''}"
+                class="py-2 sm:py-3 transition-all duration-300 {isScrolled
+                    ? 'py-1 sm:py-2'
+                    : ''} bg-surface-contrast-50 space-y-4 p-4"
             >
-                {#snippet lead()}
-                    <Logo {isScrolled} />
-                {/snippet}
+                <AppBar.Toolbar class="flex justify-between grid-cols-[auto_1fr_auto] gap-4">
+                    <AppBar.Lead class="flex space-x-4 rtl:space-x-reverse">
+                        <Logo {isScrolled} />
+                    </AppBar.Lead>
 
-                {#snippet trail()}
-                    <div class="flex items-center gap-6">
-                        <!-- Desktop Navigation Items from snippet -->
-                        {@render layoutSlots.desktopnavigationitems?.()}
+                    <AppBar.Trail class="flex space-x-4 rtl:space-x-reverse">
+                        <div class="flex items-center gap-6">
+                            <!-- Desktop Navigation Items from snippet -->
+                            {@render layoutSlots.desktopnavigationitems?.()}
 
-                        <!-- Language Dropdown -->
-                        <LanguageButton
-                            {isScrolled}
-                            {dropdownOpen}
-                            onToggleDropdown={toggleDropdown}
-                        />
+                            <!-- Language Dropdown -->
+                            <LanguageButton
+                                {isScrolled}
+                                {dropdownOpen}
+                                onToggleDropdown={toggleDropdown}
+                            />
 
-                        <!-- Mobile Menu Icon and Dropdown -->
-                        <div class="md:hidden flex items-center relative">
-                            <MobileMenuButton {isScrolled} onToggleMobileMenu={toggleMobileMenu} />
+                            <!-- Mobile Menu Icon and Dropdown -->
+                            <div class="md:hidden flex items-center relative">
+                                <MobileMenuButton
+                                    {isScrolled}
+                                    onToggleMobileMenu={toggleMobileMenu}
+                                />
 
-                            {#if mobileMenuOpen}
-                                <div
-                                    class="absolute right-0 top-full mt-2 bg-surface-50 rounded-lg p-4 shadow-lg z-100 w-60"
-                                >
-                                    {@render layoutSlots.mobilenavigationitems?.()}
-                                </div>
-                            {/if}
+                                {#if mobileMenuOpen}
+                                    <div
+                                        class="absolute right-0 top-full mt-2 bg-surface-50 rounded-lg p-4 shadow-lg z-100 w-60"
+                                    >
+                                        {@render layoutSlots.mobilenavigationitems?.()}
+                                    </div>
+                                {/if}
+                            </div>
                         </div>
-                    </div>
-                {/snippet}
+                    </AppBar.Trail>
+                </AppBar.Toolbar>
             </AppBar>
         </div>
     </header>

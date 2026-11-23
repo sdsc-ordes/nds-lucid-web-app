@@ -1,11 +1,11 @@
 <script lang="ts">
     import { onMount } from 'svelte'
-    import NavigationItems from '$lib/components/NavigationItems.svelte'
+    import NavigationItems from '#lib/components/NavigationItems.svelte'
     import { goto } from '$app/navigation'
-    import { setLayoutSlots } from '$lib/utils/layout'
+    import { setLayoutSlots } from '#lib/utils/layout.ts'
     import { loadConcepts, sanitizeKey, type Concept } from './schema'
-    import { SearchIcon, XIcon } from 'lucide-svelte'
-    import { t, initLocale } from '$lib/i18n/i18n'
+    import { SearchIcon, XIcon } from '@lucide/svelte'
+    import { t, initLocale } from '#lib/i18n/i18n.ts'
 
     let concepts = $state<Concept[]>([])
     let filteredConcepts = $state<Concept[]>([])

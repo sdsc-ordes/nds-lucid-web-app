@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { ExternalLink, FileText, FolderHeart, Globe } from 'lucide-svelte'
+    import { ExternalLink, FileText, FolderHeart, Globe } from '@lucide/svelte'
 </script>
 
 <section id="sources" class="flex flex-col justify-between relative overflow-hidden">
@@ -17,8 +17,10 @@
                     href="https://www.smartermedicine.ch/de/home"
                     class=" underline"
                     target="_blank"
-                    rel="noopener noreferrer">Smarter Medicine Website</a
+                    rel="noopener noreferrer"
                 >
+                    Smarter Medicine Website
+                </a>
                 <ExternalLink size={15} />
             </div>
             <div class="flex items-center gap-2 hover:text-tertiary-500">
@@ -26,8 +28,10 @@
                     href="https://sphn.ch/network/projects/project-page_nds_lucid/"
                     class=" underline"
                     target="_blank"
-                    rel="noopener noreferrer">LUCID NDS webpage</a
+                    rel="noopener noreferrer"
                 >
+                    LUCID NDS webpage
+                </a>
                 <ExternalLink size={15} />
             </div>
             <div class="flex items-center gap-2 hover:text-tertiary-500">
@@ -35,24 +39,26 @@
                     href="https://sphn.ch/"
                     class=" underline"
                     target="_blank"
-                    rel="noopener noreferrer">SPHN website</a
+                    rel="noopener noreferrer"
                 >
+                    SPHN website
+                </a>
                 <ExternalLink size={15} />
             </div>
 
             <div class="mt-4 flex items-center gap-2">
                 <FileText size={25} class="text-tertiary-500" />
-                <span class="font-bold text-tertiary-500 text-lg sm:text-xl"
-                    >Media Coverage and Publications</span
-                >
+                <span class="font-bold text-tertiary-500 text-lg sm:text-xl">
+                    Media Coverage and Publications
+                </span>
             </div>
             <div class="flex flex-col">
                 <span>T. Guffi, J. Ehrsam, M. Débieux et al. </span>
-                <span class="font-bold"
-                    >Monitoring low-value care in medical patients from Swiss university hospitals
+                <span class="font-bold">
+                    Monitoring low-value care in medical patients from Swiss university hospitals
                     using a Findable, Accessible, Interoperable, Reusable (FAIR) national data
-                    stream and patient and public involvement: LUCID study protocol.</span
-                >
+                    stream and patient and public involvement: LUCID study protocol.
+                </span>
                 <a
                     href="https://doi.org/10.1136/bmjopen-2024-089662"
                     class="flex items-center gap-2 hover:text-tertiary-500 underline"
@@ -78,9 +84,9 @@
             </div>
             <div class="flex flex-col">
                 <span>I. Böhm</span>
-                <span class="font-bold"
-                    >Un écosystème de données au service de la médecine personnalisée.</span
-                >
+                <span class="font-bold">
+                    Un écosystème de données au service de la médecine personnalisée.
+                </span>
                 <a
                     href="https://sphn.ch/wp-content/uploads/2024/03/bms-2023-1250296756.pdf"
                     class="flex items-center gap-2 hover:text-tertiary-500 underline"
@@ -106,16 +112,16 @@
             </div>
             <div class="flex flex-col">
                 <span>C. Grand</span>
-                <span class="font-bold"
-                    >Réduire les soins inappropriés à l'hôpital: le défi du projet LUCID.</span
-                >
+                <span class="font-bold">
+                    Réduire les soins inappropriés à l'hôpital: le défi du projet LUCID.
+                </span>
                 <span>8 June 2022 (in French)</span>
             </div>
             <div class="flex flex-col">
                 <span>L. von Beust</span>
-                <span class="font-bold"
-                    >Ils veulent traquer les soins inutiles prescrits aux patients.</span
-                >
+                <span class="font-bold">
+                    Ils veulent traquer les soins inutiles prescrits aux patients.
+                </span>
                 <a
                     href="https://www.20min.ch/fr/story/ils-veulent-traquer-les-soins-inutiles-prescrits-aux-patients-581037828005"
                     class="flex items-center gap-2 hover:text-tertiary-500 underline"
@@ -135,8 +141,10 @@
                     href="https://zenodo.org/records/17788637"
                     class="underline"
                     target="_blank"
-                    rel="noopener noreferrer">Designing the LUCID Website Together</a
+                    rel="noopener noreferrer"
                 >
+                    Designing the LUCID Website Together
+                </a>
                 <ExternalLink size={15} />
             </div>
         </div>

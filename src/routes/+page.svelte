@@ -1,16 +1,16 @@
 <script lang="ts">
     import { onMount } from 'svelte'
-    import Hero from '$lib/components/Hero.svelte'
-    import { t, initLocale } from '$lib/i18n/i18n'
-    import LVCexamples from '$lib/components/LVCexamples.svelte'
-    import Impact from '$lib/components/Impact.svelte'
-    import Datastream from '$lib/components/Datastream.svelte'
-    import Goals from '$lib/components/Goals.svelte'
-    import Sources from '$lib/components/Sources.svelte'
-    import Contact from '$lib/components/Contact.svelte'
-    import NavigationItems from '$lib/components/NavigationItems.svelte'
-    import { handleNavClick } from '$lib/utils/scroll'
-    import { setLayoutSlots } from '$lib/utils/layout'
+    import Hero from '#lib/components/Hero.svelte'
+    import { t, initLocale } from '#lib/i18n/i18n.ts'
+    import LVCexamples from '#lib/components/LVCexamples.svelte'
+    import Impact from '#lib/components/Impact.svelte'
+    import Datastream from '#lib/components/Datastream.svelte'
+    import Goals from '#lib/components/Goals.svelte'
+    import Sources from '#lib/components/Sources.svelte'
+    import Contact from '#lib/components/Contact.svelte'
+    import NavigationItems from '#lib/components/NavigationItems.svelte'
+    import { handleNavClick } from '#lib/utils/scroll.ts'
+    import { setLayoutSlots } from '#lib/utils/layout.ts'
 
     let activeSection = $state('low-value-care')
 

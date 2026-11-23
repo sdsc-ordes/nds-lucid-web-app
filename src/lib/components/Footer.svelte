@@ -1,5 +1,5 @@
 <script>
-    import { Heart } from 'lucide-svelte'
+    import { Heart } from '@lucide/svelte'
 </script>
 
 <footer class="bg-surface-950 px-4 py-6 w-full">
