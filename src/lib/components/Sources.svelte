@@ -141,7 +141,7 @@
             </div>
             <div class="flex items-center gap-2 hover:text-tertiary-500">
                 <a
-                    href="/posters/Poster_LUCID_ETHICH.pdf"
+                    href="https://zenodo.org/records/24461767"
                     class="underline"
                     target="_blank"
                     rel="noopener noreferrer"
