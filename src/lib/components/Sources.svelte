@@ -139,6 +139,16 @@
                 >
                 <ExternalLink size={15} />
             </div>
+            <div class="flex items-center gap-2 hover:text-tertiary-500">
+                <a
+                    href="/posters/Poster_LUCID_ETHICH.pdf"
+                    class="underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Reducing low-value care and promoting sustainable healthcare in hospitals (ETHICH)</a
+                >
+                <ExternalLink size={15} />
+            </div>
         </div>
     </div>
 </section>
