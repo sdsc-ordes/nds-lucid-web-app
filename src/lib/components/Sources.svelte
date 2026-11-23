@@ -139,6 +139,17 @@
                 >
                 <ExternalLink size={15} />
             </div>
+            <div class="flex items-center gap-2 hover:text-tertiary-500">
+                <a
+                    href="https://zenodo.org/records/24461767"
+                    class="underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Reducing low-value care and promoting sustainable healthcare in hospitals
+                    (ETHICH)</a
+                >
+                <ExternalLink size={15} />
+            </div>
         </div>
     </div>
 </section>
