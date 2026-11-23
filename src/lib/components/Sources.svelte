@@ -145,7 +145,8 @@
                     class="underline"
                     target="_blank"
                     rel="noopener noreferrer"
-                    >Reducing low-value care and promoting sustainable healthcare in hospitals (ETHICH)</a
+                    >Reducing low-value care and promoting sustainable healthcare in hospitals
+                    (ETHICH)</a
                 >
                 <ExternalLink size={15} />
             </div>
