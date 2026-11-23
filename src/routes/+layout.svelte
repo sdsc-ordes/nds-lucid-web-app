@@ -10,7 +10,7 @@
     import { setContext } from 'svelte'
     import { setLayoutSlots, type LayoutSlots } from '$lib/utils/layout'
 
-    let { children, slots } = $props<{ children: any; slots: LayoutSlots }>()
+    let { children, slots }: { children: any; slots: LayoutSlots } = $props()
 
     let dropdownOpen = $state(false)
     let mobileMenuOpen = $state(false)
