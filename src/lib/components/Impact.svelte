@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { t, initLocale } from '$lib/i18n/i18n'
+    import { t, initLocale } from '#lib/i18n/i18n.ts'
     import { onMount, tick } from 'svelte'
     initLocale()
 

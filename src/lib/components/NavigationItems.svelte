@@ -1,6 +1,6 @@
 <script lang="ts">
-    import { t } from '$lib/i18n/i18n'
-    import { handleNavClick } from '$lib/utils/scroll'
+    import { t } from '#lib/i18n/i18n.ts'
+    import { handleNavClick } from '#lib/utils/scroll.ts'
     import { goto } from '$app/navigation'
     import { getContext } from 'svelte'
 
@@ -22,8 +22,8 @@
     // Get mobile menu context
     const mobileMenuState = getContext<{ isOpen: boolean; close: () => void }>('mobile-menu-state')
 
-    // Auto-detect mobile mode if not explicitly set
-    let isMobileMode = $state(isMobile)
+    // Follows the isMobile prop
+    const isMobileMode = $derived(isMobile)
 
     const handleClick = (event: Event, href: string, action: 'scroll' | 'navigate' = 'scroll') => {
         // Close mobile menu if it's open

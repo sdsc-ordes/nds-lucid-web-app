@@ -1,6 +1,6 @@
 <script lang="ts">
-    import { locale, locales, setLocale } from '$lib/i18n/i18n'
-    import type { Locale } from '$lib/i18n/i18n'
+    import { locale, locales, setLocale } from '#lib/i18n/i18n.ts'
+    import type { Locale } from '#lib/i18n/i18n.ts'
 </script>
 
 <div class="language-selector rounded-lg p-2 shadow-lg">

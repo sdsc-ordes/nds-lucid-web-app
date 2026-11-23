@@ -1,7 +1,7 @@
 <script lang="ts">
     import { LanguagesIcon } from '@lucide/svelte'
-    import { locale, locales, setLocale } from '$lib/i18n/i18n'
-    import type { Locale } from '$lib/i18n/i18n'
+    import { locale, locales, setLocale } from '#lib/i18n/i18n.ts'
+    import type { Locale } from '#lib/i18n/i18n.ts'
 
     interface Props {
         isScrolled: boolean

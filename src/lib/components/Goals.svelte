@@ -1,7 +1,7 @@
 <script lang="ts">
-    import { t, initLocale } from '$lib/i18n/i18n'
+    import { t, initLocale } from '#lib/i18n/i18n.ts'
     import { onMount, onDestroy, tick } from 'svelte'
-    import { BriefcaseMedical, MapPinned, User, Speech } from 'lucide-svelte'
+    import { BriefcaseMedical, MapPinned, User, Speech } from '@lucide/svelte'
 
     initLocale()
 
